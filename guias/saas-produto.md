@@ -1,14 +1,13 @@
-# Guia — Micro SaaS e Produto com IA
+# SaaS e Produto Digital
 
-Síntese dos **18 vídeos** que formam o núcleo temático desta central de estudos: construir e vender
-software/app com IA, sem programar.
+Construir e vender software com IA, sem programar. Troca o pico do low ticket por **recorrência**.
 
-**Canais:** Starter Story (3) · Cakto (2) · Caio Martins (2) · Thiago Boeira (2) · Alex Hormozi ·
-Jaxon Poulton · João Mussoi · Bruno Gabarra · Eli Rigobeli · Kevin Rodrigues · Matheus PH ·
-Junior Moreira · Rafa Voss
+**Fontes:** Starter Story (4) · Cakto (3) · Caio Martins (2) · Thiago Boeira (2) · Jaxon Poulton ·
+Eli Rigobeli · Kevin Rodrigues · Matheus PH · Junior Moreira · Rafa Voss · Jerry Strazzeri
 
-> Para o material de low ticket e tráfego pago (131 vídeos herdados do projeto anterior), veja
-> [GUIA.md](GUIA.md). Ele é complementar: ensina a **adquirir** o cliente que o SaaS vai reter.
+> **Tópicos vizinhos:** [Agência de IA](agencia-ia.md) é o caminho mais rápido para caixa e não exige
+> produto próprio. [Low Ticket](low-ticket.md) ensina a adquirir o cliente que o SaaS vai reter.
+> [Negócio Solo](negocio-solo.md) tem o framework do Hormozi.
 
 ---
 
@@ -24,7 +23,7 @@ você desliga o anúncio.** SaaS resolve isso trocando pico por recorrência.
 | Lifetime deal (LTD) | pico único grande | caixa imediato, "converte suposição em dinheiro" | mata a recorrência futura |
 | Serviço de IA p/ empresas | recorrente, R$500-6.000/cliente | margem alta, zero produto | não escala sozinho |
 
-**O melhor arranjo do corpus inteiro** é do Nícolas Moreira (que está na outra biblioteca): usar o
+**O melhor arranjo da biblioteca inteira** é do Nícolas Moreira (ver [Low Ticket](low-ticket.md)): usar o
 micro SaaS de **$7,90/mês como upsell** de um PDF low ticket de $9,90. O low ticket paga a aquisição,
 o SaaS gera a recorrência. Nenhum dos 18 vídeos de SaaS resolve aquisição tão bem quanto isso.
 
@@ -116,7 +115,7 @@ Exemplo real: "co-parenting" — 40.000 buscas, tendência sólida e crescente.
 - Use **Google com busca avançada**, não a busca nativa do Reddit — com query que filtra por palavras
   que sinalizam alguém **explicando ou perguntando sobre um problema**
 - Curadoria manual: abra as threads, cheque nº de comentários, subreddit e atualidade
-- Copie cada thread inteira, separando uma da outra por **`---`**, antes de colar tudo no Claude
+- Copie cada thread inteira, separando uma da outra pelo delimitador `---`, antes de colar tudo no Claude
 
 ### Passo 4 — Três prompts em sequência no Claude
 
@@ -270,7 +269,7 @@ engajamento, não link na bio.
 reconhece genericamente ("tem a base de churn, as pessoas que desistem") e para aí. Junior Moreira
 fala de retenção qualitativamente (lembrete de ativação 29 dias após assinar) sem número.
 
-Para referência, os únicos dados de retenção do corpus vêm do Nícolas (outra biblioteca): **LTV de
+Para referência, os únicos dados de retenção do corpus vêm do Nícolas (ver [Low Ticket](low-ticket.md)): **LTV de
 ~2,2 meses, retenção 61%, 78 pagantes ativos de 124 assinaturas totais** — ou seja, 46 cancelaram.
 Se essa for a ordem de grandeza, é o número que decide se o negócio fecha.
 

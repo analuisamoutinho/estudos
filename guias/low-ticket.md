@@ -1,8 +1,11 @@
-# Guia de Estudo e Aplicação — Low Ticket, Tráfego Pago e Produto Digital
+# Low Ticket e Tráfego Pago
 
-> **Este é o guia complementar.** O tema principal desta central é micro SaaS e produto com IA —
-> veja [GUIA-SAAS.md](GUIA-SAAS.md). Os 131 vídeos abaixo são de low ticket e tráfego pago, herdados
-> de um projeto anterior. Valem porque ensinam a **adquirir** o cliente que o SaaS vai reter.
+Como **adquirir cliente pagando por ele**. É o bloco maior da biblioteca (131 vídeos) e o mais
+detalhado em execução de campanha.
+
+> **Tópicos vizinhos:** [SaaS](saas-produto.md) e [Agência de IA](agencia-ia.md) resolvem o problema
+> estrutural daqui — a receita para no dia em que você desliga o anúncio.
+> [Copy e Criativo](copy-e-criativo.md) aprofunda a Fase 4.
 
 Síntese operacional de **131 vídeos** transcritos em [`references/youtube/`](references/youtube/),
 lidos integralmente. Não é um resumo: é o método consolidado, os números de referência, as
@@ -460,7 +463,7 @@ Quando travar em algo, vá direto na fonte. Todos os arquivos estão em `referen
 
 ## Parte 6 — A ponte para o SaaS
 
-O outro guia ([GUIA-SAAS.md](GUIA-SAAS.md)) cobre isso a fundo. O resumo de por que importa: em vez
+O outro guia ([SaaS e Produto Digital](saas-produto.md)) cobre isso a fundo. O resumo de por que importa: em vez
 de PDF de R$19,90 com tráfego pago, **software por assinatura**. Vale entender porque resolve o problema estrutural do low
 ticket — a receita para no dia em que você desliga o anúncio.
 
