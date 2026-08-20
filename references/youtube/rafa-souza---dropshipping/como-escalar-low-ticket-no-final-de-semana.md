@@ -1,0 +1,19 @@
+---
+title: "Como Escalar LOW TICKET no Final de Semana 🔥"
+channel: "Rafa Souza - Dropshipping"
+channel_url: "https://www.youtube.com/channel/UC7biFSCsgjy7VPbWyKO4NbA"
+id: "RKlOZLydJgc"
+url: "https://www.youtube.com/watch?v=RKlOZLydJgc"
+upload_date: "20260801"
+duration: "00:04:22"
+source: "yt-dlp auto captions"
+lang: "pt-orig"
+---
+
+# Como Escalar LOW TICKET no Final de Semana 🔥
+
+[00:00:00] Fala galera, beleza? Não tava previsto gravar esse vídeo, mas eu fui mexendo nas minhas campanhas. E eu notei que eu sempre faço a mesma coisa no final de semana no quesito escala das minhas campanhas de low ticket e pode ser que seja um bom conteúdo para você. Julgue esse vídeo se é bom ou não, dando um like, comentando aí galera, para ajudar a crescer o canal. Fechou? Então, sem mais delongas, vamos pra tela do meu computador agora. Então aqui, galera, na tela do meu computador, eu vou aproveitar pegar essa conta de anúncio e essa oferta específica que tá no começo dela e já tá com a oferta validada e eu vou escalar. Lembrando, eu faço isso só no final de semana, sábado e domingo. Agora é sábado 4:12. Vocês podem ver aqui, ó. 4:12. Sábado, 4:12. Eu vou deixar sábado o dia inteiro e domingo dia inteiro. Eu não vou mexer, galera. Eu não vou mexer. Normalmente essa escala funciona pra oferta validada. Fechou? Então, sem mais delongas, vamos para a escala. Eu vou escolher uma das campanhas. Você escolhe a sua melhor campanha. Eu gosto sempre de rodar CBO 1 3 2 1 33 1 3 4 e até cinco criativos ali. Não importa como que tá. Qualquer uma dessas aí vai funcionar bem. Então, o que você vai fazer é simplesmente duplicar a sua melhor campanha. Eu vou pegar aqui o meu melhor CPA que é de 41, OK? Como eu falei, ó, 1 3 2 e vai ser essa aqui que a gente vai rodar. Então essa campanha tá com ruas de 2.47, tá relativamente bom e é ela que a gente vai escalar. Só ela tá tá com os criativos suficientes já para rodar bem final de semana. E aqui a gente vai simplesmente duplicar. Vamos vir aqui duplicar. E aqui eu vou colocar 10
+
+[00:02:00] vezes. Fechou? Então isso aí vai aumentar R$ 650 porque tá 65. O que dá para fazer aqui é aumentar o orçamento da campanha também. Só que eu gosto de fazer isso durante o dia. Então, além de duplicar as campanhas, amanhã eu vou aumentar o orçamento de quem vendeu. Quem vendeu, eu vou aumentando durante o dia, então tem que ficar meio em cima, tá? É um, eu gosto de fazer só final de semana, que normalmente é a janela de conversão melhor que a gente tem. Dia de semana eu tenho outros milhões de compromissos, então eu não fico escalando dessa forma. Eu já falei várias vezes aqui que eu prefiro Ruas Alto, mas no final de semana dá para brincar sim, porque eu tenho mais tempo aqui para para ver as campanhas. Beleza? Aí assim, eu tô fazendo dessa forma. Eu vou aumentar R$ 650 porque eu não tô com ruas tão alto aqui. Se eu tivesse com ruas mais alto, eu ia colocar aumentar o orçamento da campanha e também colocar mais conjuntos. Poderia colocar 20, 30 conjuntos. Aí você faz conforme eh a tua oferta, se tua oferta tá respondendo bem, se ela tá com ruas muito baixa, não vale a pena fazer. Essa aqui não tá tão alto, tá com 2.4 só. Para mim é baixo, então eu vou fazer dessa forma aqui. Fechou? Então vamos lá publicar. Aqui vocês podem ver, ó, três e dois criativos. Publicar. OK. Então, tá aqui todas as nossas campanhas. Vou atualizar. Numa próxima aula eu mostro o resultado. Tô aqui no minha UTMF, deixa eu atualizar que nos últimos nos últimos meses aí a gente fez 103.000 de lucro com low ticket. Então vocês estão vendo o lucro aqui, é porque realmente funciona os métodos.
+
+[00:04:00] Então use da melhor forma possível. O que você tem que entender é que no outro dia você precisa ir aumentando o orçamento. Aí você aumenta de R$ 100, R$ 200, R$ 300. Fechou? Amanhã eu vou gravar o vídeo com o resultado e posto em um outro dia. Fechou, galera? Então o vídeo de hoje é esse, curto. Até mais. Yeah.
