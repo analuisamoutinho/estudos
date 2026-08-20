@@ -3,6 +3,12 @@
 Repositório para transformar vídeos do YouTube em material de estudo organizado: transcrição
 completa, com timestamps, indexada e pesquisável.
 
+## 📘 [GUIA.md](GUIA.md) — comece por aqui
+
+Síntese operacional dos 149 vídeos da biblioteca: o método consolidado de low ticket e tráfego pago,
+os números de referência, as divergências entre os professores, o roteiro de estudo e os avisos de
+risco. É o destilado de ~150h de vídeo em um documento executável.
+
 ## Como usar
 
 Manda os links do YouTube (aqui no chat com o Claude Code, ou adicionando direto em
