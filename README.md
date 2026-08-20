@@ -3,11 +3,15 @@
 Repositório para transformar vídeos do YouTube em material de estudo organizado: transcrição
 completa, com timestamps, indexada e pesquisável.
 
-## 📘 [GUIA.md](GUIA.md) — comece por aqui
+## Guias
 
-Síntese operacional dos 149 vídeos da biblioteca: o método consolidado de low ticket e tráfego pago,
-os números de referência, as divergências entre os professores, o roteiro de estudo e os avisos de
-risco. É o destilado de ~150h de vídeo em um documento executável.
+**📗 [GUIA-SAAS.md](GUIA-SAAS.md) — o tema principal.** Micro SaaS e produto com IA: como construir
+sem programar, o método do clone, distribuição (a parte que os vídeos escondem), preço e churn, o
+framework do Hormozi e a checagem cética dos números. Dos 18 vídeos do núcleo temático.
+
+**📘 [GUIA.md](GUIA.md) — biblioteca complementar.** Low ticket e tráfego pago: método consolidado,
+números de referência e divergências entre professores. São 131 vídeos herdados de um projeto
+anterior — úteis porque ensinam a **adquirir** o cliente que o SaaS vai reter.
 
 ## Como usar
 

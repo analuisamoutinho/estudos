@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Converte GUIA.md na página HTML publicável.
 
-Uso: python3 scripts/build_guia.py [saida.html]
+Uso: python3 scripts/build_guia.py [saas|lowticket] [saida.html]
 
 Escrito à mão em vez de usar uma lib de markdown para não adicionar dependência
 ao repo — cobre exatamente o subconjunto de markdown que o GUIA.md usa.
@@ -12,7 +12,26 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SRC = ROOT / "GUIA.md"
+DOCS = {
+    "lowticket": {
+        "src": "GUIA.md",
+        "title": "Manual do Low Ticket",
+        "eyebrow": "Central de Estudos · Biblioteca complementar",
+        "lede": "O método consolidado, os números de referência e as divergências "
+                "entre os professores — destilado da leitura integral de 131 transcrições.",
+        "stats": [("131", "vídeos lidos"), ("11", "canais"),
+                  ("11", "princípios de consenso"), ("6", "divergências reais")],
+    },
+    "saas": {
+        "src": "GUIA-SAAS.md",
+        "title": "Micro SaaS com IA",
+        "eyebrow": "Central de Estudos · Tema principal",
+        "lede": "Construir e vender software com IA sem programar: o método do clone, "
+                "distribuição, preço e a checagem cética dos números.",
+        "stats": [("18", "vídeos lidos"), ("13", "canais"),
+                  ("4", "modelos de negócio"), ("2", "títulos sem lastro")],
+    },
+}
 
 
 def inline(text):
@@ -306,7 +325,9 @@ footer{
 
 
 def main():
-    md = SRC.read_text(encoding="utf-8")
+    which = sys.argv[1] if len(sys.argv) > 1 else "lowticket"
+    cfg = DOCS[which]
+    md = (ROOT / cfg["src"]).read_text(encoding="utf-8")
     lines = md.split("\n")
 
     # O cabeçalho é montado à mão; o corpo começa no primeiro <hr>.
@@ -318,23 +339,20 @@ def main():
         for sid, label, rest in toc
     )
 
-    out = f"""<title>Manual do Low Ticket</title>
+    stats = "".join(
+        f'<div class="stat"><b>{n}</b><span>{lbl}</span></div>' for n, lbl in cfg["stats"]
+    )
+    out = f"""<title>{cfg['title']}</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>{CSS}</style>
 <div class="wrap">
 <nav><p>Índice</p>{nav}</nav>
 <main>
 <header>
-  <p class="eyebrow">Central de Estudos · Síntese</p>
-  <h1>Manual do Low Ticket</h1>
-  <p class="lede">O método consolidado, os números de referência e as divergências
-  entre os professores — destilado da leitura integral de 149 transcrições.</p>
-  <div class="stats">
-    <div class="stat"><b>149</b><span>vídeos lidos</span></div>
-    <div class="stat"><b>13</b><span>canais</span></div>
-    <div class="stat"><b>11</b><span>princípios de consenso</span></div>
-    <div class="stat"><b>6</b><span>divergências reais</span></div>
-  </div>
+  <p class="eyebrow">{cfg['eyebrow']}</p>
+  <h1>{cfg['title']}</h1>
+  <p class="lede">{cfg['lede']}</p>
+  <div class="stats">{stats}</div>
 </header>
 {body}
 <footer>
@@ -345,7 +363,7 @@ def main():
 </main>
 </div>
 """
-    dest = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "GUIA.html"
+    dest = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / (cfg["src"][:-3] + ".html")
     dest.write_text(out, encoding="utf-8")
     print(f"{dest}  ({len(out):,} bytes, {len(toc)} seções)")
 

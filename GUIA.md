@@ -1,15 +1,16 @@
 # Guia de Estudo e Aplicação — Low Ticket, Tráfego Pago e Produto Digital
 
-Síntese operacional de **149 vídeos** transcritos em [`references/youtube/`](references/youtube/), lidos integralmente.
-Não é um resumo: é o método consolidado, os números de referência, as divergências entre os
-professores e a ordem em que estudar.
+> **Este é o guia complementar.** O tema principal desta central é micro SaaS e produto com IA —
+> veja [GUIA-SAAS.md](GUIA-SAAS.md). Os 131 vídeos abaixo são de low ticket e tráfego pago, herdados
+> de um projeto anterior. Valem porque ensinam a **adquirir** o cliente que o SaaS vai reter.
+
+Síntese operacional de **131 vídeos** transcritos em [`references/youtube/`](references/youtube/),
+lidos integralmente. Não é um resumo: é o método consolidado, os números de referência, as
+divergências entre os professores e a ordem em que estudar.
 
 **Canais sintetizados:** Rafa Souza (34 vídeos) · Método VTSD/Leandro Ladeira (26) · Cássio Hart (19) ·
 Henrique Oliveira (19) · Nícolas Moreira (15) · Silvio Roberto (7) · The Aristocratas (7) ·
-Caio Ramone · Adriano Gianini · Geek nos Negócios · Gustavo de Castro ·
-bloco micro SaaS/IA (18: Starter Story, Alex Hormozi, Cakto, Caio Martins, Thiago Boeira,
-Jaxon Poulton, João Mussoi, Bruno Gabarra, Eli Rigobeli, Kevin Rodrigues, Matheus PH,
-Junior Moreira, Rafa Voss)
+Caio Ramone · Adriano Gianini · Geek nos Negócios · Gustavo de Castro
 
 > **Aviso de confiabilidade.** As transcrições são legendas automáticas. Números e nomes de
 > ferramentas vêm corrompidos com frequência (`"cloud"`=Claude, `"Lovbow"`=Lovable, `"QFi"`=Kiwify,
@@ -457,10 +458,10 @@ Quando travar em algo, vá direto na fonte. Todos os arquivos estão em `referen
 
 ---
 
-## Parte 6 — O caminho paralelo: micro SaaS e produto com IA
+## Parte 6 — A ponte para o SaaS
 
-Os 18 vídeos mais recentes da biblioteca apontam para outro modelo: em vez de PDF de R$19,90 com
-tráfego pago, **software por assinatura**. Vale entender porque resolve o problema estrutural do low
+O outro guia ([GUIA-SAAS.md](GUIA-SAAS.md)) cobre isso a fundo. O resumo de por que importa: em vez
+de PDF de R$19,90 com tráfego pago, **software por assinatura**. Vale entender porque resolve o problema estrutural do low
 ticket — a receita para no dia em que você desliga o anúncio.
 
 ### 6.1 O que muda no modelo de negócio
@@ -659,5 +660,5 @@ fase de compra de dados — e vai concluir erradamente que "não funciona".
 
 ---
 
-*Gerado a partir da leitura integral de 149 transcrições. Cada afirmação é rastreável ao vídeo e
+*Gerado a partir da leitura integral de 131 transcrições. Cada afirmação é rastreável ao vídeo e
 timestamp de origem em `references/youtube/`.*
