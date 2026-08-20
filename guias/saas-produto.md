@@ -78,6 +78,88 @@ fácil e barata. O negócio inteiro está na Parte 3.**
 
 ---
 
+## Parte 1.5 — Achar uma ideia de $1M: Reddit + Claude
+
+O método mais reproduzível da biblioteca para **descobrir o que construir**. Starter Story, com Steph
+France ("Gold Mining Framework"). Promessa: 6 ferramentas, 5 prompts, 45 minutos — do zero a uma ideia
+validada com landing page, sem escrever código nem copy.
+
+### Passo 1 — Escolher o mercado
+
+Comece dentro dos três **mercados-núcleo** onde as pessoas comprovadamente gastam: **saúde, riqueza,
+relacionamentos**. Escolha onde você tem vantagem ou interesse genuíno.
+
+Use o Claude para expandir em subnichos — e **escreva o prompt em markdown**:
+> *"Markdown é uma linguagem que precisa ser usada o máximo possível quando conversamos com LLM."*
+
+Exemplo real: "gestão de estresse" → fisioterapia de estresse, massoterapia, técnicas de respiração →
+meditação guiada, mindfulness.
+
+*(Ela prefere Claude "porque é o LLM mais humano — o copywriting é bom, tem mais emoção", e usa Gemini
+só quando precisa da janela de 1M tokens.)*
+
+### Passo 2 — Validar a demanda
+
+- **Keywords Everywhere** (extensão do Chrome) para volume de busca
+- **Google Trends** — busque por **tópico**, não por termo: *"quando você tem tópico, já é uma coisa
+  grande"*, porque agrega termos relacionados e outros idiomas
+
+**Critério:** tendência estável ou crescente, **sem pico artificial**.
+> *"Aqui não estamos falando daquele hype gigante de IA que sobe e desce e a ferramenta morre 3 meses depois. Aqui estamos falando de necessidades humanas."*
+
+Exemplo real: "co-parenting" — 40.000 buscas, tendência sólida e crescente.
+
+### Passo 3 — Minerar dor no Reddit
+
+> *"Reddit é literalmente o lugar da internet onde o mundo está falando. Por causa do anonimato, as conversas longas fazem dele uma mina de ouro real para achar pontos de dor do cliente."*
+
+- Use **Google com busca avançada**, não a busca nativa do Reddit — com query que filtra por palavras
+  que sinalizam alguém **explicando ou perguntando sobre um problema**
+- Curadoria manual: abra as threads, cheque nº de comentários, subreddit e atualidade
+- Copie cada thread inteira, separando uma da outra por **`---`**, antes de colar tudo no Claude
+
+### Passo 4 — Três prompts em sequência no Claude
+
+1. **Extração de pain points** — devolve categorias de dor **com as citações reais** dos usuários
+   anexadas. Exemplo gerado: *"pais sentem pressão de manter um relacionamento amigável irreal com
+   ex-parceiros pelo bem dos filhos, muitas vezes à custa dos próprios limites"* — ancorado na
+   citação crua *"é difícil co-parentar com seu abusador"*
+2. **Market Gap Generator** — usa as dores + framework de "novo paradigma, nova tecnologia,
+   diferenciação" para gerar ideias **dentro de um mercado saturado**
+3. **Landing Page Prompt Creator** — transforma a ideia num prompt otimizado para o Lovable,
+   construído a partir da documentação inteira da ferramenta
+
+### Passo 5 — Gerar a landing page
+
+Cola o prompt final no **Lovable** → página publicada em minutos.
+
+### Passo 6 — Validar ANTES de construir o produto
+
+O passo que quase todo mundo pula: **pop-up de quiz** na landing ("o app está em desenvolvimento,
+responderia algumas perguntas sobre seu problema atual?"), captura lista de espera, e **só constrói
+depois de bater uma meta** (ex.: 100 pessoas).
+
+> *"O cérebro humano não é programado para ter uma boa ideia de negócio. Ego, viés e overthinking atrapalham."*
+
+⚠️ Os prompts exatos não são lidos em voz alta — ficam num documento anexo ao vídeo. O que está acima
+é a estrutura e a instrução de uso, suficiente para reconstruir.
+
+### O atalho brasileiro (Cakto)
+
+Mesma lógica, fontes diferentes: **Product Hunt** (filtro "Best Products" por nicho — o *rank* importa
+mais que o número de reviews; a Brex tinha 35 reviews) · **biblioteca de anúncios do TikTok e do
+Meta** (quem investe pesado está validando) · **Google Trends**.
+
+Foi assim que ele achou um SaaS de nicho de igreja (controle financeiro para igrejas), 100% construído
+com IA, com funil site → time de vendas → implementação.
+
+> *"Se você vai num nicho muito pequenininho, não tem como vender. Agora, se você vai para um público de 100 milhões... é por isso que SaaS é o melhor mercado que você pode entrar agora."*
+
+E a lição de oferta:
+> *"Todo mundo pode fazer hambúrguer em casa. Então por que o Madero consegue vender um hambúrguer a R$50 ou R$80? Porque a oferta deles é boa."*
+
+---
+
 ## Parte 2 — O método do clone (Starter Story)
 
 Samuel Rondo faz $35K/mês e **não inventa produto nenhum**. Ele copia o que já funciona.

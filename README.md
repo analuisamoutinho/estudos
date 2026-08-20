@@ -3,15 +3,19 @@
 Repositório para transformar vídeos do YouTube em material de estudo organizado: transcrição
 completa, com timestamps, indexada e pesquisável.
 
-## Guias
+## 📚 [GUIA.md](GUIA.md) — comece por aqui
 
-**📗 [GUIA-SAAS.md](GUIA-SAAS.md) — o tema principal.** Micro SaaS e produto com IA: como construir
-sem programar, o método do clone, distribuição (a parte que os vídeos escondem), preço e churn, o
-framework do Hormozi e a checagem cética dos números. Dos 18 vídeos do núcleo temático.
+Índice mestre dos 168 vídeos, organizado por grandes tópicos:
 
-**📘 [GUIA.md](GUIA.md) — biblioteca complementar.** Low ticket e tráfego pago: método consolidado,
-números de referência e divergências entre professores. São 131 vídeos herdados de um projeto
-anterior — úteis porque ensinam a **adquirir** o cliente que o SaaS vai reter.
+| Tópico | O que cobre |
+|---|---|
+| 🤖 [Agência de IA](guias/agencia-ia.md) | vender agentes e automação — o caminho mais rápido para caixa |
+| 💻 [SaaS e Produto Digital](guias/saas-produto.md) | construir e vender software com IA, sem programar |
+| 🎯 [Low Ticket e Tráfego Pago](guias/low-ticket.md) | adquirir cliente pagando por ele |
+| 🧠 [Negócio Solo e Mentalidade](guias/negocio-solo.md) | Hormozi, método CLOUD, sair do zero |
+| ✍️ [Copy, Criativo e Conteúdo](guias/copy-e-criativo.md) | escrever o que vende, produzir o que segura o scroll |
+| 📦 [E-commerce e Dropshipping](guias/ecommerce.md) | o experimento mais honesto da biblioteca |
+| ⚠️ [Números e Ceticismo](guias/numeros-e-ceticismo.md) | auditoria de todos os resultados alegados |
 
 ## Como usar
 
