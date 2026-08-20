@@ -12,3 +12,6 @@ venv/
 
 # Local Claude Code settings (personal permissions, not shared)
 .claude/settings.local.json
+
+# Build gerado (regenerar com scripts/build_guia.py)
+GUIA.html
