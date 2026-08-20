@@ -21,7 +21,7 @@ Caio Ramone · Adriano Gianini · Geek nos Negócios · Gustavo de Castro
 
 ## Parte 0 — Como usar este guia
 
-Você não precisa assistir 149 vídeos. Eles se repetem muito. O que existe de verdade aqui é:
+Você não precisa assistir os 131 vídeos. Eles se repetem muito. O que existe de verdade aqui é:
 
 - **~10 princípios** em que praticamente todos concordam → é isso que você precisa internalizar
 - **~6 divergências reais** → onde você precisa escolher um lado e testar
