@@ -18,6 +18,9 @@ Título promete um número que o vídeo **não sustenta em momento algum**.
 | **Thiago Boeira** — "Fiz R$382 mil em 30 dias" | R$382.000 | **~R$78.000** ("2 a 5 mil/dia × 30"). Diferença de ~5× |
 | **Enzo Barbatto** — "Sites de R$25.000" | R$25.000 | **o valor nunca aparece**. Nem como preço, nem projeção, nem referência. Tutorial técnico puro |
 | **Nick Saraev** — "Sell for $2k+" | $2.000+ | **não é citado uma única vez** no corpo do vídeo |
+| **Ricardo Máxima (Hotmart)** — "R$5 mil por dia com Low Ticket" | R$5.000/dia | **nunca reconstruído**: nenhuma conta de ROAS × verba ou ticket × vendas chega a esse número. O único faturamento citado (R$800k/mês de um produto) não tem período, custo ou print |
+| **Ecommerce Puro** — "R$1,5 milhão por mês" (casal Mercado Livre) | R$1,5mi/mês | dito **uma única vez, de passagem, pelo entrevistador** (não pelos entrevistados); nunca confirmado, nunca decomposto em receita vs. lucro. Vídeo institucional do canal que vende a própria mentoria dos entrevistados — pior que qualquer print já visto no acervo, porque nem print existe |
+| **Deborah Folloni** — "O novo segredo para enriquecer com IA é trabalhar sozinho" | promessa de riqueza | vídeo nunca cita um valor de faturamento pessoal — argumento é 100% sobre produtividade/estrutura de carreira, não dinheiro |
 
 ---
 
@@ -35,6 +38,11 @@ O número é tecnicamente verdadeiro, mas o enquadramento engana.
 | **Jaxon Poulton** — "$6.000/mês" | $6K/mês | é **projeção**: "$200/dia, então até este vídeo sair vou estar em $6K". Não fechado |
 | **Kevin Rodrigues** — "R$300 em 1 dia (do zero)" | do zero | já tinha Instagram ativo, prompt validado e domínio de Photoshop |
 | **Nícolas Moreira** — "Como Eu Faço +R$11.547" | R$11.547 | o áudio diz **R$11.774** |
+| **Thiago Boeira** — "R$380 mil reais em 30 dias com IA" | R$380mil | **2ª instância do mesmo padrão** já flagado acima: no corpo, os números citados (US$78k? R$390k? R$92k de lucro? 32,7% de margem) não se reconciliam entre si — parecem métricas diferentes misturadas sem explicitação |
+| **Marcos Machado** — "Funil 100k" (agências) | R$100k até dezembro | os 3 "desafios" citados no corpo (13 dias/R$98k MRR; 29 vendas/R$56k MRR; 25 contas/R$59k MRR) são documentados publicamente e mais auditáveis que a média do acervo — mas o "100k" do título é uma **simulação de calculadora** partindo de R$0, misturada deliberadamente com os dados reais dentro de uma live de venda de mentoria |
+| **Primocast** — "60 dias para salvar uma empresa de R$400 mil/mês" | salvar a empresa | os números dos 60 dias (R$117k incremental em 30 dias) são reais; a projeção de "R$1 milhão de receita incremental em 2026" é forecast, não fato. Conteúdo publicitário da consultoria que aparece no vídeo |
+| **Christian Balian** — "SÓ posso SAIR DO QUARTO quando CRIAR uma EMPRESA de R$500.000" | R$500.000 | é lucro do último dia (R$598) × 30 × 12 — nunca chegou perto de R$500k em receita real no vídeo, é extrapolação simples do ritmo de um único dia bom |
+| **Vinci Society** — consultoria de marca "R$1.000" | R$1.000 | contexto (G4, Boca Rosa, "centenas de milhões em receita") sugere erro de legenda automática — valor real provavelmente ordem de grandeza maior |
 
 ---
 
@@ -61,7 +69,8 @@ Histórico coerente, tela mostrada ao vivo, matemática que fecha.
 | **Angus Chang** — "$40K/mês com um site" | $40K/mês | evolução ano a ano ($6K→$14K→$27K→$40K), margem 97,5% declarada. **O melhor dado do acervo** |
 | **DataCrazy** (Cakto) | R$1,59M de MRR | 2.822 clientes, R$8M no ano, 16 meses, 64 funcionários, tela ao vivo |
 | **Mark Tilbury** — dropshipping 7 dias | **$81,56 de lucro** | orçamento declarado ($250) e respeitado, custo discriminado, **falha admitida** |
-| **Well Pires** | R$65.595/mês | explicado: é a entrada de 50% de 8 projetos, ticket médio >R$16k |
+| **Well Pires** | R$65.595/mês (vídeo antigo) e R$70.000/mês (vídeo novo, 3 anos de agência) | ambos explicados — provavelmente snapshots de meses diferentes da mesma trajetória, não contradição |
+| **Christian Balian** — desafio de e-commerce em 4 dias | lucro de R$673 em 4 dias | dado dia a dia, incluindo um dia de zero vendas e a causa identificada (rebranding quebrou conversão) — auditável como o Tilbury, mesma régua |
 | **Samuel Rondo** — "$35K/mês" | $35K | soma de 3 produtos ($15K + $20K + $0,9K). Correto, mas o título esconde que são portes desiguais |
 | **Bruno Gabarra** — "R$330/dia" | matemática | a conta está explícita e correta — mas é **projeção de precificação**, não case realizado |
 

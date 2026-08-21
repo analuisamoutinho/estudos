@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TOPICS = [
     ("numeros-e-ceticismo", "Números e Ceticismo", "⚠️", "leia antes de tudo"),
     ("agencia-ia", "Agência de IA", "🤖", "o caminho mais rápido para caixa"),
+    ("ferramentas-de-ia", "Ferramentas de IA na Prática", "🛠️", "Claude, Claude Code e N8N no real"),
     ("saas-produto", "SaaS e Produto Digital", "💻", "recorrência com IA"),
     ("low-ticket", "Low Ticket e Tráfego Pago", "🎯", "adquirir cliente pagando"),
     ("negocio-solo", "Negócio Solo", "🧠", "Hormozi e mentalidade"),

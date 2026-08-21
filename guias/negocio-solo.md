@@ -4,7 +4,8 @@ Como sair do zero operando sozinho: escolher o que fazer, cobrar, e não se sabo
 conceitual da biblioteca — e o que mais determina se o resto funciona.
 
 **Fontes:** Alex Hormozi · Simon Squibb / Pierce Lenny · Bruno Gabarra (5 vídeos) · Jerry Strazzeri ·
-Angus Chang e Samuel Rondo (Starter Story)
+Angus Chang e Samuel Rondo (Starter Story) · Primocast · Christian Balian Business (2) · Ernesto Reis ·
+Dan Martell · O Conselho | Flávio Augusto · Gabriel Saraiva
 
 ---
 
@@ -105,6 +106,26 @@ apresentação, tarefa agendada), *Claude Code* (produto real).
 
 > Ele cita que "no último hackathon do Claude, 3 dos 5 vencedores não eram programadores: um cardiologista, um advogado e um trabalhador de manutenção de estrada". ⚠️ Alegação não verificável.
 
+### Comandar a IA é uma habilidade — os 2 frameworks mais rigorosos do lote
+
+Complementa o CLOUD: como conversar com a IA para ela pensar, não só executar.
+
+**Os 5 movimentos (Ernesto Reis):**
+1. **Ordem clara** — Papel + Contexto + Alvo. Ordem vaga = resposta genérica.
+2. **Ensine pelo exemplo** — cole 3 textos seus, peça só para identificar o padrão comum (não produzir
+   ainda), corrija, aprofunde o "porquê", só então peça o resultado final.
+3. **Entregue o que a IA não sabe** — quando você não sabe o que informar, inverta: *"antes de
+   responder, me faça 5 perguntas que você precisa para entender minha situação de verdade."*
+4. **Regra da segunda fonte** — exija que a IA admita quando não sabe, peça o argumento contrário,
+   confirme cruzando com uma segunda IA. *"Uma fonte só nunca fecha a missão."*
+5. **Exija além do óbvio** — nunca aceite a primeira resposta: *"3 ângulos que a maioria não
+   enxergaria, marque o mais arriscado e diga qual você defenderia."*
+
+**Infraestrutura de prompt (Dan Martell):** documento de contexto pessoal/profissional gerado uma vez
+por voz e reutilizado sempre ("master prompt"); refinar um output até ficar perfeito e depois pedir
+*"escreva o prompt que teria gerado isso desde o início"* (vira IP reutilizável); pastas por área
+compartilháveis com equipe; instruções padrão de tom/formato definidas uma vez.
+
 ---
 
 ## Parte 3 — Simon Squibb / Pierce Lenny: a corrida do ouro
@@ -155,6 +176,30 @@ limpeza de telhado) com prestadores. Gera lead por ~**$20**, vende por **$50 + 5
 
 > *"A pergunta não é mais 'você sabe programar?'. A pergunta é: qual ideia você quer construir primeiro?"*
 
+### MVP validado com profissional real, não com opinião própria (Christian Balian)
+
+Dois desafios documentados dia a dia, com unit economics transparentes — reforça a etapa "Deploy/Uso
+manual" do CLOUD (Parte 2) com ferramentas concretas que este guia não citava.
+
+**Desafio 1 — micro-SaaS para barbearias:** validou a ideia entrevistando um barbeiro real sobre as
+dores dele (controle de estoque, lembrete de corte, agendamento) antes de construir qualquer coisa.
+MVP construído por prompt (Abacus AI), testado com o mesmo barbeiro, bug corrigido em minutos.
+1ª tentativa de tráfico pago deu zero a zero. O que destravou foi um "passo secreto": **Phantombuster +
+Google Maps** gerando lista de ~3.000 barbearias por região ($6/mês), usada como público customizado
+no Facebook Ads. Resultado: R$16.460 em assinaturas, custo de tráfego ~R$800, **lucro líquido ~R$850**
+— abaixo da meta do título (salário mínimo), o que o próprio vídeo reconhece implicitamente.
+
+**Desafio 2 — e-commerce em 4 dias, R$500 iniciais:** loja montada via Wix AI, criativos recriados a
+partir da Biblioteca de Anúncios (extensão que mostra há quantos dias um anúncio está ativo — proxy de
+que está vendendo). Dia a dia auditável: dia 1 lucro R$26, dia 2 **zero vendas** (rebranding
+"sofisticado" quebrou a conversão — revertido), dia 3 lucro R$598, dia 4 R$2.094 em vendas com oferta
+baseada em padrão de compra observado (cliente comprando 2 unidades → virou combo). Total: R$3.574 em
+vendas, **lucro de R$673** em 4 dias.
+
+> ⚠️ A meta do título ("empresa de R$500.000") é projeção matemática simples (lucro do último dia ×
+> 30 × 12) — nunca foi faturamento real acumulado no vídeo. Mesmo padrão de separar fato de projeção
+> já visto no case do Primocast acima.
+
 ---
 
 ## Parte 5 — A lacuna que ninguém preenche: aquisição
@@ -178,6 +223,30 @@ E a contraprova mais dura, do [guia de SaaS](saas-produto.md): Angus Chang, $40K
 Ads por 6 meses **sem nunca ser lucrativo** e cold email por 3 meses **com 1 venda**. Cresceu por SEO
 passivo e conserto de produto.
 
+### Parte 5.5 — Um caso real preenche parte da lacuna: Primocast
+
+É o case de negócio mais denso e estruturado de todo este lote novo — e o único que mostra
+**diagnóstico → hipótese → teste → número de antes e depois**, exatamente o que falta no resto da
+biblioteca.
+
+Ótica real (Visari, ~R$400 mil/mês, 2 lojas), mentorada por uma consultoria de marketing (V4
+Company). **Framework: Teoria das Restrições aplicada a marketing** — antes de investir em expansão,
+ache o elo mais fraco da corrente. Diagnóstico: time comercial com **70% de ociosidade** (SDRs
+atendiam ~100 leads/dia de uma capacidade de até 400). Decisão: **vetar** R$200.000 numa loja física
+nova (que geraria só ~R$20.000/mês extra) e escalar mídia paga para saturar a capacidade já instalada.
+
+**3 hipóteses testadas em 60 dias:**
+1. Mídia de R$8.000 → R$21.000/mês: CAC subiu 37%, mas CPL caiu e leads quase triplicaram (~400 →
+   ~1.100+), CLV manteve-se positivo. **R$117.000 de faturamento incremental em 30 dias.**
+2. Cashback/indicação: CAC R$136 (vs. R$181 da mídia paga), ticket médio maior.
+3. IA de pré-vendas para qualificar lead: **não deu certo** — pouco tempo de maturação, sócio
+   impaciente desligou antes de validar.
+
+> ⚠️ Separe o que é fato do que é projeção: os números dos 60 dias são reais e documentados. O
+> **"salvar uma empresa de R$400 mil/mês"** do título e a projeção de "R$1 milhão de receita
+> incremental em 2026" são forecast — não faturamento realizado. É conteúdo publicitário da própria
+> consultoria, então trate como caso ilustrativo de método, não como prova auditada de resultado.
+
 ---
 
 ## Parte 6 — O que é realista
@@ -198,6 +267,31 @@ passivo e conserto de produto.
 **Números não verificáveis:** faturamento da Blip (R$800M/ano), Agentor (R$1M+), MRR do garoto de 16
 anos ($30k em 5 meses), app de leads ($1M no primeiro ano). Todos são alegações do narrador ou de
 terceiros, sem dado bruto.
+
+### Dois contrapesos ao otimismo geral do acervo
+
+**O case Klarna** (citado em "O Conselho | Flávio Augusto"): a fintech demitiu 700 pessoas para
+"fazer tudo com IA", o valuation derreteu, e a empresa **voltou a contratar** 2 anos depois. É o
+contraponto mais direto ao "demita tudo e automatize" que aparece implícito em vários vídeos deste
+guia — cuidado com FOMO de implementar IA em tudo sem medir o efeito colateral em qualidade/satisfação.
+
+**"Cale a boca e trabalhe feito um louco"** (Gabriel Saraiva): contraponto explícito ao discurso de
+"trabalhe 4h com IA fazendo tudo" — 3 decisões que ele credita pelo próprio resultado: não perseguir
+objeto brilhante (uma oferta só), trabalhar de verdade (8-12h/dia, rejeitando a narrativa de que IA
+substitui esforço), e manter humildade de aluno mesmo faturando alto (pagou mentoria de copy mesmo já
+faturando 8 dígitos/mês). Reforça a decisão 3 do framework do Hormozi (Parte 1): aprender com quem
+sabe mais, mesmo pagando por isso.
+
+### Vídeos lidos com pouco conteúdo acionável de negócio
+
+Para não perder o registro, mas sem inflar o guia: Justin Sung, Mariana Santos (2), Natalia Persico e
+Desfrutando a Vida reforçam variações do mesmo núcleo já coberto aqui (foco único, disciplina via
+repetição, "cresça em silêncio") sem framework novo. Victor Viana e Jonas Castro são relatos pessoais
+de pivô/persistência sem dado de negócio auditável. Lucas Felix reformula o CLOUD em "serviço
+produtizado com IA" sem evidência nova. Alan Nicolas é demo curta sem métrica de resultado. Investidor
+Sardinha e O Primo Rico são conteúdo de finanças/psicologia pessoal, não de negócio. Anima Podcast
+(religioso) e ICMEStudio/Fei-Fei Li (palestra acadêmica de 2017 sobre visão computacional) não têm
+conexão com o tópico deste guia.
 
 ---
 

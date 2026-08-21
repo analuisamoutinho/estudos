@@ -3,7 +3,8 @@
 O tópico menor da biblioteca, mas com o vídeo mais honesto de todos: um experimento com orçamento
 declarado, resultado auditável e fracasso admitido.
 
-**Fontes:** Mark Tilbury · Rafa Souza (dropshipping)
+**Fontes:** Mark Tilbury · Rafa Souza (dropshipping) · Ecommerce Puro · Pedro Vence · Higor Cruz
+Marketing · Jessica Freire
 
 ---
 
@@ -104,6 +105,58 @@ concorrentes se matarem baixando preço até o produto esfriar.
 
 ---
 
+## Parte 2.5 — TikTok Shop e conteúdo com IA: o certo e o errado, no mesmo canal
+
+Quatro vídeos novos, todos sobre gerar conteúdo/vídeo com IA para vender em marketplace/TikTok Shop —
+com um contraste ético nítido entre eles.
+
+### O caso R$1,5 milhão/mês — pior que qualquer print já visto no acervo
+
+Casal vendendo brinquedos no Mercado Livre, entrevistado pelo próprio canal de mentoria que eles
+pagam (Ecommerce Puro). Trajetória real tem textura (galpão de 660m², fornecedor que faliu, 5 anos de
+histórico) — mas o número do título (**"R$1,5 milhão/mês"**) é dito **uma única vez, de passagem, pelo
+entrevistador**, nunca confirmado pelos entrevistados, nunca decomposto em receita vs. lucro, sem
+print de dashboard. É mais fraco que qualquer "print de faturamento sem custo" já registrado neste
+guia — porque nem print existe, é boato endossado por vídeo institucional.
+
+> Compare com a régua do Tilbury (Parte 1): orçamento declarado, número em planilha, lucro líquido
+> explícito, sem incentivo comercial de quem afirma. O caso do casal falha em todos os quatro critérios.
+
+### Lives falsas: o pior padrão de má-fé do acervo inteiro
+
+Tutorial (Pedro Vence) para rodar uma "live" no TikTok Shop que na verdade é **vídeo pré-gravado em
+loop**, usando uma extensão de terceiros que simula webcam/microfone para enganar a plataforma e o
+espectador sobre estar "ao vivo". O público-alvo é definido explicitamente por vulnerabilidade:
+*"pessoa mais velha, mais leiga em IA, que não consegue ter discernimento"*. A ferramenta ainda
+monitora avisos da plataforma e desliga a live sozinha antes de acumular violação formal — corrida
+armamentista contra moderação, o mesmo padrão perdedor já identificado no aviso de ética de
+[copy-e-criativo.md](copy-e-criativo.md).
+
+### O contraponto correto, dentro do mesmo canal
+
+Vídeo-irmão do mesmo criador que documenta o "influencer de IA indetectável" (já flagado em
+copy-e-criativo.md) mostra um formato **diferente e legítimo**: vídeo estilo POV com manequim (sem
+rosto, sem voz), que **é marcado como conteúdo de IA automaticamente pela própria ferramenta de
+geração** — e o criador trata isso como proteção, não como algo a evadir: *"você precisa informar
+para não tomar violação, até porque não aparece ninguém."* Fatura citado (não auditável): "mais de
+R$131 mil de GMV/mês" — mesmo padrão de número sem prova do resto do acervo, mas pelo menos sem o
+problema ético do vídeo anterior.
+
+### Pipeline de produção em massa (sem prova de venda)
+
+Jessica Freire usa Claude conectado ao Higgsfield via MCP para pesquisar nicho, validar produto
+(Calodata), criar uma "influencer" de IA consistente (mesmo Job ID = mesmo rosto reutilizável) e gerar
+até 120 vídeos de afiliado em lotes de 40. Zero prova de venda ou comissão no vídeo — é puramente
+tutorial de produtividade de conteúdo. Diferente do formato POV acima, **não há qualquer disclosure de
+IA mencionado** para o público do mercado-alvo (Reino Unido).
+
+> **Resumo do contraste:** dois formatos de IA para TikTok Shop no mesmo espaço — um que trata
+> disclosure como proteção (Higor Cruz/POV) e um que constrói o negócio inteiro sobre engano ativo
+> (Pedro Vence/live falsa). O primeiro é o caminho reproduzível; o segundo é risco de banimento e
+> dano ao consumidor, não uma tática a copiar.
+
+---
+
 ## Parte 3 — Clonar loja com IA
 
 Fluxo para montar vitrine rápido (Lovable):
@@ -134,6 +187,8 @@ das vendas.
 2. **A margem está na esteira**, igual no low ticket — order bump digital em produto físico é dinheiro grátis
 3. **Sazonalidade é ativo**, não problema — congele e volte
 4. **Teste o produto você mesmo.** Tilbury reprovou um ao vivo. Entregável ruim mata a oferta permanentemente
+5. **Se usar avatar/influencer de IA, rotule.** O formato que trata disclosure como proteção (POV/
+   manequim) escala tão rápido quanto o que evade — sem o risco de banimento e dano ao consumidor
 
 ---
 

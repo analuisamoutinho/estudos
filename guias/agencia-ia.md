@@ -3,8 +3,9 @@
 Vender agentes de IA e automações para empresas. **O caminho mais rápido para caixa de toda a
 biblioteca** — não exige produto próprio, não exige audiência, não exige tráfego pago.
 
-**Fontes:** NoCode StartUp (2) · Well Pires · Luciana Papini · Thalena Lima · Nick Saraev ·
-Liam Ottley/Nate Herk · Bruno Gabarra (5) · João Mussoi
+**Fontes:** NoCode StartUp (2) · Well Pires (2) · Luciana Papini (2) · Thalena Lima · Nick Saraev ·
+Liam Ottley/Nate Herk · Bruno Gabarra (5) · João Mussoi · Deborah Folloni (3) · Azev · Guilherme
+Franklim · Invente (Frederico Bittencourt) · Marcelo Távora · Elber Domingos (Hermes Agent)
 
 ---
 
@@ -77,6 +78,74 @@ Cobrando R$500/mês, o cliente sai no lucro [00:48:18].
 |---|---|
 | Advogados | decisor só atende fora do expediente |
 | Dentistas e médicos | atendendo paciente o dia todo — reunião só à noite |
+
+---
+
+## Parte 1.5 — Os 8 canais de aquisição de cliente (Well Pires)
+
+João Paulo (Parte 1) documenta rede pessoal + Google Maps presencial. Well Pires, com 3 anos de
+agência e ~R$70.000/mês, empilhou **8 canais diferentes** ao longo do tempo — o mais rápido para o
+primeiro cliente não é o que escala melhor depois.
+
+| Canal | Velocidade | Exemplo real |
+|---|---|---|
+| **Instagram DM** | mais rápido — 1ª semana | primeiro cliente dele (escritório de advocacia), 3 anos atrás |
+| Plataforma freelance (Workana) | rápido | Davi Xavier, 21-22 anos, R$4.000/projeto |
+| Site de graça (cavalo de troia) | rápido | ver processo completo abaixo |
+| Evento presencial (sem palestrar) | médio | Lucas Bazan, 22 anos: 1º projeto R$12.000, depois R$25.000/mês, nunca prospectou online |
+| Parceria com agência/consultor já estabelecido | médio, mas o de maior alcance | acesso a clientes de R$500mi-1bi/ano faturando |
+| LinkedIn (conteúdo) | lento para construir, depois escala | Vittor Bajo, conteúdo sem mostrar rosto |
+| YouTube | 6 meses até "ser levado a sério" | **não vende projeto direto** — atrai gente querendo curso |
+| Webinar | requer entrega já automatizada | Artur Muniz: R$200.000 faturamento, clínica odontológica |
+
+### 1. Instagram DM — o canal mais rápido, com script
+
+Mande pelo menos **30 mensagens/dia manualmente** — nunca automatize, o Instagram bloqueia por padrão
+de comportamento. Perfil pessoal (não página comercial), **3+ fotos suas** — perfil sem foto cai em
+"solicitação de mensagem" e o primeiro medo do lead é achar que é bot/perfil falso.
+
+Bio específica: *"ajudo advogados previdenciários a responder cliente 24h no WhatsApp com IA"* — não
+*"ajudo advogados com IA"*.
+
+**Estrutura da mensagem:** primeiros ~40 caracteres viram o gancho que abre a notificação (ex.: "Boa
+tarde, [nome], eu tenho uma dúvida") → **soco no estômago** — dor específica e pesquisada (*"tentei
+mandar mensagem pro seu escritório e não obtive resposta — clínicas da sua região já respondem na
+hora com IA, ajudei uma a automatizar, quer ver como funciona?"*) → oferece demo de 2 minutos.
+
+### 2. Site de graça como cavalo de troia
+
+Nunca diga "é de graça" ou "tomei a liberdade" — só entregue. Raspe Google Maps por nicho local
+(clínica, escritório) com site desatualizado, mensagem direto ao **dono**, não à recepcionista.
+Construa em ~10 minutos com Claude + skill de design, entregue pronto.
+
+Na entrega, você precisa de acesso a alguma ferramenta do negócio (CRM, agenda) para configurar —
+é aí que você acha o vazamento real: *"notei que seu CRM tem leads dos últimos 3 meses sem
+retorno — quer uma automação pra reengajar isso?"* O site vira a porta de entrada para a automação,
+que é o produto de verdade.
+
+### 3. Parceria com quem já tem a base de clientes
+
+Marketing agencies geram lead mas o cliente não sabe organizar/converter; consultores diagnosticam
+mas não implementam. Não vá direto no dono da agência/consultoria — ofereça implementar **de graça
+para um cliente específico dela**, como piloto. Se funcionar, ela ganha comissão recorrente e abre
+a porta para o resto da carteira. Foi o maior gerador de receita da carreira de Well Pires: uma
+parceria com um consultor de 19 anos deu acesso a clientes faturando R$500mi-1bi/ano.
+
+### 4. Webinar — só depois de ter entrega automatizada
+
+Anúncio com promessa de resultado ("essa IA agenda paciente enquanto você dorme — essa clínica teve
+70 agendamentos esse mês") → mesmo anúncio horizontalizado em vários nichos → tráfego para live em
+**menos de 7 dias** (educar audiência fria, que tem &lt;1% de consciência sobre IA como solução) →
+entre inscrição e evento, um bot de WhatsApp qualifica e já serve como demo ao vivo; lead quente pula
+direto para a call, sem esperar o webinar.
+
+**Aviso do próprio Well Pires:** esse canal exige que a entrega já esteja automatizada/escalável —
+funciona mal para quem vende algo difícil de entregar em escala (ex.: mentoria individual prometida
+a webinar inteiro).
+
+> ⚠️ **Atualização de números:** este vídeo cita **R$70.000/mês e 3 anos** de agência — o guia
+> registrava R$65.595/mês e 18 meses (Parte 2/8), provavelmente um snapshot de mês anterior. Trate os
+> dois como pontos no tempo da mesma trajetória, não como contradição.
 
 ---
 
@@ -179,6 +248,32 @@ analisado.
 
 ---
 
+## Parte 4.5 — Construir o site do cavalo de troia (processo, não prompt único)
+
+Deborah Folloni documenta o processo que faz o "site de graça" da Parte 1.5 sair com qualidade
+profissional em vez de "cara de IA" — e é explícita: **não funciona em prompt único**. 6 etapas, nesta
+ordem:
+
+1. **Identidade visual primeiro** — logo, paleta, tipografia, antes de tocar em qualquer texto ou
+   página.
+2. **Copy inteira, em documento separado** — headline+subheadline (se quem lê não entender o que você
+   faz, a headline falhou), prova social, depoimentos que reforçam diferenciais específicos (não
+   elogio genérico), CTA de baixo risco, FAQ. Referências de framework: *$100M Offers* (Hormozi) e
+   *Sales Pitch* (April Dunford) — peça ao Claude para aplicar um dos dois direto na copy.
+3. **Wireframe** (ferramenta: Paper Design) — mapeia todo "buraco" de imagem antes de gerar assets.
+   *"Não é que o Claude Code é ineficaz, é que você não se preparou."*
+4. **Gerar imagens** — Midjourney para arte/estilo (função "try style" mantém consistência entre
+   gerações); GPT Image para edição precisa e mockups a partir de print de referência.
+5. **Sistema de estilo** (Tweakcn) — escolha um tema próximo, ajuste cor/fonte, exporte como CSS
+   global. Regra crítica para o `CLAUDE.md`: **nunca hardcodar cor no componente, sempre importar da
+   variável global** — sem isso, rebranding futuro vira busca-e-substitui no projeto inteiro em vez de
+   trocar uma variável.
+6. **Construir com Claude Code, seção por seção** — nunca "construa a página toda, sem erros" de uma
+   vez. Uma seção por vez (print de referência + imagens da seção + copy exata da seção), testando
+   responsividade a cada seção.
+
+---
+
 ## Parte 5 — Stack técnica
 
 | Camada | Ferramenta | Nota |
@@ -195,6 +290,70 @@ analisado.
 
 **Dica de custo:** se o cliente tem poucos serviços, coloque a tabela de preços **direto no prompt**
 em vez de banco de dados — economiza token. Com muitos produtos, aí sim use banco.
+
+---
+
+## Parte 5.5 — WhatsApp oficial e Ads automatizados com Claude (o que muda em 2026)
+
+### A API Oficial do WhatsApp: a tabela de preço que ninguém mostra
+
+Marcelo Távora detalha as 4 categorias de mensagem da API oficial (Cloud API da Meta) — essencial para
+não estourar o custo de um agente de WhatsApp em escala:
+
+| Categoria | Preço aproximado | Quando usar |
+|---|---|---|
+| **Serviço** | **grátis** | dentro da janela de 24h aberta quando o **cliente** manda mensagem primeiro |
+| **Utilidade** | ~R$0,035/msg (≈R$35/1.000) | atualização de status a quem já é lead/cliente |
+| **Autenticação** | ~R$0,035/msg (≈R$35/1.000) | 2FA — raro em automação comercial |
+| **Marketing** | ~R$0,35/msg (≈R$350/1.000) — **10x utilidade** | prospecção fria fora da janela de 24h |
+
+> Preço em dólar convertido a câmbio aproximado (R$5) — trate como ordem de grandeza, não valor exato.
+
+**A sacada que evita pagar 10x mais:** fora da janela de 24h, mande uma mensagem de **utilidade com
+um botão de resposta**. Quando o lead clica, a Meta reconhece como resposta e abre a janela de
+**serviço grátis de 24h** — o fluxo inteiro a partir daí não custa nada [Marcelo Távora, 00:06:03].
+
+**Gotcha caro:** a Meta pode reclassificar um template aprovado de "utilidade" para "marketing" **sem
+aviso em tempo real** (só um e-mail que ninguém lê) — o próximo disparo em massa sai 10x mais caro sem
+alerta. Checar manualmente em "Gerenciar Modelos" antes de qualquer disparo grande.
+
+Outros dados operacionais: conta nova de API oficial começa limitada a **250 mensagens/dia**, com
+rampa progressiva conforme uso — não prometa volume alto a um cliente com conta recém-criada.
+Ferramenta recomendada para disparo: **Unichat** (brasileira, cobra o preço da Meta sem markup, até
+50.000 contatos); ManyChat cobra um adicional por mensagem em cima do preço da Meta.
+
+### Automatizar a própria operação de Ads com Claude
+
+Três formatos documentados, nenhum com prova de ganho de performance (CPA/ROAS) — todos reduzem
+**fricção operacional**, não substituem estratégia de mídia:
+
+1. **Conector oficial Meta Ads no Claude** (Azev) — cria campanha, conjunto, criativo (via Higgsfield)
+   e publica direto do chat. Acesso restrito por Business Manager, ainda não geral. Toda campanha
+   criada entra **pausada** por segurança — ativação é manual. Falhas reais observadas: upload de
+   vídeo via API não funcionou (precisou subir manualmente), geração de criativo alucinou idioma e
+   copy errados 2x.
+2. **Claude Code local + token da Graph API** (Guilherme Franklim) — mais técnico (cria app em
+   Facebook for Developers, gera token manualmente), mas também mais flexível: sobe campanhas em
+   massa e gera dashboard local de auditoria com recomendações ("checkout ruim → pausar campanha").
+   Token com todas as permissões é risco de segurança se vazado — gerar por sessão, não deixar ativo.
+3. **Claude Skill de auditoria de Google Ads, gratuita** (Frederico Bittencourt/Invente) — não é
+   live/API: exige exportar 5 CSVs manuais do Google Ads Manager (campanha, grupo, anúncio, palavra-
+   chave, termo de busca) e gera relatório Word com benchmark de mercado por nicho/país e plano de
+   ação priorizado. É o mais "produto pronto" dos três, mas o relatório nunca é validado contra
+   resultado real pós-implementação — e o vídeo é isca para um curso pago.
+
+### Hermes Agent como agente pessoal multi-canal (não só WhatsApp)
+
+Elber Domingos roda o Hermes Agent numa VPS própria (Hostinger), acessível por Discord/Telegram/CLI —
+funciona com o computador desligado. Conecta ~11 apps via **Composio** (Gmail, ClickUp, Calendar,
+Drive) no plano grátis, e usa MCPs customizados para a própria plataforma de curso (LMS). Uso real
+diário: baixar gravação de live do e-mail → subir no Bunny.net → criar aula no LMS, tudo com um
+comando; agendar reunião a partir de print de conversa no Telegram; resumir call e extrair decisões.
+
+Recomendação central: **pagar a assinatura paga do modelo** (mesmo a de $20/mês) em vez de tentar
+rodar modelo open-source self-hosted na VPS — "sua VPS não aguenta, e ele não é tão inteligente".
+Nota técnica: ele ainda usa Evolution API (não-oficial) para WhatsApp, não a API oficial da Meta —
+risco de bloqueio diferente do fluxo descrito acima.
 
 ---
 
@@ -251,6 +410,53 @@ E a mais importante, quando algo quebra:
 
 ---
 
+## Parte 7.5 — Oportunidades emergentes: negócios que servem agentes, não humanos
+
+Tudo até aqui é vender automação **para** uma empresa humana operar. Deborah Folloni aponta uma
+categoria diferente e ainda inexplorada no Brasil: infraestrutura para quando o **cliente final é o
+próprio agente de IA**, não uma pessoa. Modelo de negócio diferente (produto/SaaS, não serviço), mas
+vale ter no radar — nenhum dos 6 tem equivalente brasileiro hoje:
+
+1. **Marketplace de tarefas físicas para agentes** ("Rent a Human") — agente posta tarefa que exige
+   corpo físico (carregar, comprar, entregar), humano executa, recebimento só após prova.
+2. **Cartão de pagamento para agentes** ("allowance") — cartão de uso único, travado a um
+   estabelecimento, com validade curta — resolve o problema de dar a um agente um cartão de crédito
+   comum (escopo ilimitado, difícil revogar no meio do uso).
+3. **E-mail para agentes** ("Agent Mail") — caixa de entrada só-API, sem CAPTCHA, escala para
+   centenas de contas. **Nunca dê ao agente seu e-mail pessoal** — trate como uma secretária que
+   precisa de conta própria.
+4. **Controle de gastos por agente** (Skyfire, ~$10M captados) — carteira pré-paga por agente, com
+   limite por compra/período, porque um agente travado em loop pode queimar orçamento em milissegundos.
+5. **Memória persistente entre sessões** (Mem0, ~$24M captados; Honcho) — resolve a "amnésia" do
+   agente que reinicia contexto toda sessão.
+6. **Observabilidade de agente** (Agent Ops) — "Google Analytics com câmera de segurança": replay de
+   cada chamada/decisão, porque agente falha **silenciosamente** (responde errado sem travar).
+
+> Categoria de maturidade mais baixa (memória e observabilidade) = onde "ninguém fincou a bandeira
+> ainda", segundo a própria autora — mais oportunidade, também mais incerteza.
+
+## Parte 7.6 — Ficar especialista em vez de virar gestor (o "novo" caminho para riqueza)
+
+Argumento de Deborah Folloni, a partir de um artigo de Helena Verna (VP de Growth da Lovable, sem
+time): a IA quebrou a escada de carreira que forçava todo bom especialista a virar gestor para crescer.
+Hoje o **contribuidor individual de alto impacto** consegue multiplicar sozinho o que antes exigia um
+time.
+
+Framework para construir isso: **autonomia + alinhamento + obsessão por IA**. Alinhamento é dar o
+objetivo e o acesso à informação; autonomia é deixar a pessoa escolher o método. Autonomia sem
+alinhamento = todo mundo correndo em direção diferente. Obsessão por IA = contratar "mentalidade de
+cientista" (pergunta "como melhorar?"), não "mentalidade de juiz" (só emite veredito: "não funcionou").
+
+Evidências citadas: CEO da Shopify aumentou o próprio ritmo de commits no GitHub depois de adotar
+Claude Code; o time de growth da Anthropic é **uma pessoa só**; busca por "solo founder" cresceu 900%
+em 5 anos; participação de founders solo em portfólio de investidor (YC) foi de 23% para 36%.
+
+> ⚠️ O título promete "enriquecer" mas o vídeo nunca cita um valor de faturamento pessoal — o
+> argumento é 100% estrutural (produtividade, cargo, autonomia), não financeiro. Mesmo padrão do
+> "Sell for $2k+" de Nick Saraev: promessa numérica no título, sem número no corpo.
+
+---
+
 ## Parte 8 — Checagem cética
 
 | Número | Alegação | Realidade |
@@ -262,6 +468,8 @@ E a mais importante, quando algo quebra:
 | Bruno Gabarra — "R$330/dia" | título | ⚠️ é R$10.000/mês ÷ 30, e só no cenário de **2 clientes do modelo mais caro** (R$5.000/mês). Não é o resultado dos 3 modelos |
 | Blip "R$800 milhões/ano" | citado por Bruno em 3 vídeos | ⚠️ sem fonte primária em nenhum |
 | Well Pires — R$65.595/mês | fala | ✅ explicado: é a entrada de 50% de 8 projetos, ticket médio >R$16k |
+| Deborah Folloni — "O novo segredo para **enriquecer**" | título | ⚠️ vídeo nunca cita valor de faturamento pessoal — argumento é sobre produtividade/cargo, não dinheiro |
+| Vinci Society — "R$1.000" de ticket de consultoria de marca | fala | ⚠️ contexto (G4, Boca Rosa, "centenas de milhões") sugere erro de legenda — valor real provavelmente ordem de grandeza maior |
 
 **O padrão:** quase todos esses canais vendem comunidade, mentoria ou curso. O case é a isca. Isso não
 invalida o método — mas os números do criador incluem a receita de ensinar o método.

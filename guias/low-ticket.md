@@ -261,6 +261,18 @@ A sequência que emerge quando você cruza todos os canais. Cada fase tem **crit
 
 ✅ **Saída:** PDF principal + 1-2 order bumps + capas, tudo em pasta organizada.
 
+**Variante toda em Claude** (Hora de Negócios): Claude → **Gama** (integração nativa) gera o ebook
+completo em ~3 minutos a partir de um único prompt de voz; capa e descrição também pelo Claude;
+página de vendas gerada por **Atoms** (vibe coding) a partir de prompt que o próprio Claude escreve.
+Pipeline inteiro (produto + página + checkout Kiwify) em menos de 30 minutos — mas o criador admite
+que **"o ebook não vai te deixar rico"**: é isca de "abre carteira" (preço quase no zero-a-zero) para
+empurrar um upsell recorrente (app por assinatura), que no vídeo nunca é de fato construído.
+
+**Funil validado publicamente** (Nerds de Negócios): faixa de preço R$14-47 (acima de R$147-197 já
+perde o efeito), produto resolve **uma** dor específica com "quick win" — nunca 5 dores num só ebook.
+Página estática (Claude Code + skill de front-end) hospedada grátis no Cloudflare Workers Pages.
+Verba de teste R$200-360, meta ROI ≥ 2. Vídeo é puramente processo — nenhum faturamento é mostrado.
+
 ### Fase 3 — Funil e checkout (1 dia)
 
 **Escolha a estrutura:**
@@ -388,6 +400,27 @@ pequenas** ao mesmo tempo. Nichos pequenos não têm demanda para escalar ao inf
 
 **Quando cai:** não reduza orçamento. Faça **reset** (pause e duplique a mesma estrutura buscando
 público novo). Se não resolver, criativos novos.
+
+### O funil de recorrência para agências (Marcos Machado) — mesmo jogo, outro produto
+
+Quando o que se vende é **assessoria/agência** (recorrência mensal, não produto único), a estrutura
+muda de "conjunto único" para uma progressão em duas etapas: **teste em 1-3-3 ABO** (1 campanha, 3
+públicos, 3 anúncios em cada) → **escala em CBO 1-3-1** (mesmo público validado, só troca o anúncio).
+
+Métricas-alvo do funil de agendamento comercial (as "4 verticais"): custo/lead R$15-20, taxa de
+agendamento 15-20%, comparecimento 60-70% (**ligar, não só mandar WhatsApp**, triplica comparecimento
+segundo o autor), conversão em call 25-30%. Um dos "desafios" documentados publicamente: R$6.000
+investidos, R$8/lead, 763 leads, 109 reuniões agendadas, 88 realizadas, CAC R$265, **R$98.000 de MRR
+adicionado em 13 dias úteis**.
+
+Tática de criativo "In Zone": gravar o anúncio dentro do ambiente do próprio nicho-alvo (dentro de um
+restaurante, para vender a donos de restaurante) — case citado derrubou CPL de R$50-30 para **R$6**.
+
+> ⚠️ **Separe resultado de projeção:** os 3 "desafios" com números granulares (CPL, agendamento,
+> comparecimento, MRR) são documentados publicamente e mais auditáveis que a média do corpus. Mas o
+> **"100k até dezembro"** do título é uma **simulação de calculadora** partindo de R$0 — não um
+> resultado realizado. O vídeo mistura as duas coisas dentro de uma live de venda de mentoria com
+> gatilho de escassez — ver Parte 7.1.
 
 ---
 

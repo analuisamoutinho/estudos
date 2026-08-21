@@ -4,7 +4,57 @@ Escrever o que vende e produzir o que para o scroll. É a habilidade que atraves
 tópicos — sem ela, tráfego pago é caro e produto bom não vende.
 
 **Fontes:** Método VTSD / Leandro Ladeira (26 vídeos) · Henrique Oliveira · Silvio Roberto ·
-Higor Cruz · Jonny Viccari · Cakto
+Higor Cruz · Jonny Viccari · Cakto · Triwer (3) · Milena Camila | Triwer · Vinci Society (2) ·
+Matheus Porto
+
+---
+
+## Parte 0 — Posicionamento e marca, antes da copy
+
+Quatro vídeos novos (Triwer x2, Vinci Society x2) convergem, por caminhos diferentes, na mesma
+descoberta: **conteúdo/produto que vende não é sobre o criador — é sobre um atributo identitário que
+o público quer para si.** Isso é anterior à copy: você pode escrever perfeito e ainda ficar invisível
+se não resolver isso primeiro.
+
+### Viés Magnético (Triwer) — por que "ser bom" não basta
+
+Autora tinha alto engajamento e zero vendas até ajustar isto. Três peças:
+
+1. **Makeover/Transformação** — promessa **fechada e específica**, nunca vaga. *"Vida dos sonhos"* não
+   vende; *"saiba exatamente o que postar durante seu lançamento"* vende.
+2. **Bandeiras** — o que você defende/ataca publicamente (o "nós contra eles" do nicho). Descobre-se
+   perguntando: o que você mais odeia no seu mercado? Que crença do cliente você quebrou?
+3. **Identificação** — "óleo e água não se misturam": você atrai quem se parece com você em estilo de
+   vida e estética. Não dá para vender high ticket com comunicação popular, nem o contrário.
+
+> Regra prática: **Transformação vende volume. Bandeiras + Identificação seguram recorrência.** Um
+> case citado foi de 11-13 clientes para 2 de um dia para o outro quando cortaram verba — tinha
+> transformação, não tinha as outras duas pernas.
+
+**GAP de mercado:** liste tudo que você sabe fazer → circule só onde teve resultado real → veja o que
+os grandes do seu nicho **não** oferecem. *"Você não briga com o time da Série A, briga do seu
+tamanho — pega o que cai da mesa dos grandes."*
+
+### Marca irresistível, 4 passos (Vinci Society)
+
+1. **Desvendar paixão e raiva** — o que o público quer *de verdade* por trás do que ele diz querer
+   (ex.: "mudar o mundo" costuma ser "ser visto mudando o mundo"). Raiva e paixão são o mesmo eixo,
+   polos opostos — bater no "vilão" que a audiência odeia gera venda.
+2. **Individuação** (Jung) — a marca entrega um atributo identitário escasso e valioso (elegância =
+   Chanel), não apenas produto.
+3. **Hero Brand** — o cliente é o herói da jornada, a marca é a aliada. O produto resolve a dor
+   prática; **a marca resolve a dor cultural** que o produto sozinho não resolve.
+4. **Canais** — a marca deve se comportar como um criador de conteúdo, não como corporação, inclusive
+   em mídia paga.
+
+> Case citado: 1 milhão de pessoas na live de pré-venda da Boca Rosa, estoque de 3 meses esgotado em
+> **1 hora**.
+
+**Naming de marca física com IA** (Matheus Porto): comece pelo Pinterest para captar a "vibe" antes de
+qualquer definição — o que já existe fora do Brasil e ainda não aqui. Prioridade máxima no nome: **@
+limpo no Instagram, sem underline/número** — por si só já aumenta a percepção de valor da marca.
+Arquétipos de marca (Jung) servem só de norte: *"não leve ao pé da letra — é coisa que os caras
+inventam pra você pagar mais caro na mentoria deles."*
 
 ---
 
@@ -78,6 +128,34 @@ Framework reproduzível do Método VTSD.
 - **CTA duplo** — um CTA generoso (divulga outra pessoa), depois o de venda.
   *"Ela vai tocar seu coração, eu vou tocar seu bolso."*
 
+### Como escolher a história certa (antes de narrar)
+
+Dois vídeos novos (Triwer, Vinci Society/Hana Frank) convergem, com nomes diferentes, no mesmo
+mecanismo — que o framework dos 5 passos acima não cobre: **como escolher o que contar**, não só como
+narrar.
+
+**Processo de 3 passos (Triwer):**
+1. **Olhar atento** — decidir o que vale a pena mostrar, não registrar tudo.
+2. **Recorte** — nunca conte a vida inteira (desconecta: quanto mais grandioso, menos identificação).
+   Um fragmento específico e narrado com ênfase funciona; um resumo cru não.
+3. **Objetivo primeiro, história depois** — nunca produza "no flow". Defina o objetivo comercial →
+   escolha a abordagem (provocação, contraste) → só então busque a história que serve a isso.
+
+**Estrutura IHC (Vinci Society/Hana Frank)** — mesmo mecanismo, nomeado diferente: **Identificação**
+(gancho universal, que interessa a 95-100% da audiência) → **História** (prova o conteúdo) →
+**Conteúdo** (moral/produto, que só ~5% quer comprar). Comece amplo, afunile até a oferta.
+
+**7 tags de história combináveis** (Triwer): objeção, verdade existente, impossível, contraste,
+oportunidade, contraintuitivo, recontar história de terceiro do seu ponto de vista.
+
+**Headline — framework DOPA:** Descoberta, Oportunidade, Provocação, Autoridade — a mesma história
+pode virar 4 headlines diferentes dependendo do objetivo. Regra: direta, sem palavra rebuscada
+("melhorar" em vez de "maximizar"), sempre com gancho de curiosidade.
+
+> ⚠️ Lead deprimido não compra — histórias de erro/fracasso servem só como complemento, sempre
+> fechando em resolução. Nunca abra "muro das lamentações" sem virar a chave. (Reforça o aviso já
+> registrado neste guia sobre "não chorar no tanque de tubarões".)
+
 ---
 
 ## Parte 3 — Criativos que convertem
@@ -142,6 +220,36 @@ validar, depois pague alguém para regravar original.
 
 **Regra:** 90% do conteúdo nos tipos 3-7. Comercial só embutido dentro de entretenimento — técnica do
 merchandising (a novela insere na trama, não no intervalo).
+
+### As 3 rotinas de stories que vendem todo dia (Milena Camila | Triwer)
+
+Substitui "bloqueio criativo diário" por 3 rotinas fixas e repetíveis — o material mais operacional
+deste guia sobre stories especificamente:
+
+1. **Geradora de leads** (1x/semana mínimo) — isca liberada via comentário+Direct (ManyChat entrega),
+   quiz do Instagram com resultado personalizado, estudo de caso. **Nunca poste sobre o produto
+   direto** — gere o desejo primeiro, deixe a audiência pedir.
+2. **Ritual de posicionamento** (diário) — não é "postar por postar" (foto de academia sem contexto =
+   zero valor); é atribuir **significado** a algo que já é rotina sua, e usar isso para abrir conversa.
+3. **Doutrinação** (diário) — mover a crença do seguidor até a decisão de compra: análise de caso do
+   nicho, mostrar algo em andamento + resultado, ou **caixinha de perguntas** (a mais recomendada —
+   para perfil sem engajamento, mande perguntas para si mesmo por 3 dias; no 3º/4º dia seguidores
+   começam a perguntar sozinhos).
+
+> Resultado citado: mês tradicional (1 pico de lançamento) = R$14.000; mesmo período com as 3 rotinas
+> (vendas todo dia, sem lançamento) = 4 picos no gráfico. Um único story de isca gerou 132 leads.
+
+### O processo de viralização é testável, não sorte (Vinci Society/Hana Frank)
+
+Estrutura de roteiro **IHC** (ver Parte 2) + processo formal: criar hipótese → testar ~3 vídeos →
+comparar levas → manter o que funciona, iterar o que não funciona. Regra dos 4 filtros para validar um
+formato novo: potencialmente viral, na linguagem da plataforma, cabe na personalidade de quem grava,
+gera resultado financeiro alinhado à marca.
+
+Case de diagnóstico real: 3 vídeos consecutivos de 1 milhão de views cada, 4º vídeo caiu para 160.000
+— a queda foi rastreada a uma variável de roteiro (nível de especificidade) e uma de formato (ângulo
+de câmera); ajuste gerou vídeo com 1M de views em menos de 24h. **Contratar "editor de conteúdo"
+(entende narrativa), não "editor de vídeo" (só corta bonito).**
 
 ### O que mata engajamento
 
