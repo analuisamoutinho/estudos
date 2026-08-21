@@ -319,7 +319,39 @@ footer{
 }
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+/* --- progresso de leitura (compartilhado: landing + guia individual) --- */
+.lido-toggle{
+  display:inline-flex;align-items:center;gap:8px;margin:18px 0 0;padding:9px 16px 9px 12px;
+  font-family:var(--sans);font-size:13px;font-weight:600;color:var(--ink-soft);
+  background:var(--surface);border:1.5px solid var(--rule);border-radius:99px;cursor:pointer;
+  transition:border-color .15s,color .15s,background .15s;
+}
+.lido-toggle:hover{border-color:var(--accent);color:var(--ink)}
+.lido-toggle .lido-toggle-icon{
+  display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
+  border-radius:50%;border:1.5px solid var(--ink-faint);font-size:11px;line-height:1;
+  color:transparent;transition:all .15s;
+}
+.lido-toggle.is-lido{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.lido-toggle.is-lido .lido-toggle-icon{
+  background:var(--accent);border-color:var(--accent);color:var(--surface);
+}
 """
+
+TRACKING_JS = """<script>
+(function(){
+  var LS_KEY = 'estudos-lidos-v1';
+  function getLidos(){ try{ return JSON.parse(localStorage.getItem(LS_KEY)||'{}'); }catch(e){ return {}; } }
+  function setLido(stem,val){
+    var l=getLidos();
+    if(val){ l[stem]=Date.now(); } else { delete l[stem]; }
+    localStorage.setItem(LS_KEY, JSON.stringify(l));
+    return l;
+  }
+  window.estudosLidos = {get:getLidos, set:setLido};
+})();
+</script>"""
 
 
 def main():

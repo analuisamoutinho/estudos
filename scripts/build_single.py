@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_guia import CSS, ROOT, convert, slug  # noqa: E402
+from build_guia import CSS, ROOT, TRACKING_JS, convert, slug  # noqa: E402
 
 # stem -> (título, emoji, subtítulo, tagline curta para o header)
 META = {
@@ -100,16 +100,39 @@ def main():
   <div class="stats">
     <div class="stat"><b>{tag}</b><span>foco do guia</span></div>
   </div>
+  <button type="button" id="lido-toggle" class="lido-toggle" data-stem="{stem}">
+    <span class="lido-toggle-icon">✓</span><span class="lido-toggle-label">Marcar como lido</span>
+  </button>
 </header>
 {body}
 <footer>
   Extraído da leitura integral das transcrições em <code>references/youtube/</code>. Cada afirmação
   é rastreável ao vídeo e timestamp de origem.<br>
   Transcrições automáticas — números e nomes de ferramentas podem conter erros. Parte do
-  <a href="https://github.com/analuisamoutinho/estudos">repositório Central de Estudos</a>.
+  <a href="https://github.com/analuisamoutinho/estudos">repositório Central de Estudos</a>.<br>
+  <a href="index.html">← voltar para a lista de tópicos</a>
 </footer>
 </main>
 </div>
+{TRACKING_JS}
+<script>
+document.addEventListener('DOMContentLoaded', function(){{
+  var btn = document.getElementById('lido-toggle');
+  var stem = btn.getAttribute('data-stem');
+  function render(){{
+    var lidos = window.estudosLidos.get();
+    var isLido = !!lidos[stem];
+    btn.classList.toggle('is-lido', isLido);
+    btn.querySelector('.lido-toggle-label').textContent = isLido ? 'Lido' : 'Marcar como lido';
+  }}
+  btn.addEventListener('click', function(){{
+    var lidos = window.estudosLidos.get();
+    window.estudosLidos.set(stem, !lidos[stem]);
+    render();
+  }});
+  render();
+}});
+</script>
 """
     dest = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / f"{stem}.html"
     dest.write_text(out, encoding="utf-8")
