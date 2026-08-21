@@ -70,11 +70,6 @@ META = {
 }
 
 
-def count_videos(md):
-    fontes = re.search(r"\*\*Fontes:\*\*(.+)", md)
-    return fontes.group(1).strip() if fontes else ""
-
-
 def main():
     if len(sys.argv) < 2:
         print("uso: build_single.py <stem> [saida.html]")
@@ -84,7 +79,6 @@ def main():
 
     path = ROOT / "guias" / f"{stem}.md"
     md = path.read_text(encoding="utf-8")
-    fontes_line = count_videos(md)
     body_md = md.split("\n", 1)[1]
     body, subs = convert(body_md, stem, base_level=0)
     # Links para outros guias (ex.: [ecommerce.md]) viram #t-<stem> no hub multi-tópico,
@@ -107,9 +101,6 @@ def main():
     <div class="stat"><b>{tag}</b><span>foco do guia</span></div>
   </div>
 </header>
-<p style="font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin:0 0 30px">
-  Fontes: {html.escape(fontes_line)}
-</p>
 {body}
 <footer>
   Extraído da leitura integral das transcrições em <code>references/youtube/</code>. Cada afirmação
