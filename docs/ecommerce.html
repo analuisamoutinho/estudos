@@ -1,0 +1,161 @@
+<title>E-commerce e Dropshipping</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{
+  --ground:#F5F6F4; --surface:#FFFFFF; --surface-2:#EDEFEB;
+  --ink:#14201C; --ink-soft:#4A5551; --ink-faint:#78837D;
+  --rule:#DDE0DA; --accent:#0F5C4A; --accent-soft:#E4EFEA;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#101512; --surface:#171E1A; --surface-2:#1E2723;
+    --ink:#E6EAE6; --ink-soft:#9AA8A1; --ink-faint:#75837C;
+    --rule:#2A342F; --accent:#4FBF9B; --accent-soft:#1B2C26;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#101512; --surface:#171E1A; --surface-2:#1E2723;
+  --ink:#E6EAE6; --ink-soft:#9AA8A1; --ink-faint:#75837C;
+  --rule:#2A342F; --accent:#4FBF9B; --accent-soft:#1B2C26;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--serif); font-size:17px; line-height:1.68;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1220px;margin:0 auto;padding:0 24px;display:flex;gap:52px;align-items:flex-start}
+main{flex:1;min-width:0;max-width:70ch;padding:52px 0 120px}
+
+nav{
+  position:sticky; top:0; width:228px; flex:none;
+  padding:60px 0 40px; font-family:var(--mono); font-size:11px;
+  max-height:100vh; overflow-y:auto;
+}
+nav p{
+  margin:0 0 12px; text-transform:uppercase; letter-spacing:.14em;
+  color:var(--ink-faint); font-size:9.5px;
+}
+nav a{
+  display:block; padding:6px 0 6px 11px; border-left:2px solid var(--rule);
+  color:var(--ink-soft); text-decoration:none; line-height:1.35;
+}
+nav a:hover{border-left-color:var(--accent);color:var(--accent)}
+nav a b{display:block;font-weight:600;color:var(--ink);letter-spacing:.01em}
+nav a span{display:block;color:var(--ink-faint);font-size:9.5px;margin-top:1px}
+nav .sub{padding-left:22px;border-left-color:transparent;font-size:10px}
+nav .sub:hover{border-left-color:var(--rule)}
+@media(max-width:960px){nav{display:none}.wrap{gap:0}main{max-width:none;padding-top:36px}}
+
+h1,h2,h3,h4,h5{font-family:var(--sans);text-wrap:balance;line-height:1.18;letter-spacing:-.02em}
+h1{font-size:clamp(30px,5vw,44px);font-weight:750;margin:0 0 6px}
+h2{
+  font-size:clamp(23px,3.4vw,31px); font-weight:750; margin:0 0 8px;
+  padding-top:26px;
+}
+h3{font-size:19px;font-weight:700;margin:46px 0 14px;padding-top:18px;border-top:1px solid var(--rule)}
+h4{font-size:16px;font-weight:680;margin:30px 0 10px}
+h5{font-size:14px;font-weight:680;margin:24px 0 8px;color:var(--ink-soft)}
+
+.topic{margin:80px 0 0;padding-top:30px;border-top:2px solid var(--ink)}
+.topic .kicker{
+  font-family:var(--mono);font-size:10px;text-transform:uppercase;
+  letter-spacing:.17em;color:var(--accent);margin:0 0 10px;
+}
+
+p{margin:0 0 17px}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+strong{font-weight:640}
+hr{border:0;height:1px;background:var(--rule);margin:40px 0}
+
+ul,ol{margin:0 0 18px;padding-left:22px}
+li{margin-bottom:7px}
+li::marker{color:var(--ink-faint)}
+ul ul,ol ol,ul ol,ol ul{margin:7px 0 0}
+ul.check{list-style:none;padding-left:0}
+ul.check li{position:relative;padding-left:29px}
+ul.check li span{
+  position:absolute;left:0;top:.36em;width:15px;height:15px;
+  border:1.5px solid var(--ink-faint);border-radius:3px;
+}
+
+blockquote{
+  margin:22px 0;padding:15px 20px;background:var(--surface);
+  border-left:3px solid var(--accent);border-radius:0 4px 4px 0;
+}
+blockquote p{margin:0 0 9px;font-size:16px;color:var(--ink-soft)}
+blockquote p:last-child{margin:0}
+blockquote em{color:var(--ink);font-style:italic}
+
+.scroll{overflow-x:auto;margin:24px 0;-webkit-overflow-scrolling:touch}
+table{
+  border-collapse:collapse;width:100%;font-family:var(--sans);
+  font-size:13.5px;line-height:1.5;font-variant-numeric:tabular-nums;
+}
+th{
+  text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);
+  padding:0 14px 9px 0;border-bottom:1.5px solid var(--ink);white-space:nowrap;
+}
+td{padding:11px 14px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td:first-child{color:var(--ink);font-weight:550}
+table code{font-size:12px}
+
+code{
+  font-family:var(--mono);font-size:.86em;background:var(--surface-2);
+  padding:.14em .38em;border-radius:3px;
+}
+pre{
+  margin:0;background:var(--surface);border:1px solid var(--rule);
+  border-radius:5px;padding:17px 19px;overflow-x:auto;
+}
+pre code{background:none;padding:0;font-size:12.5px;line-height:1.72;color:var(--ink-soft)}
+
+header{padding:60px 0 8px;border-bottom:2px solid var(--ink)}
+.eyebrow{
+  font-family:var(--mono);font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.19em;color:var(--accent);margin:0 0 15px;
+}
+.lede{font-size:19px;color:var(--ink-soft);margin:16px 0 26px;max-width:60ch}
+.stats{display:flex;flex-wrap:wrap;margin:0 0 28px;border-top:1px solid var(--rule)}
+.stat{padding:14px 28px 14px 0;margin-right:28px;border-right:1px solid var(--rule)}
+.stat:last-child{border-right:0;margin-right:0}
+.stat b{
+  display:block;font-family:var(--sans);font-size:25px;font-weight:730;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1;
+}
+.stat span{
+  display:block;font-family:var(--mono);font-size:9.5px;text-transform:uppercase;
+  letter-spacing:.13em;color:var(--ink-faint);margin-top:4px;
+}
+footer{
+  margin-top:70px;padding-top:22px;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:11px;color:var(--ink-faint);line-height:1.7;
+}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+<div class="wrap">
+<nav><p>Neste guia</p><a href="#topo"><b>Início</b></a><a href="#ecommerce-as-regras-que-ele-declara-no-início">As regras que ele declara no início</a><a href="#ecommerce-o-processo">O processo</a><a href="#ecommerce-os-números-reais">Os números reais</a><a href="#ecommerce-por-que-este-vídeo-é-o-mais-valioso-da-biblioteca-inteira">Por que este vídeo é o mais valioso da biblioteca inteira</a><a href="#ecommerce-o-case-do-terço-católico">O case do terço católico</a><a href="#ecommerce-as-regras-que-ele-extrai">As regras que ele extrai</a><a href="#ecommerce-o-caso-r15-milhãomês-pior-que-qualquer-print-já-visto-no-acervo">O caso R$1,5 milhão/mês</a><a href="#ecommerce-lives-falsas-o-pior-padrão-de-má-fé-do-acervo-inteiro">Lives falsas: o pior padrão de má-fé do acervo inteiro</a><a href="#ecommerce-o-contraponto-correto-dentro-do-mesmo-canal">O contraponto correto, dentro do mesmo canal</a><a href="#ecommerce-pipeline-de-produção-em-massa-sem-prova-de-venda">Pipeline de produção em massa (sem prova de venda)</a></nav>
+<main>
+<header id="topo">
+  <p class="eyebrow">Central de Estudos · Guia individual</p>
+  <h1>📦 E-commerce e Dropshipping</h1>
+  <p class="lede">O tópico menor da biblioteca, com o vídeo mais honesto de todos.</p>
+  <div class="stats">
+    <div class="stat"><b>o experimento honesto</b><span>foco do guia</span></div>
+  </div>
+</header>
+<p>O tópico menor da biblioteca, mas com o vídeo mais honesto de todos: um experimento com orçamento declarado, resultado auditável e fracasso admitido.</p><p><strong>Fontes:</strong> Mark Tilbury · Rafa Souza (dropshipping) · Ecommerce Puro · Pedro Vence · Higor Cruz Marketing · Jessica Freire</p><hr><h2 id="ecommerce-parte-1-o-experimento-honesto-mark-tilbury">Parte 1 — O experimento honesto (Mark Tilbury)</h2><p><strong>&quot;I Tried Shopify Dropshipping For 7 Days (Realistic Results)&quot;</strong></p><h3 id="ecommerce-as-regras-que-ele-declara-no-início">As regras que ele declara no início</h3><ol><li>A IA toma <strong>toda</strong> decisão de negócio</li><li>Orçamento limitado a <strong>$250</strong> — cada ferramenta precisa ser grátis ou quase</li><li>Mostrar tudo, incluindo resultado bruto</li><li>Se não fizer <strong>$1.000</strong>, doa $1.000 do próprio bolso para alguém nos comentários</li></ol><h3 id="ecommerce-o-processo">O processo</h3><p><strong>Achar nicho — &quot;dummy scroll method&quot;:</strong> conta nova no Instagram, rolar Reels interagindo com <strong>todo</strong> anúncio de dropshipping que aparecer, depois jogar a lista no ChatGPT para escolher. Resultado: <strong>pets</strong>.</p><p><strong>Construir:</strong> Build Your Store + Shopify (trial 3 dias, depois $1/mês por 3 meses).</p><p><strong>Produtos:</strong> AutoDS, plano Starter 500 a <strong>$0,99</strong> por 3 dias. 10 produtos importados, incluindo o &quot;dog paw cleaner&quot; que ele tinha visto no Instagram. Títulos e descrições reescritos em massa por IA.</p><p><strong>Branding:</strong> domínio <code>.store</code> (nome sugerido pelo ChatGPT: &quot;thrivingpaws.store&quot;), logo com Nano Banana.</p><p><strong>Ele compra e testa os produtos fisicamente na câmera</strong> — e <strong>reprova um ao vivo</strong> (uma bola interativa): <em>&quot;não acho que devemos vender isso.&quot;</em></p><p><strong>Anúncios:</strong> CreateUGC (avatares de IA reagindo ao produto) + Meta Ads a $20/dia.</p><h3 id="ecommerce-os-números-reais">Os números reais</h3><div class="scroll"><table><thead><tr><th>Item</th><th>Valor</th></tr></thead><tbody><tr><td>Vendas</td><td>17 limpadores de pata + 1 vassourinha</td></tr><tr><td><strong>Receita</strong></td><td><strong>$402,41</strong></td></tr><tr><td>Custo de produto/frete</td><td>$169,85</td></tr><tr><td>Meta Ads (3 dias)</td><td>~$150</td></tr><tr><td>Shopify</td><td>$1</td></tr><tr><td><strong>Custo total</strong></td><td><strong>$320,85</strong></td></tr><tr><td><strong>Lucro líquido</strong></td><td><strong>$81,56</strong></td></tr></tbody></table></div><blockquote><p><em>&quot;Isso nos deixa com um lucro de $81,56. Então claramente eu falhei no desafio.&quot;</em> [tradução]</p></blockquote><p>Ele paga a aposta e doa os $1.000.</p><h3 id="ecommerce-por-que-este-vídeo-é-o-mais-valioso-da-biblioteca-inteira">Por que este vídeo é o mais valioso da biblioteca inteira</h3><p>É o único que:</p><ul><li>declara um orçamento fixo <strong>e o respeita</strong></li><li>mostra o número <strong>líquido</strong>, não faturamento em tela</li><li><strong>reprova um produto</strong> em vez de vender qualquer coisa</li><li>reconhece publicamente que <strong>falhou na própria meta</strong></li></ul><p>Compare com o resto do acervo: prints de faturamento sem custo, sem tempo investido, sem taxa de conversão. Guarde os <strong>$81,56 em 7 dias com IA fazendo tudo</strong> como sua régua de expectativa. A projeção dele de que &quot;com mais tempo daria $1.000/mês de lucro&quot; é justamente isso — projeção não testada.</p><hr><h2 id="ecommerce-parte-2-dropshipping-nacional-rafa-souza">Parte 2 — Dropshipping nacional (Rafa Souza)</h2><p>Produto físico, mesma lógica de tráfego do low ticket.</p><h3 id="ecommerce-o-case-do-terço-católico">O case do terço católico</h3><div class="scroll"><table><thead><tr><th>Item</th><th>Valor</th></tr></thead><tbody><tr><td>Custo do fornecedor</td><td>R$9/unidade</td></tr><tr><td>Preços</td><td>1un R$97 · 2un R$177 · 3un R$257</td></tr><tr><td>Order bump digital</td><td>R$17 (margem quase total)</td></tr><tr><td>CPA</td><td>R$20-39</td></tr><tr><td>Investimento</td><td>R$16.000</td></tr><tr><td><strong>Faturamento</strong></td><td><strong>~R$88.000</strong> em ~40-50 dias</td></tr></tbody></table></div><h3 id="ecommerce-as-regras-que-ele-extrai">As regras que ele extrai</h3><p><strong>Múltiplas faixas de preço na mesma oferta.</strong> A margem grande vem do 2º e 3º produto, não do primeiro.</p><p><strong>Cobre frete sempre.</strong></p><blockquote><p><em>&quot;Chega de frete grátis. A pessoa que quer o teu produto vai pagar frete.&quot;</em></p></blockquote><p><strong>Order bump digital em produto físico</strong> — custo zero, vai direto pro bolso.</p><p><strong>Sazonalidade: congele e volte no ano seguinte.</strong> Quando a data passa, pause sem excluir e deixe os concorrentes se matarem baixando preço até o produto esfriar.</p><blockquote><p><em>&quot;Quando eu voltar a rodar de novo, é um mar azul novamente.&quot;</em></p></blockquote><p><strong>Negocie forte com o fornecedor</strong> — é onde a margem nasce.</p><p><strong>Troque a página quando parar de vender.</strong></p><blockquote><p><em>&quot;Se sua oferta tá parando de vender, troca a página, troca o site. Não tenha preguiça de fazer isso.&quot;</em></p></blockquote><p><strong>Uma conta de anúncio por produto.</strong> <em>&quot;Eu não rodo vários produtos em uma conta de anúncio.&quot;</em></p><p><strong>ABO para comprar dados → CBO para escalar</strong>, +20% por vez, só reaumenta quando estabiliza.</p><hr><h2 id="ecommerce-parte-25-tiktok-shop-e-conteúdo-com-ia-o-certo-e-o-errado-no-mesmo-canal">Parte 2.5 — TikTok Shop e conteúdo com IA: o certo e o errado, no mesmo canal</h2><p>Quatro vídeos novos, todos sobre gerar conteúdo/vídeo com IA para vender em marketplace/TikTok Shop — com um contraste ético nítido entre eles.</p><h3 id="ecommerce-o-caso-r15-milhãomês-pior-que-qualquer-print-já-visto-no-acervo">O caso R$1,5 milhão/mês — pior que qualquer print já visto no acervo</h3><p>Casal vendendo brinquedos no Mercado Livre, entrevistado pelo próprio canal de mentoria que eles pagam (Ecommerce Puro). Trajetória real tem textura (galpão de 660m², fornecedor que faliu, 5 anos de histórico) — mas o número do título (<strong>&quot;R$1,5 milhão/mês&quot;</strong>) é dito <strong>uma única vez, de passagem, pelo entrevistador</strong>, nunca confirmado pelos entrevistados, nunca decomposto em receita vs. lucro, sem print de dashboard. É mais fraco que qualquer &quot;print de faturamento sem custo&quot; já registrado neste guia — porque nem print existe, é boato endossado por vídeo institucional.</p><blockquote><p>Compare com a régua do Tilbury (Parte 1): orçamento declarado, número em planilha, lucro líquido explícito, sem incentivo comercial de quem afirma. O caso do casal falha em todos os quatro critérios.</p></blockquote><h3 id="ecommerce-lives-falsas-o-pior-padrão-de-má-fé-do-acervo-inteiro">Lives falsas: o pior padrão de má-fé do acervo inteiro</h3><p>Tutorial (Pedro Vence) para rodar uma &quot;live&quot; no TikTok Shop que na verdade é <strong>vídeo pré-gravado em loop</strong>, usando uma extensão de terceiros que simula webcam/microfone para enganar a plataforma e o espectador sobre estar &quot;ao vivo&quot;. O público-alvo é definido explicitamente por vulnerabilidade: <em>&quot;pessoa mais velha, mais leiga em IA, que não consegue ter discernimento&quot;</em>. A ferramenta ainda monitora avisos da plataforma e desliga a live sozinha antes de acumular violação formal — corrida armamentista contra moderação, o mesmo padrão perdedor já identificado no aviso de ética de copy-e-criativo.md.</p><h3 id="ecommerce-o-contraponto-correto-dentro-do-mesmo-canal">O contraponto correto, dentro do mesmo canal</h3><p>Vídeo-irmão do mesmo criador que documenta o &quot;influencer de IA indetectável&quot; (já flagado em copy-e-criativo.md) mostra um formato <strong>diferente e legítimo</strong>: vídeo estilo POV com manequim (sem rosto, sem voz), que <strong>é marcado como conteúdo de IA automaticamente pela própria ferramenta de geração</strong> — e o criador trata isso como proteção, não como algo a evadir: <em>&quot;você precisa informar para não tomar violação, até porque não aparece ninguém.&quot;</em> Fatura citado (não auditável): &quot;mais de R$131 mil de GMV/mês&quot; — mesmo padrão de número sem prova do resto do acervo, mas pelo menos sem o problema ético do vídeo anterior.</p><h3 id="ecommerce-pipeline-de-produção-em-massa-sem-prova-de-venda">Pipeline de produção em massa (sem prova de venda)</h3><p>Jessica Freire usa Claude conectado ao Higgsfield via MCP para pesquisar nicho, validar produto (Calodata), criar uma &quot;influencer&quot; de IA consistente (mesmo Job ID = mesmo rosto reutilizável) e gerar até 120 vídeos de afiliado em lotes de 40. Zero prova de venda ou comissão no vídeo — é puramente tutorial de produtividade de conteúdo. Diferente do formato POV acima, <strong>não há qualquer disclosure de IA mencionado</strong> para o público do mercado-alvo (Reino Unido).</p><blockquote><p><strong>Resumo do contraste:</strong> dois formatos de IA para TikTok Shop no mesmo espaço — um que trata disclosure como proteção (Higor Cruz/POV) e um que constrói o negócio inteiro sobre engano ativo (Pedro Vence/live falsa). O primeiro é o caminho reproduzível; o segundo é risco de banimento e dano ao consumidor, não uma tática a copiar.</p></blockquote><hr><h2 id="ecommerce-parte-3-clonar-loja-com-ia">Parte 3 — Clonar loja com IA</h2><p>Fluxo para montar vitrine rápido (Lovable):</p><ol><li>Escolher site de referência, copiar o link</li><li>Prompt no Lovable pedindo site igual, <strong>com nome/marca fictícios</strong> (nunca copie a marca)</li><li>Aprovar o plano gerado → site pronto com produtos genéricos populados</li><li>Trocar produto por prompt: <em>&quot;altere a imagem do produto X&quot;</em>, <em>&quot;alterar o preço de X para 199&quot;</em></li><li>Rodapé com CNPJ, e-mail, WhatsApp</li><li>Avaliações: subir ~10 imagens de prova social <strong>real</strong>, pedindo que cada uma venha com texto que <strong>quebre uma objeção específica</strong> — não texto genérico</li></ol><blockquote><p><em>&quot;Não é gerar qualquer texto. É gerar uma avaliação que ajude a quebrar objeção.&quot;</em></p></blockquote><p><strong>Alternativa sem link:</strong> extensão de captura de página inteira (CaptureX) → anexar o print no Lovable.</p><p><strong>Para landing page:</strong> parta sempre de <strong>referência visual do Pinterest</strong> (&quot;landpage design&quot;), não de prompt do zero. Peça bloco de avaliações e FAQ sempre. Confira no <strong>mobile</strong> — é de onde vem a maioria das vendas.</p><blockquote><p><em>&quot;Use referências, boas referências. Pare de fazer páginas de venda que todo mundo faz.&quot;</em></p></blockquote><hr><h2 id="ecommerce-o-que-levar-daqui">O que levar daqui</h2><ol><li><strong>A régua do Tilbury:</strong> $81 de lucro em 7 dias, com IA fazendo tudo e $250 de orçamento. Qualquer promessa muito acima disso, para esse nível de esforço, merece desconfiança</li><li><strong>A margem está na esteira</strong>, igual no low ticket — order bump digital em produto físico é dinheiro grátis</li><li><strong>Sazonalidade é ativo</strong>, não problema — congele e volte</li><li><strong>Teste o produto você mesmo.</strong> Tilbury reprovou um ao vivo. Entregável ruim mata a oferta permanentemente</li><li><strong>Se usar avatar/influencer de IA, rotule.</strong> O formato que trata disclosure como proteção (POV/ manequim) escala tão rápido quanto o que evade — sem o risco de banimento e dano ao consumidor</li></ol><hr><p>*Extraído da leitura integral das transcrições em <code>references/youtube/</code>. Legendas automáticas — números e nomes podem conter erros.*</p>
+<footer>
+  Extraído da leitura integral das transcrições em <code>references/youtube/</code>. Cada afirmação
+  é rastreável ao vídeo e timestamp de origem.<br>
+  Transcrições automáticas — números e nomes de ferramentas podem conter erros. Parte do
+  <a href="https://github.com/analuisamoutinho/estudos">repositório Central de Estudos</a>.
+</footer>
+</main>
+</div>

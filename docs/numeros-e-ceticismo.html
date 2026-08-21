@@ -1,0 +1,161 @@
+<title>Números e Ceticismo</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{
+  --ground:#F5F6F4; --surface:#FFFFFF; --surface-2:#EDEFEB;
+  --ink:#14201C; --ink-soft:#4A5551; --ink-faint:#78837D;
+  --rule:#DDE0DA; --accent:#0F5C4A; --accent-soft:#E4EFEA;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#101512; --surface:#171E1A; --surface-2:#1E2723;
+    --ink:#E6EAE6; --ink-soft:#9AA8A1; --ink-faint:#75837C;
+    --rule:#2A342F; --accent:#4FBF9B; --accent-soft:#1B2C26;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#101512; --surface:#171E1A; --surface-2:#1E2723;
+  --ink:#E6EAE6; --ink-soft:#9AA8A1; --ink-faint:#75837C;
+  --rule:#2A342F; --accent:#4FBF9B; --accent-soft:#1B2C26;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--serif); font-size:17px; line-height:1.68;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1220px;margin:0 auto;padding:0 24px;display:flex;gap:52px;align-items:flex-start}
+main{flex:1;min-width:0;max-width:70ch;padding:52px 0 120px}
+
+nav{
+  position:sticky; top:0; width:228px; flex:none;
+  padding:60px 0 40px; font-family:var(--mono); font-size:11px;
+  max-height:100vh; overflow-y:auto;
+}
+nav p{
+  margin:0 0 12px; text-transform:uppercase; letter-spacing:.14em;
+  color:var(--ink-faint); font-size:9.5px;
+}
+nav a{
+  display:block; padding:6px 0 6px 11px; border-left:2px solid var(--rule);
+  color:var(--ink-soft); text-decoration:none; line-height:1.35;
+}
+nav a:hover{border-left-color:var(--accent);color:var(--accent)}
+nav a b{display:block;font-weight:600;color:var(--ink);letter-spacing:.01em}
+nav a span{display:block;color:var(--ink-faint);font-size:9.5px;margin-top:1px}
+nav .sub{padding-left:22px;border-left-color:transparent;font-size:10px}
+nav .sub:hover{border-left-color:var(--rule)}
+@media(max-width:960px){nav{display:none}.wrap{gap:0}main{max-width:none;padding-top:36px}}
+
+h1,h2,h3,h4,h5{font-family:var(--sans);text-wrap:balance;line-height:1.18;letter-spacing:-.02em}
+h1{font-size:clamp(30px,5vw,44px);font-weight:750;margin:0 0 6px}
+h2{
+  font-size:clamp(23px,3.4vw,31px); font-weight:750; margin:0 0 8px;
+  padding-top:26px;
+}
+h3{font-size:19px;font-weight:700;margin:46px 0 14px;padding-top:18px;border-top:1px solid var(--rule)}
+h4{font-size:16px;font-weight:680;margin:30px 0 10px}
+h5{font-size:14px;font-weight:680;margin:24px 0 8px;color:var(--ink-soft)}
+
+.topic{margin:80px 0 0;padding-top:30px;border-top:2px solid var(--ink)}
+.topic .kicker{
+  font-family:var(--mono);font-size:10px;text-transform:uppercase;
+  letter-spacing:.17em;color:var(--accent);margin:0 0 10px;
+}
+
+p{margin:0 0 17px}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+strong{font-weight:640}
+hr{border:0;height:1px;background:var(--rule);margin:40px 0}
+
+ul,ol{margin:0 0 18px;padding-left:22px}
+li{margin-bottom:7px}
+li::marker{color:var(--ink-faint)}
+ul ul,ol ol,ul ol,ol ul{margin:7px 0 0}
+ul.check{list-style:none;padding-left:0}
+ul.check li{position:relative;padding-left:29px}
+ul.check li span{
+  position:absolute;left:0;top:.36em;width:15px;height:15px;
+  border:1.5px solid var(--ink-faint);border-radius:3px;
+}
+
+blockquote{
+  margin:22px 0;padding:15px 20px;background:var(--surface);
+  border-left:3px solid var(--accent);border-radius:0 4px 4px 0;
+}
+blockquote p{margin:0 0 9px;font-size:16px;color:var(--ink-soft)}
+blockquote p:last-child{margin:0}
+blockquote em{color:var(--ink);font-style:italic}
+
+.scroll{overflow-x:auto;margin:24px 0;-webkit-overflow-scrolling:touch}
+table{
+  border-collapse:collapse;width:100%;font-family:var(--sans);
+  font-size:13.5px;line-height:1.5;font-variant-numeric:tabular-nums;
+}
+th{
+  text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);
+  padding:0 14px 9px 0;border-bottom:1.5px solid var(--ink);white-space:nowrap;
+}
+td{padding:11px 14px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td:first-child{color:var(--ink);font-weight:550}
+table code{font-size:12px}
+
+code{
+  font-family:var(--mono);font-size:.86em;background:var(--surface-2);
+  padding:.14em .38em;border-radius:3px;
+}
+pre{
+  margin:0;background:var(--surface);border:1px solid var(--rule);
+  border-radius:5px;padding:17px 19px;overflow-x:auto;
+}
+pre code{background:none;padding:0;font-size:12.5px;line-height:1.72;color:var(--ink-soft)}
+
+header{padding:60px 0 8px;border-bottom:2px solid var(--ink)}
+.eyebrow{
+  font-family:var(--mono);font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.19em;color:var(--accent);margin:0 0 15px;
+}
+.lede{font-size:19px;color:var(--ink-soft);margin:16px 0 26px;max-width:60ch}
+.stats{display:flex;flex-wrap:wrap;margin:0 0 28px;border-top:1px solid var(--rule)}
+.stat{padding:14px 28px 14px 0;margin-right:28px;border-right:1px solid var(--rule)}
+.stat:last-child{border-right:0;margin-right:0}
+.stat b{
+  display:block;font-family:var(--sans);font-size:25px;font-weight:730;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1;
+}
+.stat span{
+  display:block;font-family:var(--mono);font-size:9.5px;text-transform:uppercase;
+  letter-spacing:.13em;color:var(--ink-faint);margin-top:4px;
+}
+footer{
+  margin-top:70px;padding-top:22px;border-top:1px solid var(--rule);
+  font-family:var(--mono);font-size:11px;color:var(--ink-faint);line-height:1.7;
+}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+<div class="wrap">
+<nav><p>Neste guia</p><a href="#topo"><b>Início</b></a></nav>
+<main>
+<header id="topo">
+  <p class="eyebrow">Central de Estudos · Guia individual</p>
+  <h1>⚠️ Números e Ceticismo</h1>
+  <p class="lede">Auditoria de todos os resultados alegados na biblioteca — o número do título contra o que é dito dentro do vídeo.</p>
+  <div class="stats">
+    <div class="stat"><b>leia antes de tudo</b><span>foco do guia</span></div>
+  </div>
+</header>
+<p>Auditoria de todos os resultados alegados na biblioteca, cruzando <strong>o número do título contra o que é dito dentro do vídeo</strong>. Leia antes de calibrar qualquer expectativa.</p><p>Este guia existe porque uma parte grande do acervo é funil de venda de curso, e o &quot;case&quot; é a isca. Isso não invalida os métodos — mas muda como você lê os números.</p><hr><h2 id="numeros-e-ceticismo-sem-lastro-nenhum">🚨 Sem lastro nenhum</h2><p>Título promete um número que o vídeo <strong>não sustenta em momento algum</strong>.</p><div class="scroll"><table><thead><tr><th>Vídeo</th><th>Título promete</th><th>O vídeo diz</th></tr></thead><tbody><tr><td><strong>Matheus PH</strong> — &quot;R$49K/mês no automático com SaaS low ticket&quot;</td><td>R$49.000/mês</td><td><strong>nada</strong>. Zero menção a receita, preço ou venda. É tutorial de prompt do começo ao fim</td></tr><tr><td><strong>Thiago Boeira</strong> — &quot;Fiz R$382 mil em 30 dias&quot;</td><td>R$382.000</td><td><strong>~R$78.000</strong> (&quot;2 a 5 mil/dia × 30&quot;). Diferença de ~5×</td></tr><tr><td><strong>Enzo Barbatto</strong> — &quot;Sites de R$25.000&quot;</td><td>R$25.000</td><td><strong>o valor nunca aparece</strong>. Nem como preço, nem projeção, nem referência. Tutorial técnico puro</td></tr><tr><td><strong>Nick Saraev</strong> — &quot;Sell for $2k+&quot;</td><td>$2.000+</td><td><strong>não é citado uma única vez</strong> no corpo do vídeo</td></tr><tr><td><strong>Ricardo Máxima (Hotmart)</strong> — &quot;R$5 mil por dia com Low Ticket&quot;</td><td>R$5.000/dia</td><td><strong>nunca reconstruído</strong>: nenhuma conta de ROAS × verba ou ticket × vendas chega a esse número. O único faturamento citado (R$800k/mês de um produto) não tem período, custo ou print</td></tr><tr><td><strong>Ecommerce Puro</strong> — &quot;R$1,5 milhão por mês&quot; (casal Mercado Livre)</td><td>R$1,5mi/mês</td><td>dito <strong>uma única vez, de passagem, pelo entrevistador</strong> (não pelos entrevistados); nunca confirmado, nunca decomposto em receita vs. lucro. Vídeo institucional do canal que vende a própria mentoria dos entrevistados — pior que qualquer print já visto no acervo, porque nem print existe</td></tr><tr><td><strong>Deborah Folloni</strong> — &quot;O novo segredo para enriquecer com IA é trabalhar sozinho&quot;</td><td>promessa de riqueza</td><td>vídeo nunca cita um valor de faturamento pessoal — argumento é 100% sobre produtividade/estrutura de carreira, não dinheiro</td></tr></tbody></table></div><hr><h2 id="numeros-e-ceticismo-enganosos-por-omissão">⚠️ Enganosos por omissão</h2><p>O número é tecnicamente verdadeiro, mas o enquadramento engana.</p><div class="scroll"><table><thead><tr><th>Vídeo</th><th>Título</th><th>O que falta</th></tr></thead><tbody><tr><td><strong>Starter Story</strong> — &quot;$120K em 24 horas&quot;</td><td>$120K</td><td>é <strong>$117K</strong>, e é <strong>pico único de lifetime deal</strong>. O MRR recorrente real é $9-10K/mês — <strong>12× menor</strong></td></tr><tr><td><strong>Liam Ottley</strong> — &quot;$300.000/mês com automação de IA&quot;</td><td>$300k/mês</td><td><strong>$200k é comunidade paga</strong> (~2.300 membros); só $100k é a agência. Dois terços vêm de vender o método</td></tr><tr><td><strong>Bruno Gabarra</strong> — &quot;R$330/dia sem funcionários&quot;</td><td>R$330/dia</td><td>é R$10.000/mês ÷ 30, e <strong>só no cenário de 2 clientes do modelo mais caro</strong> (R$5.000/mês cada). Não é resultado dos 3 modelos</td></tr><tr><td><strong>Thiago Boeira</strong> — &quot;11 minutos, já validado&quot;</td><td>app validado</td><td>a validação citada (265 vendas) é de <strong>outro produto</strong>, não do app construído no vídeo</td></tr><tr><td><strong>Cakto</strong> — &quot;Criei produto no Claude e vendi em 20min&quot;</td><td>venda em 20 min</td><td>mostra conta com histórico de R$172.000, mas <strong>não mostra a venda do produto criado ao vivo</strong></td></tr><tr><td><strong>Jaxon Poulton</strong> — &quot;$6.000/mês&quot;</td><td>$6K/mês</td><td>é <strong>projeção</strong>: &quot;$200/dia, então até este vídeo sair vou estar em $6K&quot;. Não fechado</td></tr><tr><td><strong>Kevin Rodrigues</strong> — &quot;R$300 em 1 dia (do zero)&quot;</td><td>do zero</td><td>já tinha Instagram ativo, prompt validado e domínio de Photoshop</td></tr><tr><td><strong>Nícolas Moreira</strong> — &quot;Como Eu Faço +R$11.547&quot;</td><td>R$11.547</td><td>o áudio diz <strong>R$11.774</strong></td></tr><tr><td><strong>Thiago Boeira</strong> — &quot;R$380 mil reais em 30 dias com IA&quot;</td><td>R$380mil</td><td><strong>2ª instância do mesmo padrão</strong> já flagado acima: no corpo, os números citados (US$78k? R$390k? R$92k de lucro? 32,7% de margem) não se reconciliam entre si — parecem métricas diferentes misturadas sem explicitação</td></tr><tr><td><strong>Marcos Machado</strong> — &quot;Funil 100k&quot; (agências)</td><td>R$100k até dezembro</td><td>os 3 &quot;desafios&quot; citados no corpo (13 dias/R$98k MRR; 29 vendas/R$56k MRR; 25 contas/R$59k MRR) são documentados publicamente e mais auditáveis que a média do acervo — mas o &quot;100k&quot; do título é uma <strong>simulação de calculadora</strong> partindo de R$0, misturada deliberadamente com os dados reais dentro de uma live de venda de mentoria</td></tr><tr><td><strong>Primocast</strong> — &quot;60 dias para salvar uma empresa de R$400 mil/mês&quot;</td><td>salvar a empresa</td><td>os números dos 60 dias (R$117k incremental em 30 dias) são reais; a projeção de &quot;R$1 milhão de receita incremental em 2026&quot; é forecast, não fato. Conteúdo publicitário da consultoria que aparece no vídeo</td></tr><tr><td><strong>Christian Balian</strong> — &quot;SÓ posso SAIR DO QUARTO quando CRIAR uma EMPRESA de R$500.000&quot;</td><td>R$500.000</td><td>é lucro do último dia (R$598) × 30 × 12 — nunca chegou perto de R$500k em receita real no vídeo, é extrapolação simples do ritmo de um único dia bom</td></tr><tr><td><strong>Vinci Society</strong> — consultoria de marca &quot;R$1.000&quot;</td><td>R$1.000</td><td>contexto (G4, Boca Rosa, &quot;centenas de milhões em receita&quot;) sugere erro de legenda automática — valor real provavelmente ordem de grandeza maior</td></tr></tbody></table></div><hr><h2 id="numeros-e-ceticismo-erros-de-leitura-que-você-mesmo-pode-cometer">📉 Erros de leitura que você mesmo pode cometer</h2><div class="scroll"><table><thead><tr><th>Item</th><th>Aparência</th><th>Realidade</th></tr></thead><tbody><tr><td>Arquivo <code>r130948...</code> (Nícolas)</td><td>parece R$130.948</td><td>é <strong>R$1.309,48</strong></td></tr><tr><td>Luciana Papini — &quot;R$7.500 em 5 dias&quot;</td><td>R$7.500</td><td>o áudio diz &quot;R$75.500&quot; num ponto e &quot;R$700&quot; em outro — legenda corrompida; o título é o mais plausível</td></tr><tr><td>Cássio Hart — &quot;R$10 mil em 10 dias&quot;</td><td>R$10.600</td><td>R$8.131 no gerenciador; ele explica a diferença (atribuição atrasada). <strong>Aceitável</strong></td></tr><tr><td>Henrique Oliveira — &quot;R$9.000... lucro R$22.000, investi R$17.000&quot;</td><td>—</td><td>não fecha aritmeticamente. Legenda cortada</td></tr><tr><td>Rafa Souza — &quot;CPA de R$1, R$2&quot;</td><td>—</td><td>retórica de venda de curso, não dado de campanha</td></tr><tr><td>João Paulo (Atlas) — &quot;R$100.000&quot;</td><td>—</td><td>não fica claro se é mensal ou acumulado</td></tr><tr><td>Blip — &quot;R$800 milhões/ano&quot;</td><td>—</td><td>citado por Bruno Gabarra em <strong>3 vídeos diferentes</strong>, nunca com fonte primária</td></tr></tbody></table></div><hr><h2 id="numeros-e-ceticismo-bem-documentados">✅ Bem documentados</h2><p>Histórico coerente, tela mostrada ao vivo, matemática que fecha.</p><div class="scroll"><table><thead><tr><th>Case</th><th>Número</th><th>Por que confiar</th></tr></thead><tbody><tr><td><strong>Angus Chang</strong> — &quot;$40K/mês com um site&quot;</td><td>$40K/mês</td><td>evolução ano a ano ($6K→$14K→$27K→$40K), margem 97,5% declarada. <strong>O melhor dado do acervo</strong></td></tr><tr><td><strong>DataCrazy</strong> (Cakto)</td><td>R$1,59M de MRR</td><td>2.822 clientes, R$8M no ano, 16 meses, 64 funcionários, tela ao vivo</td></tr><tr><td><strong>Mark Tilbury</strong> — dropshipping 7 dias</td><td><strong>$81,56 de lucro</strong></td><td>orçamento declarado ($250) e respeitado, custo discriminado, <strong>falha admitida</strong></td></tr><tr><td><strong>Well Pires</strong></td><td>R$65.595/mês (vídeo antigo) e R$70.000/mês (vídeo novo, 3 anos de agência)</td><td>ambos explicados — provavelmente snapshots de meses diferentes da mesma trajetória, não contradição</td></tr><tr><td><strong>Christian Balian</strong> — desafio de e-commerce em 4 dias</td><td>lucro de R$673 em 4 dias</td><td>dado dia a dia, incluindo um dia de zero vendas e a causa identificada (rebranding quebrou conversão) — auditável como o Tilbury, mesma régua</td></tr><tr><td><strong>Samuel Rondo</strong> — &quot;$35K/mês&quot;</td><td>$35K</td><td>soma de 3 produtos ($15K + $20K + $0,9K). Correto, mas o título esconde que são portes desiguais</td></tr><tr><td><strong>Bruno Gabarra</strong> — &quot;R$330/dia&quot;</td><td>matemática</td><td>a conta está explícita e correta — mas é <strong>projeção de precificação</strong>, não case realizado</td></tr></tbody></table></div><hr><h2 id="numeros-e-ceticismo-o-padrão-estrutural-quem-ganha-ensinando">O padrão estrutural: quem ganha ensinando</h2><p>A maioria desses canais vende curso, mentoria ou comunidade. O case é a isca do funil.</p><p><strong>Casos explícitos:</strong> Liam Ottley (2/3 da receita é comunidade paga) · Junior Moreira · Thiago Boeira · Caio Martins · Matheus PH · Rafa Voss · Enzo Barbatto (reserva as &quot;automações do back end&quot; para a masterclass paga) · Nick Saraev (Maker School) · praticamente todos os canais de low ticket.</p><p>Dois participantes dizem isso na cara:</p><blockquote><p><em>&quot;É muito mais fácil vender um curso pra você criar SaaS do que você fazer dinheiro com isso.&quot;</em> — Eli Rigobeli</p><p><em>&quot;E não, eu não fiz R$77.979,90 no último mês com esse SaaS. Pelo menos não da forma como alguns têm ensinado aqui no YouTube.&quot;</em> — Eli Rigobeli</p></blockquote><p>E o mais contundente, do fundador de um SaaS de R$1,59M de MRR:</p><blockquote><p><em>&quot;O cara que tá ali no cassino do Claude Code gastando crédito — quem tá ganhando é o Claude.&quot;</em></p></blockquote><hr><h2 id="numeros-e-ceticismo-como-se-forja-um-dashboard">Como se forja um dashboard</h2><p>Nícolas Moreira dedica um vídeo inteiro (<em>&quot;O mercado de low ticket está ficando podre&quot;</em>) a demonstrar como se falsifica prova social — para você não cair:</p><ul><li><strong>Botão direito → Inspecionar elemento</strong> → editar o HTML e trocar os números de lucro/ROAS na tela</li><li>Postar recorte de dashboard <strong>sem data</strong>, filtrado por &quot;últimos 7 dias&quot; ou &quot;mês&quot;, dando a entender que é resultado do dia</li><li>Somar receita de mentoria + treinamento + low ticket <strong>numa dashboard só</strong>, inflando o que parece vir do produto</li></ul><blockquote><p><em>&quot;Não acreditem em todas as dashboards do Utmify. Existem aplicativos que forjam a dashboard.&quot;</em></p></blockquote><hr><h2 id="numeros-e-ceticismo-réguas-de-expectativa">Réguas de expectativa</h2><p>Use estes como âncora quando um vídeo prometer algo muito acima.</p><div class="scroll"><table><thead><tr><th>Contexto</th><th>Número real</th></tr></thead><tbody><tr><td>Dropshipping, 7 dias, $250, IA fazendo tudo</td><td><strong>$81,56 de lucro</strong> (Tilbury)</td></tr><tr><td>Taxa de conversão real de página de vendas</td><td><strong>0,3% a 0,7%</strong> (Ladeira) — não os 5-10% que se imagina</td></tr><tr><td>SaaS: Google Ads como canal de aquisição</td><td><strong>6 meses sem nunca ser lucrativo</strong> (Angus Chang)</td></tr><tr><td>SaaS: cold email</td><td><strong>3 meses, 1 venda</strong> (Angus Chang)</td></tr><tr><td>Retenção de micro SaaS</td><td><strong>LTV ~2,2 meses, 61% de retenção</strong> — 46 de 124 cancelaram (Nícolas)</td></tr><tr><td>Primeiro cliente de agência de IA</td><td><strong>R$400-500 de setup</strong> — é sobre o case, não a margem</td></tr><tr><td>Tempo até o primeiro lucro num negócio online</td><td><strong>14 meses</strong> (Liam Ottley)</td></tr><tr><td>Agência de IA: primeiros 5-10 projetos</td><td>têm <em>&quot;falhas embaraçosas&quot;</em> — é o normal</td></tr><tr><td>Low ticket, honestamente</td><td><em>&quot;Dá para viver disso. Porém isso não vai te deixar rico, não vai te deixar milionário.&quot;</em> (Nícolas)</td></tr></tbody></table></div><hr><h2 id="numeros-e-ceticismo-os-buracos-que-ninguém-preenche">Os buracos que ninguém preenche</h2><p><strong>Churn.</strong> Nenhum dos 18 vídeos de SaaS dá uma taxa numérica. A única referência real do acervo inteiro vem do Nícolas: LTV ~2,2 meses, 61% de retenção. Se for essa a ordem de grandeza, é o número que decide se o negócio fecha — e é exatamente o que ninguém mostra.</p><p><strong>Aquisição do zero.</strong> Fora o cold outreach do guia de agência, nenhum vídeo demonstra conseguir cliente sem rede prévia ou audiência, com números de conversão. Os métodos que começam em &quot;ligue para 10 contatos&quot; pressupõem um recurso que o espectador médio não tem — e não reconhecem isso.</p><p><strong>Custo real de ferramenta.</strong> Claude Max a R$500/mês é citado de passagem, mas os cálculos de lucro raramente descontam ferramentas, N8N, hospedagem e APIs de terceiros.</p><hr><h2 id="numeros-e-ceticismo-como-ler-qualquer-vídeo-novo">Como ler qualquer vídeo novo</h2><ol><li><strong>O número do título aparece no corpo?</strong> Se não, descarte o número</li><li><strong>É receita ou lucro?</strong> É bruto ou já descontou tráfego, taxa, imposto, reembolso?</li><li><strong>Qual o período?</strong> Pico de lançamento ≠ MRR</li><li><strong>Está somando negócios diferentes?</strong> Curso + serviço + produto na mesma tela</li><li><strong>O que ele vende no fim do vídeo?</strong> Se vende o método, o case é material de marketing</li><li><strong>Ele mostra algum fracasso?</strong> Quem só mostra acerto está editando</li><li><strong>Que vantagem prévia ele não menciona?</strong> Audiência, lista, rede, anos de skill</li></ol><hr><p>*Auditoria construída na leitura integral das transcrições em <code>references/youtube/</code>. Legendas automáticas — parte das divergências é erro de transcrição, não desonestidade; sinalizei quando é possível distinguir.*</p>
+<footer>
+  Extraído da leitura integral das transcrições em <code>references/youtube/</code>. Cada afirmação
+  é rastreável ao vídeo e timestamp de origem.<br>
+  Transcrições automáticas — números e nomes de ferramentas podem conter erros. Parte do
+  <a href="https://github.com/analuisamoutinho/estudos">repositório Central de Estudos</a>.
+</footer>
+</main>
+</div>
