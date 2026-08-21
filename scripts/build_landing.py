@@ -119,7 +119,7 @@ def main():
 </ul>
 <a class="hub-link" href="tudo.html">Ver os 8 tópicos numa página só →</a>
 <footer>
-  233 vídeos, 88 canais. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem em
+  303 vídeos, 128 canais. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem em
   <code>references/youtube/</code>.<br>
   O progresso de leitura fica salvo só neste navegador (localStorage) — não é sincronizado entre
   dispositivos. Parte do <a href="https://github.com/analuisamoutinho/estudos">repositório

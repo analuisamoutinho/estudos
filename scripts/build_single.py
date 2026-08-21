@@ -14,6 +14,13 @@ from build_guia import CSS, HEAD_ICONS, ROOT, TRACKING_JS, convert, slug  # noqa
 
 # stem -> (título, emoji, subtítulo, tagline curta para o header)
 META = {
+    "aquisicao-saas": (
+        "Aquisição de Clientes para SaaS",
+        "🧲",
+        "os primeiros 100 assinantes",
+        "Como conseguir assinantes para um SaaS — os canais que realmente trazem os primeiros "
+        "clientes, garimpados por engajamento entre 143 vídeos.",
+    ),
     "saas-produto": (
         "SaaS e Produto Digital",
         "💻",

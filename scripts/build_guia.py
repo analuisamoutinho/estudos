@@ -18,6 +18,7 @@ TOPICS = [
     ("numeros-e-ceticismo", "Números e Ceticismo", "⚠️", "leia antes de tudo"),
     ("agencia-ia", "Agência de IA", "🤖", "o caminho mais rápido para caixa"),
     ("ferramentas-de-ia", "Ferramentas de IA na Prática", "🛠️", "Claude, Claude Code e N8N no real"),
+    ("aquisicao-saas", "Aquisição de Clientes para SaaS", "🧲", "os primeiros 100 assinantes"),
     ("saas-produto", "SaaS e Produto Digital", "💻", "recorrência com IA"),
     ("low-ticket", "Low Ticket e Tráfego Pago", "🎯", "adquirir cliente pagando"),
     ("negocio-solo", "Negócio Solo", "🧠", "Hormozi e mentalidade"),
@@ -399,10 +400,10 @@ def main():
   <p class="eyebrow">Biblioteca de transcrições · Síntese operacional</p>
   <h1 class="brand"><img class="brandmark" src="cortex-icon.png" alt="">CORTEX</h1>
   <p class="lede">Agência de IA, ferramentas de IA, SaaS, low ticket, negócio solo, copy e
-  e-commerce — destilados da leitura integral de 233 transcrições de YouTube.</p>
+  e-commerce — destilados da leitura integral de 303 transcrições de YouTube.</p>
   <div class="stats">
-    <div class="stat"><b>233</b><span>vídeos lidos</span></div>
-    <div class="stat"><b>88</b><span>canais</span></div>
+    <div class="stat"><b>303</b><span>vídeos lidos</span></div>
+    <div class="stat"><b>128</b><span>canais</span></div>
     <div class="stat"><b>{len(TOPICS)}</b><span>grandes tópicos</span></div>
     <div class="stat"><b>7</b><span>números sem lastro</span></div>
   </div>

@@ -7,12 +7,13 @@ completa, com timestamps, indexada e pesquisável.
 
 ## 📚 [GUIA.md](GUIA.md) — comece por aqui
 
-Índice mestre dos 233 vídeos, organizado por grandes tópicos:
+Índice mestre dos 303 vídeos, organizado por grandes tópicos:
 
 | Tópico | O que cobre |
 |---|---|
 | 🤖 [Agência de IA](guias/agencia-ia.md) | vender agentes e automação — o caminho mais rápido para caixa |
 | 🛠️ [Ferramentas de IA na Prática](guias/ferramentas-de-ia.md) | como criadores realmente usam Claude, Claude Code e N8N |
+| 🧲 [Aquisição de Clientes para SaaS](guias/aquisicao-saas.md) | como conseguir assinantes — os primeiros 100 |
 | 💻 [SaaS e Produto Digital](guias/saas-produto.md) | construir e vender software com IA, sem programar |
 | 🎯 [Low Ticket e Tráfego Pago](guias/low-ticket.md) | adquirir cliente pagando por ele |
 | 🧠 [Negócio Solo e Mentalidade](guias/negocio-solo.md) | Hormozi, método CLOUD, sair do zero |

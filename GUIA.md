@@ -1,11 +1,11 @@
 # CORTEX — Índice por Tópico
 
-Síntese operacional de **233 vídeos** transcritos em [`references/youtube/`](references/youtube/),
+Síntese operacional de **303 vídeos** transcritos em [`references/youtube/`](references/youtube/),
 lidos integralmente. Organizado por grandes tópicos.
 
 ---
 
-## Os 7 tópicos
+## Os 8 tópicos
 
 ### 🤖 [Agência de IA e Automação](guias/agencia-ia.md)
 **Vender agentes e automações para empresas.** O caminho mais rápido para caixa de toda a biblioteca:
@@ -30,6 +30,18 @@ Omni) · skills como mecanismo central · MCP para dar "mãos" ao Claude · Clau
 contraponto cético: sêniors vs. júniors com IA.
 
 *Fontes: Descomplicando Sites, Klebson Queiroz, Tiago Lemos, Matheus Santos, MGTInc, Ratos de IA, Mateus Dias, Sancler Miranda, Rafa Voss, Victor Baggio, Karine Lago, Renato Asse (Open Squad), Codecon*
+
+---
+
+### 🧲 [Aquisição de Clientes para SaaS](guias/aquisicao-saas.md)
+**Como conseguir assinantes.** O buraco que o resto da biblioteca não preenchia — 70 vídeos garimpados
+por engajamento entre 143 sobre o tema.
+
+O portão dos 10 primeiros clientes · cold outreach com as taxas reais (e a adaptação obrigatória para a
+LGPD) · o método do Loom de 90 segundos · **o preço decide o seu canal** · integrações, o canal que
+todo mundo ignora · retenção antes de aquisição · o calendário realista.
+
+*Fontes: Y Combinator, Rob Walling, Bruno Okamoto, Vivendo de Saas, TK Kader, Alex Hormozi, Dan Martell, Marc Lou, Simon Høiberg, Starter Story*
 
 ---
 
@@ -109,6 +121,7 @@ Também: como se forja um dashboard da Utmify · réguas de expectativa · os bu
 | **Preciso de caixa nos próximos 30 dias** | [Agência de IA](guias/agencia-ia.md) — Parte 1 (primeiro cliente) |
 | **Quero aprender a usar Claude/Claude Code de verdade** | [Ferramentas de IA](guias/ferramentas-de-ia.md) |
 | **Quero receita recorrente, tenho tempo** | [SaaS](guias/saas-produto.md) — Parte 1.5 (achar a ideia) |
+| **Construí meu SaaS e ninguém compra** | [Aquisição para SaaS](guias/aquisicao-saas.md) — Partes 1 e 2 |
 | **Tenho caixa e quero escalar rápido** | [Low Ticket](guias/low-ticket.md) — Partes 1 e 4 |
 | **Não sei nem por onde começar** | [Negócio Solo](guias/negocio-solo.md) — Hormozi, os 6 passos |
 | **Meu produto é bom mas não vende** | [Copy e Criativo](guias/copy-e-criativo.md) — Parte 0 (posicionamento) |
@@ -142,7 +155,7 @@ references/youtube/
   {canal}/{título}.md   # transcrição com timestamps
 ```
 
-233 vídeos, 88 canais, ~230 horas. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem.
+303 vídeos, 128 canais, ~124 horas. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem.
 
 > **Aviso de confiabilidade.** As transcrições são legendas automáticas. Números e nomes de ferramentas
 > vêm corrompidos com frequência (`"cloud"`=Claude, `"Lovbow"`=Lovable, `"QFi"`=Kiwify, `"Moca"`=Mocha).
