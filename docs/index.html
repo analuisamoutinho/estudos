@@ -1,5 +1,7 @@
-<title>Central de Estudos</title>
+<title>CORTEX</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="cortex-icon.png">
 <style>
 :root{
   --ground:#F5F6F4; --surface:#FFFFFF; --surface-2:#EDEFEB;
@@ -157,6 +159,14 @@ footer{
   background:var(--accent);border-color:var(--accent);color:var(--surface);
 }
 
+/* --- marca --- */
+h1.brand{display:flex;align-items:center;gap:15px;letter-spacing:.015em}
+.brandmark{
+  width:52px;height:52px;flex:none;border-radius:13px;
+  box-shadow:0 1px 4px rgba(0,0,0,.22);
+}
+@media(max-width:600px){.brandmark{width:42px;height:42px;border-radius:11px}}
+
 .progress{
   display:flex;align-items:center;gap:12px;margin:22px 0 6px;
   font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);
@@ -211,7 +221,7 @@ footer{
 <main style="max-width:760px">
 <header>
   <p class="eyebrow">Biblioteca de transcrições · Síntese operacional</p>
-  <h1>Central de Estudos</h1>
+  <h1 class="brand"><img class="brandmark" src="cortex-icon.png" alt="">CORTEX</h1>
   <p class="lede">Escolha por onde começar. O que você já leu desce pra baixo da lista sozinho —
   fica só o que falta.</p>
   <div class="progress">
@@ -225,11 +235,11 @@ footer{
 </ul>
 <a class="hub-link" href="tudo.html">Ver os 8 tópicos numa página só →</a>
 <footer>
-  233 vídeos, 60+ canais. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem em
+  233 vídeos, 88 canais. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem em
   <code>references/youtube/</code>.<br>
   O progresso de leitura fica salvo só neste navegador (localStorage) — não é sincronizado entre
   dispositivos. Parte do <a href="https://github.com/analuisamoutinho/estudos">repositório
-  Central de Estudos</a>.
+  CORTEX</a>.
 </footer>
 </main>
 </div>

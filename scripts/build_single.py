@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_guia import CSS, ROOT, TRACKING_JS, convert, slug  # noqa: E402
+from build_guia import CSS, HEAD_ICONS, ROOT, TRACKING_JS, convert, slug  # noqa: E402
 
 # stem -> (título, emoji, subtítulo, tagline curta para o header)
 META = {
@@ -87,14 +87,15 @@ def main():
 
     nav = "".join(f'<a href="#{sid}">{html.escape(lbl)}</a>' for sid, lbl in subs)
 
-    out = f"""<title>{html.escape(title)}</title>
+    out = f"""<title>{html.escape(title)} · CORTEX</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+{HEAD_ICONS}
 <style>{CSS}</style>
 <div class="wrap">
 <nav><p>Neste guia</p><a href="#topo"><b>Início</b></a>{nav}</nav>
 <main>
 <header id="topo">
-  <p class="eyebrow">Central de Estudos · Guia individual</p>
+  <p class="eyebrow">CORTEX · Guia individual</p>
   <h1>{emoji} {html.escape(title)}</h1>
   <p class="lede">{html.escape(lede)}</p>
   <div class="stats">
@@ -109,7 +110,7 @@ def main():
   Extraído da leitura integral das transcrições em <code>references/youtube/</code>. Cada afirmação
   é rastreável ao vídeo e timestamp de origem.<br>
   Transcrições automáticas — números e nomes de ferramentas podem conter erros. Parte do
-  <a href="https://github.com/analuisamoutinho/estudos">repositório Central de Estudos</a>.<br>
+  <a href="https://github.com/analuisamoutinho/estudos">repositório CORTEX</a>.<br>
   <a href="index.html">← voltar para a lista de tópicos</a>
 </footer>
 </main>

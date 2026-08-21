@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_guia import CSS, ROOT, TOPICS, TRACKING_JS  # noqa: E402
+from build_guia import CSS, HEAD_ICONS, ROOT, TOPICS, TRACKING_JS  # noqa: E402
 from build_single import META  # noqa: E402
 
 
@@ -97,14 +97,15 @@ def main():
             f'</label></li>'
         )
 
-    out = f"""<title>Central de Estudos</title>
+    out = f"""<title>CORTEX</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+{HEAD_ICONS}
 <style>{CSS}{LANDING_CSS}</style>
 <div class="wrap">
 <main style="max-width:760px">
 <header>
   <p class="eyebrow">Biblioteca de transcrições · Síntese operacional</p>
-  <h1>Central de Estudos</h1>
+  <h1 class="brand"><img class="brandmark" src="cortex-icon.png" alt="">CORTEX</h1>
   <p class="lede">Escolha por onde começar. O que você já leu desce pra baixo da lista sozinho —
   fica só o que falta.</p>
   <div class="progress">
@@ -118,11 +119,11 @@ def main():
 </ul>
 <a class="hub-link" href="tudo.html">Ver os 8 tópicos numa página só →</a>
 <footer>
-  233 vídeos, 60+ canais. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem em
+  233 vídeos, 88 canais. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem em
   <code>references/youtube/</code>.<br>
   O progresso de leitura fica salvo só neste navegador (localStorage) — não é sincronizado entre
   dispositivos. Parte do <a href="https://github.com/analuisamoutinho/estudos">repositório
-  Central de Estudos</a>.
+  CORTEX</a>.
 </footer>
 </main>
 </div>

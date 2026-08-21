@@ -1,5 +1,7 @@
-<title>Low Ticket e Tráfego Pago</title>
+<title>Low Ticket e Tráfego Pago · CORTEX</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="cortex-icon.png">
 <style>
 :root{
   --ground:#F5F6F4; --surface:#FFFFFF; --surface-2:#EDEFEB;
@@ -156,12 +158,20 @@ footer{
 .lido-toggle.is-lido .lido-toggle-icon{
   background:var(--accent);border-color:var(--accent);color:var(--surface);
 }
+
+/* --- marca --- */
+h1.brand{display:flex;align-items:center;gap:15px;letter-spacing:.015em}
+.brandmark{
+  width:52px;height:52px;flex:none;border-radius:13px;
+  box-shadow:0 1px 4px rgba(0,0,0,.22);
+}
+@media(max-width:600px){.brandmark{width:42px;height:42px;border-radius:11px}}
 </style>
 <div class="wrap">
 <nav><p>Neste guia</p><a href="#topo"><b>Início</b></a><a href="#low-ticket-1-o-lucro-não-está-no-produto-da-frente-está-na-esteira">1. O lucro não está no produto da frente</a><a href="#low-ticket-2-o-que-satura-é-o-criativo-não-a-oferta">2. O que satura é o criativo, não a oferta</a><a href="#low-ticket-3-abo-para-validar-cbo-para-escalar">3. ABO para validar, CBO para escalar</a><a href="#low-ticket-4-um-criativo-por-conjunto-no-teste-e-nunca-só-um-criativo-no-total">4. Um criativo por conjunto no teste</a><a href="#low-ticket-5-cpa-alvo-metade-do-ticket-teto-de-breakeven-ticket-cheio">5. CPA-alvo = metade do ticket. Teto de breakeven = ticket cheio</a><a href="#low-ticket-6-valide-com-dinheiro-ridículo">6. Valide com dinheiro ridículo</a><a href="#low-ticket-7-não-decida-antes-de-ter-dados-e-dados-tem-número">7. Não decida antes de ter dados</a><a href="#low-ticket-8-modelar-copiar-e-copiar-sai-caro">8. Modelar ≠ copiar</a><a href="#low-ticket-9-minere-na-biblioteca-de-anúncios-e-olhe-tempo-de-veiculação">9. Minere na Biblioteca de Anúncios</a><a href="#low-ticket-10-olhe-o-funil-inteiro-não-o-gerenciador">10. Olhe o funil inteiro, não o gerenciador</a><a href="#low-ticket-11-rastreie-por-fora-do-meta">11. Rastreie por fora do Meta</a><a href="#low-ticket-21-quanto-tempo-esperar-antes-de-matar-um-teste">2.1 Quanto tempo esperar antes de matar um teste?</a><a href="#low-ticket-22-cbo-ou-abo-no-teste">2.2 CBO ou ABO no teste?</a><a href="#low-ticket-23-vsl-sim-ou-não-em-low-ticket">2.3 VSL sim ou não em low ticket?</a><a href="#low-ticket-24-order-bump-no-mercado-global">2.4 Order bump no mercado global?</a><a href="#low-ticket-25-nichos-agressivos-entrar-ou-não">2.5 Nichos agressivos: entrar ou não?</a><a href="#low-ticket-26-preço-começar-baixo-e-subir-ou-testar-faixas">2.6 Preço: começar baixo e subir, ou testar faixas?</a><a href="#low-ticket-fase-0-infraestrutura-1-dia">Fase 0</a><a href="#low-ticket-fase-1-encontrar-a-oferta-2-5-dias">Fase 1</a><a href="#low-ticket-fase-2-criar-o-produto-1-dia">Fase 2</a><a href="#low-ticket-fase-3-funil-e-checkout-1-dia">Fase 3</a><a href="#low-ticket-fase-4-criativos-1-2-dias">Fase 4</a><a href="#low-ticket-fase-5-teste-e-validação">Fase 5</a><a href="#low-ticket-fase-6-otimizar-antes-de-escalar">Fase 6</a><a href="#low-ticket-fase-7-escalar">Fase 7</a><a href="#low-ticket-o-funil-de-recorrência-para-agências-marcos-machado-mesmo-jogo-outro-produto">O funil de recorrência para agências (Marcos Machado)</a><a href="#low-ticket-orçamento">Orçamento</a><a href="#low-ticket-metas-e-cortes">Metas e cortes</a><a href="#low-ticket-mineração">Mineração</a><a href="#low-ticket-os-6-vídeos-que-eu-assistiria-se-só-pudesse-ver-6">Os 6 vídeos que eu assistiria se só pudesse ver 6</a><a href="#low-ticket-61-o-que-muda-no-modelo-de-negócio">6.1 O que muda no modelo de negócio</a><a href="#low-ticket-62-como-se-constrói-sem-programar">6.2 Como se constrói sem programar</a><a href="#low-ticket-63-o-método-do-clone-4-filtros-de-validação">6.3 O método do &quot;clone&quot;</a><a href="#low-ticket-64-distribuição-o-ponto-que-quase-todos-escondem">6.4 Distribuição</a><a href="#low-ticket-65-o-framework-do-hormozi-os-primeiros-r100-mil">6.5 O framework do Hormozi</a><a href="#low-ticket-71-números-que-não-batem">7.1 Números que não batem</a><a href="#low-ticket-72-o-conflito-de-interesse">7.2 O conflito de interesse</a><a href="#low-ticket-73-o-próprio-mercado-avisa">7.3 O próprio mercado avisa</a><a href="#low-ticket-74-práticas-de-risco-legal-de-conta-pense-duas-vezes">7.4 Práticas de risco legal / de conta</a><a href="#low-ticket-75-o-que-é-reproduzível-vs-o-que-depende-de-vantagem-prévia">7.5 O que é reproduzível vs o que depende de vantagem prévia</a><a href="#low-ticket-antes-de-subir-a-primeira-campanha">Antes de subir a primeira campanha</a><a href="#low-ticket-diagnóstico-quando-não-vende">Diagnóstico quando não vende</a><a href="#low-ticket-antes-de-escalar">Antes de escalar</a></nav>
 <main>
 <header id="topo">
-  <p class="eyebrow">Central de Estudos · Guia individual</p>
+  <p class="eyebrow">CORTEX · Guia individual</p>
   <h1>🎯 Low Ticket e Tráfego Pago</h1>
   <p class="lede">Como adquirir cliente pagando por ele — 11 princípios de consenso e um método operacional em 8 fases.</p>
   <div class="stats">
@@ -183,7 +193,7 @@ Início:          meia-noite (a campanha organiza a verba nas 24h)</code></pre><
   Extraído da leitura integral das transcrições em <code>references/youtube/</code>. Cada afirmação
   é rastreável ao vídeo e timestamp de origem.<br>
   Transcrições automáticas — números e nomes de ferramentas podem conter erros. Parte do
-  <a href="https://github.com/analuisamoutinho/estudos">repositório Central de Estudos</a>.<br>
+  <a href="https://github.com/analuisamoutinho/estudos">repositório CORTEX</a>.<br>
   <a href="index.html">← voltar para a lista de tópicos</a>
 </footer>
 </main>

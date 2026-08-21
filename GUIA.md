@@ -1,4 +1,4 @@
-# Central de Estudos — Índice por Tópico
+# CORTEX — Índice por Tópico
 
 Síntese operacional de **233 vídeos** transcritos em [`references/youtube/`](references/youtube/),
 lidos integralmente. Organizado por grandes tópicos.
@@ -142,7 +142,7 @@ references/youtube/
   {canal}/{título}.md   # transcrição com timestamps
 ```
 
-233 vídeos, 60+ canais, ~230 horas. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem.
+233 vídeos, 88 canais, ~230 horas. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem.
 
 > **Aviso de confiabilidade.** As transcrições são legendas automáticas. Números e nomes de ferramentas
 > vêm corrompidos com frequência (`"cloud"`=Claude, `"Lovbow"`=Lovable, `"QFi"`=Kiwify, `"Moca"`=Mocha).

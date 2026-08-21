@@ -337,7 +337,19 @@ footer{
 .lido-toggle.is-lido .lido-toggle-icon{
   background:var(--accent);border-color:var(--accent);color:var(--surface);
 }
+
+/* --- marca --- */
+h1.brand{display:flex;align-items:center;gap:15px;letter-spacing:.015em}
+.brandmark{
+  width:52px;height:52px;flex:none;border-radius:13px;
+  box-shadow:0 1px 4px rgba(0,0,0,.22);
+}
+@media(max-width:600px){.brandmark{width:42px;height:42px;border-radius:11px}}
 """
+
+# Favicon + apple-touch-icon; caminhos relativos ao próprio HTML (tudo mora em docs/).
+HEAD_ICONS = """<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="cortex-icon.png">"""
 
 TRACKING_JS = """<script>
 (function(){
@@ -376,22 +388,23 @@ def main():
             + "".join(f'<a class="sub" href="#{sid}">{html.escape(lbl)}</a>' for sid, lbl in subs[:7])
         )
 
-    out = f"""<title>Central de Estudos</title>
+    out = f"""<title>CORTEX</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+{HEAD_ICONS}
 <style>{CSS}</style>
 <div class="wrap">
 <nav><p>Tópicos</p><a href="#topo"><b>Por onde começar</b></a>{"".join(nav)}</nav>
 <main>
 <header id="topo">
   <p class="eyebrow">Biblioteca de transcrições · Síntese operacional</p>
-  <h1>Central de Estudos</h1>
-  <p class="lede">Agência de IA, SaaS, low ticket, negócio solo, copy e e-commerce —
-  destilados da leitura integral de 168 transcrições de YouTube.</p>
+  <h1 class="brand"><img class="brandmark" src="cortex-icon.png" alt="">CORTEX</h1>
+  <p class="lede">Agência de IA, ferramentas de IA, SaaS, low ticket, negócio solo, copy e
+  e-commerce — destilados da leitura integral de 233 transcrições de YouTube.</p>
   <div class="stats">
-    <div class="stat"><b>168</b><span>vídeos lidos</span></div>
-    <div class="stat"><b>30+</b><span>canais</span></div>
-    <div class="stat"><b>6</b><span>grandes tópicos</span></div>
-    <div class="stat"><b>12</b><span>números sem lastro</span></div>
+    <div class="stat"><b>233</b><span>vídeos lidos</span></div>
+    <div class="stat"><b>88</b><span>canais</span></div>
+    <div class="stat"><b>{len(TOPICS)}</b><span>grandes tópicos</span></div>
+    <div class="stat"><b>7</b><span>números sem lastro</span></div>
   </div>
 </header>
 {intro}
@@ -399,7 +412,8 @@ def main():
 <footer>
   Gerado de <code>GUIA.md</code> + <code>guias/*.md</code>. Cada afirmação é rastreável ao vídeo
   e timestamp em <code>references/youtube/</code>.<br>
-  Transcrições automáticas — números e nomes de ferramentas podem conter erros.
+  Transcrições automáticas — números e nomes de ferramentas podem conter erros.<br>
+  <a href="index.html">← voltar para a lista de tópicos</a>
 </footer>
 </main>
 </div>

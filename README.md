@@ -1,7 +1,9 @@
-# Central de Estudos
+# CORTEX
 
 Repositório para transformar vídeos do YouTube em material de estudo organizado: transcrição
 completa, com timestamps, indexada e pesquisável.
+
+**🔗 Site: [analuisamoutinho.github.io/estudos](https://analuisamoutinho.github.io/estudos/)**
 
 ## 📚 [GUIA.md](GUIA.md) — comece por aqui
 
