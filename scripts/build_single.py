@@ -21,6 +21,20 @@ META = {
         "Como conseguir assinantes para um SaaS — os canais que realmente trazem os primeiros "
         "clientes, garimpados por engajamento entre 143 vídeos.",
     ),
+    "servicos-mil-dia": (
+        "Serviços Digitais: a meta de R$1k/dia",
+        "💰",
+        "tráfego, IA, ebook e prospecção",
+        "O que realmente é preciso para faturar R$1.000 por dia com serviço digital — as contas, os "
+        "canais de prospecção e o que a matemática diz sobre a meta.",
+    ),
+    "upwork": (
+        "Upwork e Freela Internacional",
+        "🌎",
+        "faturar em dólar",
+        "Como pegar freela em dólar no Upwork e afins — perfil, proposta, precificação e o que os "
+        "relatos honestos mostram sobre os primeiros meses.",
+    ),
     "saas-produto": (
         "SaaS e Produto Digital",
         "💻",

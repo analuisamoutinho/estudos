@@ -1,11 +1,11 @@
 # CORTEX — Índice por Tópico
 
-Síntese operacional de **303 vídeos** transcritos em [`references/youtube/`](references/youtube/),
+Síntese operacional de **375 vídeos** transcritos em [`references/youtube/`](references/youtube/),
 lidos integralmente. Organizado por grandes tópicos.
 
 ---
 
-## Os 8 tópicos
+## Os 10 tópicos
 
 ### 🤖 [Agência de IA e Automação](guias/agencia-ia.md)
 **Vender agentes e automações para empresas.** O caminho mais rápido para caixa de toda a biblioteca:
@@ -42,6 +42,30 @@ LGPD) · o método do Loom de 90 segundos · **o preço decide o seu canal** · 
 todo mundo ignora · retenção antes de aquisição · o calendário realista.
 
 *Fontes: Y Combinator, Rob Walling, Bruno Okamoto, Vivendo de Saas, TK Kader, Alex Hormozi, Dan Martell, Marc Lou, Simon Høiberg, Starter Story*
+
+---
+
+### 💰 [Serviços Digitais: a meta de R$1k/dia](guias/servicos-mil-dia.md)
+**O que realmente é preciso para faturar R$1.000/dia** com tráfego, IA, sites e ebook — com a matemática
+feita, não com promessa. Nenhum dos 45 vídeos apresenta caminho crível em menos de 6 meses.
+
+A tabela de preços real do mercado brasileiro · o multiplicador de integração (a mesma automação vale
+16× mais com CRM atrás) · a conta de R$30.000/mês modelo por modelo · prospecção com scripts e taxas
+reais · gestão de risco contratual.
+
+*Fontes: Adriano Gianini, Rodrigo Vincenzi, Felipe Fontoura, Luciana Papini, Kelvin Cleto, Afonso Lopes, Victor Peixoto, Henrique Avila*
+
+---
+
+### 🌎 [Upwork e Freela Internacional](guias/upwork.md)
+**Faturar em dólar.** Perfil, proposta, precificação e recebimento — e os relatos honestos sobre os
+primeiros meses, que são bem diferentes dos títulos.
+
+Os números reais (~$70 no 1º mês, ~$630 no 2º) · o template de proposta · os filtros de busca que
+importam · as 8 regras que protegem seu dinheiro · inglês, câmbio e recebimento para brasileiro · **a
+lacuna fiscal que nenhum vídeo cobre**.
+
+*Fontes: Mundo Freelancer, Attekita Dev, Evan Fisher, Michael Elliott, Bloem Loete, Lucas Guerra, Juliana Puppim*
 
 ---
 
@@ -122,6 +146,8 @@ Também: como se forja um dashboard da Utmify · réguas de expectativa · os bu
 | **Quero aprender a usar Claude/Claude Code de verdade** | [Ferramentas de IA](guias/ferramentas-de-ia.md) |
 | **Quero receita recorrente, tenho tempo** | [SaaS](guias/saas-produto.md) — Parte 1.5 (achar a ideia) |
 | **Construí meu SaaS e ninguém compra** | [Aquisição para SaaS](guias/aquisicao-saas.md) — Partes 1 e 2 |
+| **Quero faturar R$1.000/dia com serviço** | [Serviços Digitais](guias/servicos-mil-dia.md) — a matemática primeiro |
+| **Quero pegar freela em dólar** | [Upwork](guias/upwork.md) — Partes 1 a 5 |
 | **Tenho caixa e quero escalar rápido** | [Low Ticket](guias/low-ticket.md) — Partes 1 e 4 |
 | **Não sei nem por onde começar** | [Negócio Solo](guias/negocio-solo.md) — Hormozi, os 6 passos |
 | **Meu produto é bom mas não vende** | [Copy e Criativo](guias/copy-e-criativo.md) — Parte 0 (posicionamento) |
@@ -155,7 +181,7 @@ references/youtube/
   {canal}/{título}.md   # transcrição com timestamps
 ```
 
-303 vídeos, 128 canais, ~124 horas. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem.
+375 vídeos, 173 canais, ~150 horas. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem.
 
 > **Aviso de confiabilidade.** As transcrições são legendas automáticas. Números e nomes de ferramentas
 > vêm corrompidos com frequência (`"cloud"`=Claude, `"Lovbow"`=Lovable, `"QFi"`=Kiwify, `"Moca"`=Mocha).
