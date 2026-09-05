@@ -26,6 +26,7 @@ TOPICS = [
     ("negocio-solo", "Negócio Solo", "🧠", "Hormozi e mentalidade"),
     ("copy-e-criativo", "Copy e Criativo", "✍️", "o que vende"),
     ("ecommerce", "E-commerce", "📦", "o experimento honesto"),
+    ("amar-a-deus-no-ordinario", "Amar a Deus no Ordinário", "🕊️", "santidade na vida comum"),
 ]
 
 
@@ -178,6 +179,11 @@ def convert(md, prefix, base_level=0):
             r"\s*([-*]\s|\d+\.\s|[|>#]|```|-{3,}$)", lines[i]
         ):
             para.append(lines[i].strip())
+            i += 1
+        if not para:
+            # Linha que nenhum bloco reconheceu (ex.: "#Titulo" sem espaço).
+            # Sem isto o laço não avança e o build trava.
+            para.append(stripped)
             i += 1
         body.append(f"<p>{inline(' '.join(para))}</p>")
 
@@ -402,10 +408,11 @@ def main():
   <p class="eyebrow">Biblioteca de transcrições · Síntese operacional</p>
   <h1 class="brand"><img class="brandmark" src="cortex-icon.png" alt="">CORTEX</h1>
   <p class="lede">Agência de IA, ferramentas de IA, SaaS, low ticket, negócio solo, copy e
-  e-commerce — destilados da leitura integral de 375 transcrições de YouTube.</p>
+  e-commerce, e a santidade na vida ordinária — destilados da leitura integral de 435
+  transcrições de YouTube.</p>
   <div class="stats">
-    <div class="stat"><b>375</b><span>vídeos lidos</span></div>
-    <div class="stat"><b>173</b><span>canais</span></div>
+    <div class="stat"><b>435</b><span>vídeos lidos</span></div>
+    <div class="stat"><b>197</b><span>canais</span></div>
     <div class="stat"><b>{len(TOPICS)}</b><span>grandes tópicos</span></div>
     <div class="stat"><b>7</b><span>números sem lastro</span></div>
   </div>

@@ -1,6 +1,6 @@
 # CORTEX — Índice por Tópico
 
-Síntese operacional de **375 vídeos** transcritos em [`references/youtube/`](references/youtube/),
+Síntese operacional de **435 vídeos** transcritos em [`references/youtube/`](references/youtube/),
 lidos integralmente. Organizado por grandes tópicos.
 
 ---
@@ -152,6 +152,7 @@ Também: como se forja um dashboard da Utmify · réguas de expectativa · os bu
 | **Não sei nem por onde começar** | [Negócio Solo](guias/negocio-solo.md) — Hormozi, os 6 passos |
 | **Meu produto é bom mas não vende** | [Copy e Criativo](guias/copy-e-criativo.md) — Parte 0 (posicionamento) |
 | **Quero calibrar expectativa antes de investir** | [Números e Ceticismo](guias/numeros-e-ceticismo.md) |
+| **Quero buscar a Deus dentro da rotina que tenho** | [Amar a Deus no Ordinário](guias/amar-a-deus-no-ordinario.md) — a tese, e depois a Parte 5 |
 
 ---
 
@@ -181,7 +182,7 @@ references/youtube/
   {canal}/{título}.md   # transcrição com timestamps
 ```
 
-375 vídeos, 173 canais, ~150 horas. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem.
+435 vídeos, 197 canais, ~173 horas. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem.
 
 > **Aviso de confiabilidade.** As transcrições são legendas automáticas. Números e nomes de ferramentas
 > vêm corrompidos com frequência (`"cloud"`=Claude, `"Lovbow"`=Lovable, `"QFi"`=Kiwify, `"Moca"`=Mocha).

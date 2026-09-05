@@ -68,6 +68,13 @@ META = {
         "o que vende",
         "Escrever o que vende e produzir o que para o scroll.",
     ),
+    "amar-a-deus-no-ordinario": (
+        "Amar a Deus no Ordinário",
+        "🕊️",
+        "santidade na vida comum",
+        "Buscar a Deus dentro do trabalho, da rotina, do cansaço e das obrigações banais — "
+        "sem precisar de uma vida diferente da que você já tem.",
+    ),
     "ecommerce": (
         "E-commerce e Dropshipping",
         "📦",

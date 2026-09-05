@@ -7,7 +7,7 @@ completa, com timestamps, indexada e pesquisável.
 
 ## 📚 [GUIA.md](GUIA.md) — comece por aqui
 
-Índice mestre dos 375 vídeos, organizado por grandes tópicos:
+Índice mestre dos 435 vídeos, organizado por grandes tópicos:
 
 | Tópico | O que cobre |
 |---|---|
