@@ -1,4 +1,10 @@
-# Upwork e Freela Internacional
+---
+title: "Upwork e Freela Internacional"
+emoji: "🌎"
+tag: "faturar em dólar"
+lede: "Como pegar freela em dólar no Upwork e afins — perfil, proposta, precificação e o que os relatos honestos mostram sobre os primeiros meses."
+order: 60
+---
 
 Como pegar freela em dólar de verdade — perfil, proposta, precificação, recebimento — e o que os
 relatos honestos mostram sobre os primeiros meses, que é bem diferente do que os títulos prometem.

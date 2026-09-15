@@ -1,4 +1,10 @@
-# Serviços Digitais: a meta de R$1.000/dia
+---
+title: "Serviços Digitais: a meta de R$1k/dia"
+emoji: "💰"
+tag: "tráfego, IA, ebook e prospecção"
+lede: "O que realmente é preciso para faturar R$1.000 por dia com serviço digital — as contas, os canais de prospecção e o que a matemática diz sobre a meta."
+order: 50
+---
 
 O que realmente é preciso para faturar **R$1.000 por dia** — R$30.000/mês — com serviço digital: tráfego
 pago, automação com IA, sites, ebook. Este guia existe para responder uma pergunta com números, não com

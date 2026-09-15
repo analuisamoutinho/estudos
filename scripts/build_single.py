@@ -10,92 +10,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_guia import CSS, HEAD_ICONS, ROOT, TRACKING_JS, convert, slug  # noqa: E402
-
-# stem -> (título, emoji, subtítulo, tagline curta para o header)
-META = {
-    "aquisicao-saas": (
-        "Aquisição de Clientes para SaaS",
-        "🧲",
-        "os primeiros 100 assinantes",
-        "Como conseguir assinantes para um SaaS — os canais que realmente trazem os primeiros "
-        "clientes, garimpados por engajamento entre 143 vídeos.",
-    ),
-    "servicos-mil-dia": (
-        "Serviços Digitais: a meta de R$1k/dia",
-        "💰",
-        "tráfego, IA, ebook e prospecção",
-        "O que realmente é preciso para faturar R$1.000 por dia com serviço digital — as contas, os "
-        "canais de prospecção e o que a matemática diz sobre a meta.",
-    ),
-    "upwork": (
-        "Upwork e Freela Internacional",
-        "🌎",
-        "faturar em dólar",
-        "Como pegar freela em dólar no Upwork e afins — perfil, proposta, precificação e o que os "
-        "relatos honestos mostram sobre os primeiros meses.",
-    ),
-    "saas-produto": (
-        "SaaS e Produto Digital",
-        "💻",
-        "recorrência com IA",
-        "Construir e vender software com IA, sem programar — achar a ideia, montar o produto "
-        "e a distribuição que os vídeos escondem.",
-    ),
-    "agencia-ia": (
-        "Agência de IA e Automação",
-        "🤖",
-        "o caminho mais rápido para caixa",
-        "Vender agentes de IA e automações para empresas — sem produto próprio, sem audiência, "
-        "sem tráfego pago.",
-    ),
-    "low-ticket": (
-        "Low Ticket e Tráfego Pago",
-        "🎯",
-        "adquirir cliente pagando",
-        "Como adquirir cliente pagando por ele — 11 princípios de consenso e um método "
-        "operacional em 8 fases.",
-    ),
-    "negocio-solo": (
-        "Negócio Solo e Mentalidade",
-        "🧠",
-        "Hormozi e mentalidade",
-        "Como sair do zero operando sozinho, sem se sabotar.",
-    ),
-    "copy-e-criativo": (
-        "Copy, Criativo e Conteúdo",
-        "✍️",
-        "o que vende",
-        "Escrever o que vende e produzir o que para o scroll.",
-    ),
-    "amar-a-deus-no-ordinario": (
-        "Amar a Deus no Ordinário",
-        "🕊️",
-        "santidade na vida comum",
-        "Buscar a Deus dentro do trabalho, da rotina, do cansaço e das obrigações banais — "
-        "sem precisar de uma vida diferente da que você já tem.",
-    ),
-    "ecommerce": (
-        "E-commerce e Dropshipping",
-        "📦",
-        "o experimento honesto",
-        "O tópico menor da biblioteca, com o vídeo mais honesto de todos.",
-    ),
-    "ferramentas-de-ia": (
-        "Ferramentas de IA na Prática",
-        "🛠️",
-        "Claude, Claude Code e N8N no real",
-        "Como criadores realmente usam Claude, Claude Code e Gemini Omni — o fluxo de trabalho "
-        "de verdade, com bug e retrabalho.",
-    ),
-    "numeros-e-ceticismo": (
-        "Números e Ceticismo",
-        "⚠️",
-        "leia antes de tudo",
-        "Auditoria de todos os resultados alegados na biblioteca — o número do título contra o "
-        "que é dito dentro do vídeo.",
-    ),
-}
+from build_guia import CSS, HEAD_ICONS, ROOT, TOPICS_META, TRACKING_JS, convert, parse_frontmatter  # noqa: E402
 
 
 def main():
@@ -103,11 +18,11 @@ def main():
         print("uso: build_single.py <stem> [saida.html]")
         sys.exit(1)
     stem = sys.argv[1]
-    title, emoji, tag, lede = META.get(stem, (stem, "📄", "", ""))
+    meta = TOPICS_META.get(stem, {"title": stem, "title_full": stem, "emoji": "📄", "tag": "", "lede": ""})
+    title, emoji, tag, lede = meta["title_full"], meta["emoji"], meta["tag"], meta["lede"]
 
     path = ROOT / "guias" / f"{stem}.md"
-    md = path.read_text(encoding="utf-8")
-    body_md = md.split("\n", 1)[1]
+    _, body_md = parse_frontmatter(path.read_text(encoding="utf-8"))
     body, subs = convert(body_md, stem, base_level=0)
     # Links para outros guias (ex.: [ecommerce.md]) viram #t-<stem> no hub multi-tópico,
     # âncora que não existe nesta página standalone — desfaz o link, mantém o texto.

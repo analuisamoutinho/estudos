@@ -1,4 +1,11 @@
-# Agência de IA e Automação
+---
+title: "Agência de IA"
+emoji: "🤖"
+tag: "o caminho mais rápido para caixa"
+lede: "Vender agentes de IA e automações para empresas — sem produto próprio, sem audiência, sem tráfego pago."
+title_full: "Agência de IA e Automação"
+order: 20
+---
 
 Vender agentes de IA e automações para empresas. **O caminho mais rápido para caixa de toda a
 biblioteca** — não exige produto próprio, não exige audiência, não exige tráfego pago.

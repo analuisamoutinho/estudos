@@ -1,4 +1,11 @@
-# Copy, Criativo e Conteúdo
+---
+title: "Copy e Criativo"
+emoji: "✍️"
+tag: "o que vende"
+lede: "Escrever o que vende e produzir o que para o scroll."
+title_full: "Copy, Criativo e Conteúdo"
+order: 100
+---
 
 Escrever o que vende e produzir o que para o scroll. É a habilidade que atravessa todos os outros
 tópicos — sem ela, tráfego pago é caro e produto bom não vende.

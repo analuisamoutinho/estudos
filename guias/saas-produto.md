@@ -1,4 +1,10 @@
-# SaaS e Produto Digital
+---
+title: "SaaS e Produto Digital"
+emoji: "💻"
+tag: "recorrência com IA"
+lede: "Construir e vender software com IA, sem programar — achar a ideia, montar o produto e a distribuição que os vídeos escondem."
+order: 70
+---
 
 Construir e vender software com IA, sem programar. Troca o pico do low ticket por **recorrência**.
 

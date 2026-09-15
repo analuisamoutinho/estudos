@@ -8,8 +8,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_guia import CSS, HEAD_ICONS, ROOT, TOPICS, TRACKING_JS  # noqa: E402
-from build_single import META  # noqa: E402
+from build_guia import CSS, HEAD_ICONS, ROOT, TOPICS, TOPICS_META, TRACKING_JS  # noqa: E402
 
 
 def fontes_curtas(stem, limit=3):
@@ -80,7 +79,10 @@ LANDING_CSS = """
 def main():
     cards = []
     for stem, _title, _emoji, _tag in TOPICS:
-        title, emoji, tag, lede = META[stem]
+        meta = TOPICS_META[stem]
+        # o card da home usa o título "completo" (o mesmo da própria página do
+        # guia); o hub tudo.html usa o título curto — comportamento original.
+        title, emoji, tag, lede = meta["title_full"], meta["emoji"], meta["tag"], meta["lede"]
         fontes = fontes_curtas(stem)
         cards.append(
             f'<li class="card" data-stem="{stem}">'

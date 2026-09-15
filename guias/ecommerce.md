@@ -1,4 +1,11 @@
-# E-commerce e Dropshipping
+---
+title: "E-commerce"
+emoji: "📦"
+tag: "o experimento honesto"
+lede: "O tópico menor da biblioteca, com o vídeo mais honesto de todos."
+title_full: "E-commerce e Dropshipping"
+order: 110
+---
 
 O tópico menor da biblioteca, mas com o vídeo mais honesto de todos: um experimento com orçamento
 declarado, resultado auditável e fracasso admitido.

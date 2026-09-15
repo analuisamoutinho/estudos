@@ -1,4 +1,10 @@
-# Low Ticket e Tráfego Pago
+---
+title: "Low Ticket e Tráfego Pago"
+emoji: "🎯"
+tag: "adquirir cliente pagando"
+lede: "Como adquirir cliente pagando por ele — 11 princípios de consenso e um método operacional em 8 fases."
+order: 80
+---
 
 Como **adquirir cliente pagando por ele**. É o bloco maior da biblioteca (131 vídeos) e o mais
 detalhado em execução de campanha.

@@ -1,4 +1,11 @@
-# Negócio Solo e Mentalidade
+---
+title: "Negócio Solo"
+emoji: "🧠"
+tag: "Hormozi e mentalidade"
+lede: "Como sair do zero operando sozinho, sem se sabotar."
+title_full: "Negócio Solo e Mentalidade"
+order: 90
+---
 
 Como sair do zero operando sozinho: escolher o que fazer, cobrar, e não se sabotar. É o tópico mais
 conceitual da biblioteca — e o que mais determina se o resto funciona.

@@ -13,21 +13,61 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# Ordem de leitura sugerida, não alfabética.
-TOPICS = [
-    ("numeros-e-ceticismo", "Números e Ceticismo", "⚠️", "leia antes de tudo"),
-    ("agencia-ia", "Agência de IA", "🤖", "o caminho mais rápido para caixa"),
-    ("ferramentas-de-ia", "Ferramentas de IA na Prática", "🛠️", "Claude, Claude Code e N8N no real"),
-    ("aquisicao-saas", "Aquisição de Clientes para SaaS", "🧲", "os primeiros 100 assinantes"),
-    ("servicos-mil-dia", "Serviços Digitais: a meta de R$1k/dia", "💰", "tráfego, IA, ebook e prospecção"),
-    ("upwork", "Upwork e Freela Internacional", "🌎", "faturar em dólar"),
-    ("saas-produto", "SaaS e Produto Digital", "💻", "recorrência com IA"),
-    ("low-ticket", "Low Ticket e Tráfego Pago", "🎯", "adquirir cliente pagando"),
-    ("negocio-solo", "Negócio Solo", "🧠", "Hormozi e mentalidade"),
-    ("copy-e-criativo", "Copy e Criativo", "✍️", "o que vende"),
-    ("ecommerce", "E-commerce", "📦", "o experimento honesto"),
-    ("amar-a-deus-no-ordinario", "Amar a Deus no Ordinário", "🕊️", "santidade na vida comum"),
-]
+
+def parse_frontmatter(text):
+    """Lê um bloco `---\nkey: valor\n---` no início do arquivo.
+
+    Sem dependência de PyYAML: cobre só o que os guias usam (uma linha por
+    campo, valor opcionalmente entre aspas). Retorna (metadados, resto_do_texto).
+    """
+    if not text.startswith("---\n"):
+        return {}, text
+    end = text.find("\n---", 4)
+    if end == -1:
+        return {}, text
+    meta = {}
+    for line in text[4:end].splitlines():
+        if ":" not in line:
+            continue
+        key, _, val = line.partition(":")
+        val = val.strip()
+        if len(val) >= 2 and val[0] == val[-1] == '"':
+            val = val[1:-1]
+        meta[key.strip()] = val
+    body = text[end + 4:].lstrip("\n")
+    return meta, body
+
+
+def _load_topics():
+    """Cada guias/*.md carrega seu próprio título/emoji/tag/lede/order no
+    frontmatter. Isto é a fonte única de verdade da lista de tópicos —
+    adicionar ou remover um tópico é só criar ou apagar o arquivo .md, sem
+    tocar em código. Ordenado pelo campo `order` (menor primeiro)."""
+    entries = []
+    for path in sorted((ROOT / "guias").glob("*.md")):
+        meta, _ = parse_frontmatter(path.read_text(encoding="utf-8"))
+        if not meta.get("title"):
+            continue
+        entries.append({
+            "stem": path.stem,
+            "title": meta.get("title", path.stem),
+            # título alternativo, mais longo, só para o <h1>/<title> da própria
+            # página do guia — cai no "title" quando não definido
+            "title_full": meta.get("title_full") or meta.get("title", path.stem),
+            "emoji": meta.get("emoji", "📄"),
+            "tag": meta.get("tag", ""),
+            "lede": meta.get("lede", ""),
+            "order": int(meta["order"]) if str(meta.get("order", "")).strip().lstrip("-").isdigit() else 999,
+        })
+    entries.sort(key=lambda e: e["order"])
+    return entries
+
+
+_TOPICS_LIST = _load_topics()
+TOPICS_META = {e["stem"]: e for e in _TOPICS_LIST}
+# Mantido no formato de tupla (stem, title, emoji, tag) por compatibilidade
+# com o restante do código.
+TOPICS = [(e["stem"], e["title"], e["emoji"], e["tag"]) for e in _TOPICS_LIST]
 
 
 def inline(text):
@@ -383,8 +423,8 @@ def main():
 
     sections, nav = [], []
     for stem, title, emoji, tag in TOPICS:
-        md = (ROOT / "guias" / f"{stem}.md").read_text(encoding="utf-8")
-        md = md.split("\n", 1)[1]  # descarta o h1 do arquivo
+        text = (ROOT / "guias" / f"{stem}.md").read_text(encoding="utf-8")
+        _, md = parse_frontmatter(text)
         body, subs = convert(md, stem, base_level=1)
         sections.append(
             f'<section class="topic" id="t-{stem}">'

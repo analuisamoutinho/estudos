@@ -1,4 +1,11 @@
-# Amar a Deus no Ordinário
+---
+title: "Amar a Deus no Ordinário"
+emoji: "🕊️"
+tag: "santidade na vida comum"
+lede: "Buscar a Deus dentro do trabalho, da rotina, do cansaço e das obrigações banais — sem precisar de uma vida diferente da que você já tem."
+order: 120
+---
+
 Como buscar a Deus dentro da vida que você já tem — o trabalho, a rotina, o cansaço, as
 obrigações banais — sem precisar de uma vida diferente da que existe. A tese central: ou se encontra
 o Senhor na vida comum, ou não se encontra nunca.

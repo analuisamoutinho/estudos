@@ -1,4 +1,10 @@
-# Números e Ceticismo
+---
+title: "Números e Ceticismo"
+emoji: "⚠️"
+tag: "leia antes de tudo"
+lede: "Auditoria de todos os resultados alegados na biblioteca — o número do título contra o que é dito dentro do vídeo."
+order: 10
+---
 
 Auditoria de todos os resultados alegados na biblioteca, cruzando **o número do título contra o que é
 dito dentro do vídeo**. Leia antes de calibrar qualquer expectativa.

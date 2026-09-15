@@ -1,4 +1,10 @@
-# Aquisição de Clientes para SaaS
+---
+title: "Aquisição de Clientes para SaaS"
+emoji: "🧲"
+tag: "os primeiros 100 assinantes"
+lede: "Como conseguir assinantes para um SaaS — os canais que realmente trazem os primeiros clientes, garimpados por engajamento entre 143 vídeos."
+order: 40
+---
 
 Como conseguir assinantes — o buraco que o resto da biblioteca não preenchia. Os 70 vídeos deste guia
 foram **garimpados por engajamento**: busquei 143 vídeos sobre o tema e fiquei com os que tinham a maior
