@@ -15,3 +15,4 @@ venv/
 
 # Build gerado (regenerar com scripts/build_guia.py)
 GUIA.html
+.vercel
