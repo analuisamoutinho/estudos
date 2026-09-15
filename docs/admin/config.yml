@@ -1,0 +1,62 @@
+backend:
+  name: github
+  repo: analuisamoutinho/estudos
+  branch: main
+  base_url: https://cortex-estudos.vercel.app
+  auth_endpoint: api/auth
+
+# Toda mudança feita aqui vira um commit direto na branch main, que já
+# dispara o deploy automático no Vercel (vercel_build.py regenera o HTML).
+media_folder: "docs/uploads"
+public_folder: "uploads"
+
+collections:
+  - name: "guias"
+    label: "Tópicos do CORTEX"
+    label_singular: "Tópico"
+    description: "Cada tópico é um arquivo aqui. Criar um arquivo novo = adicionar tópico. Apagar = remover."
+    folder: "guias"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: "title"
+    format: "frontmatter"
+    extension: "md"
+    fields:
+      - label: "Título curto"
+        name: "title"
+        widget: "string"
+        hint: "Aparece no menu lateral e no cabeçalho da lista de tudo.html"
+      - label: "Título completo"
+        name: "title_full"
+        widget: "string"
+        required: false
+        hint: "Aparece no card da home e no topo da própria página. Deixe em branco para usar o título curto."
+      - label: "Emoji"
+        name: "emoji"
+        widget: "string"
+      - label: "Frase curta (tag)"
+        name: "tag"
+        widget: "string"
+        hint: "Ex.: \"o caminho mais rápido para caixa\""
+      - label: "Descrição (lede)"
+        name: "lede"
+        widget: "text"
+        hint: "1-2 frases, aparece no card da home"
+      - label: "Ordem"
+        name: "order"
+        widget: "number"
+        value_type: "int"
+        hint: "Menor aparece primeiro. Os tópicos atuais usam 10, 20, 30... — use um número entre dois deles para inserir no meio."
+      - label: "Conteúdo"
+        name: "body"
+        widget: "markdown"
+
+  - name: "pagina_inicial"
+    label: "Página inicial (GUIA.md)"
+    files:
+      - label: "Índice e tabela \"por onde começar\""
+        name: "guia"
+        file: "GUIA.md"
+        fields:
+          - { label: "Conteúdo", name: "body", widget: "markdown" }
