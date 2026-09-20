@@ -1,0 +1,19 @@
+---
+title: "O que fazer quando receber uma avaliação negativa no google meu negócio"
+channel: "Linguagem de Influencia"
+channel_url: "https://www.youtube.com/channel/UCIWceFvTKRcNYsKjulOnhiQ"
+id: "qP9n3HBcDFc"
+url: "https://www.youtube.com/watch?v=qP9n3HBcDFc"
+upload_date: "20210218"
+duration: "00:04:16"
+source: "yt-dlp auto captions"
+lang: "pt-orig"
+---
+
+# O que fazer quando receber uma avaliação negativa no google meu negócio
+
+[00:00:00] e deixa eu compartilhar com você algo que acabou de acontecer e que pode salvar sua reputação online Você conhece o Google meu negócio ou conhece alguém que usar aquelas estrelinhas de reputação que ficam no Google e quando você vai procurar informação de algum site de algum serviço ou produto você recorre aquelas estrelinhas Pois então uma cliente minha mandou uma mensagem para mim toda preocupada Alberto Acabei de receber uma avaliação negativa Ok isso acontece todo mundo em algum momento vai se deparar com isso fosse não mas acontece que eu tinha acabado de fazer uma uma uma agradecimento para as mais de 100 avaliações 5 estrelas que eu recebi E aí apareceu essa eu tô pensando em mandar uma mensagem lá para o Google para tirar isso ela não precisa fazer primeiro porque todo mundo entende uma outra avaliação negativa afinal de contas não é possível agradar a todos e muitas vezes alguém que te procure pode ter uma isso é muito além daquilo que é possível entregar a Foi então que que eu faço responde com a verdade para essa pessoa aí eu mandei para ela um script Eu dei um exemplo Então vamos lá apoiar o seu nome o cargo que você ocupa um e-mail da ouvidoria e um telefone também e fala Olha lamentamos que você tem enfrentado uma situação frustrante desgastante em relação ao nosso trabalho infelizmente nesse momento eu não consigo resolver Até porque eu não encontrei os seus dados o nosso banco de dados as suas informações eu tentei te encontrar justamente para saber o que houve Deixa eu aproveitar e te dizer o seguinte eu escrevi um script para ela se você quiser ter acesso ao script direitinho tudo palavra por palavra os espaços e tudo mais na descrição desse vídeo eu deixei um link do meu WhatsApp se você clicar lá eu vou receber sua mensagem
+
+[00:02:00] é você dizer o seu nome completo e que você quer fazer parte da minha lista vip é uma lista não é grupo e ela é gratuita eu coloco você na lista e você vai ter acesso a esse script EA outros materiais exclusivos que eu mando para os melhores clientes então fica a dica quer saber mais clica lá voltando aqui para história eu passei para ela um script ela se posicionou ficou super contente por quê Porque o resultado foi exatamente que ela esperava né não posso dar mais detalhes que é sigiloso o fato é não dá para atender 100 porcento bem é como uma postagem que certa vez que certa vez eu vi era um lápis com a ponta quebrada o outro tinha a ponta gasta e o lápis do Meio tinha a ponta perfeita e os dizeres eram é fácil parecer perfeito quando você não faz nada se você está fazendo alguma coisa é muito provável a portinha cabo te criticando mas esse do jogo não precisa entrar em desespero basta relaxar procurar a pessoa tentar o contato e tentar mudar essa percepção da pessoa as pessoas entendem que a gente não é perfeito eu já lhe dei com isso várias vezes eu sempre tive resultados positivos o melhor deles foi a pessoa tirar a avaliação negativa e substituir por uma muito positiva Espero que você tenha gostado do vídeo e queira acessar o material completo Se for importante para você receber esse tipo de dica se inscreve no canal e fala com alguém do comércio do serviço que enfrentou algo assim de repente o script que eu proporcionei para minha cliente vai caber como uma luva no seu negócio tudo bem sou Alberto Martín do Instituto internacional de influência te vejo no próximo vídeo tchau e
+
+[00:04:00] E aí

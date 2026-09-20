@@ -7,7 +7,7 @@ completa, com timestamps, indexada e pesquisável.
 
 ## 📚 [GUIA.md](GUIA.md) — comece por aqui
 
-Índice mestre dos 435 vídeos, organizado por grandes tópicos:
+Índice mestre dos 477 vídeos, organizado por grandes tópicos:
 
 | Tópico | O que cobre |
 |---|---|
@@ -22,6 +22,8 @@ completa, com timestamps, indexada e pesquisável.
 | ✍️ [Copy, Criativo e Conteúdo](guias/copy-e-criativo.md) | escrever o que vende, produzir o que segura o scroll |
 | 📦 [E-commerce e Dropshipping](guias/ecommerce.md) | o experimento mais honesto da biblioteca |
 | ⚠️ [Números e Ceticismo](guias/numeros-e-ceticismo.md) | auditoria de todos os resultados alegados |
+| 🕊️ [Amar a Deus no Ordinário](guias/amar-a-deus-no-ordinario.md) | santidade na vida comum — trabalho, rotina, oração |
+| 📍 [Google Meu Negócio](guias/google-meu-negocio.md) | avaliações e ranking no mapa para atrair cliente no orgânico |
 
 ## Como usar
 
