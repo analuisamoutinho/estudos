@@ -415,6 +415,14 @@
     "upload_date": "20210304",
     "url": "https://www.youtube.com/watch?v=2wQFnbdGSFM"
   },
+  "3Jet9i1wLEA": {
+    "channel": "",
+    "error": "ERROR: [youtube] 3Jet9i1wLEA: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "3Jet9i1wLEA",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=3Jet9i1wLEA"
+  },
   "3Ku4VcBKmrg": {
     "channel": "Padre Paulo Ricardo",
     "channel_url": "https://www.youtube.com/channel/UCP6L9TPS3pHccVRiDB_cvqQ",
@@ -878,6 +886,14 @@
     "title": "Trabalho Remoto: Vagas para Freelancer no site Upwork (passo a passo para iniciantes)",
     "upload_date": "20220706",
     "url": "https://www.youtube.com/watch?v=7lUOvGxeJkw"
+  },
+  "7nrGootLEgs": {
+    "channel": "",
+    "error": "ERROR: [youtube] 7nrGootLEgs: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "7nrGootLEgs",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=7nrGootLEgs"
   },
   "7wyG6Qc2xlE": {
     "channel": "Deborah Folloni",
@@ -1934,6 +1950,14 @@
     "title": "Eu Usei N8N e GPT-4 para Criar um Agente de IA que Fez R$ 7.500 em 5 Dias!",
     "upload_date": "20251210",
     "url": "https://www.youtube.com/watch?v=GJguDzE7AUY"
+  },
+  "GMpmiE2zFNE": {
+    "channel": "",
+    "error": "ERROR: [youtube] GMpmiE2zFNE: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "GMpmiE2zFNE",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=GMpmiE2zFNE"
   },
   "GQA4XwSmeQg": {
     "channel": "The Scott Leese",
@@ -3599,6 +3623,14 @@
     "upload_date": "20260130",
     "url": "https://www.youtube.com/watch?v=UGQYjRMpazU"
   },
+  "UJEgiXSQTo4": {
+    "channel": "",
+    "error": "ERROR: [youtube] UJEgiXSQTo4: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "UJEgiXSQTo4",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=UJEgiXSQTo4"
+  },
   "UKxk7ijiZKk": {
     "channel": "Nícolas Moreira",
     "channel_url": "https://www.youtube.com/channel/UC0Z9Qrd-1pH7qmLdPdS_i6w",
@@ -3646,6 +3678,14 @@
     "title": "I documented my SaaS journey to $20K MRR",
     "upload_date": "20260601",
     "url": "https://www.youtube.com/watch?v=UTjU_30SHIo"
+  },
+  "UfKZi6fL6tQ": {
+    "channel": "",
+    "error": "ERROR: [youtube] UfKZi6fL6tQ: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "UfKZi6fL6tQ",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=UfKZi6fL6tQ"
   },
   "UpBR4InLuzU": {
     "channel": "The Aristocratas | Del Francco & Rubatinno",
@@ -3871,6 +3911,14 @@
     "upload_date": "20260209",
     "url": "https://www.youtube.com/watch?v=WVzg8t25BvY"
   },
+  "WaT8C0-ZpIQ": {
+    "channel": "",
+    "error": "ERROR: [youtube] WaT8C0-ZpIQ: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "WaT8C0-ZpIQ",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=WaT8C0-ZpIQ"
+  },
   "Web2ESlnRQA": {
     "channel": "Método VTSD",
     "channel_url": "https://www.youtube.com/channel/UCPkWR3YeOc2YDpTws-zsFEA",
@@ -4094,6 +4142,14 @@
     "title": "CRIANDO UMA MARCA DO ZERO COM IA - EP 1",
     "upload_date": "20260714",
     "url": "https://www.youtube.com/watch?v=YVvP-gjI5WQ"
+  },
+  "YZO0ORmy5MI": {
+    "channel": "",
+    "error": "ERROR: [youtube] YZO0ORmy5MI: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "YZO0ORmy5MI",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=YZO0ORmy5MI"
   },
   "Yd2MXxsQEVQ": {
     "channel": "Oração com Frei Gilson",
@@ -4831,6 +4887,22 @@
     "upload_date": "20240921",
     "url": "https://www.youtube.com/watch?v=dYDONN0PcB4"
   },
+  "daD9WSVRAus": {
+    "channel": "",
+    "error": "ERROR: [youtube] daD9WSVRAus: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "daD9WSVRAus",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=daD9WSVRAus"
+  },
+  "djy4BcBj20g": {
+    "channel": "",
+    "error": "ERROR: [youtube] djy4BcBj20g: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "djy4BcBj20g",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=djy4BcBj20g"
+  },
   "eK9IjMyIMz8": {
     "channel": "Gabriel Saraiva",
     "channel_url": "https://www.youtube.com/channel/UCCTl0qq7LuSG9VvK7r7PpPQ",
@@ -5070,6 +5142,14 @@
     "title": "AS MELHORES TÉCNICAS DE VENDAS com Netto Simões",
     "upload_date": "20260226",
     "url": "https://www.youtube.com/watch?v=fbSoJTh4aMo"
+  },
+  "fnzfKzOUONI": {
+    "channel": "",
+    "error": "ERROR: [youtube] fnzfKzOUONI: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "fnzfKzOUONI",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=fnzfKzOUONI"
   },
   "g0IkU512u1c": {
     "channel": "Nícolas Moreira",
@@ -5438,6 +5518,14 @@
     "title": "If I Wanted to Make My First $100K in 2026, I’d Do This",
     "upload_date": "20260304",
     "url": "https://www.youtube.com/watch?v=jfW6gL6hKhk"
+  },
+  "jyDqtwkGoeA": {
+    "channel": "",
+    "error": "ERROR: [youtube] jyDqtwkGoeA: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "jyDqtwkGoeA",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=jyDqtwkGoeA"
   },
   "kcE7RDo75Ns": {
     "channel": "NoCode StartUp",
