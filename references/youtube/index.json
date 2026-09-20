@@ -900,10 +900,10 @@
     "channel_url": "https://www.youtube.com/channel/UCDJvxhapekZTheLn3o7Kz6w",
     "duration": "00:04:23",
     "duration_secs": 263,
-    "error": "ERROR: [youtube] 773zJUIezxo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "error": "",
     "id": "773zJUIezxo",
     "note": "needs mlx-whisper",
-    "status": "error",
+    "status": "no_subs",
     "title": "Como Conseguir Avaliações 5 Estrelas no Google - 3 Dicas + Template Canva QRCode",
     "upload_date": "20230918",
     "url": "https://www.youtube.com/watch?v=773zJUIezxo"
@@ -2749,11 +2749,19 @@
     "url": "https://www.youtube.com/watch?v=Kv3olmGKVmw"
   },
   "L4PJUe4Pvbo": {
-    "channel": "",
-    "error": "ERROR: [youtube] L4PJUe4Pvbo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "channel": "Weliton Duarte",
+    "channel_url": "https://www.youtube.com/channel/UC1AdPz-_yrjWqeWaj93RzgA",
+    "chars": 5510,
+    "duration": "00:05:46",
+    "duration_secs": 346,
+    "error": "",
     "id": "L4PJUe4Pvbo",
-    "status": "error",
-    "title": "",
+    "lang": "pt-orig",
+    "path": "references/youtube/weliton-duarte/como-recuperar-acesso-de-perfil-suspenso-no-google-meu-negocio.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como recuperar acesso de perfil suspenso no google meu negocio",
+    "upload_date": "20240521",
     "url": "https://www.youtube.com/watch?v=L4PJUe4Pvbo"
   },
   "L4ZT0CiL6p0": {
@@ -2885,11 +2893,19 @@
     "url": "https://www.youtube.com/watch?v=LcOvwCvtkxg"
   },
   "Lh-j78h_gd4": {
-    "channel": "",
-    "error": "ERROR: [youtube] Lh-j78h_gd4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "channel": "Franscielle Souza",
+    "channel_url": "https://www.youtube.com/channel/UC-RvJryX_UuR8fmtXCAlVTA",
+    "chars": 11119,
+    "duration": "00:10:58",
+    "duration_secs": 658,
+    "error": "",
     "id": "Lh-j78h_gd4",
-    "status": "error",
-    "title": "",
+    "lang": "pt-orig",
+    "path": "references/youtube/franscielle-souza/google-meu-negócio-suspenso-como-restabelecer-a-ficha-ou-evitar-que-isso-aconteça.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Google Meu Negócio SUSPENSO:  Como RESTABELECER a ficha ou EVITAR que isso aconteça.",
+    "upload_date": "20230704",
     "url": "https://www.youtube.com/watch?v=Lh-j78h_gd4"
   },
   "LkTFvh3UQfY": {
@@ -5932,11 +5948,15 @@
   "jOZ-D4w1O2A": {
     "channel": "Diego Zanini",
     "channel_url": "https://www.youtube.com/channel/UCPLx0p0xcVB8zEQpN6WOv8g",
+    "chars": 8160,
     "duration": "00:10:22",
     "duration_secs": 622,
-    "error": "ERROR: [youtube] jOZ-D4w1O2A: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "error": "",
     "id": "jOZ-D4w1O2A",
-    "status": "error",
+    "lang": "pt-BR",
+    "path": "references/youtube/diego-zanini/google-meu-negócio---avaliações-negativas-e-falsas.md",
+    "source": "yt-dlp manual captions",
+    "status": "ok",
     "title": "Google Meu Negócio - Avaliações Negativas e Falsas",
     "upload_date": "20230329",
     "url": "https://www.youtube.com/watch?v=jOZ-D4w1O2A"
@@ -6294,11 +6314,19 @@
     "url": "https://www.youtube.com/watch?v=nNr0jVmba9w"
   },
   "nTesk5mF1bU": {
-    "channel": "",
-    "error": "ERROR: [youtube] nTesk5mF1bU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "channel": "Torie Mathis | Digital Marketing",
+    "channel_url": "https://www.youtube.com/channel/UC4K3JPvoLh2Fw7ALXK1-oPw",
+    "chars": 9175,
+    "duration": "00:08:52",
+    "duration_secs": 532,
+    "error": "",
     "id": "nTesk5mF1bU",
-    "status": "error",
-    "title": "",
+    "lang": "en-orig",
+    "path": "references/youtube/torie-mathis-digital-marketing/how-to-fix-a-google-business-profile-suspension.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "How to Fix A Google Business Profile Suspension",
+    "upload_date": "20240212",
     "url": "https://www.youtube.com/watch?v=nTesk5mF1bU"
   },
   "n_QfDPolQEU": {
@@ -6894,11 +6922,19 @@
     "url": "https://www.youtube.com/watch?v=rhuYy9LP72M"
   },
   "rkHgz6njgL4": {
-    "channel": "",
-    "error": "ERROR: [youtube] rkHgz6njgL4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "channel": "Mkt Local",
+    "channel_url": "https://www.youtube.com/channel/UCtmvh18l2Iu_rG0ianVML5g",
+    "chars": 8539,
+    "duration": "00:08:36",
+    "duration_secs": 516,
+    "error": "",
     "id": "rkHgz6njgL4",
-    "status": "error",
-    "title": "",
+    "lang": "pt-orig",
+    "path": "references/youtube/mkt-local/nunca-mais-seja-suspenso-no-google-meu-negócio.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Nunca mais seja suspenso no Google Meu Negócio",
+    "upload_date": "20241120",
     "url": "https://www.youtube.com/watch?v=rkHgz6njgL4"
   },
   "rtSXwMb4xNc": {

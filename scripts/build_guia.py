@@ -490,11 +490,11 @@ def main():
   <p class="eyebrow">Biblioteca de transcrições · Síntese operacional</p>
   <h1 class="brand"><img class="brandmark" src="cortex-icon.png" alt="">CORTEX</h1>
   <p class="lede">Agência de IA, ferramentas de IA, SaaS, low ticket, negócio solo, copy e
-  e-commerce, Google Meu Negócio e a santidade na vida ordinária — destilados da leitura integral de 477
+  e-commerce, Google Meu Negócio e a santidade na vida ordinária — destilados da leitura integral de 482
   transcrições de YouTube.</p>
   <div class="stats">
-    <div class="stat"><b>477</b><span>vídeos lidos</span></div>
-    <div class="stat"><b>223</b><span>canais</span></div>
+    <div class="stat"><b>482</b><span>vídeos lidos</span></div>
+    <div class="stat"><b>225</b><span>canais</span></div>
     <div class="stat"><b>{len(TOPICS)}</b><span>grandes tópicos</span></div>
     <div class="stat"><b>7</b><span>números sem lastro</span></div>
   </div>

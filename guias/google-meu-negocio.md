@@ -12,21 +12,21 @@ Como aumentar as avaliações do Perfil da Empresa (o antigo Google Meu Negócio
 posições do mapa, para atrair cliente sem pagar anúncio. Vale para quem tem loja, consultório,
 restaurante ou presta serviço na casa do cliente.
 
-Os 41 vídeos aqui foram lidos na íntegra e garimpados por engajamento (curtidas + comentários sobre
+Os 46 vídeos aqui foram lidos na íntegra e garimpados por engajamento (curtidas + comentários sobre
 visualizações) entre 314 candidatos, em português e inglês. Onde o assunto era avaliações, fiz uma busca extra, porque
 era o ponto mais fraco da primeira seleção.
 
-**Fontes:** Escola de SEO / Luciano Arthur (5) · Franscielle Souza (3) · Mkt Local (3) · Sterling Sky (3)
+**Fontes:** Escola de SEO / Luciano Arthur (5) · Franscielle Souza (4) · Mkt Local (4) · Sterling Sky (3)
 · Caleb Ulku (2) · Clay Lawrence (2) · Matt Diamante (2) · Ranking Academy (2) · Jeferson Rodrigues (2)
-· Thiago Almeida · Tiago Rossi · Weliton Duarte · Denis Silva · Vinicius Moreira · Sebrae PR · Darlan
+· Thiago Almeida · Tiago Rossi · Weliton Duarte (2) · Denis Silva · Vinicius Moreira · Sebrae PR · Darlan
 Evandro (2) · Vinícius Souza · Linguagem de Influência · Feedback Automatic · BKA Content · Portable
-Entrepreneur (Whitespark) · Nathan Gotch · Tim Kahlert · Mariah Magazine · Ericvelch
+Entrepreneur (Whitespark) · Nathan Gotch · Tim Kahlert · Mariah Magazine · Ericvelch · Diego Zanini · Torie Mathis
 
 > **Nota de leitura.** Quase todas as transcrições são legendas automáticas do YouTube; só as de Darlan
 > Evandro e Caleb Ulku são revisadas. Os `[timestamps]` marcam o **início de um bloco de ~2 minutos**
 > — a fala exata pode estar até 2 minutos depois. Citações em inglês estão traduzidas.
-> **Nenhum vídeo cita as diretrizes oficiais do Google.** Onde falo do que o Google permite ou proíbe,
-> é o que os vídeos dizem, mais avisos meus marcados como tal.
+> **Só um vídeo (Torie Mathis, em inglês) percorre as diretrizes do Google item a item.** Onde falo do
+> que o Google permite ou proíbe, é o que os vídeos dizem, mais avisos meus marcados como tal.
 
 ---
 
@@ -328,10 +328,25 @@ O que os vídeos ensinam (só resolve por fora):
    é fake da concorrência"** — Luciano sugere essa ideia como parte da resposta, mas isso pode gerar
    conflito público.
 
-**Lacuna importante:** **nenhum vídeo ensina a denunciar** avaliação falsa ou ofensiva ao Google. O
-vídeo de Luciano sobre *remover* avaliações negativas, que eu tinha selecionado, não tinha transcrição
-disponível. Fora dos vídeos: o Google tem o fluxo "sinalizar como inadequada" nas avaliações; o
-caminho exato mudou várias vezes, então confira no painel.
+**Como denunciar uma avaliação falsa** (Diego Zanini, legenda revisada, mar/2023 [00:06:02–00:08:07]):
+
+1. **Veja primeiro se é real.** Se for, melhore, contate o cliente para tentar reverter e siga em frente.
+2. **Se for falsa:** abra o perfil, vá na avaliação, clique nos **três pontinhos** e em **"denunciar
+   avaliação"**. *"Tá feito isso a denúncia vai para o Google."*
+3. **Aguarde.** *"Não sei ao certo dizer exatamente quanto tempo."* Se o Google considerar procedente,
+   *"essa nota sai do sistema"*.
+4. **Em paralelo, responda publicamente** — *"não é deixar quieto lá é responder a pessoa"* [00:08:07].
+
+Ele diz que o Google usa a **localização** do autor para saber se a pessoa esteve no local, *"e outros
+métodos que a gente nem sabe"* [00:06:02] — afirmação plausível, sem fonte no vídeo. Casos típicos que ele
+descreve: concorrente sem ética que avalia com 1 estrela sem nunca ter ido, às vezes mobilizando amigos
+[00:04:01]. E uma perspectiva que ajuda: *"3 negativas perto de 90 positivas não é nada"*.
+
+**O que continua sem resposta em qualquer vídeo:** os motivos que o formulário de denúncia oferece, o
+prazo, o que fazer se o Google negar e para onde recorrer. O vídeo de remover negativas da Escola de SEO,
+que eu tinha selecionado, ficou sem legenda. Nesse caso, a alternativa é o suporte do Perfil da Empresa
+(Ajuda → Fale Conosco) — o mesmo caminho do formulário de "avaliação faltando" da seção abaixo, mas
+escolhendo o problema correspondente; confira as opções na tela.
 
 ### Avaliações que somem
 
@@ -407,9 +422,81 @@ diferente, tudo na mesma janela de tempo. O método não entra neste guia.
 | Comprar backlinks | **Violação de link scheme** | Franscielle 2025: *"Você pode comprar backlinks de qualidade"* [00:18:05] — contradiz Luciano (*"nada de fazer booms de backlinks"* [00:22:10]) |
 | Ocultar ou mostrar o endereço em negócio de área de atendimento | **Dilema real:** o Google orienta ocultar, mas o teste da Sterling mostra queda de ranking ao ocultar | Ver Parte 4 |
 
-**O que fazer se for suspenso:** vídeos específicos sobre recuperação de perfil suspenso (Mkt Local,
-Franscielle Souza, Weliton Duarte, entre outros) apareceram na busca mas **não foram baixados** —
-o YouTube bloqueou o download. Fica como próximo passo do acervo.
+### Se o seu perfil for suspenso — e como evitar
+
+Cinco vídeos de 2023–2024 tratam disso. Ressalva: nenhum é de 2025–2026, e as telas do Google mudam.
+**Primeiro descubra qual suspensão é a sua:** o **perfil** sumiu para os clientes, ou só o **seu acesso**
+foi suspenso enquanto o perfil segue no ar (Weliton Duarte, que trata só desse segundo caso).
+
+**Por que suspendem** — em ordem de convergência entre os vídeos. O Google não diz o motivo: *"o Google
+geralmente não é claro sobre o que você fez, então você vai precisar descobrir"* (Torie Mathis
+[tradução, 00:00:00]).
+
+| # | Motivo | Quem cita |
+|---|---|---|
+| 1 | **Endereço problemático:** vários perfis de cidades diferentes em vez de área de cobertura; caixa postal, escritório virtual ou endereço residencial exibido por prestador; pino fora do lugar; marcar que recebe clientes sendo online ou atendendo na casa do cliente | Franscielle Souza [00:04:02]; Torie Mathis [00:02:02–00:06:04]; Mkt Local [00:02:00, 00:06:01]; Weliton (alguém alterou o endereço do perfil dele) |
+| 2 | **Avaliações falsas ou compradas**, incluindo grupos de troca | Franscielle [00:06:04]; Mkt Local [00:04:01]; Torie lista "engajamento falso" [00:00:00]; Diego Zanini diz só "não compre" |
+| 3 | **Nome que não é o nome real**, com palavra-chave | Franscielle [00:02:01]; Torie [00:04:04] |
+| 4 | **Perfil sem dono ativo, não verificado ou abandonado** | Mkt Local [00:00:00]; Torie [00:04:04] |
+| 5 | **Negócio inelegível ou categoria sensível.** Torie: só online, gerador de leads, aulas ou reuniões em local que você não representa, imóvel para alugar ou vender. Franscielle: desentupidora, dedetizadora, chaveiro e sex shop *"correm sério risco"* (observação empírica dela, não regra publicada) | Torie [00:02:02]; Franscielle [00:06:04] |
+| 6 | **Horário incorreto**, como 24 h sem ser 24 h (emergência real pode) | Franscielle [00:04:02–00:06:04] |
+| 7 | **Descrição com promoção, preço, link, MAIÚSCULAS ou texto de baixa qualidade** | Torie [00:04:04] |
+
+Duas notas importantes: a **denúncia de concorrente** não é motivo, é gatilho — perfil fraco ou
+inconsistente cai mais fácil (Mkt Local [00:00:00]); e a lista de Torie mistura política de conteúdo de
+avaliações e fotos com suspensão de perfil, então nem tudo ali é causa típica para negócio local.
+
+**Protocolo de recuperação, consolidado dos vídeos:**
+
+1. **Não crie perfil novo.** Franscielle: *"o primeiro passo quando o nosso perfil é suspenso a gente já
+   pensa em criar novos perfis. Não faça isso"* — pode ser lido como spam e levar a banimento
+   [00:08:05].
+2. **Anote o aviso do painel** (algo como *"seu acesso foi suspenso porque esse perfil não segue as
+   diretrizes"* [Franscielle, 00:02:01]) e pense na **última coisa que você mudou** antes da suspensão
+   (Torie [00:00:00]).
+3. **Corrija a causa antes de pedir.** Nome só com o nome real; endereço real (sem caixa postal nem
+   escritório virtual; oculto se atende na casa do cliente); horário real; categoria adequada;
+   descrição sem promoção nem link; pino no lugar certo; avaliações compradas fora.
+4. **Reúna provas** de que o negócio existe e é seu. O que os vídeos citam: **CNPJ, foto da fachada com
+   o nome, logomarca, pessoa uniformizada e fotos do local** (Weliton [00:00:00]); para apelação,
+   **fotos da fachada e um resumo das operações** (Torie [00:06:04]).
+5. **Envie o pedido de restabelecimento — só um.** No aviso do painel, "Saiba mais" ou "Solicitar",
+   responda tudo com informação **verdadeira** e anexe o que o Google pedir (Franscielle [00:08:05];
+   Weliton [00:00:00]). *"É necessário que você envie apenas uma solicitação, não fique enviando
+   várias."*
+6. **Espere.** Torie: o Google *"resolve a maioria dos pedidos em até 2 semanas"* [tradução, 00:06:04];
+   Franscielle: *"depois de duas semanas, 30 dias"* sem retorno provavelmente foi reprovado [00:08:05].
+7. **Se negaram:** Torie manda **responder ao e-mail de negação** com fotos da fachada e resumo das
+   operações, e depois falar com o suporte ou **agendar horário com um representante do Google**
+   [00:06:04]. Franscielle diz que o Google *"não vai responder no seu e-mail"* e sugere mandar mensagem
+   à conta oficial do Google Meu Negócio nas redes [00:10:07] — canal informal. **Os dois se
+   contradizem:** o e-mail de negação só existe se o Google mandou um.
+
+**Se só o seu acesso caiu** (Weliton Duarte, mai/2024 [00:00:00–00:04:05]):
+1. No aviso, clique em **"Saiba mais"** → botão azul de enviar → anexe CNPJ, fachada, logomarca,
+   uniformizado e fotos do local.
+2. Se não resolver, no painel de revisar/acessar perfil, busque o nome da empresa → **"gerenciar
+   acesso"** → escolha proprietário → **pule** o preenchimento de horário e informações e avance →
+   quando aparecer "processando a verificação", **aguarde e não faça mais nada**. Depois confira em
+   Configurações se você ficou como proprietário principal.
+3. Ele avisa que o perfil às vezes fica **duplicado** nesse caminho. Funciona melhor com endereço
+   visível; em negócio só com área de cobertura é *"um pouco mais de dificuldade"*. Ele não informa o
+   prazo, e a promessa de que o Google *"vai te entregar o acesso novamente"* não tem base.
+
+**Prevenção, sem heurística de SEO:** nome real · um perfil por local real, com área de cobertura (até
+20 localidades, segundo Franscielle) em vez de perfis-fantasma · endereço e pino coerentes · horário real
+· só avaliações reais · perfil **verificado** e com **mais de um administrador** (Mkt Local [00:00:00]).
+
+**Cuidado com as heurísticas do Mkt Local:** ele apresenta como "blindagem" mais fotos, mais redes
+sociais vinculadas e **pedir a 5–10 pessoas que façam perguntas no perfil para você responder**
+[00:04:01–00:06:01]. Não há fonte para "blindagem", e combinar perguntas com terceiros se aproxima
+do *"engajamento falso"* que Torie lista como violação. Ele mesmo ressalva: "não vale ser você mesmo".
+
+**O que nenhum vídeo responde:** os documentos exatos que o formulário pede hoje, o que mostrar num
+vídeo de verificação, como distinguir suspensão leve de desativação, quantas apelações são permitidas,
+como manter um perfil elegível sendo MEI em casa ou 100% online, e o risco de pagar serviço de
+"reativação". Franscielle abre o vídeo vendendo treinamento e Torie fecha com curso: leia os dois com
+essa lente.
 
 ---
 
@@ -902,7 +989,7 @@ sempre pelas que têm mais de uma fonte independente e nenhum risco de suspensã
 
 Engajamento = (curtidas + comentários) ÷ visualizações, na data da busca.
 
-### Em português (23)
+### Em português (27)
 
 | Canal | Vídeo | Ano | Engaj. | Views |
 |---|---|---|---|---|
@@ -920,17 +1007,21 @@ Engajamento = (curtidas + comentários) ÷ visualizações, na data da busca.
 | Vinicius Moreira | [Google Meu Negócio: Checklist Completo para Otimização em 2026 / Guia ](https://www.youtube.com/watch?v=nkVOH6_oUBw) | 2025 | 6.6% | 2.918 |
 | Escola de SEO - Por Luciano  | [25 Fatores de Ranking de Google meu Negócio 2026 / React](https://www.youtube.com/watch?v=Bfg6uXrc3-s) | 2025 | 6.4% | 10.544 |
 | Tiago Rossi | [GOOGLE MEU NEGÓCIO: COMO FICAR NO TOPO AO OTIMIZAR O PERFIL DA EMPRESA](https://www.youtube.com/watch?v=ccCJ-8gKyDw) | 2025 | 6.4% | 5.644 |
+| Mkt Local | [Nunca mais seja suspenso no Google Meu Negócio](https://www.youtube.com/watch?v=rkHgz6njgL4) | 2024 | 6.4% | 5.499 |
 | Weliton Duarte | [Como ranquear no Google Meu Negócio](https://www.youtube.com/watch?v=9QsWF4o0_Uc) | 2023 | 6.4% | 5.440 |
 | Mkt Local | [GOOGLE MEU NEGÓCIO 2026: O único jeito de ranquear a sua empresa](https://www.youtube.com/watch?v=ot4tEZIT0cU) | 2026 | 6.3% | 6.177 |
 | Escola de SEO - Por Luciano  | [Curso de Google Meu Negócio 2025 - Passo a Passo (Gratuito)](https://www.youtube.com/watch?v=D_pONlyWD78) | 2025 | 6.0% | 92.322 |
 | Franscielle Souza | [Google Meu Negócio 2026: 7 Ajustes Para Aparecer no Topo do Google](https://www.youtube.com/watch?v=luXoWRqYsAo) | 2026 | 5.8% | 6.559 |
 | Sebrae PR | [Como OTIMIZAR seu PERFIL de EMPRESA no GOOGLE? 🧐 3 DICAS para APARECER](https://www.youtube.com/watch?v=1w-JKTKaQfg) | 2024 | 5.7% | 7.312 |
+| Franscielle Souza | [Google Meu Negócio SUSPENSO:  Como RESTABELECER a ficha ou EVITAR que ](https://www.youtube.com/watch?v=Lh-j78h_gd4) | 2023 | 5.4% | 23.080 |
 | Linguagem de Influencia | [O que fazer quando receber uma avaliação negativa no google meu negó](https://www.youtube.com/watch?v=qP9n3HBcDFc) | 2021 | 5.0% | 3.101 |
 | Escola de SEO - Por Luciano  | [Como Fazer Cartão NFC - Para Avaliações Google meu Negócio](https://www.youtube.com/watch?v=Og3APqXHeDw) | 2024 | 4.8% | 62.874 |
 | Vinícius Souza | Comunidade  | [Como fazer uma placa de QR CODE grátis para avaliação do Google Meu Ne](https://www.youtube.com/watch?v=_uv1LkTp-XE) | 2023 | 4.2% | 13.921 |
 | Mkt Local | [Minhas AVALIAÇÕES não aparecem no GOOGLE MEU NEGÓCIO. Como recuperar A](https://www.youtube.com/watch?v=sl1KN9eQB6Q) | 2023 | 3.5% | 13.931 |
+| Weliton Duarte | [Como recuperar acesso de perfil suspenso no google meu negocio](https://www.youtube.com/watch?v=L4PJUe4Pvbo) | 2024 | 2.7% | 26.689 |
+| Diego Zanini | [Google Meu Negócio - Avaliações Negativas e Falsas](https://www.youtube.com/watch?v=jOZ-D4w1O2A) | 2023 | 2.7% | 3.062 |
 
-### Em inglês (18)
+### Em inglês (19)
 
 | Canal | Vídeo | Ano | Engaj. | Views |
 |---|---|---|---|---|
@@ -950,11 +1041,11 @@ Engajamento = (curtidas + comentários) ÷ visualizações, na data da busca.
 | Caleb Ulku | [Rank #1 on Google maps in 30 days (Even if you're new)](https://www.youtube.com/watch?v=-O8jOdKvAjA) | 2025 | 3.9% | 71.698 |
 | Ranking Academy | [Google My Business Profile Optimization - Ultimate Tutorial for 2023 (](https://www.youtube.com/watch?v=vSDdAWwn8LU) | 2022 | 3.8% | 199.263 |
 | Tim Kahlert | [Rank #1 in Google’s Local Map Pack in 2026 Fast!](https://www.youtube.com/watch?v=fnzfKzOUONI) | 2026 | 3.7% | 1.718 |
+| Torie Mathis | Digital Marke | [How to Fix A Google Business Profile Suspension](https://www.youtube.com/watch?v=nTesk5mF1bU) | 2024 | 3.1% | 4.713 |
 | BKA Content | [How To Reply To EVERY Google Review (Good or Bad)](https://www.youtube.com/watch?v=LJMtvbQytOw) | 2025 | 1.5% | 2.811 |
 | Feedback Automatic | [How To Ask Customers for Online Reviews (3 Example Scripts)](https://www.youtube.com/watch?v=3kErg1AeEow) | 2020 | 1.3% | 2.088 |
 
 **Não aproveitados:**
-- Como Conseguir Avaliações 5 Estrelas no Google - 3 Dicas + Template Canva QRCode — sem transcrição (bloqueio do YouTube / sem legenda)
-- Como Remover / Excluir Avaliações Negativas no Google meu Negócio em 2024 | + 2  — sem transcrição (bloqueio do YouTube / sem legenda)
+- Como Conseguir Avaliações 5 Estrelas no Google - 3 Dicas + Template Canva QRCode — sem legenda no YouTube
+- Como Remover / Excluir Avaliações Negativas no Google meu Negócio em 2024 | + 2  — sem legenda no YouTube
 - How to Ask for Reviews or Testimonials | 5 Steps to Success — transcrição ilegível (idioma errado)
-- Cinco vídeos sobre suspensão de perfil e avaliação falsa (Mkt Local, Franscielle Souza, Weliton Duarte, Diego Zanini e um em inglês): o YouTube bloqueou o download. Ficam para uma nova tentativa.
