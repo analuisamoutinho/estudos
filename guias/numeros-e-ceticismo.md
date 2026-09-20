@@ -3,6 +3,7 @@ title: "Números e Ceticismo"
 emoji: "⚠️"
 tag: "leia antes de tudo"
 lede: "Auditoria de todos os resultados alegados na biblioteca — o número do título contra o que é dito dentro do vídeo."
+categoria: "Negócios"
 order: 10
 ---
 

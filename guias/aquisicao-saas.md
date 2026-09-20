@@ -3,6 +3,7 @@ title: "Aquisição de Clientes para SaaS"
 emoji: "🧲"
 tag: "os primeiros 100 assinantes"
 lede: "Como conseguir assinantes para um SaaS — os canais que realmente trazem os primeiros clientes, garimpados por engajamento entre 143 vídeos."
+categoria: "Negócios"
 order: 40
 ---
 

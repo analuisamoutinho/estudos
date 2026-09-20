@@ -3,6 +3,7 @@ title: "Serviços Digitais: a meta de R$1k/dia"
 emoji: "💰"
 tag: "tráfego, IA, ebook e prospecção"
 lede: "O que realmente é preciso para faturar R$1.000 por dia com serviço digital — as contas, os canais de prospecção e o que a matemática diz sobre a meta."
+categoria: "Negócios"
 order: 50
 ---
 

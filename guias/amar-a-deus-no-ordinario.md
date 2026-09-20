@@ -3,6 +3,7 @@ title: "Amar a Deus no Ordinário"
 emoji: "🕊️"
 tag: "santidade na vida comum"
 lede: "Buscar a Deus dentro do trabalho, da rotina, do cansaço e das obrigações banais — sem precisar de uma vida diferente da que você já tem."
+categoria: "Fé"
 order: 120
 ---
 

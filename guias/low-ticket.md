@@ -3,6 +3,7 @@ title: "Low Ticket e Tráfego Pago"
 emoji: "🎯"
 tag: "adquirir cliente pagando"
 lede: "Como adquirir cliente pagando por ele — 11 princípios de consenso e um método operacional em 8 fases."
+categoria: "Negócios"
 order: 80
 ---
 

@@ -56,6 +56,7 @@ def _load_topics():
             "title_full": meta.get("title_full") or meta.get("title", path.stem),
             "emoji": meta.get("emoji", "📄"),
             "tag": meta.get("tag", ""),
+            "categoria": meta.get("categoria") or "Outros",
             "lede": meta.get("lede", ""),
             "order": int(meta["order"]) if str(meta.get("order", "")).strip().lstrip("-").isdigit() else 999,
         })

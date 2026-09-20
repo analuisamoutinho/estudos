@@ -3,6 +3,7 @@ title: "Ferramentas de IA na Prática"
 emoji: "🛠️"
 tag: "Claude, Claude Code e N8N no real"
 lede: "Como criadores realmente usam Claude, Claude Code e Gemini Omni — o fluxo de trabalho de verdade, com bug e retrabalho."
+categoria: "Negócios"
 order: 30
 ---
 

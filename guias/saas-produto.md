@@ -3,6 +3,7 @@ title: "SaaS e Produto Digital"
 emoji: "💻"
 tag: "recorrência com IA"
 lede: "Construir e vender software com IA, sem programar — achar a ideia, montar o produto e a distribuição que os vídeos escondem."
+categoria: "Negócios"
 order: 70
 ---
 

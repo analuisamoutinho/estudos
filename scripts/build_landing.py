@@ -30,12 +30,16 @@ LANDING_CSS = """
 }
 .progress-bar{flex:1;max-width:220px;height:5px;border-radius:99px;background:var(--surface-2);overflow:hidden}
 .progress-fill{height:100%;background:var(--accent);border-radius:99px;transition:width .25s ease}
-.cardlist{list-style:none;margin:34px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
-.cardlist li.divider{
-  margin:22px 0 2px;padding-top:18px;border-top:1px dashed var(--rule);
-  font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.16em;
-  color:var(--ink-faint);display:none;
+.cardlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.group{margin-top:34px}
+.group[hidden]{display:none}
+.group-title{
+  display:flex;align-items:baseline;gap:10px;margin:0 0 12px;padding:0;border:0;
+  font-family:var(--mono);font-size:11px;font-weight:500;text-transform:uppercase;
+  letter-spacing:.16em;color:var(--ink-faint);
 }
+.group-count{letter-spacing:.04em;text-transform:none;opacity:.8}
+#read-section{padding-top:18px;border-top:1px dashed var(--rule)}
 .card{
   display:flex;align-items:center;gap:14px;background:var(--surface);
   border:1.5px solid var(--rule);border-radius:12px;padding:16px 18px;
@@ -77,15 +81,15 @@ LANDING_CSS = """
 
 
 def main():
-    cards = []
-    for stem, _title, _emoji, _tag in TOPICS:
+    cards_by_cat = {}
+    for idx, (stem, _title, _emoji, _tag) in enumerate(TOPICS):
         meta = TOPICS_META[stem]
         # o card da home usa o título "completo" (o mesmo da própria página do
         # guia); o hub tudo.html usa o título curto — comportamento original.
         title, emoji, tag, lede = meta["title_full"], meta["emoji"], meta["tag"], meta["lede"]
         fontes = fontes_curtas(stem)
-        cards.append(
-            f'<li class="card" data-stem="{stem}">'
+        cards_by_cat.setdefault(meta["categoria"], []).append(
+            f'<li class="card" data-stem="{stem}" data-i="{idx}" data-cat="{html.escape(meta['categoria'])}">'
             f'<a class="card-link" href="{stem}.html">'
             f'<span class="card-emoji">{emoji}</span>'
             f'<span class="card-body">'
@@ -98,6 +102,13 @@ def main():
             f'<input type="checkbox" data-stem="{stem}"><span>Já li</span>'
             f'</label></li>'
         )
+
+    groups_html = "".join(
+        f'<section class="group" data-cat="{html.escape(cat)}">'
+        f'<h2 class="group-title">{html.escape(cat)} <span class="group-count"></span></h2>'
+        f'<ul class="cardlist">{"".join(items)}</ul></section>'
+        for cat, items in cards_by_cat.items()
+    )
 
     out = f"""<title>CORTEX</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -115,10 +126,11 @@ def main():
     <span class="progress-bar"><span class="progress-fill" id="progress-fill" style="width:0%"></span></span>
   </div>
 </header>
-<ul class="cardlist" id="cardlist">
-{"".join(cards)}
-<li class="divider" id="divider">Já lidos</li>
-</ul>
+<div id="groups">{groups_html}</div>
+<section class="group" id="read-section" hidden>
+  <h2 class="group-title">Já lidos <span class="group-count"></span></h2>
+  <ul class="cardlist" id="read-list"></ul>
+</section>
 <a class="hub-link" href="tudo.html">Ver os {len(TOPICS)} tópicos numa página só →</a>
 <footer>
   435 vídeos, 197 canais. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem em
@@ -132,38 +144,55 @@ def main():
 {TRACKING_JS}
 <script>
 document.addEventListener('DOMContentLoaded', function(){{
-  var list = document.getElementById('cardlist');
-  var divider = document.getElementById('divider');
+  var root = document.getElementById('groups');
+  var readSection = document.getElementById('read-section');
+  var readList = document.getElementById('read-list');
   var label = document.getElementById('progress-label');
   var fill = document.getElementById('progress-fill');
   var total = {len(TOPICS)};
+  var cards = Array.prototype.slice.call(document.querySelectorAll('li.card'))
+    .sort(function(a,b){{ return a.getAttribute('data-i') - b.getAttribute('data-i'); }});
+  var groupList = {{}};
+  Array.prototype.forEach.call(root.querySelectorAll('.group'), function(g){{
+    groupList[g.getAttribute('data-cat')] = g;
+  }});
 
   function renderOrder(){{
     var lidos = window.estudosLidos.get();
-    var items = Array.prototype.slice.call(list.querySelectorAll('li.card'));
-    var unread = items.filter(function(li){{ return !lidos[li.getAttribute('data-stem')]; }});
-    var read = items.filter(function(li){{ return lidos[li.getAttribute('data-stem')]; }})
-      .sort(function(a,b){{
-        return lidos[a.getAttribute('data-stem')] - lidos[b.getAttribute('data-stem')];
-      }});
-    unread.forEach(function(li){{
-      list.appendChild(li);
-      li.classList.remove('is-lido');
-      li.querySelector('input').checked = false;
+    var read = [];
+    cards.forEach(function(li){{
+      var stem = li.getAttribute('data-stem');
+      var input = li.querySelector('input');
+      if (lidos[stem]) {{
+        read.push(li);
+        li.classList.add('is-lido');
+        input.checked = true;
+      }} else {{
+        var home = groupList[li.getAttribute('data-cat')];
+        home.querySelector('.cardlist').appendChild(li);
+        li.classList.remove('is-lido');
+        input.checked = false;
+      }}
     }});
-    divider.style.display = read.length ? 'block' : 'none';
-    list.appendChild(divider);
-    read.forEach(function(li){{
-      list.appendChild(li);
-      li.classList.add('is-lido');
-      li.querySelector('input').checked = true;
+    read.sort(function(a,b){{
+      return lidos[a.getAttribute('data-stem')] - lidos[b.getAttribute('data-stem')];
     }});
+    read.forEach(function(li){{ readList.appendChild(li); }});
+
+    Object.keys(groupList).forEach(function(cat){{
+      var g = groupList[cat];
+      var n = g.querySelectorAll('li.card').length;
+      g.hidden = n === 0;
+      g.querySelector('.group-count').textContent = n;
+    }});
+    readSection.hidden = read.length === 0;
+    readSection.querySelector('.group-count').textContent = read.length;
     label.textContent = read.length + ' de ' + total + ' lidos';
     fill.style.width = Math.round((read.length/total)*100) + '%';
   }}
 
-  list.addEventListener('change', function(e){{
-    if (e.target.matches('input[type=checkbox]')){{
+  document.addEventListener('change', function(e){{
+    if (e.target.matches('li.card input[type=checkbox]')){{
       var li = e.target.closest('li.card');
       window.estudosLidos.set(li.getAttribute('data-stem'), e.target.checked);
       renderOrder();

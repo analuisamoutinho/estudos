@@ -173,12 +173,16 @@ h1.brand{display:flex;align-items:center;gap:15px;letter-spacing:.015em}
 }
 .progress-bar{flex:1;max-width:220px;height:5px;border-radius:99px;background:var(--surface-2);overflow:hidden}
 .progress-fill{height:100%;background:var(--accent);border-radius:99px;transition:width .25s ease}
-.cardlist{list-style:none;margin:34px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
-.cardlist li.divider{
-  margin:22px 0 2px;padding-top:18px;border-top:1px dashed var(--rule);
-  font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.16em;
-  color:var(--ink-faint);display:none;
+.cardlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.group{margin-top:34px}
+.group[hidden]{display:none}
+.group-title{
+  display:flex;align-items:baseline;gap:10px;margin:0 0 12px;padding:0;border:0;
+  font-family:var(--mono);font-size:11px;font-weight:500;text-transform:uppercase;
+  letter-spacing:.16em;color:var(--ink-faint);
 }
+.group-count{letter-spacing:.04em;text-transform:none;opacity:.8}
+#read-section{padding-top:18px;border-top:1px dashed var(--rule)}
 .card{
   display:flex;align-items:center;gap:14px;background:var(--surface);
   border:1.5px solid var(--rule);border-radius:12px;padding:16px 18px;
@@ -229,10 +233,11 @@ h1.brand{display:flex;align-items:center;gap:15px;letter-spacing:.015em}
     <span class="progress-bar"><span class="progress-fill" id="progress-fill" style="width:0%"></span></span>
   </div>
 </header>
-<ul class="cardlist" id="cardlist">
-<li class="card" data-stem="numeros-e-ceticismo"><a class="card-link" href="numeros-e-ceticismo.html"><span class="card-emoji">⚠️</span><span class="card-body"><span class="card-title">Números e Ceticismo</span><span class="card-tag">leia antes de tudo</span><span class="card-lede">Auditoria de todos os resultados alegados na biblioteca — o número do título contra o que é dito dentro do vídeo.</span><span class="card-fontes">Fontes: </span></span></a><label class="card-check"><input type="checkbox" data-stem="numeros-e-ceticismo"><span>Já li</span></label></li><li class="card" data-stem="agencia-ia"><a class="card-link" href="agencia-ia.html"><span class="card-emoji">🤖</span><span class="card-body"><span class="card-title">Agência de IA e Automação</span><span class="card-tag">o caminho mais rápido para caixa</span><span class="card-lede">Vender agentes de IA e automações para empresas — sem produto próprio, sem audiência, sem tráfego pago.</span><span class="card-fontes">Fontes: NoCode StartUp, Well Pires, Luciana Papini +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="agencia-ia"><span>Já li</span></label></li><li class="card" data-stem="ferramentas-de-ia"><a class="card-link" href="ferramentas-de-ia.html"><span class="card-emoji">🛠️</span><span class="card-body"><span class="card-title">Ferramentas de IA na Prática</span><span class="card-tag">Claude, Claude Code e N8N no real</span><span class="card-lede">Como criadores realmente usam Claude, Claude Code e Gemini Omni — o fluxo de trabalho de verdade, com bug e retrabalho.</span><span class="card-fontes">Fontes: Descomplicando Sites, Klebson Queiroz, Tiago Lemos +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="ferramentas-de-ia"><span>Já li</span></label></li><li class="card" data-stem="aquisicao-saas"><a class="card-link" href="aquisicao-saas.html"><span class="card-emoji">🧲</span><span class="card-body"><span class="card-title">Aquisição de Clientes para SaaS</span><span class="card-tag">os primeiros 100 assinantes</span><span class="card-lede">Como conseguir assinantes para um SaaS — os canais que realmente trazem os primeiros clientes, garimpados por engajamento entre 143 vídeos.</span><span class="card-fontes">Fontes: Y Combinator, Rob Walling, Bruno Okamoto +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="aquisicao-saas"><span>Já li</span></label></li><li class="card" data-stem="servicos-mil-dia"><a class="card-link" href="servicos-mil-dia.html"><span class="card-emoji">💰</span><span class="card-body"><span class="card-title">Serviços Digitais: a meta de R$1k/dia</span><span class="card-tag">tráfego, IA, ebook e prospecção</span><span class="card-lede">O que realmente é preciso para faturar R$1.000 por dia com serviço digital — as contas, os canais de prospecção e o que a matemática diz sobre a meta.</span><span class="card-fontes">Fontes: Adriano Gianini, Rodrigo Vincenzi, Rodolfo Zanin +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="servicos-mil-dia"><span>Já li</span></label></li><li class="card" data-stem="upwork"><a class="card-link" href="upwork.html"><span class="card-emoji">🌎</span><span class="card-body"><span class="card-title">Upwork e Freela Internacional</span><span class="card-tag">faturar em dólar</span><span class="card-lede">Como pegar freela em dólar no Upwork e afins — perfil, proposta, precificação e o que os relatos honestos mostram sobre os primeiros meses.</span><span class="card-fontes">Fontes: Mundo Freelancer, Attekita Dev, Lucas Guerra +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="upwork"><span>Já li</span></label></li><li class="card" data-stem="saas-produto"><a class="card-link" href="saas-produto.html"><span class="card-emoji">💻</span><span class="card-body"><span class="card-title">SaaS e Produto Digital</span><span class="card-tag">recorrência com IA</span><span class="card-lede">Construir e vender software com IA, sem programar — achar a ideia, montar o produto e a distribuição que os vídeos escondem.</span><span class="card-fontes">Fontes: Starter Story, Cakto, Caio Martins +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="saas-produto"><span>Já li</span></label></li><li class="card" data-stem="low-ticket"><a class="card-link" href="low-ticket.html"><span class="card-emoji">🎯</span><span class="card-body"><span class="card-title">Low Ticket e Tráfego Pago</span><span class="card-tag">adquirir cliente pagando</span><span class="card-lede">Como adquirir cliente pagando por ele — 11 princípios de consenso e um método operacional em 8 fases.</span><span class="card-fontes">Fontes: </span></span></a><label class="card-check"><input type="checkbox" data-stem="low-ticket"><span>Já li</span></label></li><li class="card" data-stem="negocio-solo"><a class="card-link" href="negocio-solo.html"><span class="card-emoji">🧠</span><span class="card-body"><span class="card-title">Negócio Solo e Mentalidade</span><span class="card-tag">Hormozi e mentalidade</span><span class="card-lede">Como sair do zero operando sozinho, sem se sabotar.</span><span class="card-fontes">Fontes: Alex Hormozi, Simon Squibb / Pierce Lenny, Bruno Gabarra +1</span></span></a><label class="card-check"><input type="checkbox" data-stem="negocio-solo"><span>Já li</span></label></li><li class="card" data-stem="copy-e-criativo"><a class="card-link" href="copy-e-criativo.html"><span class="card-emoji">✍️</span><span class="card-body"><span class="card-title">Copy, Criativo e Conteúdo</span><span class="card-tag">o que vende</span><span class="card-lede">Escrever o que vende e produzir o que para o scroll.</span><span class="card-fontes">Fontes: Método VTSD / Leandro Ladeira, Henrique Oliveira, Silvio Roberto</span></span></a><label class="card-check"><input type="checkbox" data-stem="copy-e-criativo"><span>Já li</span></label></li><li class="card" data-stem="ecommerce"><a class="card-link" href="ecommerce.html"><span class="card-emoji">📦</span><span class="card-body"><span class="card-title">E-commerce e Dropshipping</span><span class="card-tag">o experimento honesto</span><span class="card-lede">O tópico menor da biblioteca, com o vídeo mais honesto de todos.</span><span class="card-fontes">Fontes: Mark Tilbury, Rafa Souza, Ecommerce Puro +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="ecommerce"><span>Já li</span></label></li><li class="card" data-stem="amar-a-deus-no-ordinario"><a class="card-link" href="amar-a-deus-no-ordinario.html"><span class="card-emoji">🕊️</span><span class="card-body"><span class="card-title">Amar a Deus no Ordinário</span><span class="card-tag">santidade na vida comum</span><span class="card-lede">Buscar a Deus dentro do trabalho, da rotina, do cansaço e das obrigações banais — sem precisar de uma vida diferente da que você já tem.</span><span class="card-fontes">Fontes: Padre Paulo Ricardo, Padre Pedro Willemsens, Frei Gilson +1</span></span></a><label class="card-check"><input type="checkbox" data-stem="amar-a-deus-no-ordinario"><span>Já li</span></label></li>
-<li class="divider" id="divider">Já lidos</li>
-</ul>
+<div id="groups"><section class="group" data-cat="Negócios"><h2 class="group-title">Negócios <span class="group-count"></span></h2><ul class="cardlist"><li class="card" data-stem="numeros-e-ceticismo" data-i="0" data-cat="Negócios"><a class="card-link" href="numeros-e-ceticismo.html"><span class="card-emoji">⚠️</span><span class="card-body"><span class="card-title">Números e Ceticismo</span><span class="card-tag">leia antes de tudo</span><span class="card-lede">Auditoria de todos os resultados alegados na biblioteca — o número do título contra o que é dito dentro do vídeo.</span><span class="card-fontes">Fontes: </span></span></a><label class="card-check"><input type="checkbox" data-stem="numeros-e-ceticismo"><span>Já li</span></label></li><li class="card" data-stem="agencia-ia" data-i="1" data-cat="Negócios"><a class="card-link" href="agencia-ia.html"><span class="card-emoji">🤖</span><span class="card-body"><span class="card-title">Agência de IA e Automação</span><span class="card-tag">o caminho mais rápido para caixa</span><span class="card-lede">Vender agentes de IA e automações para empresas — sem produto próprio, sem audiência, sem tráfego pago.</span><span class="card-fontes">Fontes: NoCode StartUp, Well Pires, Luciana Papini +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="agencia-ia"><span>Já li</span></label></li><li class="card" data-stem="ferramentas-de-ia" data-i="2" data-cat="Negócios"><a class="card-link" href="ferramentas-de-ia.html"><span class="card-emoji">🛠️</span><span class="card-body"><span class="card-title">Ferramentas de IA na Prática</span><span class="card-tag">Claude, Claude Code e N8N no real</span><span class="card-lede">Como criadores realmente usam Claude, Claude Code e Gemini Omni — o fluxo de trabalho de verdade, com bug e retrabalho.</span><span class="card-fontes">Fontes: Descomplicando Sites, Klebson Queiroz, Tiago Lemos +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="ferramentas-de-ia"><span>Já li</span></label></li><li class="card" data-stem="aquisicao-saas" data-i="3" data-cat="Negócios"><a class="card-link" href="aquisicao-saas.html"><span class="card-emoji">🧲</span><span class="card-body"><span class="card-title">Aquisição de Clientes para SaaS</span><span class="card-tag">os primeiros 100 assinantes</span><span class="card-lede">Como conseguir assinantes para um SaaS — os canais que realmente trazem os primeiros clientes, garimpados por engajamento entre 143 vídeos.</span><span class="card-fontes">Fontes: Y Combinator, Rob Walling, Bruno Okamoto +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="aquisicao-saas"><span>Já li</span></label></li><li class="card" data-stem="servicos-mil-dia" data-i="4" data-cat="Negócios"><a class="card-link" href="servicos-mil-dia.html"><span class="card-emoji">💰</span><span class="card-body"><span class="card-title">Serviços Digitais: a meta de R$1k/dia</span><span class="card-tag">tráfego, IA, ebook e prospecção</span><span class="card-lede">O que realmente é preciso para faturar R$1.000 por dia com serviço digital — as contas, os canais de prospecção e o que a matemática diz sobre a meta.</span><span class="card-fontes">Fontes: Adriano Gianini, Rodrigo Vincenzi, Rodolfo Zanin +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="servicos-mil-dia"><span>Já li</span></label></li><li class="card" data-stem="upwork" data-i="5" data-cat="Negócios"><a class="card-link" href="upwork.html"><span class="card-emoji">🌎</span><span class="card-body"><span class="card-title">Upwork e Freela Internacional</span><span class="card-tag">faturar em dólar</span><span class="card-lede">Como pegar freela em dólar no Upwork e afins — perfil, proposta, precificação e o que os relatos honestos mostram sobre os primeiros meses.</span><span class="card-fontes">Fontes: Mundo Freelancer, Attekita Dev, Lucas Guerra +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="upwork"><span>Já li</span></label></li><li class="card" data-stem="saas-produto" data-i="6" data-cat="Negócios"><a class="card-link" href="saas-produto.html"><span class="card-emoji">💻</span><span class="card-body"><span class="card-title">SaaS e Produto Digital</span><span class="card-tag">recorrência com IA</span><span class="card-lede">Construir e vender software com IA, sem programar — achar a ideia, montar o produto e a distribuição que os vídeos escondem.</span><span class="card-fontes">Fontes: Starter Story, Cakto, Caio Martins +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="saas-produto"><span>Já li</span></label></li><li class="card" data-stem="low-ticket" data-i="7" data-cat="Negócios"><a class="card-link" href="low-ticket.html"><span class="card-emoji">🎯</span><span class="card-body"><span class="card-title">Low Ticket e Tráfego Pago</span><span class="card-tag">adquirir cliente pagando</span><span class="card-lede">Como adquirir cliente pagando por ele — 11 princípios de consenso e um método operacional em 8 fases.</span><span class="card-fontes">Fontes: </span></span></a><label class="card-check"><input type="checkbox" data-stem="low-ticket"><span>Já li</span></label></li><li class="card" data-stem="negocio-solo" data-i="8" data-cat="Negócios"><a class="card-link" href="negocio-solo.html"><span class="card-emoji">🧠</span><span class="card-body"><span class="card-title">Negócio Solo e Mentalidade</span><span class="card-tag">Hormozi e mentalidade</span><span class="card-lede">Como sair do zero operando sozinho, sem se sabotar.</span><span class="card-fontes">Fontes: Alex Hormozi, Simon Squibb / Pierce Lenny, Bruno Gabarra +1</span></span></a><label class="card-check"><input type="checkbox" data-stem="negocio-solo"><span>Já li</span></label></li><li class="card" data-stem="copy-e-criativo" data-i="9" data-cat="Negócios"><a class="card-link" href="copy-e-criativo.html"><span class="card-emoji">✍️</span><span class="card-body"><span class="card-title">Copy, Criativo e Conteúdo</span><span class="card-tag">o que vende</span><span class="card-lede">Escrever o que vende e produzir o que para o scroll.</span><span class="card-fontes">Fontes: Método VTSD / Leandro Ladeira, Henrique Oliveira, Silvio Roberto</span></span></a><label class="card-check"><input type="checkbox" data-stem="copy-e-criativo"><span>Já li</span></label></li><li class="card" data-stem="ecommerce" data-i="10" data-cat="Negócios"><a class="card-link" href="ecommerce.html"><span class="card-emoji">📦</span><span class="card-body"><span class="card-title">E-commerce e Dropshipping</span><span class="card-tag">o experimento honesto</span><span class="card-lede">O tópico menor da biblioteca, com o vídeo mais honesto de todos.</span><span class="card-fontes">Fontes: Mark Tilbury, Rafa Souza, Ecommerce Puro +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="ecommerce"><span>Já li</span></label></li></ul></section><section class="group" data-cat="Fé"><h2 class="group-title">Fé <span class="group-count"></span></h2><ul class="cardlist"><li class="card" data-stem="amar-a-deus-no-ordinario" data-i="11" data-cat="Fé"><a class="card-link" href="amar-a-deus-no-ordinario.html"><span class="card-emoji">🕊️</span><span class="card-body"><span class="card-title">Amar a Deus no Ordinário</span><span class="card-tag">santidade na vida comum</span><span class="card-lede">Buscar a Deus dentro do trabalho, da rotina, do cansaço e das obrigações banais — sem precisar de uma vida diferente da que você já tem.</span><span class="card-fontes">Fontes: Padre Paulo Ricardo, Padre Pedro Willemsens, Frei Gilson +1</span></span></a><label class="card-check"><input type="checkbox" data-stem="amar-a-deus-no-ordinario"><span>Já li</span></label></li></ul></section></div>
+<section class="group" id="read-section" hidden>
+  <h2 class="group-title">Já lidos <span class="group-count"></span></h2>
+  <ul class="cardlist" id="read-list"></ul>
+</section>
 <a class="hub-link" href="tudo.html">Ver os 12 tópicos numa página só →</a>
 <footer>
   435 vídeos, 197 canais. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem em
@@ -258,38 +263,55 @@ h1.brand{display:flex;align-items:center;gap:15px;letter-spacing:.015em}
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function(){
-  var list = document.getElementById('cardlist');
-  var divider = document.getElementById('divider');
+  var root = document.getElementById('groups');
+  var readSection = document.getElementById('read-section');
+  var readList = document.getElementById('read-list');
   var label = document.getElementById('progress-label');
   var fill = document.getElementById('progress-fill');
   var total = 12;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('li.card'))
+    .sort(function(a,b){ return a.getAttribute('data-i') - b.getAttribute('data-i'); });
+  var groupList = {};
+  Array.prototype.forEach.call(root.querySelectorAll('.group'), function(g){
+    groupList[g.getAttribute('data-cat')] = g;
+  });
 
   function renderOrder(){
     var lidos = window.estudosLidos.get();
-    var items = Array.prototype.slice.call(list.querySelectorAll('li.card'));
-    var unread = items.filter(function(li){ return !lidos[li.getAttribute('data-stem')]; });
-    var read = items.filter(function(li){ return lidos[li.getAttribute('data-stem')]; })
-      .sort(function(a,b){
-        return lidos[a.getAttribute('data-stem')] - lidos[b.getAttribute('data-stem')];
-      });
-    unread.forEach(function(li){
-      list.appendChild(li);
-      li.classList.remove('is-lido');
-      li.querySelector('input').checked = false;
+    var read = [];
+    cards.forEach(function(li){
+      var stem = li.getAttribute('data-stem');
+      var input = li.querySelector('input');
+      if (lidos[stem]) {
+        read.push(li);
+        li.classList.add('is-lido');
+        input.checked = true;
+      } else {
+        var home = groupList[li.getAttribute('data-cat')];
+        home.querySelector('.cardlist').appendChild(li);
+        li.classList.remove('is-lido');
+        input.checked = false;
+      }
     });
-    divider.style.display = read.length ? 'block' : 'none';
-    list.appendChild(divider);
-    read.forEach(function(li){
-      list.appendChild(li);
-      li.classList.add('is-lido');
-      li.querySelector('input').checked = true;
+    read.sort(function(a,b){
+      return lidos[a.getAttribute('data-stem')] - lidos[b.getAttribute('data-stem')];
     });
+    read.forEach(function(li){ readList.appendChild(li); });
+
+    Object.keys(groupList).forEach(function(cat){
+      var g = groupList[cat];
+      var n = g.querySelectorAll('li.card').length;
+      g.hidden = n === 0;
+      g.querySelector('.group-count').textContent = n;
+    });
+    readSection.hidden = read.length === 0;
+    readSection.querySelector('.group-count').textContent = read.length;
     label.textContent = read.length + ' de ' + total + ' lidos';
     fill.style.width = Math.round((read.length/total)*100) + '%';
   }
 
-  list.addEventListener('change', function(e){
-    if (e.target.matches('input[type=checkbox]')){
+  document.addEventListener('change', function(e){
+    if (e.target.matches('li.card input[type=checkbox]')){
       var li = e.target.closest('li.card');
       window.estudosLidos.set(li.getAttribute('data-stem'), e.target.checked);
       renderOrder();

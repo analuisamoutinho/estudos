@@ -4,6 +4,7 @@ emoji: "✍️"
 tag: "o que vende"
 lede: "Escrever o que vende e produzir o que para o scroll."
 title_full: "Copy, Criativo e Conteúdo"
+categoria: "Negócios"
 order: 100
 ---
 

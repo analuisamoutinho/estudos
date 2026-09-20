@@ -4,6 +4,7 @@ emoji: "🤖"
 tag: "o caminho mais rápido para caixa"
 lede: "Vender agentes de IA e automações para empresas — sem produto próprio, sem audiência, sem tráfego pago."
 title_full: "Agência de IA e Automação"
+categoria: "Negócios"
 order: 20
 ---
 

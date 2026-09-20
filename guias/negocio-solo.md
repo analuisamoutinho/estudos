@@ -4,6 +4,7 @@ emoji: "🧠"
 tag: "Hormozi e mentalidade"
 lede: "Como sair do zero operando sozinho, sem se sabotar."
 title_full: "Negócio Solo e Mentalidade"
+categoria: "Negócios"
 order: 90
 ---
 
