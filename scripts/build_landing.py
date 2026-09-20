@@ -24,58 +24,128 @@ def fontes_curtas(stem, limit=3):
 
 
 LANDING_CSS = """
-.progress{
-  display:flex;align-items:center;gap:12px;margin:22px 0 6px;
-  font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);
+/* --- stage: painel com o gradiente "atmosphere" do design system, onde os
+   cards de vidro (frosted) flutuam --- */
+.stage{
+  position:relative; overflow:hidden; border-radius:var(--radius-stage);
+  background:var(--atmosphere); box-shadow:var(--shadow-raised);
+  padding:22px 22px 26px; margin:28px 0 40px;
 }
-.progress-bar{flex:1;max-width:220px;height:5px;border-radius:99px;background:var(--surface-2);overflow:hidden}
-.progress-fill{height:100%;background:var(--accent);border-radius:99px;transition:width .25s ease}
-.cardlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
-.group{margin-top:34px}
+.stage-top{
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  flex-wrap:wrap; margin:0 0 20px;
+}
+.stage-label{
+  font-family:var(--mono); font-size:10.5px; text-transform:uppercase;
+  letter-spacing:.16em; color:rgba(248,250,252,.72);
+}
+.progress{
+  display:flex; align-items:center; gap:11px;
+  font-family:var(--mono); font-size:11px; color:rgba(248,250,252,.78);
+}
+.progress-bar{
+  flex:1; width:150px; max-width:40vw; height:5px; border-radius:var(--radius-pill);
+  background:rgba(248,250,252,.18); overflow:hidden;
+}
+.progress-fill{height:100%;background:#F8FAFC;border-radius:var(--radius-pill);transition:width var(--reveal) var(--ease)}
+
+.filter-pills{
+  display:inline-flex; gap:3px; padding:4px; border-radius:var(--radius-pill);
+  background:var(--glass-clear); backdrop-filter:blur(var(--blur-clear));
+  -webkit-backdrop-filter:blur(var(--blur-clear));
+  border:1px solid rgba(255,255,255,.16);
+}
+.filter-pill{
+  border:0; background:transparent; cursor:pointer; white-space:nowrap;
+  font:600 12px var(--sans); color:rgba(248,250,252,.76);
+  padding:7px 14px; border-radius:var(--radius-pill);
+  transition:background var(--fast) var(--ease),color var(--fast) var(--ease);
+}
+.filter-pill:hover{color:#fff}
+.filter-pill.is-active{background:rgba(248,250,252,.94);color:#1F2E3A}
+
+.cardlist{
+  list-style:none; margin:0; padding:0; counter-reset:card;
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px;
+}
+.group{margin-top:28px}
+.group:first-child{margin-top:0}
 .group[hidden]{display:none}
 .group-title{
   display:flex;align-items:baseline;gap:10px;margin:0 0 12px;padding:0;border:0;
   font-family:var(--mono);font-size:11px;font-weight:500;text-transform:uppercase;
-  letter-spacing:.16em;color:var(--ink-faint);
+  letter-spacing:.16em;color:rgba(248,250,252,.6);
 }
 .group-count{letter-spacing:.04em;text-transform:none;opacity:.8}
-#read-section{padding-top:18px;border-top:1px dashed var(--rule)}
+#read-section{margin-top:40px;padding-top:20px;border-top:1px dashed var(--border)}
+#read-section .group-title{color:var(--ink-faint)}
+
+/* --- card de tópico: material "frosted" (28px blur · 72% tint), leitura em
+   primeiro plano sobre o palco escuro --- */
 .card{
-  display:flex;align-items:center;gap:14px;background:var(--surface);
-  border:1.5px solid var(--rule);border-radius:12px;padding:16px 18px;
-  transition:border-color .15s,opacity .2s;
+  counter-increment:card; min-width:0;
+  position:relative; display:flex; flex-direction:column; gap:10px;
+  background:var(--glass-frosted);
+  backdrop-filter:blur(var(--blur-frosted)); -webkit-backdrop-filter:blur(var(--blur-frosted));
+  border:1px solid rgba(255,255,255,.18); border-radius:var(--radius-card);
+  padding:18px 18px 16px; color:var(--ink);
+  box-shadow:var(--glass-rim),var(--shadow-glass);
+  transition:transform var(--fast) var(--ease),box-shadow var(--fast) var(--ease),opacity var(--fast) var(--ease);
 }
-.card:hover{border-color:var(--accent)}
-.card.is-lido{opacity:.52}
+.card:hover{transform:translateY(-3px)}
+.card.is-lido{opacity:.55}
 .card.is-lido .card-title{text-decoration:line-through;text-decoration-color:var(--ink-faint)}
 .card-link{
-  flex:1;min-width:0;display:flex;align-items:flex-start;gap:14px;
-  text-decoration:none;color:inherit;
+  display:flex; flex-direction:column; gap:9px;
+  text-decoration:none; color:inherit; min-width:0;
 }
-.card-emoji{font-size:26px;line-height:1.3;flex:none}
+.card-emoji{
+  display:flex; align-items:center; justify-content:center; flex:none;
+  width:42px; height:42px; font-size:21px; border-radius:var(--radius-control);
+  background:color-mix(in srgb, var(--ink) 8%, transparent);
+}
 .card-body{min-width:0}
+.card-tag{
+  display:block; font-family:var(--mono); font-size:10px; text-transform:uppercase;
+  letter-spacing:.1em; color:var(--action); margin:0 0 6px;
+}
+.card-tag::before{content:counter(card,decimal-leading-zero) " / "}
 .card-title{
   display:block;font-family:var(--sans);font-weight:700;font-size:16.5px;
-  color:var(--ink);letter-spacing:-.01em;
+  line-height:1.28;color:var(--ink);letter-spacing:-.01em;margin-bottom:2px;
 }
-.card-tag{
-  display:block;font-family:var(--mono);font-size:10px;text-transform:uppercase;
-  letter-spacing:.12em;color:var(--accent);margin:3px 0 6px;
+.card-lede{display:block;font-size:13.5px;color:var(--ink-soft);line-height:1.5}
+.card-meta{
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  margin-top:8px; padding-top:10px;
+  border-top:1px solid color-mix(in srgb, var(--ink) 12%, transparent);
 }
-.card-lede{display:block;font-size:14px;color:var(--ink-soft);line-height:1.5;max-width:56ch}
-.card-fontes{display:block;font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);margin-top:7px}
+.card-fontes{
+  display:block; font-family:var(--mono); font-size:10px; color:var(--ink-faint);
+  min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
 .card-check{
-  flex:none;display:flex;flex-direction:column;align-items:center;gap:4px;
-  font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;
-  color:var(--ink-faint);cursor:pointer;padding:4px 6px;
+  flex:none;display:flex;align-items:center;gap:5px;
+  font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--ink-faint);cursor:pointer;
 }
-.card-check input{width:18px;height:18px;accent-color:var(--accent);cursor:pointer}
+.card-check input{width:15px;height:15px;accent-color:var(--success);cursor:pointer}
+
 .hub-link{
-  display:inline-block;margin-top:46px;font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+  display:inline-flex; align-items:center; gap:8px; margin-top:8px;
+  font-family:var(--sans); font-size:13px; font-weight:600; color:var(--text-inverse);
+  background:var(--action); padding:11px 20px; border-radius:var(--radius-pill);
+  text-decoration:none; box-shadow:var(--shadow-soft);
+  transition:background var(--fast) var(--ease),transform var(--fast) var(--ease);
 }
+.hub-link:hover{background:var(--action-hover);transform:translateY(-1px)}
+
 @media(max-width:600px){
-  .card{flex-direction:column;align-items:stretch}
-  .card-check{flex-direction:row;align-self:flex-end}
+  .stage{padding:16px 14px 20px;border-radius:calc(var(--radius-stage) - .375rem)}
+  .stage-top{gap:12px}
+  .progress-bar{max-width:100%}
+  .cardlist{grid-template-columns:1fr}
+  .card{padding:16px 16px 14px}
 }
 """
 
@@ -88,26 +158,33 @@ def main():
         # guia); o hub tudo.html usa o título curto — comportamento original.
         title, emoji, tag, lede = meta["title_full"], meta["emoji"], meta["tag"], meta["lede"]
         fontes = fontes_curtas(stem)
+        categoria_attr = html.escape(meta["categoria"])
         cards_by_cat.setdefault(meta["categoria"], []).append(
-            f'<li class="card" data-stem="{stem}" data-i="{idx}" data-cat="{html.escape(meta['categoria'])}">'
+            f'<li class="card" data-stem="{stem}" data-i="{idx}" data-cat="{categoria_attr}">'
             f'<a class="card-link" href="{stem}.html">'
             f'<span class="card-emoji">{emoji}</span>'
             f'<span class="card-body">'
-            f'<span class="card-title">{html.escape(title)}</span>'
             f'<span class="card-tag">{html.escape(tag)}</span>'
+            f'<span class="card-title">{html.escape(title)}</span>'
             f'<span class="card-lede">{html.escape(lede)}</span>'
-            f'<span class="card-fontes">Fontes: {html.escape(fontes)}</span>'
             f'</span></a>'
+            f'<span class="card-meta">'
+            f'<span class="card-fontes">Fontes: {html.escape(fontes)}</span>'
             f'<label class="card-check">'
             f'<input type="checkbox" data-stem="{stem}"><span>Já li</span>'
-            f'</label></li>'
+            f'</label></span></li>'
         )
 
+    cats = list(cards_by_cat.keys())
     groups_html = "".join(
         f'<section class="group" data-cat="{html.escape(cat)}">'
         f'<h2 class="group-title">{html.escape(cat)} <span class="group-count"></span></h2>'
         f'<ul class="cardlist">{"".join(items)}</ul></section>'
         for cat, items in cards_by_cat.items()
+    )
+    filter_pills = '<button type="button" class="filter-pill is-active" data-filter="todos">Todos</button>' + "".join(
+        f'<button type="button" class="filter-pill" data-filter="{html.escape(cat)}">{html.escape(cat)}</button>'
+        for cat in cats
     )
 
     out = f"""<title>CORTEX</title>
@@ -115,18 +192,24 @@ def main():
 {HEAD_ICONS}
 <style>{CSS}{LANDING_CSS}</style>
 <div class="wrap">
-<main style="max-width:760px">
-<header>
+<main style="max-width:820px">
+<header style="border-bottom:0">
   <p class="eyebrow">Biblioteca de transcrições · Síntese operacional</p>
   <h1 class="brand"><img class="brandmark" src="cortex-icon.png" alt="">CORTEX</h1>
   <p class="lede">Escolha por onde começar. O que você já leu desce pra baixo da lista sozinho —
   fica só o que falta.</p>
-  <div class="progress">
-    <span id="progress-label">0 de {len(TOPICS)} lidos</span>
-    <span class="progress-bar"><span class="progress-fill" id="progress-fill" style="width:0%"></span></span>
-  </div>
 </header>
-<div id="groups">{groups_html}</div>
+<div class="stage">
+  <div class="stage-top">
+    <span class="stage-label">{len(TOPICS)} tópicos · {len(cats)} categorias</span>
+    <div class="progress">
+      <span id="progress-label">0 de {len(TOPICS)} lidos</span>
+      <span class="progress-bar"><span class="progress-fill" id="progress-fill" style="width:0%"></span></span>
+    </div>
+    <div class="filter-pills" id="filter-pills">{filter_pills}</div>
+  </div>
+  <div id="groups">{groups_html}</div>
+</div>
 <section class="group" id="read-section" hidden>
   <h2 class="group-title">Já lidos <span class="group-count"></span></h2>
   <ul class="cardlist" id="read-list"></ul>
@@ -156,6 +239,7 @@ document.addEventListener('DOMContentLoaded', function(){{
   Array.prototype.forEach.call(root.querySelectorAll('.group'), function(g){{
     groupList[g.getAttribute('data-cat')] = g;
   }});
+  var activeFilter = 'todos';
 
   function renderOrder(){{
     var lidos = window.estudosLidos.get();
@@ -182,7 +266,8 @@ document.addEventListener('DOMContentLoaded', function(){{
     Object.keys(groupList).forEach(function(cat){{
       var g = groupList[cat];
       var n = g.querySelectorAll('li.card').length;
-      g.hidden = n === 0;
+      var matches = activeFilter === 'todos' || activeFilter === cat;
+      g.hidden = n === 0 || !matches;
       g.querySelector('.group-count').textContent = n;
     }});
     readSection.hidden = read.length === 0;
@@ -198,6 +283,19 @@ document.addEventListener('DOMContentLoaded', function(){{
       renderOrder();
     }}
   }});
+
+  var pills = document.getElementById('filter-pills');
+  if (pills) {{
+    pills.addEventListener('click', function(e){{
+      var btn = e.target.closest('.filter-pill');
+      if (!btn) return;
+      activeFilter = btn.getAttribute('data-filter');
+      Array.prototype.forEach.call(pills.querySelectorAll('.filter-pill'), function(b){{
+        b.classList.toggle('is-active', b === btn);
+      }});
+      renderOrder();
+    }});
+  }}
 
   renderOrder();
 }});

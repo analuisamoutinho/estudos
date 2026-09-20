@@ -2,39 +2,70 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="cortex-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ground:#F5F6F4; --surface:#FFFFFF; --surface-2:#EDEFEB;
-  --ink:#14201C; --ink-soft:#4A5551; --ink-faint:#78837D;
-  --rule:#DDE0DA; --accent:#0F5C4A; --accent-soft:#E4EFEA;
-  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
-  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  --bg:#EDF1F4; --surface:#F8FAFC; --surface-raised:#FFFFFF; --surface-muted:#E2E9EF;
+  --ink:#243746; --ink-soft:#546777; --ink-faint:#7E90A0; --text-inverse:#F8FAFC;
+  --border:#CCD6DE; --border-control:#8294A3;
+  --action:#344F65; --action-hover:#263F54; --focus:#396E98;
+  --success:#28644F; --success-bg:#E5F0EA;
+  --warning:#805B1D; --warning-bg:#F4EDDF;
+  --danger:#A63D4B; --danger-bg:#F8E9EB;
+  --info:#345F83; --info-bg:#E3ECF4;
+  --glass-clear:rgba(255,255,255,.10); --glass-frosted:rgba(248,250,252,.72); --glass-liquid:rgba(255,255,255,.16);
+  --blur-clear:12px; --blur-frosted:28px; --blur-liquid:24px;
+  --glass-rim:inset 0 1px 0 rgba(255,255,255,.65),inset 1px 0 0 rgba(255,255,255,.16);
+  --atmosphere:radial-gradient(ellipse at 85% 0%,#9EAFBB 0%,transparent 58%),linear-gradient(125deg,#294355 0%,#526C80 54%,#8A9FAE 100%);
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'SFMono-Regular',Consolas,'Liberation Mono',monospace;
+  --radius-sm:.5rem; --radius-control:.875rem; --radius-card:1.75rem; --radius-stage:2rem; --radius-pill:999px;
+  --shadow-soft:0 8px 30px rgba(36,55,70,.05);
+  --shadow-raised:0 24px 64px rgba(25,44,60,.14);
+  --shadow-glass:0 16px 40px rgba(17,34,49,.15);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --press:120ms; --fast:180ms; --reveal:280ms;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --ground:#101512; --surface:#171E1A; --surface-2:#1E2723;
-    --ink:#E6EAE6; --ink-soft:#9AA8A1; --ink-faint:#75837C;
-    --rule:#2A342F; --accent:#4FBF9B; --accent-soft:#1B2C26;
+    --bg:#131A21; --surface:#1A222B; --surface-raised:#202A34; --surface-muted:#25303B;
+    --ink:#E9EFF4; --ink-soft:#AAB9C6; --ink-faint:#758795;
+    --border:#2C3945; --border-control:#4B5C6C;
+    --action:#89ABC6; --action-hover:#A6C3DA; --focus:#6FA9D6;
+    --success:#63C09E; --success-bg:#132621;
+    --warning:#DDB169; --warning-bg:#2A2313;
+    --danger:#E38F9A; --danger-bg:#2B181B;
+    --info:#8FB6D8; --info-bg:#15222E;
+    --glass-frosted:rgba(26,34,43,.72); --glass-clear:rgba(255,255,255,.06); --glass-liquid:rgba(255,255,255,.08);
+    --glass-rim:inset 0 1px 0 rgba(255,255,255,.10),inset 1px 0 0 rgba(255,255,255,.05);
   }
 }
 :root[data-theme="dark"]{
-  --ground:#101512; --surface:#171E1A; --surface-2:#1E2723;
-  --ink:#E6EAE6; --ink-soft:#9AA8A1; --ink-faint:#75837C;
-  --rule:#2A342F; --accent:#4FBF9B; --accent-soft:#1B2C26;
+  --bg:#131A21; --surface:#1A222B; --surface-raised:#202A34; --surface-muted:#25303B;
+  --ink:#E9EFF4; --ink-soft:#AAB9C6; --ink-faint:#758795;
+  --border:#2C3945; --border-control:#4B5C6C;
+  --action:#89ABC6; --action-hover:#A6C3DA; --focus:#6FA9D6;
+  --success:#63C09E; --success-bg:#132621;
+  --warning:#DDB169; --warning-bg:#2A2313;
+  --danger:#E38F9A; --danger-bg:#2B181B;
+  --info:#8FB6D8; --info-bg:#15222E;
+  --glass-frosted:rgba(26,34,43,.72); --glass-clear:rgba(255,255,255,.06); --glass-liquid:rgba(255,255,255,.08);
+  --glass-rim:inset 0 1px 0 rgba(255,255,255,.10),inset 1px 0 0 rgba(255,255,255,.05);
 }
 *{box-sizing:border-box}
 body{
-  margin:0; background:var(--ground); color:var(--ink);
-  font-family:var(--serif); font-size:17px; line-height:1.68;
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:16px; line-height:1.62;
   -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:1220px;margin:0 auto;padding:0 24px;display:flex;gap:52px;align-items:flex-start}
-main{flex:1;min-width:0;max-width:70ch;padding:52px 0 120px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px;display:flex;gap:48px;align-items:flex-start}
+main{flex:1;min-width:0;max-width:72ch;padding:44px 0 110px}
 
 nav{
-  position:sticky; top:0; width:228px; flex:none;
-  padding:60px 0 40px; font-family:var(--mono); font-size:11px;
+  position:sticky; top:0; width:224px; flex:none;
+  padding:56px 0 40px; font-family:var(--mono); font-size:11px;
   max-height:100vh; overflow-y:auto;
 }
 nav p{
@@ -42,36 +73,37 @@ nav p{
   color:var(--ink-faint); font-size:9.5px;
 }
 nav a{
-  display:block; padding:6px 0 6px 11px; border-left:2px solid var(--rule);
+  display:block; padding:6px 0 6px 11px; border-left:2px solid var(--border);
   color:var(--ink-soft); text-decoration:none; line-height:1.35;
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease);
 }
-nav a:hover{border-left-color:var(--accent);color:var(--accent)}
+nav a:hover{border-left-color:var(--action);color:var(--action)}
 nav a b{display:block;font-weight:600;color:var(--ink);letter-spacing:.01em}
 nav a span{display:block;color:var(--ink-faint);font-size:9.5px;margin-top:1px}
 nav .sub{padding-left:22px;border-left-color:transparent;font-size:10px}
-nav .sub:hover{border-left-color:var(--rule)}
-@media(max-width:960px){nav{display:none}.wrap{gap:0}main{max-width:none;padding-top:36px}}
+nav .sub:hover{border-left-color:var(--border)}
+@media(max-width:960px){nav{display:none}.wrap{gap:0}main{max-width:none;padding-top:32px}}
 
 h1,h2,h3,h4,h5{font-family:var(--sans);text-wrap:balance;line-height:1.18;letter-spacing:-.02em}
-h1{font-size:clamp(30px,5vw,44px);font-weight:750;margin:0 0 6px}
+h1{font-size:clamp(28px,5vw,42px);font-weight:750;margin:0 0 6px}
 h2{
-  font-size:clamp(23px,3.4vw,31px); font-weight:750; margin:0 0 8px;
-  padding-top:26px;
+  font-size:clamp(22px,3.4vw,29px); font-weight:750; margin:0 0 8px;
+  padding-top:24px;
 }
-h3{font-size:19px;font-weight:700;margin:46px 0 14px;padding-top:18px;border-top:1px solid var(--rule)}
-h4{font-size:16px;font-weight:680;margin:30px 0 10px}
-h5{font-size:14px;font-weight:680;margin:24px 0 8px;color:var(--ink-soft)}
+h3{font-size:19px;font-weight:700;margin:44px 0 14px;padding-top:18px;border-top:1px solid var(--border)}
+h4{font-size:16px;font-weight:680;margin:28px 0 10px}
+h5{font-size:14px;font-weight:680;margin:22px 0 8px;color:var(--ink-soft)}
 
-.topic{margin:80px 0 0;padding-top:30px;border-top:2px solid var(--ink)}
+.topic{margin:76px 0 0;padding-top:28px;border-top:2px solid var(--border-control)}
 .topic .kicker{
   font-family:var(--mono);font-size:10px;text-transform:uppercase;
-  letter-spacing:.17em;color:var(--accent);margin:0 0 10px;
+  letter-spacing:.17em;color:var(--action);margin:0 0 10px;
 }
 
 p{margin:0 0 17px}
-a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a{color:var(--action);text-decoration-thickness:1px;text-underline-offset:2px}
 strong{font-weight:640}
-hr{border:0;height:1px;background:var(--rule);margin:40px 0}
+hr{border:0;height:1px;background:var(--border);margin:38px 0}
 
 ul,ol{margin:0 0 18px;padding-left:22px}
 li{margin-bottom:7px}
@@ -81,12 +113,12 @@ ul.check{list-style:none;padding-left:0}
 ul.check li{position:relative;padding-left:29px}
 ul.check li span{
   position:absolute;left:0;top:.36em;width:15px;height:15px;
-  border:1.5px solid var(--ink-faint);border-radius:3px;
+  border:1.5px solid var(--ink-faint);border-radius:4px;
 }
 
 blockquote{
   margin:22px 0;padding:15px 20px;background:var(--surface);
-  border-left:3px solid var(--accent);border-radius:0 4px 4px 0;
+  border-left:3px solid var(--action);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
 }
 blockquote p{margin:0 0 9px;font-size:16px;color:var(--ink-soft)}
 blockquote p:last-child{margin:0}
@@ -100,34 +132,34 @@ table{
 th{
   text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;
   text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);
-  padding:0 14px 9px 0;border-bottom:1.5px solid var(--ink);white-space:nowrap;
+  padding:0 14px 9px 0;border-bottom:1.5px solid var(--border-control);white-space:nowrap;
 }
-td{padding:11px 14px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td{padding:11px 14px 11px 0;border-bottom:1px solid var(--border);vertical-align:top}
 tr:last-child td{border-bottom:0}
 td:first-child{color:var(--ink);font-weight:550}
 table code{font-size:12px}
 
 code{
-  font-family:var(--mono);font-size:.86em;background:var(--surface-2);
-  padding:.14em .38em;border-radius:3px;
+  font-family:var(--mono);font-size:.86em;background:var(--surface-muted);
+  padding:.14em .38em;border-radius:var(--radius-sm)
 }
 pre{
-  margin:0;background:var(--surface);border:1px solid var(--rule);
-  border-radius:5px;padding:17px 19px;overflow-x:auto;
+  margin:0;background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-sm);padding:17px 19px;overflow-x:auto;
 }
 pre code{background:none;padding:0;font-size:12.5px;line-height:1.72;color:var(--ink-soft)}
 
-header{padding:60px 0 8px;border-bottom:2px solid var(--ink)}
+header{padding:56px 0 8px;border-bottom:2px solid var(--border-control)}
 .eyebrow{
   font-family:var(--mono);font-size:10.5px;text-transform:uppercase;
-  letter-spacing:.19em;color:var(--accent);margin:0 0 15px;
+  letter-spacing:.19em;color:var(--action);margin:0 0 15px;
 }
-.lede{font-size:19px;color:var(--ink-soft);margin:16px 0 26px;max-width:60ch}
-.stats{display:flex;flex-wrap:wrap;margin:0 0 28px;border-top:1px solid var(--rule)}
-.stat{padding:14px 28px 14px 0;margin-right:28px;border-right:1px solid var(--rule)}
+.lede{font-size:18px;color:var(--ink-soft);margin:16px 0 26px;max-width:60ch}
+.stats{display:flex;flex-wrap:wrap;margin:0 0 28px;border-top:1px solid var(--border)}
+.stat{padding:14px 28px 14px 0;margin-right:28px;border-right:1px solid var(--border)}
 .stat:last-child{border-right:0;margin-right:0}
 .stat b{
-  display:block;font-family:var(--sans);font-size:25px;font-weight:730;
+  display:block;font-family:var(--sans);font-size:24px;font-weight:730;
   letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1;
 }
 .stat span{
@@ -135,105 +167,181 @@ header{padding:60px 0 8px;border-bottom:2px solid var(--ink)}
   letter-spacing:.13em;color:var(--ink-faint);margin-top:4px;
 }
 footer{
-  margin-top:70px;padding-top:22px;border-top:1px solid var(--rule);
+  margin-top:64px;padding-top:22px;border-top:1px solid var(--border);
   font-family:var(--mono);font-size:11px;color:var(--ink-faint);line-height:1.7;
 }
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 
 /* --- progresso de leitura (compartilhado: landing + guia individual) --- */
 .lido-toggle{
   display:inline-flex;align-items:center;gap:8px;margin:18px 0 0;padding:9px 16px 9px 12px;
   font-family:var(--sans);font-size:13px;font-weight:600;color:var(--ink-soft);
-  background:var(--surface);border:1.5px solid var(--rule);border-radius:99px;cursor:pointer;
-  transition:border-color .15s,color .15s,background .15s;
+  background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius-pill);cursor:pointer;
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease),background var(--fast) var(--ease);
 }
-.lido-toggle:hover{border-color:var(--accent);color:var(--ink)}
+.lido-toggle:hover{border-color:var(--action);color:var(--ink)}
 .lido-toggle .lido-toggle-icon{
   display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
   border-radius:50%;border:1.5px solid var(--ink-faint);font-size:11px;line-height:1;
-  color:transparent;transition:all .15s;
+  color:transparent;transition:all var(--fast) var(--ease);
 }
-.lido-toggle.is-lido{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.lido-toggle.is-lido{background:var(--success-bg);border-color:var(--success);color:var(--success)}
 .lido-toggle.is-lido .lido-toggle-icon{
-  background:var(--accent);border-color:var(--accent);color:var(--surface);
+  background:var(--success);border-color:var(--success);color:var(--surface);
 }
 
 /* --- marca --- */
-h1.brand{display:flex;align-items:center;gap:15px;letter-spacing:.015em}
+h1.brand{display:flex;align-items:center;gap:14px;letter-spacing:.015em}
 .brandmark{
-  width:52px;height:52px;flex:none;border-radius:13px;
-  box-shadow:0 1px 4px rgba(0,0,0,.22);
+  width:50px;height:50px;flex:none;border-radius:var(--radius-control);
+  box-shadow:var(--shadow-soft);
 }
-@media(max-width:600px){.brandmark{width:42px;height:42px;border-radius:11px}}
+@media(max-width:600px){.brandmark{width:40px;height:40px;border-radius:var(--radius-sm)}}
 
-.progress{
-  display:flex;align-items:center;gap:12px;margin:22px 0 6px;
-  font-family:var(--mono);font-size:11.5px;color:var(--ink-faint);
+/* --- stage: painel com o gradiente "atmosphere" do design system, onde os
+   cards de vidro (frosted) flutuam --- */
+.stage{
+  position:relative; overflow:hidden; border-radius:var(--radius-stage);
+  background:var(--atmosphere); box-shadow:var(--shadow-raised);
+  padding:22px 22px 26px; margin:28px 0 40px;
 }
-.progress-bar{flex:1;max-width:220px;height:5px;border-radius:99px;background:var(--surface-2);overflow:hidden}
-.progress-fill{height:100%;background:var(--accent);border-radius:99px;transition:width .25s ease}
-.cardlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
-.group{margin-top:34px}
+.stage-top{
+  display:flex; align-items:center; justify-content:space-between; gap:14px;
+  flex-wrap:wrap; margin:0 0 20px;
+}
+.stage-label{
+  font-family:var(--mono); font-size:10.5px; text-transform:uppercase;
+  letter-spacing:.16em; color:rgba(248,250,252,.72);
+}
+.progress{
+  display:flex; align-items:center; gap:11px;
+  font-family:var(--mono); font-size:11px; color:rgba(248,250,252,.78);
+}
+.progress-bar{
+  flex:1; width:150px; max-width:40vw; height:5px; border-radius:var(--radius-pill);
+  background:rgba(248,250,252,.18); overflow:hidden;
+}
+.progress-fill{height:100%;background:#F8FAFC;border-radius:var(--radius-pill);transition:width var(--reveal) var(--ease)}
+
+.filter-pills{
+  display:inline-flex; gap:3px; padding:4px; border-radius:var(--radius-pill);
+  background:var(--glass-clear); backdrop-filter:blur(var(--blur-clear));
+  -webkit-backdrop-filter:blur(var(--blur-clear));
+  border:1px solid rgba(255,255,255,.16);
+}
+.filter-pill{
+  border:0; background:transparent; cursor:pointer; white-space:nowrap;
+  font:600 12px var(--sans); color:rgba(248,250,252,.76);
+  padding:7px 14px; border-radius:var(--radius-pill);
+  transition:background var(--fast) var(--ease),color var(--fast) var(--ease);
+}
+.filter-pill:hover{color:#fff}
+.filter-pill.is-active{background:rgba(248,250,252,.94);color:#1F2E3A}
+
+.cardlist{
+  list-style:none; margin:0; padding:0; counter-reset:card;
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px;
+}
+.group{margin-top:28px}
+.group:first-child{margin-top:0}
 .group[hidden]{display:none}
 .group-title{
   display:flex;align-items:baseline;gap:10px;margin:0 0 12px;padding:0;border:0;
   font-family:var(--mono);font-size:11px;font-weight:500;text-transform:uppercase;
-  letter-spacing:.16em;color:var(--ink-faint);
+  letter-spacing:.16em;color:rgba(248,250,252,.6);
 }
 .group-count{letter-spacing:.04em;text-transform:none;opacity:.8}
-#read-section{padding-top:18px;border-top:1px dashed var(--rule)}
+#read-section{margin-top:40px;padding-top:20px;border-top:1px dashed var(--border)}
+#read-section .group-title{color:var(--ink-faint)}
+
+/* --- card de tópico: material "frosted" (28px blur · 72% tint), leitura em
+   primeiro plano sobre o palco escuro --- */
 .card{
-  display:flex;align-items:center;gap:14px;background:var(--surface);
-  border:1.5px solid var(--rule);border-radius:12px;padding:16px 18px;
-  transition:border-color .15s,opacity .2s;
+  counter-increment:card; min-width:0;
+  position:relative; display:flex; flex-direction:column; gap:10px;
+  background:var(--glass-frosted);
+  backdrop-filter:blur(var(--blur-frosted)); -webkit-backdrop-filter:blur(var(--blur-frosted));
+  border:1px solid rgba(255,255,255,.18); border-radius:var(--radius-card);
+  padding:18px 18px 16px; color:var(--ink);
+  box-shadow:var(--glass-rim),var(--shadow-glass);
+  transition:transform var(--fast) var(--ease),box-shadow var(--fast) var(--ease),opacity var(--fast) var(--ease);
 }
-.card:hover{border-color:var(--accent)}
-.card.is-lido{opacity:.52}
+.card:hover{transform:translateY(-3px)}
+.card.is-lido{opacity:.55}
 .card.is-lido .card-title{text-decoration:line-through;text-decoration-color:var(--ink-faint)}
 .card-link{
-  flex:1;min-width:0;display:flex;align-items:flex-start;gap:14px;
-  text-decoration:none;color:inherit;
+  display:flex; flex-direction:column; gap:9px;
+  text-decoration:none; color:inherit; min-width:0;
 }
-.card-emoji{font-size:26px;line-height:1.3;flex:none}
+.card-emoji{
+  display:flex; align-items:center; justify-content:center; flex:none;
+  width:42px; height:42px; font-size:21px; border-radius:var(--radius-control);
+  background:color-mix(in srgb, var(--ink) 8%, transparent);
+}
 .card-body{min-width:0}
+.card-tag{
+  display:block; font-family:var(--mono); font-size:10px; text-transform:uppercase;
+  letter-spacing:.1em; color:var(--action); margin:0 0 6px;
+}
+.card-tag::before{content:counter(card,decimal-leading-zero) " / "}
 .card-title{
   display:block;font-family:var(--sans);font-weight:700;font-size:16.5px;
-  color:var(--ink);letter-spacing:-.01em;
+  line-height:1.28;color:var(--ink);letter-spacing:-.01em;margin-bottom:2px;
 }
-.card-tag{
-  display:block;font-family:var(--mono);font-size:10px;text-transform:uppercase;
-  letter-spacing:.12em;color:var(--accent);margin:3px 0 6px;
+.card-lede{display:block;font-size:13.5px;color:var(--ink-soft);line-height:1.5}
+.card-meta{
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  margin-top:8px; padding-top:10px;
+  border-top:1px solid color-mix(in srgb, var(--ink) 12%, transparent);
 }
-.card-lede{display:block;font-size:14px;color:var(--ink-soft);line-height:1.5;max-width:56ch}
-.card-fontes{display:block;font-family:var(--mono);font-size:10.5px;color:var(--ink-faint);margin-top:7px}
+.card-fontes{
+  display:block; font-family:var(--mono); font-size:10px; color:var(--ink-faint);
+  min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
 .card-check{
-  flex:none;display:flex;flex-direction:column;align-items:center;gap:4px;
-  font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;
-  color:var(--ink-faint);cursor:pointer;padding:4px 6px;
+  flex:none;display:flex;align-items:center;gap:5px;
+  font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--ink-faint);cursor:pointer;
 }
-.card-check input{width:18px;height:18px;accent-color:var(--accent);cursor:pointer}
+.card-check input{width:15px;height:15px;accent-color:var(--success);cursor:pointer}
+
 .hub-link{
-  display:inline-block;margin-top:46px;font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+  display:inline-flex; align-items:center; gap:8px; margin-top:8px;
+  font-family:var(--sans); font-size:13px; font-weight:600; color:var(--text-inverse);
+  background:var(--action); padding:11px 20px; border-radius:var(--radius-pill);
+  text-decoration:none; box-shadow:var(--shadow-soft);
+  transition:background var(--fast) var(--ease),transform var(--fast) var(--ease);
 }
+.hub-link:hover{background:var(--action-hover);transform:translateY(-1px)}
+
 @media(max-width:600px){
-  .card{flex-direction:column;align-items:stretch}
-  .card-check{flex-direction:row;align-self:flex-end}
+  .stage{padding:16px 14px 20px;border-radius:calc(var(--radius-stage) - .375rem)}
+  .stage-top{gap:12px}
+  .progress-bar{max-width:100%}
+  .cardlist{grid-template-columns:1fr}
+  .card{padding:16px 16px 14px}
 }
 </style>
 <div class="wrap">
-<main style="max-width:760px">
-<header>
+<main style="max-width:820px">
+<header style="border-bottom:0">
   <p class="eyebrow">Biblioteca de transcrições · Síntese operacional</p>
   <h1 class="brand"><img class="brandmark" src="cortex-icon.png" alt="">CORTEX</h1>
   <p class="lede">Escolha por onde começar. O que você já leu desce pra baixo da lista sozinho —
   fica só o que falta.</p>
-  <div class="progress">
-    <span id="progress-label">0 de 13 lidos</span>
-    <span class="progress-bar"><span class="progress-fill" id="progress-fill" style="width:0%"></span></span>
-  </div>
 </header>
-<div id="groups"><section class="group" data-cat="Negócios"><h2 class="group-title">Negócios <span class="group-count"></span></h2><ul class="cardlist"><li class="card" data-stem="numeros-e-ceticismo" data-i="0" data-cat="Negócios"><a class="card-link" href="numeros-e-ceticismo.html"><span class="card-emoji">⚠️</span><span class="card-body"><span class="card-title">Números e Ceticismo</span><span class="card-tag">leia antes de tudo</span><span class="card-lede">Auditoria de todos os resultados alegados na biblioteca — o número do título contra o que é dito dentro do vídeo.</span><span class="card-fontes">Fontes: </span></span></a><label class="card-check"><input type="checkbox" data-stem="numeros-e-ceticismo"><span>Já li</span></label></li><li class="card" data-stem="agencia-ia" data-i="1" data-cat="Negócios"><a class="card-link" href="agencia-ia.html"><span class="card-emoji">🤖</span><span class="card-body"><span class="card-title">Agência de IA e Automação</span><span class="card-tag">o caminho mais rápido para caixa</span><span class="card-lede">Vender agentes de IA e automações para empresas — sem produto próprio, sem audiência, sem tráfego pago.</span><span class="card-fontes">Fontes: NoCode StartUp, Well Pires, Luciana Papini +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="agencia-ia"><span>Já li</span></label></li><li class="card" data-stem="ferramentas-de-ia" data-i="2" data-cat="Negócios"><a class="card-link" href="ferramentas-de-ia.html"><span class="card-emoji">🛠️</span><span class="card-body"><span class="card-title">Ferramentas de IA na Prática</span><span class="card-tag">Claude, Claude Code e N8N no real</span><span class="card-lede">Como criadores realmente usam Claude, Claude Code e Gemini Omni — o fluxo de trabalho de verdade, com bug e retrabalho.</span><span class="card-fontes">Fontes: Descomplicando Sites, Klebson Queiroz, Tiago Lemos +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="ferramentas-de-ia"><span>Já li</span></label></li><li class="card" data-stem="aquisicao-saas" data-i="3" data-cat="Negócios"><a class="card-link" href="aquisicao-saas.html"><span class="card-emoji">🧲</span><span class="card-body"><span class="card-title">Aquisição de Clientes para SaaS</span><span class="card-tag">os primeiros 100 assinantes</span><span class="card-lede">Como conseguir assinantes para um SaaS — os canais que realmente trazem os primeiros clientes, garimpados por engajamento entre 143 vídeos.</span><span class="card-fontes">Fontes: Y Combinator, Rob Walling, Bruno Okamoto +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="aquisicao-saas"><span>Já li</span></label></li><li class="card" data-stem="servicos-mil-dia" data-i="4" data-cat="Negócios"><a class="card-link" href="servicos-mil-dia.html"><span class="card-emoji">💰</span><span class="card-body"><span class="card-title">Serviços Digitais: a meta de R$1k/dia</span><span class="card-tag">tráfego, IA, ebook e prospecção</span><span class="card-lede">O que realmente é preciso para faturar R$1.000 por dia com serviço digital — as contas, os canais de prospecção e o que a matemática diz sobre a meta.</span><span class="card-fontes">Fontes: Adriano Gianini, Rodrigo Vincenzi, Rodolfo Zanin +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="servicos-mil-dia"><span>Já li</span></label></li><li class="card" data-stem="upwork" data-i="5" data-cat="Negócios"><a class="card-link" href="upwork.html"><span class="card-emoji">🌎</span><span class="card-body"><span class="card-title">Upwork e Freela Internacional</span><span class="card-tag">faturar em dólar</span><span class="card-lede">Como pegar freela em dólar no Upwork e afins — perfil, proposta, precificação e o que os relatos honestos mostram sobre os primeiros meses.</span><span class="card-fontes">Fontes: Mundo Freelancer, Attekita Dev, Lucas Guerra +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="upwork"><span>Já li</span></label></li><li class="card" data-stem="saas-produto" data-i="6" data-cat="Negócios"><a class="card-link" href="saas-produto.html"><span class="card-emoji">💻</span><span class="card-body"><span class="card-title">SaaS e Produto Digital</span><span class="card-tag">recorrência com IA</span><span class="card-lede">Construir e vender software com IA, sem programar — achar a ideia, montar o produto e a distribuição que os vídeos escondem.</span><span class="card-fontes">Fontes: Starter Story, Cakto, Caio Martins +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="saas-produto"><span>Já li</span></label></li><li class="card" data-stem="low-ticket" data-i="7" data-cat="Negócios"><a class="card-link" href="low-ticket.html"><span class="card-emoji">🎯</span><span class="card-body"><span class="card-title">Low Ticket e Tráfego Pago</span><span class="card-tag">adquirir cliente pagando</span><span class="card-lede">Como adquirir cliente pagando por ele — 11 princípios de consenso e um método operacional em 8 fases.</span><span class="card-fontes">Fontes: </span></span></a><label class="card-check"><input type="checkbox" data-stem="low-ticket"><span>Já li</span></label></li><li class="card" data-stem="negocio-solo" data-i="8" data-cat="Negócios"><a class="card-link" href="negocio-solo.html"><span class="card-emoji">🧠</span><span class="card-body"><span class="card-title">Negócio Solo e Mentalidade</span><span class="card-tag">Hormozi e mentalidade</span><span class="card-lede">Como sair do zero operando sozinho, sem se sabotar.</span><span class="card-fontes">Fontes: Alex Hormozi, Simon Squibb / Pierce Lenny, Bruno Gabarra +1</span></span></a><label class="card-check"><input type="checkbox" data-stem="negocio-solo"><span>Já li</span></label></li><li class="card" data-stem="copy-e-criativo" data-i="9" data-cat="Negócios"><a class="card-link" href="copy-e-criativo.html"><span class="card-emoji">✍️</span><span class="card-body"><span class="card-title">Copy, Criativo e Conteúdo</span><span class="card-tag">o que vende</span><span class="card-lede">Escrever o que vende e produzir o que para o scroll.</span><span class="card-fontes">Fontes: Método VTSD / Leandro Ladeira, Henrique Oliveira, Silvio Roberto</span></span></a><label class="card-check"><input type="checkbox" data-stem="copy-e-criativo"><span>Já li</span></label></li><li class="card" data-stem="ecommerce" data-i="10" data-cat="Negócios"><a class="card-link" href="ecommerce.html"><span class="card-emoji">📦</span><span class="card-body"><span class="card-title">E-commerce e Dropshipping</span><span class="card-tag">o experimento honesto</span><span class="card-lede">O tópico menor da biblioteca, com o vídeo mais honesto de todos.</span><span class="card-fontes">Fontes: Mark Tilbury, Rafa Souza, Ecommerce Puro +2</span></span></a><label class="card-check"><input type="checkbox" data-stem="ecommerce"><span>Já li</span></label></li><li class="card" data-stem="google-meu-negocio" data-i="12" data-cat="Negócios"><a class="card-link" href="google-meu-negocio.html"><span class="card-emoji">📍</span><span class="card-body"><span class="card-title">Google Meu Negócio: Avaliações e Ranking Local</span><span class="card-tag">avaliações e ranking no mapa</span><span class="card-lede">Como conseguir mais avaliações no Perfil da Empresa do Google e subir no mapa para atrair cliente no orgânico — o que os melhores vídeos brasileiros e gringos provam, o que só prometem e o que pode suspender seu perfil.</span><span class="card-fontes">Fontes: Escola de SEO / Luciano Arthur, Franscielle Souza, Mkt Local +1</span></span></a><label class="card-check"><input type="checkbox" data-stem="google-meu-negocio"><span>Já li</span></label></li></ul></section><section class="group" data-cat="Fé"><h2 class="group-title">Fé <span class="group-count"></span></h2><ul class="cardlist"><li class="card" data-stem="amar-a-deus-no-ordinario" data-i="11" data-cat="Fé"><a class="card-link" href="amar-a-deus-no-ordinario.html"><span class="card-emoji">🕊️</span><span class="card-body"><span class="card-title">Amar a Deus no Ordinário</span><span class="card-tag">santidade na vida comum</span><span class="card-lede">Buscar a Deus dentro do trabalho, da rotina, do cansaço e das obrigações banais — sem precisar de uma vida diferente da que você já tem.</span><span class="card-fontes">Fontes: Padre Paulo Ricardo, Padre Pedro Willemsens, Frei Gilson +1</span></span></a><label class="card-check"><input type="checkbox" data-stem="amar-a-deus-no-ordinario"><span>Já li</span></label></li></ul></section></div>
+<div class="stage">
+  <div class="stage-top">
+    <span class="stage-label">13 tópicos · 2 categorias</span>
+    <div class="progress">
+      <span id="progress-label">0 de 13 lidos</span>
+      <span class="progress-bar"><span class="progress-fill" id="progress-fill" style="width:0%"></span></span>
+    </div>
+    <div class="filter-pills" id="filter-pills"><button type="button" class="filter-pill is-active" data-filter="todos">Todos</button><button type="button" class="filter-pill" data-filter="Negócios">Negócios</button><button type="button" class="filter-pill" data-filter="Fé">Fé</button></div>
+  </div>
+  <div id="groups"><section class="group" data-cat="Negócios"><h2 class="group-title">Negócios <span class="group-count"></span></h2><ul class="cardlist"><li class="card" data-stem="numeros-e-ceticismo" data-i="0" data-cat="Negócios"><a class="card-link" href="numeros-e-ceticismo.html"><span class="card-emoji">⚠️</span><span class="card-body"><span class="card-tag">leia antes de tudo</span><span class="card-title">Números e Ceticismo</span><span class="card-lede">Auditoria de todos os resultados alegados na biblioteca — o número do título contra o que é dito dentro do vídeo.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: </span><label class="card-check"><input type="checkbox" data-stem="numeros-e-ceticismo"><span>Já li</span></label></span></li><li class="card" data-stem="agencia-ia" data-i="1" data-cat="Negócios"><a class="card-link" href="agencia-ia.html"><span class="card-emoji">🤖</span><span class="card-body"><span class="card-tag">o caminho mais rápido para caixa</span><span class="card-title">Agência de IA e Automação</span><span class="card-lede">Vender agentes de IA e automações para empresas — sem produto próprio, sem audiência, sem tráfego pago.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: NoCode StartUp, Well Pires, Luciana Papini +2</span><label class="card-check"><input type="checkbox" data-stem="agencia-ia"><span>Já li</span></label></span></li><li class="card" data-stem="ferramentas-de-ia" data-i="2" data-cat="Negócios"><a class="card-link" href="ferramentas-de-ia.html"><span class="card-emoji">🛠️</span><span class="card-body"><span class="card-tag">Claude, Claude Code e N8N no real</span><span class="card-title">Ferramentas de IA na Prática</span><span class="card-lede">Como criadores realmente usam Claude, Claude Code e Gemini Omni — o fluxo de trabalho de verdade, com bug e retrabalho.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: Descomplicando Sites, Klebson Queiroz, Tiago Lemos +2</span><label class="card-check"><input type="checkbox" data-stem="ferramentas-de-ia"><span>Já li</span></label></span></li><li class="card" data-stem="aquisicao-saas" data-i="3" data-cat="Negócios"><a class="card-link" href="aquisicao-saas.html"><span class="card-emoji">🧲</span><span class="card-body"><span class="card-tag">os primeiros 100 assinantes</span><span class="card-title">Aquisição de Clientes para SaaS</span><span class="card-lede">Como conseguir assinantes para um SaaS — os canais que realmente trazem os primeiros clientes, garimpados por engajamento entre 143 vídeos.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: Y Combinator, Rob Walling, Bruno Okamoto +2</span><label class="card-check"><input type="checkbox" data-stem="aquisicao-saas"><span>Já li</span></label></span></li><li class="card" data-stem="servicos-mil-dia" data-i="4" data-cat="Negócios"><a class="card-link" href="servicos-mil-dia.html"><span class="card-emoji">💰</span><span class="card-body"><span class="card-tag">tráfego, IA, ebook e prospecção</span><span class="card-title">Serviços Digitais: a meta de R$1k/dia</span><span class="card-lede">O que realmente é preciso para faturar R$1.000 por dia com serviço digital — as contas, os canais de prospecção e o que a matemática diz sobre a meta.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: Adriano Gianini, Rodrigo Vincenzi, Rodolfo Zanin +2</span><label class="card-check"><input type="checkbox" data-stem="servicos-mil-dia"><span>Já li</span></label></span></li><li class="card" data-stem="upwork" data-i="5" data-cat="Negócios"><a class="card-link" href="upwork.html"><span class="card-emoji">🌎</span><span class="card-body"><span class="card-tag">faturar em dólar</span><span class="card-title">Upwork e Freela Internacional</span><span class="card-lede">Como pegar freela em dólar no Upwork e afins — perfil, proposta, precificação e o que os relatos honestos mostram sobre os primeiros meses.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: Mundo Freelancer, Attekita Dev, Lucas Guerra +2</span><label class="card-check"><input type="checkbox" data-stem="upwork"><span>Já li</span></label></span></li><li class="card" data-stem="saas-produto" data-i="6" data-cat="Negócios"><a class="card-link" href="saas-produto.html"><span class="card-emoji">💻</span><span class="card-body"><span class="card-tag">recorrência com IA</span><span class="card-title">SaaS e Produto Digital</span><span class="card-lede">Construir e vender software com IA, sem programar — achar a ideia, montar o produto e a distribuição que os vídeos escondem.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: Starter Story, Cakto, Caio Martins +2</span><label class="card-check"><input type="checkbox" data-stem="saas-produto"><span>Já li</span></label></span></li><li class="card" data-stem="low-ticket" data-i="7" data-cat="Negócios"><a class="card-link" href="low-ticket.html"><span class="card-emoji">🎯</span><span class="card-body"><span class="card-tag">adquirir cliente pagando</span><span class="card-title">Low Ticket e Tráfego Pago</span><span class="card-lede">Como adquirir cliente pagando por ele — 11 princípios de consenso e um método operacional em 8 fases.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: </span><label class="card-check"><input type="checkbox" data-stem="low-ticket"><span>Já li</span></label></span></li><li class="card" data-stem="negocio-solo" data-i="8" data-cat="Negócios"><a class="card-link" href="negocio-solo.html"><span class="card-emoji">🧠</span><span class="card-body"><span class="card-tag">Hormozi e mentalidade</span><span class="card-title">Negócio Solo e Mentalidade</span><span class="card-lede">Como sair do zero operando sozinho, sem se sabotar.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: Alex Hormozi, Simon Squibb / Pierce Lenny, Bruno Gabarra +1</span><label class="card-check"><input type="checkbox" data-stem="negocio-solo"><span>Já li</span></label></span></li><li class="card" data-stem="copy-e-criativo" data-i="9" data-cat="Negócios"><a class="card-link" href="copy-e-criativo.html"><span class="card-emoji">✍️</span><span class="card-body"><span class="card-tag">o que vende</span><span class="card-title">Copy, Criativo e Conteúdo</span><span class="card-lede">Escrever o que vende e produzir o que para o scroll.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: Método VTSD / Leandro Ladeira, Henrique Oliveira, Silvio Roberto</span><label class="card-check"><input type="checkbox" data-stem="copy-e-criativo"><span>Já li</span></label></span></li><li class="card" data-stem="ecommerce" data-i="10" data-cat="Negócios"><a class="card-link" href="ecommerce.html"><span class="card-emoji">📦</span><span class="card-body"><span class="card-tag">o experimento honesto</span><span class="card-title">E-commerce e Dropshipping</span><span class="card-lede">O tópico menor da biblioteca, com o vídeo mais honesto de todos.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: Mark Tilbury, Rafa Souza, Ecommerce Puro +2</span><label class="card-check"><input type="checkbox" data-stem="ecommerce"><span>Já li</span></label></span></li><li class="card" data-stem="google-meu-negocio" data-i="12" data-cat="Negócios"><a class="card-link" href="google-meu-negocio.html"><span class="card-emoji">📍</span><span class="card-body"><span class="card-tag">avaliações e ranking no mapa</span><span class="card-title">Google Meu Negócio: Avaliações e Ranking Local</span><span class="card-lede">Como conseguir mais avaliações no Perfil da Empresa do Google e subir no mapa para atrair cliente no orgânico — o que os melhores vídeos brasileiros e gringos provam, o que só prometem e o que pode suspender seu perfil.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: Escola de SEO / Luciano Arthur, Franscielle Souza, Mkt Local +1</span><label class="card-check"><input type="checkbox" data-stem="google-meu-negocio"><span>Já li</span></label></span></li></ul></section><section class="group" data-cat="Fé"><h2 class="group-title">Fé <span class="group-count"></span></h2><ul class="cardlist"><li class="card" data-stem="amar-a-deus-no-ordinario" data-i="11" data-cat="Fé"><a class="card-link" href="amar-a-deus-no-ordinario.html"><span class="card-emoji">🕊️</span><span class="card-body"><span class="card-tag">santidade na vida comum</span><span class="card-title">Amar a Deus no Ordinário</span><span class="card-lede">Buscar a Deus dentro do trabalho, da rotina, do cansaço e das obrigações banais — sem precisar de uma vida diferente da que você já tem.</span></span></a><span class="card-meta"><span class="card-fontes">Fontes: Padre Paulo Ricardo, Padre Pedro Willemsens, Frei Gilson +1</span><label class="card-check"><input type="checkbox" data-stem="amar-a-deus-no-ordinario"><span>Já li</span></label></span></li></ul></section></div>
+</div>
 <section class="group" id="read-section" hidden>
   <h2 class="group-title">Já lidos <span class="group-count"></span></h2>
   <ul class="cardlist" id="read-list"></ul>
@@ -275,6 +383,7 @@ document.addEventListener('DOMContentLoaded', function(){
   Array.prototype.forEach.call(root.querySelectorAll('.group'), function(g){
     groupList[g.getAttribute('data-cat')] = g;
   });
+  var activeFilter = 'todos';
 
   function renderOrder(){
     var lidos = window.estudosLidos.get();
@@ -301,7 +410,8 @@ document.addEventListener('DOMContentLoaded', function(){
     Object.keys(groupList).forEach(function(cat){
       var g = groupList[cat];
       var n = g.querySelectorAll('li.card').length;
-      g.hidden = n === 0;
+      var matches = activeFilter === 'todos' || activeFilter === cat;
+      g.hidden = n === 0 || !matches;
       g.querySelector('.group-count').textContent = n;
     });
     readSection.hidden = read.length === 0;
@@ -317,6 +427,19 @@ document.addEventListener('DOMContentLoaded', function(){
       renderOrder();
     }
   });
+
+  var pills = document.getElementById('filter-pills');
+  if (pills) {
+    pills.addEventListener('click', function(e){
+      var btn = e.target.closest('.filter-pill');
+      if (!btn) return;
+      activeFilter = btn.getAttribute('data-filter');
+      Array.prototype.forEach.call(pills.querySelectorAll('.filter-pill'), function(b){
+        b.classList.toggle('is-active', b === btn);
+      });
+      renderOrder();
+    });
+  }
 
   renderOrder();
 });

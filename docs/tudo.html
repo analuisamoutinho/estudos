@@ -2,39 +2,70 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="cortex-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ground:#F5F6F4; --surface:#FFFFFF; --surface-2:#EDEFEB;
-  --ink:#14201C; --ink-soft:#4A5551; --ink-faint:#78837D;
-  --rule:#DDE0DA; --accent:#0F5C4A; --accent-soft:#E4EFEA;
-  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
-  --sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  --bg:#EDF1F4; --surface:#F8FAFC; --surface-raised:#FFFFFF; --surface-muted:#E2E9EF;
+  --ink:#243746; --ink-soft:#546777; --ink-faint:#7E90A0; --text-inverse:#F8FAFC;
+  --border:#CCD6DE; --border-control:#8294A3;
+  --action:#344F65; --action-hover:#263F54; --focus:#396E98;
+  --success:#28644F; --success-bg:#E5F0EA;
+  --warning:#805B1D; --warning-bg:#F4EDDF;
+  --danger:#A63D4B; --danger-bg:#F8E9EB;
+  --info:#345F83; --info-bg:#E3ECF4;
+  --glass-clear:rgba(255,255,255,.10); --glass-frosted:rgba(248,250,252,.72); --glass-liquid:rgba(255,255,255,.16);
+  --blur-clear:12px; --blur-frosted:28px; --blur-liquid:24px;
+  --glass-rim:inset 0 1px 0 rgba(255,255,255,.65),inset 1px 0 0 rgba(255,255,255,.16);
+  --atmosphere:radial-gradient(ellipse at 85% 0%,#9EAFBB 0%,transparent 58%),linear-gradient(125deg,#294355 0%,#526C80 54%,#8A9FAE 100%);
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'SFMono-Regular',Consolas,'Liberation Mono',monospace;
+  --radius-sm:.5rem; --radius-control:.875rem; --radius-card:1.75rem; --radius-stage:2rem; --radius-pill:999px;
+  --shadow-soft:0 8px 30px rgba(36,55,70,.05);
+  --shadow-raised:0 24px 64px rgba(25,44,60,.14);
+  --shadow-glass:0 16px 40px rgba(17,34,49,.15);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --press:120ms; --fast:180ms; --reveal:280ms;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --ground:#101512; --surface:#171E1A; --surface-2:#1E2723;
-    --ink:#E6EAE6; --ink-soft:#9AA8A1; --ink-faint:#75837C;
-    --rule:#2A342F; --accent:#4FBF9B; --accent-soft:#1B2C26;
+    --bg:#131A21; --surface:#1A222B; --surface-raised:#202A34; --surface-muted:#25303B;
+    --ink:#E9EFF4; --ink-soft:#AAB9C6; --ink-faint:#758795;
+    --border:#2C3945; --border-control:#4B5C6C;
+    --action:#89ABC6; --action-hover:#A6C3DA; --focus:#6FA9D6;
+    --success:#63C09E; --success-bg:#132621;
+    --warning:#DDB169; --warning-bg:#2A2313;
+    --danger:#E38F9A; --danger-bg:#2B181B;
+    --info:#8FB6D8; --info-bg:#15222E;
+    --glass-frosted:rgba(26,34,43,.72); --glass-clear:rgba(255,255,255,.06); --glass-liquid:rgba(255,255,255,.08);
+    --glass-rim:inset 0 1px 0 rgba(255,255,255,.10),inset 1px 0 0 rgba(255,255,255,.05);
   }
 }
 :root[data-theme="dark"]{
-  --ground:#101512; --surface:#171E1A; --surface-2:#1E2723;
-  --ink:#E6EAE6; --ink-soft:#9AA8A1; --ink-faint:#75837C;
-  --rule:#2A342F; --accent:#4FBF9B; --accent-soft:#1B2C26;
+  --bg:#131A21; --surface:#1A222B; --surface-raised:#202A34; --surface-muted:#25303B;
+  --ink:#E9EFF4; --ink-soft:#AAB9C6; --ink-faint:#758795;
+  --border:#2C3945; --border-control:#4B5C6C;
+  --action:#89ABC6; --action-hover:#A6C3DA; --focus:#6FA9D6;
+  --success:#63C09E; --success-bg:#132621;
+  --warning:#DDB169; --warning-bg:#2A2313;
+  --danger:#E38F9A; --danger-bg:#2B181B;
+  --info:#8FB6D8; --info-bg:#15222E;
+  --glass-frosted:rgba(26,34,43,.72); --glass-clear:rgba(255,255,255,.06); --glass-liquid:rgba(255,255,255,.08);
+  --glass-rim:inset 0 1px 0 rgba(255,255,255,.10),inset 1px 0 0 rgba(255,255,255,.05);
 }
 *{box-sizing:border-box}
 body{
-  margin:0; background:var(--ground); color:var(--ink);
-  font-family:var(--serif); font-size:17px; line-height:1.68;
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:16px; line-height:1.62;
   -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:1220px;margin:0 auto;padding:0 24px;display:flex;gap:52px;align-items:flex-start}
-main{flex:1;min-width:0;max-width:70ch;padding:52px 0 120px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px;display:flex;gap:48px;align-items:flex-start}
+main{flex:1;min-width:0;max-width:72ch;padding:44px 0 110px}
 
 nav{
-  position:sticky; top:0; width:228px; flex:none;
-  padding:60px 0 40px; font-family:var(--mono); font-size:11px;
+  position:sticky; top:0; width:224px; flex:none;
+  padding:56px 0 40px; font-family:var(--mono); font-size:11px;
   max-height:100vh; overflow-y:auto;
 }
 nav p{
@@ -42,36 +73,37 @@ nav p{
   color:var(--ink-faint); font-size:9.5px;
 }
 nav a{
-  display:block; padding:6px 0 6px 11px; border-left:2px solid var(--rule);
+  display:block; padding:6px 0 6px 11px; border-left:2px solid var(--border);
   color:var(--ink-soft); text-decoration:none; line-height:1.35;
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease);
 }
-nav a:hover{border-left-color:var(--accent);color:var(--accent)}
+nav a:hover{border-left-color:var(--action);color:var(--action)}
 nav a b{display:block;font-weight:600;color:var(--ink);letter-spacing:.01em}
 nav a span{display:block;color:var(--ink-faint);font-size:9.5px;margin-top:1px}
 nav .sub{padding-left:22px;border-left-color:transparent;font-size:10px}
-nav .sub:hover{border-left-color:var(--rule)}
-@media(max-width:960px){nav{display:none}.wrap{gap:0}main{max-width:none;padding-top:36px}}
+nav .sub:hover{border-left-color:var(--border)}
+@media(max-width:960px){nav{display:none}.wrap{gap:0}main{max-width:none;padding-top:32px}}
 
 h1,h2,h3,h4,h5{font-family:var(--sans);text-wrap:balance;line-height:1.18;letter-spacing:-.02em}
-h1{font-size:clamp(30px,5vw,44px);font-weight:750;margin:0 0 6px}
+h1{font-size:clamp(28px,5vw,42px);font-weight:750;margin:0 0 6px}
 h2{
-  font-size:clamp(23px,3.4vw,31px); font-weight:750; margin:0 0 8px;
-  padding-top:26px;
+  font-size:clamp(22px,3.4vw,29px); font-weight:750; margin:0 0 8px;
+  padding-top:24px;
 }
-h3{font-size:19px;font-weight:700;margin:46px 0 14px;padding-top:18px;border-top:1px solid var(--rule)}
-h4{font-size:16px;font-weight:680;margin:30px 0 10px}
-h5{font-size:14px;font-weight:680;margin:24px 0 8px;color:var(--ink-soft)}
+h3{font-size:19px;font-weight:700;margin:44px 0 14px;padding-top:18px;border-top:1px solid var(--border)}
+h4{font-size:16px;font-weight:680;margin:28px 0 10px}
+h5{font-size:14px;font-weight:680;margin:22px 0 8px;color:var(--ink-soft)}
 
-.topic{margin:80px 0 0;padding-top:30px;border-top:2px solid var(--ink)}
+.topic{margin:76px 0 0;padding-top:28px;border-top:2px solid var(--border-control)}
 .topic .kicker{
   font-family:var(--mono);font-size:10px;text-transform:uppercase;
-  letter-spacing:.17em;color:var(--accent);margin:0 0 10px;
+  letter-spacing:.17em;color:var(--action);margin:0 0 10px;
 }
 
 p{margin:0 0 17px}
-a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a{color:var(--action);text-decoration-thickness:1px;text-underline-offset:2px}
 strong{font-weight:640}
-hr{border:0;height:1px;background:var(--rule);margin:40px 0}
+hr{border:0;height:1px;background:var(--border);margin:38px 0}
 
 ul,ol{margin:0 0 18px;padding-left:22px}
 li{margin-bottom:7px}
@@ -81,12 +113,12 @@ ul.check{list-style:none;padding-left:0}
 ul.check li{position:relative;padding-left:29px}
 ul.check li span{
   position:absolute;left:0;top:.36em;width:15px;height:15px;
-  border:1.5px solid var(--ink-faint);border-radius:3px;
+  border:1.5px solid var(--ink-faint);border-radius:4px;
 }
 
 blockquote{
   margin:22px 0;padding:15px 20px;background:var(--surface);
-  border-left:3px solid var(--accent);border-radius:0 4px 4px 0;
+  border-left:3px solid var(--action);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
 }
 blockquote p{margin:0 0 9px;font-size:16px;color:var(--ink-soft)}
 blockquote p:last-child{margin:0}
@@ -100,34 +132,34 @@ table{
 th{
   text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;
   text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);
-  padding:0 14px 9px 0;border-bottom:1.5px solid var(--ink);white-space:nowrap;
+  padding:0 14px 9px 0;border-bottom:1.5px solid var(--border-control);white-space:nowrap;
 }
-td{padding:11px 14px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td{padding:11px 14px 11px 0;border-bottom:1px solid var(--border);vertical-align:top}
 tr:last-child td{border-bottom:0}
 td:first-child{color:var(--ink);font-weight:550}
 table code{font-size:12px}
 
 code{
-  font-family:var(--mono);font-size:.86em;background:var(--surface-2);
-  padding:.14em .38em;border-radius:3px;
+  font-family:var(--mono);font-size:.86em;background:var(--surface-muted);
+  padding:.14em .38em;border-radius:var(--radius-sm)
 }
 pre{
-  margin:0;background:var(--surface);border:1px solid var(--rule);
-  border-radius:5px;padding:17px 19px;overflow-x:auto;
+  margin:0;background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-sm);padding:17px 19px;overflow-x:auto;
 }
 pre code{background:none;padding:0;font-size:12.5px;line-height:1.72;color:var(--ink-soft)}
 
-header{padding:60px 0 8px;border-bottom:2px solid var(--ink)}
+header{padding:56px 0 8px;border-bottom:2px solid var(--border-control)}
 .eyebrow{
   font-family:var(--mono);font-size:10.5px;text-transform:uppercase;
-  letter-spacing:.19em;color:var(--accent);margin:0 0 15px;
+  letter-spacing:.19em;color:var(--action);margin:0 0 15px;
 }
-.lede{font-size:19px;color:var(--ink-soft);margin:16px 0 26px;max-width:60ch}
-.stats{display:flex;flex-wrap:wrap;margin:0 0 28px;border-top:1px solid var(--rule)}
-.stat{padding:14px 28px 14px 0;margin-right:28px;border-right:1px solid var(--rule)}
+.lede{font-size:18px;color:var(--ink-soft);margin:16px 0 26px;max-width:60ch}
+.stats{display:flex;flex-wrap:wrap;margin:0 0 28px;border-top:1px solid var(--border)}
+.stat{padding:14px 28px 14px 0;margin-right:28px;border-right:1px solid var(--border)}
 .stat:last-child{border-right:0;margin-right:0}
 .stat b{
-  display:block;font-family:var(--sans);font-size:25px;font-weight:730;
+  display:block;font-family:var(--sans);font-size:24px;font-weight:730;
   letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1;
 }
 .stat span{
@@ -135,37 +167,37 @@ header{padding:60px 0 8px;border-bottom:2px solid var(--ink)}
   letter-spacing:.13em;color:var(--ink-faint);margin-top:4px;
 }
 footer{
-  margin-top:70px;padding-top:22px;border-top:1px solid var(--rule);
+  margin-top:64px;padding-top:22px;border-top:1px solid var(--border);
   font-family:var(--mono);font-size:11px;color:var(--ink-faint);line-height:1.7;
 }
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 
 /* --- progresso de leitura (compartilhado: landing + guia individual) --- */
 .lido-toggle{
   display:inline-flex;align-items:center;gap:8px;margin:18px 0 0;padding:9px 16px 9px 12px;
   font-family:var(--sans);font-size:13px;font-weight:600;color:var(--ink-soft);
-  background:var(--surface);border:1.5px solid var(--rule);border-radius:99px;cursor:pointer;
-  transition:border-color .15s,color .15s,background .15s;
+  background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius-pill);cursor:pointer;
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease),background var(--fast) var(--ease);
 }
-.lido-toggle:hover{border-color:var(--accent);color:var(--ink)}
+.lido-toggle:hover{border-color:var(--action);color:var(--ink)}
 .lido-toggle .lido-toggle-icon{
   display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
   border-radius:50%;border:1.5px solid var(--ink-faint);font-size:11px;line-height:1;
-  color:transparent;transition:all .15s;
+  color:transparent;transition:all var(--fast) var(--ease);
 }
-.lido-toggle.is-lido{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.lido-toggle.is-lido{background:var(--success-bg);border-color:var(--success);color:var(--success)}
 .lido-toggle.is-lido .lido-toggle-icon{
-  background:var(--accent);border-color:var(--accent);color:var(--surface);
+  background:var(--success);border-color:var(--success);color:var(--surface);
 }
 
 /* --- marca --- */
-h1.brand{display:flex;align-items:center;gap:15px;letter-spacing:.015em}
+h1.brand{display:flex;align-items:center;gap:14px;letter-spacing:.015em}
 .brandmark{
-  width:52px;height:52px;flex:none;border-radius:13px;
-  box-shadow:0 1px 4px rgba(0,0,0,.22);
+  width:50px;height:50px;flex:none;border-radius:var(--radius-control);
+  box-shadow:var(--shadow-soft);
 }
-@media(max-width:600px){.brandmark{width:42px;height:42px;border-radius:11px}}
+@media(max-width:600px){.brandmark{width:40px;height:40px;border-radius:var(--radius-sm)}}
 </style>
 <div class="wrap">
 <nav><p>Tópicos</p><a href="#topo"><b>Por onde começar</b></a><a href="#t-numeros-e-ceticismo"><b>Números e Ceticismo</b><span>leia antes de tudo</span></a><a class="sub" href="#numeros-e-ceticismo-sem-lastro-nenhum">🚨 Sem lastro nenhum</a><a class="sub" href="#numeros-e-ceticismo-enganosos-por-omissão">⚠️ Enganosos por omissão</a><a class="sub" href="#numeros-e-ceticismo-erros-de-leitura-que-você-mesmo-pode-cometer">📉 Erros de leitura que você mesmo pode cometer</a><a class="sub" href="#numeros-e-ceticismo-bem-documentados">✅ Bem documentados</a><a class="sub" href="#numeros-e-ceticismo-o-padrão-estrutural-quem-ganha-ensinando">O padrão estrutural: quem ganha ensinando</a><a class="sub" href="#numeros-e-ceticismo-como-se-forja-um-dashboard">Como se forja um dashboard</a><a class="sub" href="#numeros-e-ceticismo-réguas-de-expectativa">Réguas de expectativa</a><a href="#t-agencia-ia"><b>Agência de IA</b><span>o caminho mais rápido para caixa</span></a><a class="sub" href="#agencia-ia-por-que-este-é-o-modelo-de-entrada">Por que este é o modelo de entrada</a><a class="sub" href="#agencia-ia-parte-1-como-conseguir-o-primeiro-cliente">Parte 1</a><a class="sub" href="#agencia-ia-parte-15-os-8-canais-de-aquisição-de-cliente-well-pires">Parte 1.5</a><a class="sub" href="#agencia-ia-parte-2-precificação">Parte 2</a><a class="sub" href="#agencia-ia-parte-3-as-7-habilidades-de-um-agente-que-não-é-capenga">Parte 3</a><a class="sub" href="#agencia-ia-parte-4-as-automações-que-se-vendem">Parte 4</a><a class="sub" href="#agencia-ia-parte-45-construir-o-site-do-cavalo-de-troia-processo-não-prompt-único">Parte 4.5</a><a href="#t-ferramentas-de-ia"><b>Ferramentas de IA na Prática</b><span>Claude, Claude Code e N8N no real</span></a><a class="sub" href="#ferramentas-de-ia-parte-1-landing-pages-com-claude-design-o-pipeline-que-3-criadores-ensinam-igual">Parte 1</a><a class="sub" href="#ferramentas-de-ia-parte-2-vídeo-sem-editor-claude-code-gemini-omnikrea">Parte 2</a><a class="sub" href="#ferramentas-de-ia-parte-3-skills-o-mecanismo-que-se-repete-em-todo-o-lote">Parte 3</a><a class="sub" href="#ferramentas-de-ia-parte-4-mcp-dar-mãos-ao-claude">Parte 4</a><a class="sub" href="#ferramentas-de-ia-parte-5-claude-code-o-que-sustenta-todo-o-resto">Parte 5</a><a class="sub" href="#ferramentas-de-ia-parte-6-n8n-a-camada-de-automação-complementar-não-claude-específica">Parte 6</a><a class="sub" href="#ferramentas-de-ia-parte-7-fora-do-mecânico-ia-como-parceiro-de-pensar-não-substituto">Parte 7</a><a href="#t-aquisicao-saas"><b>Aquisição de Clientes para SaaS</b><span>os primeiros 100 assinantes</span></a><a class="sub" href="#aquisicao-saas-o-dado-que-derruba-a-premissa-mais-comum">O dado que derruba a premissa mais comum</a><a class="sub" href="#aquisicao-saas-parte-1-o-portão-você-tem-10-pessoas-para-procurar">Parte 1</a><a class="sub" href="#aquisicao-saas-parte-2-os-primeiros-10-clientes-nenhum-canal-só-conversa">Parte 2</a><a class="sub" href="#aquisicao-saas-parte-3-cold-outreach-o-único-canal-que-não-exige-ativo-prévio">Parte 3</a><a class="sub" href="#aquisicao-saas-parte-4-o-preço-decide-o-seu-canal-a-variável-que-quase-ninguém-coloca-primeiro">Parte 4</a><a class="sub" href="#aquisicao-saas-parte-5-os-canais-que-escalam-depois-dos-10-primeiros">Parte 5</a><a class="sub" href="#aquisicao-saas-parte-6-retenção-onde-a-aquisição-vaza">Parte 6</a><a href="#t-servicos-mil-dia"><b>Serviços Digitais: a meta de R$1k/dia</b><span>tráfego, IA, ebook e prospecção</span></a><a class="sub" href="#servicos-mil-dia-a-resposta-curta-antes-de-tudo">A resposta curta, antes de tudo</a><a class="sub" href="#servicos-mil-dia-parte-1-a-tabela-de-preços-real-do-mercado-brasileiro">Parte 1</a><a class="sub" href="#servicos-mil-dia-parte-2-a-matemática-de-r1000dia-modelo-por-modelo">Parte 2</a><a class="sub" href="#servicos-mil-dia-parte-3-prospecção-os-números-reais-do-funil">Parte 3</a><a class="sub" href="#servicos-mil-dia-parte-4-como-precificar-e-a-fórmula-que-quase-ninguém-usa-direito">Parte 4</a><a class="sub" href="#servicos-mil-dia-parte-5-para-quem-vender-o-icp-que-multiplica-o-preço">Parte 5</a><a class="sub" href="#servicos-mil-dia-parte-6-gestão-de-risco-o-que-ninguém-ensina-e-todo-mundo-aprende-errado">Parte 6</a><a href="#t-upwork"><b>Upwork e Freela Internacional</b><span>faturar em dólar</span></a><a class="sub" href="#upwork-os-dois-números-que-calibram-tudo">Os dois números que calibram tudo</a><a class="sub" href="#upwork-parte-1-antes-de-tocar-na-plataforma">Parte 1</a><a class="sub" href="#upwork-parte-2-os-ativos-que-precisam-existir-antes-da-primeira-proposta">Parte 2</a><a class="sub" href="#upwork-parte-3-o-perfil-e-como-o-algoritmo-lê-ele-em-2026">Parte 3</a><a class="sub" href="#upwork-parte-4-encontrar-a-vaga-certa">Parte 4</a><a class="sub" href="#upwork-parte-5-a-proposta">Parte 5</a><a class="sub" href="#upwork-parte-6-preço">Parte 6</a><a href="#t-saas-produto"><b>SaaS e Produto Digital</b><span>recorrência com IA</span></a><a class="sub" href="#saas-produto-a-tese-central">A tese central</a><a class="sub" href="#saas-produto-parte-1-construir-sem-programar">Parte 1</a><a class="sub" href="#saas-produto-parte-15-achar-uma-ideia-de-1m-reddit-claude">Parte 1.5</a><a class="sub" href="#saas-produto-parte-2-o-método-do-clone-starter-story">Parte 2</a><a class="sub" href="#saas-produto-parte-3-distribuição-o-negócio-inteiro">Parte 3</a><a class="sub" href="#saas-produto-parte-4-preço-e-monetização">Parte 4</a><a class="sub" href="#saas-produto-parte-5-números-o-que-se-sustenta-e-o-que-não">Parte 5</a><a href="#t-low-ticket"><b>Low Ticket e Tráfego Pago</b><span>adquirir cliente pagando</span></a><a class="sub" href="#low-ticket-parte-0-como-usar-este-guia">Parte 0</a><a class="sub" href="#low-ticket-parte-1-o-consenso-os-11-princípios-que-todos-ensinam">Parte 1</a><a class="sub" href="#low-ticket-parte-2-as-divergências-onde-eles-brigam-e-como-você-decide">Parte 2</a><a class="sub" href="#low-ticket-parte-3-o-método-operacional-consolidado">Parte 3</a><a class="sub" href="#low-ticket-parte-4-painel-de-números-de-referência">Parte 4</a><a class="sub" href="#low-ticket-parte-5-roteiro-de-estudo-por-assunto">Parte 5</a><a class="sub" href="#low-ticket-parte-6-a-ponte-para-o-saas">Parte 6</a><a href="#t-negocio-solo"><b>Negócio Solo</b><span>Hormozi e mentalidade</span></a><a class="sub" href="#negocio-solo-parte-1-hormozi-os-primeiros-r100-mil">Parte 1</a><a class="sub" href="#negocio-solo-parte-2-o-método-cloud-bruno-gabarra">Parte 2</a><a class="sub" href="#negocio-solo-parte-3-simon-squibb-pierce-lenny-a-corrida-do-ouro">Parte 3</a><a class="sub" href="#negocio-solo-parte-4-jerry-strazzeri-construir-e-monetizar-em-10-minutos">Parte 4</a><a class="sub" href="#negocio-solo-parte-5-a-lacuna-que-ninguém-preenche-aquisição">Parte 5</a><a class="sub" href="#negocio-solo-parte-6-o-que-é-realista">Parte 6</a><a class="sub" href="#negocio-solo-o-destilado-em-6-linhas">O destilado, em 6 linhas</a><a href="#t-copy-e-criativo"><b>Copy e Criativo</b><span>o que vende</span></a><a class="sub" href="#copy-e-criativo-parte-0-posicionamento-e-marca-antes-da-copy">Parte 0</a><a class="sub" href="#copy-e-criativo-parte-1-copywriting-as-5-lições">Parte 1</a><a class="sub" href="#copy-e-criativo-parte-2-storytelling-os-5-passos">Parte 2</a><a class="sub" href="#copy-e-criativo-parte-3-criativos-que-convertem">Parte 3</a><a class="sub" href="#copy-e-criativo-parte-4-conteúdo-e-instagram">Parte 4</a><a class="sub" href="#copy-e-criativo-parte-5-manychat-e-marketing-conversacional">Parte 5</a><a class="sub" href="#copy-e-criativo-parte-6-imagem-e-vídeo-com-ia">Parte 6</a><a href="#t-ecommerce"><b>E-commerce</b><span>o experimento honesto</span></a><a class="sub" href="#ecommerce-parte-1-o-experimento-honesto-mark-tilbury">Parte 1</a><a class="sub" href="#ecommerce-parte-2-dropshipping-nacional-rafa-souza">Parte 2</a><a class="sub" href="#ecommerce-parte-25-tiktok-shop-e-conteúdo-com-ia-o-certo-e-o-errado-no-mesmo-canal">Parte 2.5</a><a class="sub" href="#ecommerce-parte-3-clonar-loja-com-ia">Parte 3</a><a class="sub" href="#ecommerce-o-que-levar-daqui">O que levar daqui</a><a href="#t-amar-a-deus-no-ordinario"><b>Amar a Deus no Ordinário</b><span>santidade na vida comum</span></a><a class="sub" href="#amar-a-deus-no-ordinario-a-tese-em-uma-frase">A tese, em uma frase</a><a class="sub" href="#amar-a-deus-no-ordinario-parte-1-o-que-santidade-não-é">Parte 1</a><a class="sub" href="#amar-a-deus-no-ordinario-parte-2-por-que-tão-poucos-chegam-lá">Parte 2</a><a class="sub" href="#amar-a-deus-no-ordinario-parte-3-amar-a-deus-de-todo-o-coração">Parte 3</a><a class="sub" href="#amar-a-deus-no-ordinario-parte-4-a-oração-de-quem-tem-pouco-tempo">Parte 4</a><a class="sub" href="#amar-a-deus-no-ordinario-parte-5-como-rezar-na-prática">Parte 5</a><a class="sub" href="#amar-a-deus-no-ordinario-parte-6-quanto-tempo-dar-a-cada-coisa">Parte 6</a><a href="#t-google-meu-negocio"><b>Google Meu Negócio</b><span>avaliações e ranking no mapa</span></a><a class="sub" href="#google-meu-negocio-antes-de-tudo-o-que-este-acervo-prova-e-o-que-só-promete">Antes de tudo: o que este acervo prova e o que só promete</a><a class="sub" href="#google-meu-negocio-parte-1-como-o-google-decide-quem-aparece">Parte 1</a><a class="sub" href="#google-meu-negocio-parte-2-o-sistema-de-avaliações">Parte 2</a><a class="sub" href="#google-meu-negocio-parte-3-a-linha-vermelha-o-que-é-seguro-o-que-é-zona-cinzenta-e-o-que-derruba-seu-perfil">Parte 3</a><a class="sub" href="#google-meu-negocio-parte-4-o-perfil-campo-a-campo">Parte 4</a><a class="sub" href="#google-meu-negocio-parte-5-o-site-e-o-que-está-fora-do-perfil">Parte 5</a><a class="sub" href="#google-meu-negocio-parte-6-rotinas-e-planos">Parte 6</a></nav>
