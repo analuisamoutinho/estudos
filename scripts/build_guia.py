@@ -377,22 +377,27 @@ pre{
 }
 pre code{background:none;padding:0;font-size:12.5px;line-height:1.72;color:var(--ink-soft)}
 
-header{padding:56px 0 8px;border-bottom:2px solid var(--border-control)}
+/* --- hero: banner de página inteira (edge-to-edge) com o gradiente
+   "atmosphere" do design system. Fica fora de .wrap para não parecer um
+   cartão recortado sobre o fundo — é a própria página, não uma moldura. --- */
+.hero{background:var(--atmosphere);color:var(--text-inverse)}
+.hero-inner{max-width:1240px;margin:0 auto;padding:52px 20px 40px}
 .eyebrow{
   font-family:var(--mono);font-size:10.5px;text-transform:uppercase;
-  letter-spacing:.19em;color:var(--action);margin:0 0 15px;
+  letter-spacing:.19em;color:rgba(248,250,252,.7);margin:0 0 15px;
 }
-.lede{font-size:18px;color:var(--ink-soft);margin:16px 0 26px;max-width:60ch}
-.stats{display:flex;flex-wrap:wrap;margin:0 0 28px;border-top:1px solid var(--border)}
-.stat{padding:14px 28px 14px 0;margin-right:28px;border-right:1px solid var(--border)}
+.hero h1{color:#F8FAFC}
+.lede{font-size:18px;color:rgba(248,250,252,.85);margin:16px 0 26px;max-width:60ch}
+.stats{display:flex;flex-wrap:wrap;margin:0;border-top:1px solid rgba(248,250,252,.22)}
+.stat{padding:14px 28px 14px 0;margin-right:28px;border-right:1px solid rgba(248,250,252,.22)}
 .stat:last-child{border-right:0;margin-right:0}
 .stat b{
   display:block;font-family:var(--sans);font-size:24px;font-weight:730;
-  letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1;color:#fff;
 }
 .stat span{
   display:block;font-family:var(--mono);font-size:9.5px;text-transform:uppercase;
-  letter-spacing:.13em;color:var(--ink-faint);margin-top:4px;
+  letter-spacing:.13em;color:rgba(248,250,252,.6);margin-top:4px;
 }
 footer{
   margin-top:64px;padding-top:22px;border-top:1px solid var(--border);
@@ -401,17 +406,19 @@ footer{
 :focus-visible{outline:2px solid var(--focus);outline-offset:3px}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 
-/* --- progresso de leitura (compartilhado: landing + guia individual) --- */
+/* --- progresso de leitura: vive dentro do hero (fundo "atmosphere"),
+   por isso parte de vidro claro em vez dos tokens de superfície comuns --- */
 .lido-toggle{
   display:inline-flex;align-items:center;gap:8px;margin:18px 0 0;padding:9px 16px 9px 12px;
-  font-family:var(--sans);font-size:13px;font-weight:600;color:var(--ink-soft);
-  background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius-pill);cursor:pointer;
+  font-family:var(--sans);font-size:13px;font-weight:600;color:#fff;
+  background:var(--glass-clear);backdrop-filter:blur(var(--blur-clear));-webkit-backdrop-filter:blur(var(--blur-clear));
+  border:1.5px solid rgba(248,250,252,.32);border-radius:var(--radius-pill);cursor:pointer;
   transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease),background var(--fast) var(--ease);
 }
-.lido-toggle:hover{border-color:var(--action);color:var(--ink)}
+.lido-toggle:hover{border-color:#fff;color:#fff}
 .lido-toggle .lido-toggle-icon{
   display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
-  border-radius:50%;border:1.5px solid var(--ink-faint);font-size:11px;line-height:1;
+  border-radius:50%;border:1.5px solid rgba(248,250,252,.6);font-size:11px;line-height:1;
   color:transparent;transition:all var(--fast) var(--ease);
 }
 .lido-toggle.is-lido{background:var(--success-bg);border-color:var(--success);color:var(--success)}
@@ -478,10 +485,8 @@ def main():
 <meta name="viewport" content="width=device-width,initial-scale=1">
 {HEAD_ICONS}
 <style>{CSS}</style>
-<div class="wrap">
-<nav><p>Tópicos</p><a href="#topo"><b>Por onde começar</b></a>{"".join(nav)}</nav>
-<main>
-<header id="topo">
+<div class="hero" id="topo">
+<div class="hero-inner">
   <p class="eyebrow">Biblioteca de transcrições · Síntese operacional</p>
   <h1 class="brand"><img class="brandmark" src="cortex-icon.png" alt="">CORTEX</h1>
   <p class="lede">Agência de IA, ferramentas de IA, SaaS, low ticket, negócio solo, copy e
@@ -493,7 +498,11 @@ def main():
     <div class="stat"><b>{len(TOPICS)}</b><span>grandes tópicos</span></div>
     <div class="stat"><b>7</b><span>números sem lastro</span></div>
   </div>
-</header>
+</div>
+</div>
+<div class="wrap">
+<nav><p>Tópicos</p><a href="#topo"><b>Por onde começar</b></a>{"".join(nav)}</nav>
+<main>
 {intro}
 {"".join(sections)}
 <footer>

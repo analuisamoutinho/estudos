@@ -24,18 +24,13 @@ def fontes_curtas(stem, limit=3):
 
 
 LANDING_CSS = """
-/* --- stage: painel com o gradiente "atmosphere" do design system, onde os
-   cards de vidro (frosted) flutuam --- */
-.stage{
-  position:relative; overflow:hidden; border-radius:var(--radius-stage);
-  background:var(--atmosphere); box-shadow:var(--shadow-raised);
-  padding:22px 22px 26px; margin:28px 0 40px;
-}
-.stage-top{
+/* --- a lista de tópicos continua dentro do próprio hero (fundo "atmosphere"
+   edge-to-edge da página) em vez de um painel recortado por cima --- */
+.hero-controls{
   display:flex; align-items:center; justify-content:space-between; gap:14px;
-  flex-wrap:wrap; margin:0 0 20px;
+  flex-wrap:wrap; margin:8px 0 28px;
 }
-.stage-label{
+.hero-label{
   font-family:var(--mono); font-size:10.5px; text-transform:uppercase;
   letter-spacing:.16em; color:rgba(248,250,252,.72);
 }
@@ -131,18 +126,20 @@ LANDING_CSS = """
 }
 .card-check input{width:15px;height:15px;accent-color:var(--success);cursor:pointer}
 
+/* cor fixa (não segue --action/--text-inverse): é um CTA sobre o fundo
+   claro da página, não texto sobre o hero escuro — precisa do mesmo
+   contraste nos dois temas. */
 .hub-link{
   display:inline-flex; align-items:center; gap:8px; margin-top:8px;
-  font-family:var(--sans); font-size:13px; font-weight:600; color:var(--text-inverse);
-  background:var(--action); padding:11px 20px; border-radius:var(--radius-pill);
+  font-family:var(--sans); font-size:13px; font-weight:600; color:#F8FAFC;
+  background:#344F65; padding:11px 20px; border-radius:var(--radius-pill);
   text-decoration:none; box-shadow:var(--shadow-soft);
   transition:background var(--fast) var(--ease),transform var(--fast) var(--ease);
 }
-.hub-link:hover{background:var(--action-hover);transform:translateY(-1px)}
+.hub-link:hover{background:#263F54;transform:translateY(-1px)}
 
 @media(max-width:600px){
-  .stage{padding:16px 14px 20px;border-radius:calc(var(--radius-stage) - .375rem)}
-  .stage-top{gap:12px}
+  .hero-controls{gap:12px}
   .progress-bar{max-width:100%}
   .cardlist{grid-template-columns:1fr}
   .card{padding:16px 16px 14px}
@@ -191,17 +188,14 @@ def main():
 <meta name="viewport" content="width=device-width,initial-scale=1">
 {HEAD_ICONS}
 <style>{CSS}{LANDING_CSS}</style>
-<div class="wrap">
-<main style="max-width:820px">
-<header style="border-bottom:0">
+<div class="hero" id="topo">
+<div class="hero-inner">
   <p class="eyebrow">Biblioteca de transcrições · Síntese operacional</p>
   <h1 class="brand"><img class="brandmark" src="cortex-icon.png" alt="">CORTEX</h1>
   <p class="lede">Escolha por onde começar. O que você já leu desce pra baixo da lista sozinho —
   fica só o que falta.</p>
-</header>
-<div class="stage">
-  <div class="stage-top">
-    <span class="stage-label">{len(TOPICS)} tópicos · {len(cats)} categorias</span>
+  <div class="hero-controls">
+    <span class="hero-label">{len(TOPICS)} tópicos · {len(cats)} categorias</span>
     <div class="progress">
       <span id="progress-label">0 de {len(TOPICS)} lidos</span>
       <span class="progress-bar"><span class="progress-fill" id="progress-fill" style="width:0%"></span></span>
@@ -210,6 +204,9 @@ def main():
   </div>
   <div id="groups">{groups_html}</div>
 </div>
+</div>
+<div class="wrap">
+<main style="max-width:820px">
 <section class="group" id="read-section" hidden>
   <h2 class="group-title">Já lidos <span class="group-count"></span></h2>
   <ul class="cardlist" id="read-list"></ul>
