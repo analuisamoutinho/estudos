@@ -18,6 +18,7 @@ completa, com timestamps, indexada e pesquisável.
 | 🌎 [Upwork e Freela Internacional](guias/upwork.md) | pegar freela em dólar — perfil, proposta, recebimento |
 | 💻 [SaaS e Produto Digital](guias/saas-produto.md) | construir e vender software com IA, sem programar |
 | 🎯 [Low Ticket e Tráfego Pago](guias/low-ticket.md) | adquirir cliente pagando por ele |
+| 🛰️ [Ofertas LATAM e EUA](guias/ofertas-latam-eua.md) | rodar oferta de renda extra fora do Brasil — política da Meta, FTC, mercado e conta |
 | 🧠 [Negócio Solo e Mentalidade](guias/negocio-solo.md) | Hormozi, método CLOUD, sair do zero |
 | ✍️ [Copy, Criativo e Conteúdo](guias/copy-e-criativo.md) | escrever o que vende, produzir o que segura o scroll |
 | 📦 [E-commerce e Dropshipping](guias/ecommerce.md) | o experimento mais honesto da biblioteca |

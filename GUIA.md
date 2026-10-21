@@ -149,6 +149,7 @@ Também: como se forja um dashboard da Utmify · réguas de expectativa · os bu
 | **Quero faturar R$1.000/dia com serviço** | [Serviços Digitais](guias/servicos-mil-dia.md) — a matemática primeiro |
 | **Quero pegar freela em dólar** | [Upwork](guias/upwork.md) — Partes 1 a 5 |
 | **Tenho caixa e quero escalar rápido** | [Low Ticket](guias/low-ticket.md) — Partes 1 e 4 |
+| **Quero rodar oferta de renda extra na LATAM ou nos EUA** | [Ofertas LATAM e EUA](guias/ofertas-latam-eua.md) — Parte 1 (o que derruba conta) antes de qualquer teste |
 | **Não sei nem por onde começar** | [Negócio Solo](guias/negocio-solo.md) — Hormozi, os 6 passos |
 | **Meu produto é bom mas não vende** | [Copy e Criativo](guias/copy-e-criativo.md) — Parte 0 (posicionamento) |
 | **Quero calibrar expectativa antes de investir** | [Números e Ceticismo](guias/numeros-e-ceticismo.md) |
