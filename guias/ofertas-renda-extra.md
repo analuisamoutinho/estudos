@@ -639,7 +639,7 @@ inventada e urgência falsa convertem no curto prazo e destroem reembolso, reput
 
 ### Tom e linguagem: o que o brasileiro precisa saber ao escrever em espanhol
 
-- **Todos os autores usam *tuteo*** (tú, tu); ninguém usa *vos*. Mas não há autor argentino ou uruguaio no
+- **Todos os autores usam tuteo** (tú, tu); ninguém usa *vos*. Mas não há autor argentino ou uruguaio no
   corpus — **o *vos* é uma lacuna**, e vender para o Cone Sul sem ele soa estranho (observação minha).
 - **Regionalismos nos vídeos:** Colômbia: "bolis", "paletas", "mi gente"; México: "chamba", "botonazos",
   "clicazos", "pautar" (= anunciar); Espanha: "vale", "chulo", "ordenador", "contra reembolso" (em LATAM, "pago
@@ -784,7 +784,7 @@ México e do Brasil, imposto e recebimento) são tratadas, com fonte e grau de c
 | **CPM, hook rate, hold rate**; CPM e CPC do Brasil para comparar com EUA e LATAM | Ausentes |
 | **Cartão em dólar e verificação de anunciante** para a conta de anúncio | Ausentes |
 | **Suporte em espanhol** | Ninguém ensina |
-| **Autor argentino ou chileno; o *vos*** | Não há |
+| **Autor argentino ou chileno; o vos** | Não há |
 | **Resultados auditáveis de lucro líquido** de um brasileiro vendendo no exterior | Nenhum |
 | **Risco de banimento do número de WhatsApp** em x1 automatizado | Ninguém fala |
 | **Como o Meta mudou em 2025–2026** (Advantage+, Andromeda) | Só um vídeo toca; defasagem alta |
