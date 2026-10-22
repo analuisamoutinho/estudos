@@ -1,6 +1,6 @@
 # CORTEX — Índice por Tópico
 
-Síntese operacional de **482 vídeos** transcritos em [`references/youtube/`](references/youtube/),
+Síntese operacional de **540 vídeos** transcritos em [`references/youtube/`](references/youtube/),
 lidos integralmente. Organizado por grandes tópicos.
 
 ---
@@ -154,6 +154,7 @@ Também: como se forja um dashboard da Utmify · réguas de expectativa · os bu
 | **Meu produto é bom mas não vende** | [Copy e Criativo](guias/copy-e-criativo.md) — Parte 0 (posicionamento) |
 | **Quero calibrar expectativa antes de investir** | [Números e Ceticismo](guias/numeros-e-ceticismo.md) |
 | **Tenho negócio local e quero mais avaliações e cliente no orgânico** | [Google Meu Negócio](guias/google-meu-negocio.md) — Parte 2 (avaliações) e Parte 3 (o que suspende) |
+| **Quero ver o que os vídeos de quem opera ensinam sobre renda extra com tráfego pago** | [Renda Extra: Método e Conta](guias/ofertas-renda-extra.md) — o "antes de tudo" e a Parte 2 (conta); complementa o de cima |
 | **Quero buscar a Deus dentro da rotina que tenho** | [Amar a Deus no Ordinário](guias/amar-a-deus-no-ordinario.md) — a tese, e depois a Parte 5 |
 
 ---
@@ -184,7 +185,7 @@ references/youtube/
   {canal}/{título}.md   # transcrição com timestamps
 ```
 
-482 vídeos, 225 canais, ~184 horas. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem.
+540 vídeos, 261 canais, ~204 horas. Cada afirmação nos guias é rastreável ao vídeo e timestamp de origem.
 
 > **Aviso de confiabilidade.** As transcrições são legendas automáticas. Números e nomes de ferramentas
 > vêm corrompidos com frequência (`"cloud"`=Claude, `"Lovbow"`=Lovable, `"QFi"`=Kiwify, `"Moca"`=Mocha).

@@ -1,4 +1,20 @@
 {
+  "-Albg7BGsr8": {
+    "channel": "Allan Torquato",
+    "channel_url": "https://www.youtube.com/channel/UCdrSd6acAbz23X2neLw2_eg",
+    "chars": 22842,
+    "duration": "00:19:45",
+    "duration_secs": 1185,
+    "error": "",
+    "id": "-Albg7BGsr8",
+    "lang": "pt-orig",
+    "path": "references/youtube/allan-torquato/modelei-uma-oferta-escalada-no-brasil-para-vender-em-dólar-na-latam.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Modelei Uma Oferta Escalada no Brasil Para Vender em Dólar na LATAM",
+    "upload_date": "20260824",
+    "url": "https://www.youtube.com/watch?v=-Albg7BGsr8"
+  },
   "-FvX81leJpc": {
     "channel": "Cássio Hart | Tráfego Pago para Low Ticket",
     "channel_url": "https://www.youtube.com/channel/UCfiVoZJZOejWGlLvADb9zFA",
@@ -271,6 +287,22 @@
     "upload_date": "20241202",
     "url": "https://www.youtube.com/watch?v=1QGSh2nh51U"
   },
+  "1TY_nKIObJA": {
+    "channel": "Caio Martins",
+    "channel_url": "https://www.youtube.com/channel/UC6V_gx5jBDS6dAC6-ywrbhA",
+    "chars": 41493,
+    "duration": "00:39:15",
+    "duration_secs": 2355,
+    "error": "",
+    "id": "1TY_nKIObJA",
+    "lang": "pt-orig",
+    "path": "references/youtube/caio-martins/criando-um-low-ticket-e-vendendo-com-tráfego-direto---aula-completa.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "CRIANDO UM LOW TICKET E VENDENDO COM TRÁFEGO DIRETO - AULA COMPLETA",
+    "upload_date": "20260708",
+    "url": "https://www.youtube.com/watch?v=1TY_nKIObJA"
+  },
   "1dzTGLd5o9s": {
     "channel": "Matt Diamante",
     "channel_url": "https://www.youtube.com/channel/UCqFqqzB3dG6d55vLMKITqAw",
@@ -350,6 +382,22 @@
     "title": "COMO FUNCIONA O FUNIL DE LOW TICKET?",
     "upload_date": "20260612",
     "url": "https://www.youtube.com/watch?v=1zVCj_tReZw"
+  },
+  "27FxFwsydls": {
+    "channel": "Tyson Zahner",
+    "channel_url": "https://www.youtube.com/channel/UCbdAhb5fYpVBeqyH1o95eLg",
+    "chars": 14784,
+    "duration": "00:16:04",
+    "duration_secs": 964,
+    "error": "",
+    "id": "27FxFwsydls",
+    "lang": "en-orig",
+    "path": "references/youtube/tyson-zahner/how-to-get-facebook-ads-approved-3-main-reasons-ads-get-rejected.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "How to Get Facebook Ads Approved | 3 Main Reasons Ads Get Rejected",
+    "upload_date": "20201029",
+    "url": "https://www.youtube.com/watch?v=27FxFwsydls"
   },
   "2EQ3TRNYIQM": {
     "channel": "Nícolas Moreira",
@@ -495,6 +543,22 @@
     "upload_date": "20260401",
     "url": "https://www.youtube.com/watch?v=30zw1Y_mS4g"
   },
+  "34xEejx_QpA": {
+    "channel": "Felipe Lona",
+    "channel_url": "https://www.youtube.com/channel/UCPF02UL_TJ2FwmkOo2bJISw",
+    "chars": 26075,
+    "duration": "00:23:52",
+    "duration_secs": 1432,
+    "error": "",
+    "id": "34xEejx_QpA",
+    "lang": "pt-orig",
+    "path": "references/youtube/felipe-lona/do-0-ao-r1000000-clonando-uma-oferta-escalada-e-criando-produto-na-prática.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Do 0 ao R$1.000.000: Clonando uma oferta escalada e criando produto na prática",
+    "upload_date": "20250702",
+    "url": "https://www.youtube.com/watch?v=34xEejx_QpA"
+  },
   "3Ku4VcBKmrg": {
     "channel": "Padre Paulo Ricardo",
     "channel_url": "https://www.youtube.com/channel/UCP6L9TPS3pHccVRiDB_cvqQ",
@@ -590,6 +654,22 @@
     "title": "COMO ENTRAR EM CONTATO COM O LEAD E AUMENTAR A TAXA DE CONVERSÃO | Prospecção com Thiago Reis",
     "upload_date": "20211025",
     "url": "https://www.youtube.com/watch?v=3mZKKdKzBJU"
+  },
+  "3z2JDpDnMoY": {
+    "channel": "Nerds de Negócios",
+    "channel_url": "https://www.youtube.com/channel/UCbTAwyq6nWOLnFag-PR0XVw",
+    "chars": 31659,
+    "duration": "00:29:08",
+    "duration_secs": 1748,
+    "error": "",
+    "id": "3z2JDpDnMoY",
+    "lang": "pt-orig",
+    "path": "references/youtube/nerds-de-negócios/como-gerar-renda-mensal-com-tráfego-direto.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "COMO GERAR RENDA MENSAL COM TRÁFEGO DIRETO",
+    "upload_date": "20230903",
+    "url": "https://www.youtube.com/watch?v=3z2JDpDnMoY"
   },
   "3zqERrc6_fA": {
     "channel": "Mkt Local",
@@ -988,6 +1068,22 @@
     "upload_date": "20250715",
     "url": "https://www.youtube.com/watch?v=7X8Vrnn7cv4"
   },
+  "7Zv-Qhw8ivU": {
+    "channel": "Adailton SAntos",
+    "channel_url": "https://www.youtube.com/channel/UCLV-PpN0Kn9wtKI35hX59gA",
+    "chars": 22306,
+    "duration": "00:24:43",
+    "duration_secs": 1483,
+    "error": "",
+    "id": "7Zv-Qhw8ivU",
+    "lang": "pt-orig",
+    "path": "references/youtube/adailton-santos/low-ticket-no-whatsapp-no-méxico-com-roi-de-5---copie-e-cole.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "LOW TICKET NO WHATSAPP NO MÉXICO COM ROI DE 5 - COPIE E COLE",
+    "upload_date": "20260807",
+    "url": "https://www.youtube.com/watch?v=7Zv-Qhw8ivU"
+  },
   "7ewQDY8Elys": {
     "channel": "Payton Clark Smith",
     "channel_url": "https://www.youtube.com/channel/UCbHP6VGz859AqUebR1B_WLw",
@@ -1019,6 +1115,22 @@
     "title": "Trabalho Remoto: Vagas para Freelancer no site Upwork (passo a passo para iniciantes)",
     "upload_date": "20220706",
     "url": "https://www.youtube.com/watch?v=7lUOvGxeJkw"
+  },
+  "7u3-t-Ft65w": {
+    "channel": "ClickBank",
+    "channel_url": "https://www.youtube.com/channel/UC_U7_SF5ygXAIPOPNC6HuDw",
+    "chars": 6960,
+    "duration": "00:06:46",
+    "duration_secs": 406,
+    "error": "",
+    "id": "7u3-t-Ft65w",
+    "lang": "en-orig",
+    "path": "references/youtube/clickbank/top-5-clickbank-offers-to-promote-on-facebook.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Top 5 ClickBank Offers to Promote on Facebook",
+    "upload_date": "20230914",
+    "url": "https://www.youtube.com/watch?v=7u3-t-Ft65w"
   },
   "7wyG6Qc2xlE": {
     "channel": "Deborah Folloni",
@@ -1083,6 +1195,54 @@
     "title": "Como Encontrar o Melhor Criativo para Escalar Low Ticket",
     "upload_date": "20251212",
     "url": "https://www.youtube.com/watch?v=8Poq0LuMzU4"
+  },
+  "8VnZrfZMf6M": {
+    "channel": "Ernesto Berducido",
+    "channel_url": "https://www.youtube.com/channel/UCz2Ly6dRKXbTGipF3A7zT-w",
+    "chars": 22633,
+    "duration": "00:21:18",
+    "duration_secs": 1278,
+    "error": "",
+    "id": "8VnZrfZMf6M",
+    "lang": "es-orig",
+    "path": "references/youtube/ernesto-berducido/digistore24-cómo-funciona-cómo-vendí-179603-con-digistore24.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Digistore24 Cómo Funciona? Cómo Vendí $1,796.03 Con Digistore24 🔥",
+    "upload_date": "20241005",
+    "url": "https://www.youtube.com/watch?v=8VnZrfZMf6M"
+  },
+  "8ZnjdsqmjG8": {
+    "channel": "Powerhouse Affiliate",
+    "channel_url": "https://www.youtube.com/channel/UCSkyI7nsKvjRIEJGuPyelPg",
+    "chars": 10056,
+    "duration": "00:09:49",
+    "duration_secs": 589,
+    "error": "",
+    "id": "8ZnjdsqmjG8",
+    "lang": "en-orig",
+    "path": "references/youtube/powerhouse-affiliate/from-0-to-10000---3-profit-boosting-nutra-affiliate-strategies-with-drcash.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "From $0 to $10,000 - 3 Profit-Boosting NUTRA AFFILIATE Strategies With Dr.Cash",
+    "upload_date": "20230328",
+    "url": "https://www.youtube.com/watch?v=8ZnjdsqmjG8"
+  },
+  "8rifP6ci93w": {
+    "channel": "Heriberto Martorell",
+    "channel_url": "https://www.youtube.com/channel/UCC0v1YhpE3x_3oCuKwUMFPQ",
+    "chars": 21106,
+    "duration": "00:28:49",
+    "duration_secs": 1729,
+    "error": "",
+    "id": "8rifP6ci93w",
+    "lang": "es-orig",
+    "path": "references/youtube/heriberto-martorell/cómo-ganar-dinero-con-adcombo-y-tráfico-orgánico.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Cómo Ganar Dinero Con Adcombo y Tráfico Orgánico",
+    "upload_date": "20200815",
+    "url": "https://www.youtube.com/watch?v=8rifP6ci93w"
   },
   "8tfHnpjzXP8": {
     "channel": "Marina Blanc",
@@ -1163,6 +1323,22 @@
     "title": "TESTEI LOW TICKET COM 6 REAIS",
     "upload_date": "20260201",
     "url": "https://www.youtube.com/watch?v=9BTFkD1m1VA"
+  },
+  "9GLb_CEjzko": {
+    "channel": "Henrique Oliveira",
+    "channel_url": "https://www.youtube.com/channel/UCN9wfWdEgkINbJiEUCL-h-Q",
+    "chars": 13242,
+    "duration": "00:12:17",
+    "duration_secs": 737,
+    "error": "",
+    "id": "9GLb_CEjzko",
+    "lang": "pt-orig",
+    "path": "references/youtube/henrique-oliveira/a-escala-cbo-que-faz-vc-vender-10x-mais-no-facebook-ads-em-2026.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "A ESCALA CBO QUE FAZ VC VENDER 10X MAIS NO FACEBOOK ADS EM 2026",
+    "upload_date": "20260308",
+    "url": "https://www.youtube.com/watch?v=9GLb_CEjzko"
   },
   "9NWXLAlaVPY": {
     "channel": "Denée",
@@ -1388,6 +1564,22 @@
     "upload_date": "20260203",
     "url": "https://www.youtube.com/watch?v=AuijVYX3lrs"
   },
+  "B1OSXixl_Jw": {
+    "channel": "Hustlers Club",
+    "channel_url": "https://www.youtube.com/channel/UCC3aCpHhCGmzpQ2WYDIhePA",
+    "chars": 16239,
+    "duration": "00:15:30",
+    "duration_secs": 930,
+    "error": "",
+    "id": "B1OSXixl_Jw",
+    "lang": "en-orig",
+    "path": "references/youtube/hustlers-club/actually-make-money-claude-clickbank-affiliate-marketing-facebook-ads.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "ACTUALLY Make Money Claude + Clickbank Affiliate Marketing + Facebook Ads",
+    "upload_date": "20260617",
+    "url": "https://www.youtube.com/watch?v=B1OSXixl_Jw"
+  },
   "B6LT_HXEopY": {
     "channel": "Mundo Freelancer",
     "channel_url": "https://www.youtube.com/channel/UCGdpSMAo63oO9rLw4MVnSzQ",
@@ -1468,6 +1660,22 @@
     "upload_date": "20260518",
     "url": "https://www.youtube.com/watch?v=BV98gX1ffcY"
   },
+  "B_u5jr8UoMI": {
+    "channel": "Matheus Bressan",
+    "channel_url": "https://www.youtube.com/channel/UCPzdmyhHeLRuJmoNGB-iieQ",
+    "chars": 14732,
+    "duration": "00:14:38",
+    "duration_secs": 878,
+    "error": "",
+    "id": "B_u5jr8UoMI",
+    "lang": "pt-orig",
+    "path": "references/youtube/matheus-bressan/como-fazer-criativos-de-alta-conversão-para-anúncios-no-facebook-ads-tudo-na-prática.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como fazer criativos de alta conversão para anúncios no Facebook ads (tudo na prática)",
+    "upload_date": "20231027",
+    "url": "https://www.youtube.com/watch?v=B_u5jr8UoMI"
+  },
   "BaFOWYQNJrc": {
     "channel": "Frei Gilson / Som do Monte - OFICIAL",
     "channel_url": "https://www.youtube.com/channel/UCbh6_TmFnAJLI56aAQeD3qw",
@@ -1483,6 +1691,22 @@
     "title": "A graça da vocação | (Mt 9, 9-13) #802 -  Meditação da Palavra",
     "upload_date": "20220701",
     "url": "https://www.youtube.com/watch?v=BaFOWYQNJrc"
+  },
+  "BcrTq1htOBk": {
+    "channel": "Matheus Bressan",
+    "channel_url": "https://www.youtube.com/channel/UCPzdmyhHeLRuJmoNGB-iieQ",
+    "chars": 28385,
+    "duration": "00:27:13",
+    "duration_secs": 1633,
+    "error": "",
+    "id": "BcrTq1htOBk",
+    "lang": "pt-orig",
+    "path": "references/youtube/matheus-bressan/como-faço-900k-mês-com-low-ticket-em-dólar.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "COMO FAÇO 900K MÊS COM LOW TICKET EM DÓLAR",
+    "upload_date": "20250902",
+    "url": "https://www.youtube.com/watch?v=BcrTq1htOBk"
   },
   "Bfg6uXrc3-s": {
     "channel": "Escola de SEO - Por Luciano Arthur",
@@ -1563,6 +1787,22 @@
     "title": "Assista isso para conseguir seus 100 primeiros clientes (passo a passo)",
     "upload_date": "20251012",
     "url": "https://www.youtube.com/watch?v=C266y0gKEeI"
+  },
+  "C5M_4DJF2Vs": {
+    "channel": "Filipe Detrey",
+    "channel_url": "https://www.youtube.com/channel/UCJbuO-k1LvwxUB5bNhbWSCA",
+    "chars": 8025,
+    "duration": "00:07:17",
+    "duration_secs": 437,
+    "error": "",
+    "id": "C5M_4DJF2Vs",
+    "lang": "pt-orig",
+    "path": "references/youtube/filipe-detrey/novo-meta-ads-2026---o-que-fazer-agora-mudou-tudo.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Novo Meta Ads 2026 - O que fazer Agora? (Mudou tudo!)",
+    "upload_date": "20260712",
+    "url": "https://www.youtube.com/watch?v=C5M_4DJF2Vs"
   },
   "C8En3-P4658": {
     "channel": "Nerds de Negócios",
@@ -1932,6 +2172,22 @@
     "upload_date": "20251216",
     "url": "https://www.youtube.com/watch?v=EsgQ0bQzvZ0"
   },
+  "EtAXsb_eaRs": {
+    "channel": "João Castanheira",
+    "channel_url": "https://www.youtube.com/channel/UCT7a5ZIRo8gFKQEXXhgtBZw",
+    "chars": 23347,
+    "duration": "00:21:20",
+    "duration_secs": 1280,
+    "error": "",
+    "id": "EtAXsb_eaRs",
+    "lang": "pt-orig",
+    "path": "references/youtube/joão-castanheira/os-5-principais-motivos-de-bloqueio-no-facebook-ads-e-como-parar-de-sofrer-com-isso.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Os 5 principais motivos de bloqueio no Facebook Ads (e como parar de sofrer com isso)",
+    "upload_date": "20230927",
+    "url": "https://www.youtube.com/watch?v=EtAXsb_eaRs"
+  },
   "Euu4CmTQx50": {
     "channel": "Nícolas Moreira",
     "channel_url": "https://www.youtube.com/channel/UC0Z9Qrd-1pH7qmLdPdS_i6w",
@@ -2220,6 +2476,22 @@
     "upload_date": "20250327",
     "url": "https://www.youtube.com/watch?v=GV-ycqgg908"
   },
+  "GVFsil1m3h0": {
+    "channel": "Rafael Doncel ",
+    "channel_url": "https://www.youtube.com/channel/UCzx-EeGPaL_uXIF2XKjzo3A",
+    "chars": 31257,
+    "duration": "00:27:15",
+    "duration_secs": 1635,
+    "error": "",
+    "id": "GVFsil1m3h0",
+    "lang": "es-orig",
+    "path": "references/youtube/rafael-doncel/cómo-evitar-baneo-de-facebook-ads-estructura-para-blindar-tu-cuenta-publicitaria-solución.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "✅ Cómo evitar baneo de facebook ads | Estructura para blindar tu cuenta publicitaria [SOLUCIÓN 2022]",
+    "upload_date": "20211115",
+    "url": "https://www.youtube.com/watch?v=GVFsil1m3h0"
+  },
   "GX-TryqAw3M": {
     "channel": "MGTInc | AI Economy 🌐",
     "channel_url": "https://www.youtube.com/channel/UCXK2fOoYibsFE6mrFYDrnfA",
@@ -2347,6 +2619,22 @@
     "title": "A Quest for Visual Intelligence in Computers | Fei-Fei Li | WiDS 2017",
     "upload_date": "20170210",
     "url": "https://www.youtube.com/watch?v=HTeWDF7lPU0"
+  },
+  "HmumLwemJQg": {
+    "channel": "Adrián Sáenz",
+    "channel_url": "https://www.youtube.com/channel/UCVt4ugq2txl_szlXAO7B3-g",
+    "chars": 13128,
+    "duration": "00:11:03",
+    "duration_secs": 663,
+    "error": "",
+    "id": "HmumLwemJQg",
+    "lang": "es-orig",
+    "path": "references/youtube/adrián-sáenz/cómo-vender-infoproductos-desde-cero.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Cómo Vender Infoproductos Desde Cero",
+    "upload_date": "20210614",
+    "url": "https://www.youtube.com/watch?v=HmumLwemJQg"
   },
   "HqQg9N9NZ9c": {
     "channel": "Silvio Roberto",
@@ -2476,6 +2764,22 @@
     "upload_date": "20230526",
     "url": "https://www.youtube.com/watch?v=IGNnFvND74I"
   },
+  "IT-cZnlZEk0": {
+    "channel": "Aprendamos Marketing",
+    "channel_url": "https://www.youtube.com/channel/UChq0O-Nb05OrWPglKV5w4bg",
+    "chars": 8403,
+    "duration": "00:07:57",
+    "duration_secs": 477,
+    "error": "",
+    "id": "IT-cZnlZEk0",
+    "lang": "es-orig",
+    "path": "references/youtube/aprendamos-marketing/por-esto-meta-está-rechazando-tus-anuncios-solución-rápida.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Por esto Meta está RECHAZANDO tus anuncios (Solución Rápida)",
+    "upload_date": "20260828",
+    "url": "https://www.youtube.com/watch?v=IT-cZnlZEk0"
+  },
   "IjTaTDpRrME": {
     "channel": "Matt Diamante",
     "channel_url": "https://www.youtube.com/channel/UCqFqqzB3dG6d55vLMKITqAw",
@@ -2571,6 +2875,22 @@
     "title": "O mínimo que deve saber sobre TDAH",
     "upload_date": "20240928",
     "url": "https://www.youtube.com/watch?v=J5jBcrp6s9Q"
+  },
+  "J7jsaA-eD0s": {
+    "channel": "Mayara Prado",
+    "channel_url": "https://www.youtube.com/channel/UCf9z_R7nN72Q9PBE6ET9Huw",
+    "chars": 38916,
+    "duration": "00:33:24",
+    "duration_secs": 2004,
+    "error": "",
+    "id": "J7jsaA-eD0s",
+    "lang": "pt-orig",
+    "path": "references/youtube/mayara-prado/como-vender-na-clickbank-e-ganhar-em-dolar-afiliado-google-ads-na-gringa-2025.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como Vender Na CLICKBANK e Ganhar em Dólar! Afiliado Google Ads Na Gringa 2025",
+    "upload_date": "20250528",
+    "url": "https://www.youtube.com/watch?v=J7jsaA-eD0s"
   },
   "JLaprLzPZYM": {
     "channel": "Florian Darroman",
@@ -2796,6 +3116,22 @@
     "upload_date": "20260212",
     "url": "https://www.youtube.com/watch?v=L9Uzls9_qas"
   },
+  "L9n704f6VIA": {
+    "channel": "Christian Sánchez",
+    "channel_url": "https://www.youtube.com/channel/UCi3P5IIm2pGJh6cN3WcSoEQ",
+    "chars": 31917,
+    "duration": "00:32:10",
+    "duration_secs": 1930,
+    "error": "",
+    "id": "L9n704f6VIA",
+    "lang": "es-orig",
+    "path": "references/youtube/christian-sánchez/principiantes-cómo-hacer-tu-primera-campaña-en-facebook-ads-2026.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "PRINCIPIANTES: Cómo Hacer tu PRIMERA CAMPAÑA en Facebook ADS (2026)",
+    "upload_date": "20260501",
+    "url": "https://www.youtube.com/watch?v=L9n704f6VIA"
+  },
   "LE16UA6GByw": {
     "channel": "Attekita Dev",
     "channel_url": "https://www.youtube.com/channel/UCetRsdZxDQDcgVDJd6erz6g",
@@ -2891,6 +3227,22 @@
     "title": "COMO CRIAR UM SAAS DE GRAÇA NO CLAUDE CODE SEM PROGRAMAR",
     "upload_date": "20260331",
     "url": "https://www.youtube.com/watch?v=LcOvwCvtkxg"
+  },
+  "LgYy1C9mz0k": {
+    "channel": "ClickBank",
+    "channel_url": "https://www.youtube.com/channel/UC_U7_SF5ygXAIPOPNC6HuDw",
+    "chars": 47998,
+    "duration": "00:48:43",
+    "duration_secs": 2923,
+    "error": "",
+    "id": "LgYy1C9mz0k",
+    "lang": "en-orig",
+    "path": "references/youtube/clickbank/facebook-ad-tutorial-for-beginners-2021-proven-framework-to-increase-conversions.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Facebook Ad Tutorial For Beginners 2021: Proven Framework to Increase Conversions",
+    "upload_date": "20210225",
+    "url": "https://www.youtube.com/watch?v=LgYy1C9mz0k"
   },
   "Lh-j78h_gd4": {
     "channel": "Franscielle Souza",
@@ -3356,6 +3708,22 @@
     "upload_date": "20250409",
     "url": "https://www.youtube.com/watch?v=OxccQM6l7uY"
   },
+  "P53zikm-FPM": {
+    "channel": "Fabio Cavalcante",
+    "channel_url": "https://www.youtube.com/channel/UC3sBqeI4RqMwPxGsjXcVGqg",
+    "chars": 9320,
+    "duration": "00:09:02",
+    "duration_secs": 542,
+    "error": "",
+    "id": "P53zikm-FPM",
+    "lang": "pt-orig",
+    "path": "references/youtube/fabio-cavalcante/o-segredo-para-validar-seu-anúncio-no-facebook-ads-rápido.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "O Segredo para Validar Seu ANÚNCIO no Facebook ADS Rápido",
+    "upload_date": "20250320",
+    "url": "https://www.youtube.com/watch?v=P53zikm-FPM"
+  },
   "P5zebeK9K1g": {
     "channel": "Afonso Lopes | Automações IA ",
     "channel_url": "https://www.youtube.com/channel/UCG8Woy3WwNyv2H_dLP_KFkg",
@@ -3371,6 +3739,22 @@
     "title": "7 lições que tive VENDENDO AGENTES DE IA no n8n para empresas reais",
     "upload_date": "20260122",
     "url": "https://www.youtube.com/watch?v=P5zebeK9K1g"
+  },
+  "P8PrS6KKVHA": {
+    "channel": "Guilherme Emanoel",
+    "channel_url": "https://www.youtube.com/channel/UCJmo4dHKOA84FAUt9_oiVVA",
+    "chars": 9579,
+    "duration": "00:08:20",
+    "duration_secs": 500,
+    "error": "",
+    "id": "P8PrS6KKVHA",
+    "lang": "pt-orig",
+    "path": "references/youtube/guilherme-emanoel/como-testar-pré-escalar-e-escalar-um-low-ticket.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como Testar, Pré-Escalar e Escalar um Low Ticket",
+    "upload_date": "20260129",
+    "url": "https://www.youtube.com/watch?v=P8PrS6KKVHA"
   },
   "PZylEWhBDqo": {
     "channel": "Your Average Tech Bro",
@@ -3483,6 +3867,22 @@
     "title": "Aula 11 - Como Criar Fluxo Typebot (Produto Low Ticket)",
     "upload_date": "20260625",
     "url": "https://www.youtube.com/watch?v=QWSU0slKGeM"
+  },
+  "QXY6FzKF34c": {
+    "channel": "Samuel Corvo",
+    "channel_url": "https://www.youtube.com/channel/UCsaC6uSmag6oy4ZQz1jyAFg",
+    "chars": 6816,
+    "duration": "00:07:13",
+    "duration_secs": 433,
+    "error": "",
+    "id": "QXY6FzKF34c",
+    "lang": "pt-orig",
+    "path": "references/youtube/samuel-corvo/r5mil-de-lucrodia-com-low-ticket-revelei-minha-estratégia-de-escala-facebook-ads.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "R$5mil de Lucro/dia com Low Ticket: Revelei Minha Estratégia de ESCALA (Facebook Ads)",
+    "upload_date": "20251117",
+    "url": "https://www.youtube.com/watch?v=QXY6FzKF34c"
   },
   "QcTh1SEdA0Q": {
     "channel": "Oliur Online",
@@ -3740,6 +4140,22 @@
     "upload_date": "20260721",
     "url": "https://www.youtube.com/watch?v=SPtwlP8Id4k"
   },
+  "SY7UffF3sjE": {
+    "channel": "Carla Con Wifi",
+    "channel_url": "https://www.youtube.com/channel/UCkViwdgDvpQa9zfIejwfHqg",
+    "chars": 28228,
+    "duration": "00:23:46",
+    "duration_secs": 1426,
+    "error": "",
+    "id": "SY7UffF3sjE",
+    "lang": "es-orig",
+    "path": "references/youtube/carla-con-wifi/así-puedes-ganar-dinero-con-marketing-de-afiliados-en-2026-paso-a-paso.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Así puedes ganar dinero con marketing de afiliados en 2026 (paso a paso)",
+    "upload_date": "20250312",
+    "url": "https://www.youtube.com/watch?v=SY7UffF3sjE"
+  },
   "SYe1R-8HlcU": {
     "channel": "The Aristocratas | Del Francco & Rubatinno",
     "channel_url": "https://www.youtube.com/channel/UCsxXnsW_NXhV0GJbRviLIUA",
@@ -3787,6 +4203,22 @@
     "title": "Como eu faturei R$255 MIL com CHAT GPT",
     "upload_date": "20250220",
     "url": "https://www.youtube.com/watch?v=Sz3WNtLF4jY"
+  },
+  "T5fIG0BPt3M": {
+    "channel": "Matheus Bressan",
+    "channel_url": "https://www.youtube.com/channel/UCPzdmyhHeLRuJmoNGB-iieQ",
+    "chars": 13270,
+    "duration": "00:13:25",
+    "duration_secs": 805,
+    "error": "",
+    "id": "T5fIG0BPt3M",
+    "lang": "pt-orig",
+    "path": "references/youtube/matheus-bressan/vender-latam-é-muito-mais-fácil-que-no-brasil.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Vender LATAM é muito mais FÁCIL que no Brasil",
+    "upload_date": "20250904",
+    "url": "https://www.youtube.com/watch?v=T5fIG0BPt3M"
   },
   "TI5H--IbZs4": {
     "channel": "Rafa Souza - Dropshipping",
@@ -3964,6 +4396,22 @@
     "upload_date": "20260130",
     "url": "https://www.youtube.com/watch?v=UGQYjRMpazU"
   },
+  "UIpOblxbiVM": {
+    "channel": "kayoleal",
+    "channel_url": "https://www.youtube.com/channel/UCAPDhCXNpHEx6r_6QAms1IQ",
+    "chars": 26745,
+    "duration": "00:26:02",
+    "duration_secs": 1562,
+    "error": "",
+    "id": "UIpOblxbiVM",
+    "lang": "pt-orig",
+    "path": "references/youtube/kayoleal/a-forma-mais-barata-de-validar-uma-oferta-quase-ninguém-faz.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "A forma mais BARATA DE VALIDAR uma OFERTA (quase ninguém faz)",
+    "upload_date": "20260701",
+    "url": "https://www.youtube.com/watch?v=UIpOblxbiVM"
+  },
   "UKxk7ijiZKk": {
     "channel": "Nícolas Moreira",
     "channel_url": "https://www.youtube.com/channel/UC0Z9Qrd-1pH7qmLdPdS_i6w",
@@ -3979,6 +4427,22 @@
     "title": "Como Criar um Low Ticket com IA e Fazer a Primeira Venda em 24h. Aplique Hoje",
     "upload_date": "20260712",
     "url": "https://www.youtube.com/watch?v=UKxk7ijiZKk"
+  },
+  "UNgizx7SBkg": {
+    "channel": "Jani at Aff Labs",
+    "channel_url": "https://www.youtube.com/channel/UC8dvu-KOrEQX0UiK_fGIHAQ",
+    "chars": 9685,
+    "duration": "00:12:05",
+    "duration_secs": 725,
+    "error": "",
+    "id": "UNgizx7SBkg",
+    "lang": "en-orig",
+    "path": "references/youtube/jani-at-aff-labs/329825-from-tiktok-ads-and-clickbank.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "$329,825 From TikTok Ads And Clickbank",
+    "upload_date": "20220905",
+    "url": "https://www.youtube.com/watch?v=UNgizx7SBkg"
   },
   "UR8lr2l10RI": {
     "channel": "Connor Murray",
@@ -4172,6 +4636,22 @@
     "upload_date": "20260624",
     "url": "https://www.youtube.com/watch?v=VZv2Bb0WHdk"
   },
+  "Vba9SfVc76M": {
+    "channel": "Filipe Detrey",
+    "channel_url": "https://www.youtube.com/channel/UCJbuO-k1LvwxUB5bNhbWSCA",
+    "chars": 17487,
+    "duration": "00:16:34",
+    "duration_secs": 994,
+    "error": "",
+    "id": "Vba9SfVc76M",
+    "lang": "pt-orig",
+    "path": "references/youtube/filipe-detrey/plano-de-contingência-2026-passo-a-passo-para-iniciante.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "PLANO DE CONTINGÊNCIA 2026 (PASSO A PASSO PARA INICIANTE)",
+    "upload_date": "20260304",
+    "url": "https://www.youtube.com/watch?v=Vba9SfVc76M"
+  },
   "VvaoYLNXoeE": {
     "channel": "Simon Squibb",
     "channel_url": "https://www.youtube.com/channel/UCGznz4NfW5iymkvn1l40qyA",
@@ -4219,6 +4699,22 @@
     "title": "Esse casal fatura mais de R$1.5 MILHÃO por mês vendendo brinquedos no Mercado Livre!",
     "upload_date": "20260318",
     "url": "https://www.youtube.com/watch?v=WJCZ-vLopQM"
+  },
+  "WUTJ4AodRUE": {
+    "channel": "William Adams",
+    "channel_url": "https://www.youtube.com/channel/UCDL_IFdIUeQY6mvCIB_tHug",
+    "chars": 11479,
+    "duration": "00:09:07",
+    "duration_secs": 547,
+    "error": "",
+    "id": "WUTJ4AodRUE",
+    "lang": "en-orig",
+    "path": "references/youtube/william-adams/how-ive-been-making-13kday-with-tiktok-ads-super-simple.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "How i've been making 13k/day with TikTok Ads (Super Simple)",
+    "upload_date": "20251018",
+    "url": "https://www.youtube.com/watch?v=WUTJ4AodRUE"
   },
   "WVzg8t25BvY": {
     "channel": "Bruno Okamoto",
@@ -4379,6 +4875,22 @@
     "title": "Meu produto validado de LOW TICKET (Copie e Cole)",
     "upload_date": "20260530",
     "url": "https://www.youtube.com/watch?v=Xm0djO0DP6g"
+  },
+  "Xq7tNOoTyz8": {
+    "channel": "Hora de Negócios",
+    "channel_url": "https://www.youtube.com/channel/UCIe04HVUJNcZOEwXML6DDSA",
+    "chars": 26606,
+    "duration": "00:20:59",
+    "duration_secs": 1259,
+    "error": "",
+    "id": "Xq7tNOoTyz8",
+    "lang": "pt-orig",
+    "path": "references/youtube/hora-de-negócios/testei-low-ticket-no-whatsapp-por-7-dias-e-olha-no-que-deu-resultados-reais.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "TESTEI LOW TICKET NO WHATSAPP POR 7 DIAS E OLHA NO QUE DEU (RESULTADOS REAIS)",
+    "upload_date": "20260227",
+    "url": "https://www.youtube.com/watch?v=Xq7tNOoTyz8"
   },
   "XqP59v2yYpo": {
     "channel": "Cássio Hart | Tráfego Pago para Low Ticket",
@@ -4636,6 +5148,22 @@
     "upload_date": "20250520",
     "url": "https://www.youtube.com/watch?v=ZnE9N0CclMg"
   },
+  "ZnsQTdvFnEM": {
+    "channel": "Jhonier Gomez",
+    "channel_url": "https://www.youtube.com/channel/UCrklARFd_stLNsycvWyTtSg",
+    "chars": 24181,
+    "duration": "00:22:46",
+    "duration_secs": 1366,
+    "error": "",
+    "id": "ZnsQTdvFnEM",
+    "lang": "es-orig",
+    "path": "references/youtube/jhonier-gomez/facebook-ads-2025-para-afiliados-de-hotmart-ventas-automáticas.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "FACEBOOK ADS 2025: Para Afiliados De Hotmart | VENTAS AUTOMÁTICAS",
+    "upload_date": "20250211",
+    "url": "https://www.youtube.com/watch?v=ZnsQTdvFnEM"
+  },
   "_1EA8-JnhEs": {
     "channel": "Rodrigo Vincenzi",
     "channel_url": "https://www.youtube.com/channel/UCJx8oUY4N_SvP8P3ZliyBhw",
@@ -4844,6 +5372,22 @@
     "upload_date": "20250211",
     "url": "https://www.youtube.com/watch?v=aUJZFGfqDQU"
   },
+  "aUYGsoHUb2w": {
+    "channel": "1kevones",
+    "channel_url": "https://www.youtube.com/channel/UCoHb-LiEMbt1i5iukKpfX1w",
+    "chars": 15341,
+    "duration": "00:14:34",
+    "duration_secs": 874,
+    "error": "",
+    "id": "aUYGsoHUb2w",
+    "lang": "pt-orig",
+    "path": "references/youtube/1kevones/meta-ads-teste-de-criativos-atualizado.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Meta Ads! Teste de CRIATIVOS (Atualizado)",
+    "upload_date": "20251017",
+    "url": "https://www.youtube.com/watch?v=aUYGsoHUb2w"
+  },
   "aawJ06qhVfE": {
     "channel": "Sancler Miranda",
     "channel_url": "https://www.youtube.com/channel/UCLMB3EPQVT-d9oQ5JigcabA",
@@ -4892,6 +5436,22 @@
     "upload_date": "20260306",
     "url": "https://www.youtube.com/watch?v=adKLxVC9mgU"
   },
+  "aj-xrTKawD4": {
+    "channel": "Matheus Bressan",
+    "channel_url": "https://www.youtube.com/channel/UCPzdmyhHeLRuJmoNGB-iieQ",
+    "chars": 14039,
+    "duration": "00:14:24",
+    "duration_secs": 864,
+    "error": "",
+    "id": "aj-xrTKawD4",
+    "lang": "pt-orig",
+    "path": "references/youtube/matheus-bressan/como-nunca-ser-bloqueado-no-meta-ads.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como NUNCA ser bloqueado no Meta Ads",
+    "upload_date": "20260609",
+    "url": "https://www.youtube.com/watch?v=aj-xrTKawD4"
+  },
   "ayPv41F1t1o": {
     "channel": "The Aristocratas | Del Francco & Rubatinno",
     "channel_url": "https://www.youtube.com/channel/UCsxXnsW_NXhV0GJbRviLIUA",
@@ -4907,6 +5467,22 @@
     "title": "ESSE NICHO GRINGO VAI ESTOURAR NO BRASIL (LOOKSMAXXING) | The Aristocratas",
     "upload_date": "20260610",
     "url": "https://www.youtube.com/watch?v=ayPv41F1t1o"
+  },
+  "b4bppKq4sik": {
+    "channel": "Betty Romerito",
+    "channel_url": "https://www.youtube.com/channel/UCgWcgQbfgCC1W-EWTvjWSZA",
+    "chars": 15102,
+    "duration": "00:19:35",
+    "duration_secs": 1175,
+    "error": "",
+    "id": "b4bppKq4sik",
+    "lang": "es-orig",
+    "path": "references/youtube/betty-romerito/fuente-de-tráfico-secreta-cpa-marketing-500-al-mes.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Fuente de Tráfico SECRETA CPA Marketing (500 al mes)",
+    "upload_date": "20210923",
+    "url": "https://www.youtube.com/watch?v=b4bppKq4sik"
   },
   "bDAgkYVUdac": {
     "channel": "Rafa Souza - Dropshipping",
@@ -5132,6 +5708,22 @@
     "upload_date": "20260413",
     "url": "https://www.youtube.com/watch?v=c6yTomwGNHI"
   },
+  "cL5gm7H0wgI": {
+    "channel": "Leonardo Leite",
+    "channel_url": "https://www.youtube.com/channel/UCIExXuhL0f3A_P_9TLi0KhA",
+    "chars": 28615,
+    "duration": "00:33:55",
+    "duration_secs": 2035,
+    "error": "",
+    "id": "cL5gm7H0wgI",
+    "lang": "pt-orig",
+    "path": "references/youtube/leonardo-leite/como-rodar-low-ticket-para-vender-pelo-whatsapp-x1-no-méxico.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como RODAR Low Ticket para Vender pelo WhatsApp X1 no MÉXICO!",
+    "upload_date": "20260813",
+    "url": "https://www.youtube.com/watch?v=cL5gm7H0wgI"
+  },
   "cLDq2I05f_U": {
     "channel": "Rafa Souza - Dropshipping",
     "channel_url": "https://www.youtube.com/channel/UC7biFSCsgjy7VPbWyKO4NbA",
@@ -5163,6 +5755,38 @@
     "title": "S. Josemaria e a oração. Parte 1: a centralidade da oração.",
     "upload_date": "20250105",
     "url": "https://www.youtube.com/watch?v=cSrDbKyipaY"
+  },
+  "cYf4ki9d6fg": {
+    "channel": "Christian Sánchez",
+    "channel_url": "https://www.youtube.com/channel/UCi3P5IIm2pGJh6cN3WcSoEQ",
+    "chars": 24613,
+    "duration": "00:23:42",
+    "duration_secs": 1422,
+    "error": "",
+    "id": "cYf4ki9d6fg",
+    "lang": "es-orig",
+    "path": "references/youtube/christian-sánchez/hotmart-facebook-como-hacer-tu-primera-venta-en-15-minutos.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "HOTMART + FACEBOOK: Como Hacer TU PRIMERA VENTA en 15 MINUTOS",
+    "upload_date": "20240206",
+    "url": "https://www.youtube.com/watch?v=cYf4ki9d6fg"
+  },
+  "cZmFHdXjIWo": {
+    "channel": "Allan Torquato",
+    "channel_url": "https://www.youtube.com/channel/UCdrSd6acAbz23X2neLw2_eg",
+    "chars": 14531,
+    "duration": "00:11:49",
+    "duration_secs": 709,
+    "error": "",
+    "id": "cZmFHdXjIWo",
+    "lang": "pt-orig",
+    "path": "references/youtube/allan-torquato/analisei-as-páginas-dos-low-ticket-latam.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "ANALISEI AS PÁGINAS DOS LOW TICKET LATAM",
+    "upload_date": "20260116",
+    "url": "https://www.youtube.com/watch?v=cZmFHdXjIWo"
   },
   "ccCJ-8gKyDw": {
     "channel": "Tiago Rossi",
@@ -5211,6 +5835,22 @@
     "title": "Include keywords in Google Reviews for Higher Rankings",
     "upload_date": "20190429",
     "url": "https://www.youtube.com/watch?v=csYFbk169mE"
+  },
+  "cuIiOD3qJ2o": {
+    "channel": "Powerhouse Affiliate",
+    "channel_url": "https://www.youtube.com/channel/UCSkyI7nsKvjRIEJGuPyelPg",
+    "chars": 23779,
+    "duration": "00:22:05",
+    "duration_secs": 1325,
+    "error": "",
+    "id": "cuIiOD3qJ2o",
+    "lang": "en-orig",
+    "path": "references/youtube/powerhouse-affiliate/the-lazy-way-to-make-100day-with-facebook-ads-affiliate-arbitrage.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "The \"Lazy\" Way to Make $100/Day With Facebook Ads (Affiliate Arbitrage)",
+    "upload_date": "20260814",
+    "url": "https://www.youtube.com/watch?v=cuIiOD3qJ2o"
   },
   "cxZmkWxJJtk": {
     "channel": "Rafa Souza - Dropshipping",
@@ -5292,6 +5932,22 @@
     "upload_date": "20260713",
     "url": "https://www.youtube.com/watch?v=dO_S6inB4-M"
   },
+  "dS3MYU30UO4": {
+    "channel": "Guilherme Franklim",
+    "channel_url": "https://www.youtube.com/channel/UCLa8vxPYMpVxKfG7ViEdpkA",
+    "chars": 14117,
+    "duration": "00:12:48",
+    "duration_secs": 768,
+    "error": "",
+    "id": "dS3MYU30UO4",
+    "lang": "pt-orig",
+    "path": "references/youtube/guilherme-franklim/como-rodar-lowticket-global-worldwide-no-facebook-ads-da-forma-certa-brasil-nunca-mais.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como Rodar LOWTICKET GLOBAL / WORLDWIDE no FACEBOOK ADS da Forma CERTA (Brasil Nunca Mais)",
+    "upload_date": "20250622",
+    "url": "https://www.youtube.com/watch?v=dS3MYU30UO4"
+  },
   "dYDONN0PcB4": {
     "channel": "Prof. Diego Reis",
     "channel_url": "https://www.youtube.com/channel/UCK1ZofEiTmlGqQKXRzjfftw",
@@ -5307,6 +5963,22 @@
     "title": "Por que somos atraídos pela tragédia e morte?",
     "upload_date": "20240921",
     "url": "https://www.youtube.com/watch?v=dYDONN0PcB4"
+  },
+  "dzmwsqVa2AA": {
+    "channel": "Iagor Gonçalves",
+    "channel_url": "https://www.youtube.com/channel/UCU8rU8Muy2NXtggSsRIcSWg",
+    "chars": 26640,
+    "duration": "00:24:44",
+    "duration_secs": 1484,
+    "error": "",
+    "id": "dzmwsqVa2AA",
+    "lang": "pt-orig",
+    "path": "references/youtube/iagor-gonçalves/como-vender-na-gringa-e-ganhar-em-dólar-passo-a-passo.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como Vender na GRINGA e Ganhar em DÓLAR (Passo a Passo)",
+    "upload_date": "20250712",
+    "url": "https://www.youtube.com/watch?v=dzmwsqVa2AA"
   },
   "eK9IjMyIMz8": {
     "channel": "Gabriel Saraiva",
@@ -5612,6 +6284,22 @@
     "upload_date": "20260803",
     "url": "https://www.youtube.com/watch?v=g8ot_VzZbnc"
   },
+  "ga10nPbcK_E": {
+    "channel": "Thiago Boeira ",
+    "channel_url": "https://www.youtube.com/channel/UCR7l6ks9W6eKjk1A8aMT8yg",
+    "chars": 37406,
+    "duration": "00:31:57",
+    "duration_secs": 1917,
+    "error": "",
+    "id": "ga10nPbcK_E",
+    "lang": "pt-orig",
+    "path": "references/youtube/thiago-boeira/como-vender-rápido-em-dolár-2025-afiliado-na-gringa-passo-a-passo.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "COMO VENDER RÁPIDO EM DOLÁR 2025 (Afiliado na Gringa Passo a Passo)",
+    "upload_date": "20250122",
+    "url": "https://www.youtube.com/watch?v=ga10nPbcK_E"
+  },
   "gsrZSQGc7xk": {
     "channel": "Escola de SEO - Por Luciano Arthur",
     "channel_url": "https://www.youtube.com/channel/UCDJvxhapekZTheLn3o7Kz6w",
@@ -5800,6 +6488,22 @@
     "title": "Criei outro SaaS LUCRATIVO sozinho (Primeiros usuários, faturamento, custos) Passo a passo",
     "upload_date": "20251021",
     "url": "https://www.youtube.com/watch?v=i9mqYVXu9es"
+  },
+  "iG1lnDdHdQI": {
+    "channel": "Lu Villalobos mkt",
+    "channel_url": "https://www.youtube.com/channel/UC46gKoUkcWlK7iGFt0IL-tw",
+    "chars": 45282,
+    "duration": "00:42:13",
+    "duration_secs": 2533,
+    "error": "",
+    "id": "iG1lnDdHdQI",
+    "lang": "es-orig",
+    "path": "references/youtube/lu-villalobos-mkt/la-estructura-que-uso-en-meta-ads-para-ganar-100día-vendiendo-pdfs-2025.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "🔥 La estructura que uso en Meta Ads para ganar $100/día vendiendo PDFs (2025)",
+    "upload_date": "20251108",
+    "url": "https://www.youtube.com/watch?v=iG1lnDdHdQI"
   },
   "iNjhUESm7UE": {
     "channel": "Nícolas Moreira",
@@ -5992,6 +6696,22 @@
     "title": "If I Wanted to Make My First $100K in 2026, I’d Do This",
     "upload_date": "20260304",
     "url": "https://www.youtube.com/watch?v=jfW6gL6hKhk"
+  },
+  "jz9hzvDVXho": {
+    "channel": "Henrique Oliveira",
+    "channel_url": "https://www.youtube.com/channel/UCN9wfWdEgkINbJiEUCL-h-Q",
+    "chars": 20955,
+    "duration": "00:20:07",
+    "duration_secs": 1207,
+    "error": "",
+    "id": "jz9hzvDVXho",
+    "lang": "pt-orig",
+    "path": "references/youtube/henrique-oliveira/como-vender-low-ticket-no-facebook-ads-em-2026-280-vendas-sendo-iniciante.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como Vender Low Ticket no Facebook Ads em 2026 [280 Vendas Sendo Iniciante]",
+    "upload_date": "20260127",
+    "url": "https://www.youtube.com/watch?v=jz9hzvDVXho"
   },
   "kE1XywpXT60": {
     "channel": "Thiago Almeida",
@@ -6281,6 +7001,22 @@
     "upload_date": "20260404",
     "url": "https://www.youtube.com/watch?v=mYiFs95ddRA"
   },
+  "muVPcgoOUoM": {
+    "channel": "Thiago Boeira ",
+    "channel_url": "https://www.youtube.com/channel/UCR7l6ks9W6eKjk1A8aMT8yg",
+    "chars": 27654,
+    "duration": "00:24:39",
+    "duration_secs": 1479,
+    "error": "",
+    "id": "muVPcgoOUoM",
+    "lang": "pt-orig",
+    "path": "references/youtube/thiago-boeira/como-vender-rapido-na-clickbank-2025-afiliado-na-gringa---passo-a-passo.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "COMO VENDER RAPIDO NA CLICKBANK 2025 (Afiliado na Gringa - Passo a Passo)",
+    "upload_date": "20250319",
+    "url": "https://www.youtube.com/watch?v=muVPcgoOUoM"
+  },
   "n5QaE1kuijw": {
     "channel": "Padre Paulo Ricardo",
     "channel_url": "https://www.youtube.com/channel/UCP6L9TPS3pHccVRiDB_cvqQ",
@@ -6296,6 +7032,22 @@
     "title": "A Vida Interior: A Grande Vocação | Um documentário Lumine",
     "upload_date": "20220922",
     "url": "https://www.youtube.com/watch?v=n5QaE1kuijw"
+  },
+  "nNqmbPxuDm4": {
+    "channel": "Henrique Oliveira",
+    "channel_url": "https://www.youtube.com/channel/UCN9wfWdEgkINbJiEUCL-h-Q",
+    "chars": 15518,
+    "duration": "00:14:13",
+    "duration_secs": 853,
+    "error": "",
+    "id": "nNqmbPxuDm4",
+    "lang": "pt-orig",
+    "path": "references/youtube/henrique-oliveira/esse-nicho-vende-15kmês-melhores-nichos-para-vender-produto-low-ticket.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Esse Nicho Vende 15k/mês : MELHORES NICHOS PARA VENDER PRODUTO LOW TICKET",
+    "upload_date": "20251216",
+    "url": "https://www.youtube.com/watch?v=nNqmbPxuDm4"
   },
   "nNr0jVmba9w": {
     "channel": "Sell Your Service",
@@ -6377,6 +7129,22 @@
     "upload_date": "20260202",
     "url": "https://www.youtube.com/watch?v=nd8kY2xsAuQ"
   },
+  "ne8AaEluUa8": {
+    "channel": "Arturs.digital",
+    "channel_url": "https://www.youtube.com/channel/UCN8oRIlRHxcj0s0Ik2ooFTQ",
+    "chars": 6981,
+    "duration": "00:07:15",
+    "duration_secs": 435,
+    "error": "",
+    "id": "ne8AaEluUa8",
+    "lang": "pt-orig",
+    "path": "references/youtube/artursdigital/é-assim-que-eu-subo-minhas-ofertas-latam-passo-a-passo.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "É Assim Que Eu Subo Minhas Ofertas LATAM (Passo a Passo)",
+    "upload_date": "20260305",
+    "url": "https://www.youtube.com/watch?v=ne8AaEluUa8"
+  },
   "nfBzotaOBQk": {
     "channel": "Vivendo de Saas",
     "channel_url": "https://www.youtube.com/channel/UCoiZEHpk3hqkCe4Kz4psIuw",
@@ -6440,6 +7208,22 @@
     "title": "PAREI de editar o vídeo na mão: agora o Claude Code edita tudo (editor e skills gratuitas)",
     "upload_date": "20260702",
     "url": "https://www.youtube.com/watch?v=npRJqW3UJsw"
+  },
+  "ns6VpSf9iuM": {
+    "channel": "Marc Verdú",
+    "channel_url": "https://www.youtube.com/channel/UCWKcmHzYxCts3re1klUN3_g",
+    "chars": 25016,
+    "duration": "00:21:03",
+    "duration_secs": 1263,
+    "error": "",
+    "id": "ns6VpSf9iuM",
+    "lang": "es-orig",
+    "path": "references/youtube/marc-verdú/facebook-ads-ha-inhabilitado-tu-cuenta-publicitaria-no-hagas-esto.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "FACEBOOK ADS ha Inhabilitado tu Cuenta Publicitaria? No Hagas Esto...",
+    "upload_date": "20250502",
+    "url": "https://www.youtube.com/watch?v=ns6VpSf9iuM"
   },
   "nsnvEqLjmZA": {
     "channel": "Rafa Souza - Dropshipping",
@@ -6953,6 +7737,22 @@
     "upload_date": "20250418",
     "url": "https://www.youtube.com/watch?v=rtSXwMb4xNc"
   },
+  "rvk50H69His": {
+    "channel": "Filipe Detrey",
+    "channel_url": "https://www.youtube.com/channel/UCJbuO-k1LvwxUB5bNhbWSCA",
+    "chars": 15982,
+    "duration": "00:15:30",
+    "duration_secs": 930,
+    "error": "",
+    "id": "rvk50H69His",
+    "lang": "pt-orig",
+    "path": "references/youtube/filipe-detrey/facebook-ads-como-escalar-15kdia-testar-criativos-e-otimizar-campanhas-na-prática-em-2026.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Facebook Ads: Como Escalar 15k/dia, Testar Criativos e Otimizar Campanhas na Prática em 2026",
+    "upload_date": "20250129",
+    "url": "https://www.youtube.com/watch?v=rvk50H69His"
+  },
   "s4d5dz3fy_A": {
     "channel": "Investidor Sardinha l Raul Sena",
     "channel_url": "https://www.youtube.com/channel/UCM3vJxmuJJkk1r0yzFI9eZg",
@@ -6984,6 +7784,22 @@
     "title": "Como vender SaaS sem depender de tráfego pago",
     "upload_date": "20260129",
     "url": "https://www.youtube.com/watch?v=sG3f8Ey4EsE"
+  },
+  "sPVVGg1Ew9w": {
+    "channel": "Sam Georgiyev",
+    "channel_url": "https://www.youtube.com/channel/UC56SnS-hp04ITVZUqYuCwAw",
+    "chars": 14961,
+    "duration": "00:14:59",
+    "duration_secs": 899,
+    "error": "",
+    "id": "sPVVGg1Ew9w",
+    "lang": "en-orig",
+    "path": "references/youtube/sam-georgiyev/tiktok-ads-scaling-secrets-structure-creatives-setup.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "TikTok ads scaling secrets | Structure, Creatives & Setup",
+    "upload_date": "20220417",
+    "url": "https://www.youtube.com/watch?v=sPVVGg1Ew9w"
   },
   "sT9ppvwOMfM": {
     "channel": "Joabel Kasper",
@@ -7080,6 +7896,54 @@
     "title": "Dicas para melhorar a qualificação dos SDRs | Cortes A Ciência da Venda Podcast",
     "upload_date": "20210212",
     "url": "https://www.youtube.com/watch?v=swNpx3iFlU8"
+  },
+  "t-Xf12o4jt4": {
+    "channel": "Dara Denney",
+    "channel_url": "https://www.youtube.com/channel/UCFF55suuW0LjzXEnzDTNCnA",
+    "chars": 12492,
+    "duration": "00:11:50",
+    "duration_secs": 710,
+    "error": "",
+    "id": "t-Xf12o4jt4",
+    "lang": "en-orig",
+    "path": "references/youtube/dara-denney/i-tested-over-1000-ads-here-are-the-hooks-actually-making-money.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "I tested over 1000 ads. Here are the hooks ACTUALLY making MONEY",
+    "upload_date": "20250828",
+    "url": "https://www.youtube.com/watch?v=t-Xf12o4jt4"
+  },
+  "t17lH7HnKH8": {
+    "channel": "Matheus Bressan",
+    "channel_url": "https://www.youtube.com/channel/UCPzdmyhHeLRuJmoNGB-iieQ",
+    "chars": 24835,
+    "duration": "00:25:03",
+    "duration_secs": 1503,
+    "error": "",
+    "id": "t17lH7HnKH8",
+    "lang": "pt-orig",
+    "path": "references/youtube/matheus-bressan/low-ticket-em-dólar-na-américa-latina---manual-definitivo.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Low Ticket em Dólar na América Latina - Manual Definitivo",
+    "upload_date": "20250501",
+    "url": "https://www.youtube.com/watch?v=t17lH7HnKH8"
+  },
+  "t4OkBe2zUZw": {
+    "channel": "Hora de Negócios",
+    "channel_url": "https://www.youtube.com/channel/UCIe04HVUJNcZOEwXML6DDSA",
+    "chars": 32483,
+    "duration": "00:24:52",
+    "duration_secs": 1492,
+    "error": "",
+    "id": "t4OkBe2zUZw",
+    "lang": "pt-orig",
+    "path": "references/youtube/hora-de-negócios/como-vender-como-afiliado-na-gringa-mesmo-morando-no-brasil-passo-a-passo.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "COMO VENDER COMO AFILIADO NA GRINGA MESMO MORANDO NO BRASIL (Passo a Passo)",
+    "upload_date": "20260417",
+    "url": "https://www.youtube.com/watch?v=t4OkBe2zUZw"
   },
   "tLwDtGlhGLs": {
     "channel": "Jaume Ros",
@@ -7305,6 +8169,22 @@
     "upload_date": "20220316",
     "url": "https://www.youtube.com/watch?v=vWBRZx7JCjY"
   },
+  "vhrQjWYc_s8": {
+    "channel": "Kevin Salazar MKT",
+    "channel_url": "https://www.youtube.com/channel/UCub4mFANfskbx_9HmdLWbjw",
+    "chars": 7863,
+    "duration": "00:06:53",
+    "duration_secs": 413,
+    "error": "",
+    "id": "vhrQjWYc_s8",
+    "lang": "es-orig",
+    "path": "references/youtube/kevin-salazar-mkt/cómo-recuperar-una-cuenta-publicitaria-inhabilitada-de-facebook-e-instagram-ads-nuevo.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "🔓 Cómo RECUPERAR una Cuenta Publicitaria INHABILITADA de Facebook e Instagram ADS Nuevo Método 2026",
+    "upload_date": "20241007",
+    "url": "https://www.youtube.com/watch?v=vhrQjWYc_s8"
+  },
   "vie36pDfSHo": {
     "channel": "Padre Pedro Willemsens - Meditações",
     "channel_url": "https://www.youtube.com/channel/UCtysxzTEQeORGFYCQe7W1YQ",
@@ -7481,6 +8361,38 @@
     "upload_date": "20260505",
     "url": "https://www.youtube.com/watch?v=x9iVtIgIsz4"
   },
+  "x9kljw6KCAI": {
+    "channel": "Guilherme Asvi",
+    "channel_url": "https://www.youtube.com/channel/UCkA6wBt7PbS_RXG3P6zuPXA",
+    "chars": 34390,
+    "duration": "00:31:37",
+    "duration_secs": 1897,
+    "error": "",
+    "id": "x9kljw6KCAI",
+    "lang": "pt-orig",
+    "path": "references/youtube/guilherme-asvi/como-encontrar-uma-oferta-escalada-clonar-e-vender-na-prática.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como encontrar uma OFERTA ESCALADA, CLONAR e VENDER na Prática.",
+    "upload_date": "20250521",
+    "url": "https://www.youtube.com/watch?v=x9kljw6KCAI"
+  },
+  "xTWLaAJSpUU": {
+    "channel": "Adrián Sáenz",
+    "channel_url": "https://www.youtube.com/channel/UCVt4ugq2txl_szlXAO7B3-g",
+    "chars": 18121,
+    "duration": "00:15:11",
+    "duration_secs": 911,
+    "error": "",
+    "id": "xTWLaAJSpUU",
+    "lang": "es-orig",
+    "path": "references/youtube/adrián-sáenz/pruebo-hotmart-durante-una-semana.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Pruebo Hotmart Durante Una Semana",
+    "upload_date": "20231024",
+    "url": "https://www.youtube.com/watch?v=xTWLaAJSpUU"
+  },
   "xeUhKuJbeWQ": {
     "channel": "Starter Story",
     "channel_url": "https://www.youtube.com/channel/UChhw6DlKKTQ9mYSpTfXUYqA",
@@ -7512,6 +8424,22 @@
     "title": "2 MIL SEGUIDORES EM 30 MINUTOS! ASSIM LIBEREI O TIKTOK SHOP",
     "upload_date": "20260801",
     "url": "https://www.youtube.com/watch?v=xkREASsB5tE"
+  },
+  "xpYu4Adu7wY": {
+    "channel": "Felipe Almeida | Business",
+    "channel_url": "https://www.youtube.com/channel/UCEq9nS5qX1GDnSIe14h41Xg",
+    "chars": 66370,
+    "duration": "00:52:44",
+    "duration_secs": 3164,
+    "error": "",
+    "id": "xpYu4Adu7wY",
+    "lang": "pt-orig",
+    "path": "references/youtube/felipe-almeida-business/criando-um-low-ticket-e-vendendo-em-dólar-em-24-horas-passo-a-passo-completo.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "CRIANDO UM LOW TICKET E VENDENDO EM DÓLAR EM 24 HORAS (PASSO-A-PASSO COMPLETO) 🔥",
+    "upload_date": "20260713",
+    "url": "https://www.youtube.com/watch?v=xpYu4Adu7wY"
   },
   "xroGT0QDogg": {
     "channel": "Kelvin Cleto",

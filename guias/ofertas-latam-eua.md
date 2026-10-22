@@ -16,7 +16,9 @@ fiscalizado de todos.
 > **Tópicos vizinhos:** [Low Ticket e Tráfego Pago](low-ticket.md) tem o método de campanha (ABO/CBO, CPA-alvo,
 > escala); este guia só acrescenta o que muda ao sair do Brasil. [Números e Ceticismo](numeros-e-ceticismo.md)
 > ensina a ler os resultados que aparecem aqui. [Upwork e Freela Internacional](upwork.md) cobre o caminho
-> alternativo de ganhar em dólar prestando serviço, sem rodar oferta.
+> alternativo de ganhar em dólar prestando serviço, sem rodar oferta. [Renda Extra: Método e Conta](ofertas-renda-extra.md)
+> é o complemento **feito de transcrições de YouTube** (58 vídeos): o que quem opera ensina, com timestamp,
+> e a auditoria dos números de faturamento.
 
 ## Nota de leitura — de onde vem cada coisa
 

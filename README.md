@@ -7,7 +7,7 @@ completa, com timestamps, indexada e pesquisável.
 
 ## 📚 [GUIA.md](GUIA.md) — comece por aqui
 
-Índice mestre dos 482 vídeos, organizado por grandes tópicos:
+Índice mestre dos 540 vídeos, organizado por grandes tópicos:
 
 | Tópico | O que cobre |
 |---|---|
@@ -25,6 +25,7 @@ completa, com timestamps, indexada e pesquisável.
 | ⚠️ [Números e Ceticismo](guias/numeros-e-ceticismo.md) | auditoria de todos os resultados alegados |
 | 🕊️ [Amar a Deus no Ordinário](guias/amar-a-deus-no-ordinario.md) | santidade na vida comum — trabalho, rotina, oração |
 | 📍 [Google Meu Negócio](guias/google-meu-negocio.md) | avaliações e ranking no mapa para atrair cliente no orgânico |
+| 📣 [Renda Extra: Método e Conta](guias/ofertas-renda-extra.md) | o que 58 vídeos ensinam e escondem sobre rodar oferta de renda extra — método, conta e números auditados (complementa o de cima) |
 
 ## Como usar
 
