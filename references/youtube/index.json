@@ -7289,6 +7289,14 @@
     "upload_date": "20250315",
     "url": "https://www.youtube.com/watch?v=oEdFZT9vF5Q"
   },
+  "oEiKLyjBtEQ": {
+    "channel": "",
+    "error": "ERROR: [youtube] oEiKLyjBtEQ: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "oEiKLyjBtEQ",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=oEiKLyjBtEQ"
+  },
   "oUFOVBGbOhs": {
     "channel": "Rafa Souza - Dropshipping",
     "channel_url": "https://www.youtube.com/channel/UC7biFSCsgjy7VPbWyKO4NbA",
@@ -7336,6 +7344,14 @@
     "title": "GOOGLE MEU NEGÓCIO 2026: O único jeito de ranquear a sua empresa",
     "upload_date": "20260402",
     "url": "https://www.youtube.com/watch?v=ot4tEZIT0cU"
+  },
+  "oy4Mps5xt3c": {
+    "channel": "",
+    "error": "ERROR: [youtube] oy4Mps5xt3c: Unable to download API page: ('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')) (caused by ProxyError(\"('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))\")); please report this issue on  https://github.com/",
+    "id": "oy4Mps5xt3c",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=oy4Mps5xt3c"
   },
   "pL7TAXxvI4U": {
     "channel": "Padre Pedro Willemsens - Meditações",
