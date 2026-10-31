@@ -13,9 +13,12 @@ empresas americanas. Duas fontes: **transcrições de YouTube já na biblioteca*
 Biblioteca de Anúncios da Meta** (consultada em 2026-10-31).
 
 > **Leia isto antes.**
-> 1. **Nenhum vídeo novo foi baixado.** A rede desta sessão bloqueia o YouTube (o `yt-dlp` recebeu 403 do
->    proxy). Tudo abaixo vem dos vídeos que **já estavam** na biblioteca. "Os melhores" aqui quer dizer *os mais
->    relevantes dentre os 540 que existem*; não medi visualizações nem engajamento.
+> 1. **Os vídeos novos vieram depois que o YouTube foi liberado.** Na primeira rodada a rede bloqueava o YouTube e usei só
+> os vídeos que já estavam na biblioteca. Depois da liberação, busquei candidatos no próprio YouTube, ordenando por
+> visualizações, e baixei **23 transcrições novas**. Dessas, li **5 por inteiro e 2 em parte** (marcadas no índice); as outras
+> 16 estão salvas em `references/youtube/` e **não foram lidas**. Uma (52 min, Jordan Platten) não baixou: o YouTube pediu
+> verificação anti-robô e a skill não permite usar cookies da sua conta. "Melhores" = mais vistos e mais relevantes entre
+> os que achei; não medi engajamento.
 > 2. **Só o que está marcado "lido" foi lido na íntegra nesta sessão.** O resto foi achado pelo título
 >    (veja o índice no fim) e não entra como evidência.
 > 3. **Todas as transcrições são legendas automáticas** e quase todos os criadores vendem curso, ferramenta
@@ -31,7 +34,8 @@ Biblioteca de Anúncios da Meta** (consultada em 2026-10-31).
 2. O que separa outreach que funciona do que não funciona, em todos os vídeos: **dar valor antes de pedir**
    (auditoria, vídeo, resultado concreto) e **insistir em vários canais**, não um e-mail.
 3. A **oferta** pesa mais que o canal. Pavlo e os anúncios convergem: ofereça um **resultado específico e sem
-   risco** ("4 a 5 orçamentos de graça"), não um serviço ("gestão de tráfego").
+   risco** ("4 a 5 orçamentos de graça"), não um serviço ("gestão de tráfego"). **Cuidado:** esse mesmo script aparece
+   quase igual em três criadores (Pavlo, Travis Wardrop, Mussoi), o que sugere que o dono de negócio já o ouviu.
 4. Nos anúncios dos EUA, o padrão dominante é **nicho de serviço doméstico + garantia ou pagamento por resultado**:
    telhado, HVAC, reforma de cozinha, quiropraxia, paisagismo.
 5. Quem vende "recepcionista de IA" lá vende **telefone/voz**. Preços que aparecem nos títulos: US$ 49/mês (RingReady), "US$ 48 por dia" (Smart Center AI) e site grátis + IA por US$ 297/mês (Lever Launch).
@@ -163,6 +167,48 @@ ele não sabe fazer, ou não tem tempo para fazer, ou não tem tempo para aprend
 quem vende localmente (inclusive indústria), **não** a padaria da esquina, que não tem orçamento [00:02:00].
 Funciona igual nos EUA. O treinamento que ele vende ao final é publicidade; o conteúdo útil vem antes.
 
+### 1.8 Vídeos adicionados depois que o YouTube foi liberado
+
+**Carson Reed — "The TRUTH About Selling AI Receptionists to Businesses"** (5:03,
+[vídeo](https://www.youtube.com/watch?v=VOY-37c6jVE)), lido. É o contraponto: a maioria das pessoas fica presa
+construindo ferramenta e não vende. *"Selling is going to come before having a good product"* [00:02:00]. Para ele,
+sem muitos clientes você nem sabe se o serviço é bom: um caso de sucesso é um dado só [00:02:00]. Ele diz já ter equipe
+de entrega, então fala de quem já vendeu, mas não mostra números.
+
+**Joey Seeman — "Selling AI Receptionists To Local Businesses With Cold Calls ($5k Per)"** (11:37,
+[vídeo](https://www.youtube.com/watch?v=Krnsw9WZtRA)), lido. Ele liga ao vivo para chaveiros e **não fecha nada em
+cerca de 15 minutos**; é o único vídeo do conjunto que mostra a rejeição de verdade:
+- Respostas reais: "não no momento", "estou em reunião", "não me ligue, marketing para quem eu quiser", e um dono que já
+  tinha tentado n8n e GoHighLevel e achava que não funciona [00:00:00-00:06:01].
+- Método: seguir **o script palavra por palavra** e **testar uma variável por vez**, "como um experimento científico"
+  [00:10:01]. Dedicar **2 a 3 horas por dia**; pode levar uma semana ou um mês até a primeira venda [00:10:01].
+- Voicemail "é perfeito" porque o pitch inteiro cabe na mensagem [00:02:00].
+- Preço citado: **US$ 5.000** por cliente. Ele diz ter vendido a agência de voz em 2024 [00:00:00].
+- ⚠️ No fim ele indica a plataforma Nova Echo, que "parceira de graça se você for qualificado", e afirma que "mais de
+  95% dos que ligam não sabem que é IA" e que a IA custa "80% menos que um atendente" [00:04:00, 00:08:01]. São
+  afirmações de vendedor de ferramenta.
+
+**Travis Wardrop — "How I Sell AI Receptionists to Local Businesses"** (12:50,
+[vídeo](https://www.youtube.com/watch?v=-iLRyOghSYI)), lido.
+- Prospectar **30 a 50 negócios por dia** pelo Google, e contatar de novo ao longo da semana por Facebook, Instagram,
+  e-mail e formulário do site [00:02:02].
+- Mensagem: *"I just built an AI employee for [nome] that will get you 3 to 5 appointments in the next 7 days for free.
+  Do you want to see it?"* [00:02:02]. É a mesma frase do Pavlo, do Mussoi e dos anúncios.
+- Modelo: **US$ 300 a US$ 500 por mês** por cliente, plataforma white-label revendida com marca própria [00:00:00]; o
+  número de teste custa US$ 1,15 e o telefone do cliente só **redireciona as chamadas perdidas** para a IA
+  [00:08:08].
+- ⚠️ Ele diz que não vende curso, mas que **ganha comissão de afiliado** da plataforma [00:12:17].
+
+**Eric Beer — "How to Make $80,000 a month Selling Leads to Plumbers"** (32:11,
+[vídeo](https://www.youtube.com/watch?v=ubAAK1Uletg)), lido só até 00:12:05. Descreve outro modelo: **gerar o lead e
+vender ao encanador**, em vez de prestar serviço.
+- Ele hospeda o formulário (senão vira afiliado) e quanto mais dados do lead, mais caro ele vale [00:04:02-00:08:05].
+- Valor do lead depende de **tempo de entrega** (tempo real vale mais) e de **exclusivo × compartilhado** [00:12:05].
+- Compradores nacionais (agregadores) ou locais; sem comprador no fundo, não há negócio [00:10:05].
+- O exemplo de LTV (US$ 1.000 por visita, 3 visitas) é hipotético dele [00:04:02].
+- Isso explica anúncios da Biblioteca como "Exclusive HVAC Leads From $60" e "$75 Per Confirmed Roof Replacement
+  Estimate": são **lead como produto**, vendido por unidade.
+
 ---
 
 ## Parte 2 — Benchmarking: a Biblioteca de Anúncios da Meta (EUA)
@@ -268,7 +314,7 @@ quanto tempo leva até o primeiro cliente. As taxas em vídeos ("7 reuniões por
 
 ## Índice: o que foi lido e o que só foi achado
 
-**Lido na íntegra nesta sessão** (10 vídeos EUA e BR):
+**Lido na íntegra nesta sessão** (7 da primeira rodada, mais os 4 da seção 1.8, dos quais Eric Beer só em parte):
 
 | Vídeo | Canal | Caminho local |
 |---|---|---|
@@ -279,8 +325,12 @@ quanto tempo leva até o primeiro cliente. As taxas em vídeos ("7 reuniões por
 | He got 1,000 SaaS Clients in 12 Months Using 5-Minute Looms | ItsKeaton | `references/youtube/itskeaton/` |
 | Como é o Processo de Captação de Clientes na minha Agência | Henrique Avila | `references/youtube/henrique-avila/` |
 | Como Vender Serviços de Marketing Digital para Negócios Locais | Rodrigo Vincenzi | `references/youtube/rodrigo-vincenzi/` |
+| The TRUTH About Selling AI Receptionists | Carson Reed | `references/youtube/carson-reed/` |
+| Selling AI Receptionists … With Cold Calls ($5k Per) | Joey Seeman | `references/youtube/joey-seeman/` |
+| How I Sell AI Receptionists to Local Businesses | Travis Wardrop | `references/youtube/travis-wardrop/` |
+| How to Make $80,000 a month Selling Leads to Plumbers (até 00:12:05) | Eric Beer | `references/youtube/eric-beer/` |
 
-**Na biblioteca e relevantes, mas não lidos nesta sessão** (abra a transcrição antes de citar):
+**Na biblioteca e relevantes, mas não lidos** (abra a transcrição antes de citar). Os 11 últimos foram baixados nesta rodada:
 
 | Vídeo | Canal | Duração | Link |
 |---|---|---|---|
@@ -293,13 +343,22 @@ quanto tempo leva até o primeiro cliente. As taxas em vídeos ("7 reuniões por
 | Ranking a local business #1 … (Merchynt AI SEO) | Clay Lawrence | — | índice em `references/youtube/index.json` |
 | Como Prospectar Clientes e Conseguir 200 Reuniões Por Mês (lido só o início) | Victor Peixoto | 30:46 | [YouTube](https://www.youtube.com/watch?v=rPTLbX4Iu9I) |
 | Como funciona o processo de prospecção da minha agência | Henrique Avila | 19:04 | [YouTube](https://www.youtube.com/watch?v=ky-U_AFXHuM) |
+| $20K–$100K/mo Agency Owners Share How They ACTUALLY Get Clients | ItsKeaton (painel) | 1:13:09 | [YouTube](https://www.youtube.com/watch?v=JOCR2pL6kTI) |
+| My Favorite Marketing Strategy for Getting Clients in 48 Hours | Adam Erhart | 14:35 | [YouTube](https://www.youtube.com/watch?v=HwO7g5uHHYY) |
+| I Sent 4,500,000 Cold Emails in 90 days | GrowthFlare | 12:13 | [YouTube](https://www.youtube.com/watch?v=BUG4J-NFA9A) |
+| EASY Cold Email Strategy That'll Make You $40k+/mo | Jordan Platten | 32:49 | [YouTube](https://www.youtube.com/watch?v=gmD3YrVwHaM) |
+| The Cheapest & Fastest Ways to Get Clients in 2026 (Ranked) | Jordan Platten | 17:11 | [YouTube](https://www.youtube.com/watch?v=SgeJoDWc_9U) |
+| How To Get Clients Using Cold Email | Alex Berman | 5:30 | [YouTube](https://www.youtube.com/watch?v=NqDWRJMOgEA) |
+| How to Sell SEO Services to Local Businesses | Payton Clark Smith | 10:55 | [YouTube](https://www.youtube.com/watch?v=XUJA20VhWvE) |
+| How to Get Your First SMMA Client In 7 Days | 2GuysBuildaBiz | 9:11 | [YouTube](https://www.youtube.com/watch?v=m7rdbpmG9ck) |
+| How to Sign Your First AI Automation Client | Nate Herk | 14:49 | [YouTube](https://www.youtube.com/watch?v=9dA1VB8V8oo) |
+| AI Agency Live Cold Calling: 6 Meetings Booked in One Session | AI Hustlers | 37:54 | [YouTube](https://www.youtube.com/watch?v=3fsjnY9hT4M) |
+| how i get AI agency clients with paid ads | Owen Rensland | 15:01 | [YouTube](https://www.youtube.com/watch?v=LxaDD7eW_9E) |
 
 **Pesquisa na web:** a busca disponível aqui é restrita aos EUA e devolveu quase só blogs de fornecedores de
 ferramentas, sem vídeos do YouTube nem dados independentes. Não usei esses resultados como evidência.
 
-**Para ampliar:** se o domínio `youtube.com` for liberado na política de rede do ambiente, dá para rodar a
-skill `youtube-refs` e puxar vídeos novos (por exemplo, canais de agência de leads para home services nos EUA,
-que a biblioteca quase não tem).
+**Não baixou:** "How to Get Agency Clients in 2026 (Full A-Z Guide)", Jordan Platten, 52 min ([YouTube](https://www.youtube.com/watch?v=aYTX4cfK64U)): o YouTube pediu verificação anti-robô. Dá para tentar de novo mais tarde.
 
 ---
 

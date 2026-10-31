@@ -21,24 +21,25 @@ servir agentes de IA).
 ---
 
 ### 🇺🇸 [Captar Clientes de Marketing nos EUA](guias/captar-clientes-marketing-eua.md)
-**Outreach, oferta e o que os anunciantes americanos fazem.** Sete vídeos lidos (Hormozi via Lead Gen Jay,
-Payton Clark Smith, Pavlo, Clay Lawrence, ItsKeaton) cruzados com uma amostra da Biblioteca de Anúncios da Meta.
+**Outreach, oferta e o que os anunciantes americanos fazem.** Onze vídeos lidos (Hormozi via Lead Gen Jay,
+Payton Clark Smith, Pavlo, Clay Lawrence, ItsKeaton, Joey Seeman, Travis Wardrop, Carson Reed, Eric Beer) cruzados com uma
+amostra da Biblioteca de Anúncios da Meta.
 
 Cold e-mail, Loom + ligação, script de ligação fria, post "levanta a mão" · o padrão dos anúncios: nicho de
 serviço doméstico + garantia ou pagamento por resultado · riscos que os vídeos não cobrem (CAN-SPAM, TCPA).
 
-*Fontes: Lead Gen Jay, Payton Clark Smith, Pavlo, Clay Lawrence, ItsKeaton, Henrique Avila, Rodrigo Vincenzi*
+*Fontes: Lead Gen Jay, Payton Clark Smith, Pavlo, Clay Lawrence, ItsKeaton, Joey Seeman, Travis Wardrop, Carson Reed, Eric Beer, Henrique Avila, Rodrigo Vincenzi*
 
 ---
 
 ### 💬 [Captar Clientes para IA no WhatsApp](guias/captar-clientes-ia-whatsapp.md)
 **Vender atendimento por IA, no Brasil e nos EUA.** Cliente certo, abordagem, preço e o que o mercado anuncia.
 
-ICP do Afonso Lopes · Google Maps + reativação de base (Mussoi) · três escolas de preço que divergem ·
+ICP do Afonso Lopes · Google Maps + reativação de base (Mussoi) · escolas de preço que divergem (ticket × volume) · um fechamento real por Instagram (Victor Peixoto) ·
 campanha de clique para WhatsApp · benchmark da Biblioteca de Anúncios BR e EUA (nos EUA o produto é voz) ·
 LGPD e bloqueio de número.
 
-*Fontes: Afonso Lopes, João Mussoi, Felipe Fontoura, Henrique Oliveira, Kelvin Cleto, Henrique Avila, Victor Peixoto*
+*Fontes: Afonso Lopes, João Mussoi, Felipe Fontoura, Henrique Oliveira, Kelvin Cleto, Henrique Avila, Victor Peixoto, Breno Santos, Eduardo Carezia*
 
 ---
 

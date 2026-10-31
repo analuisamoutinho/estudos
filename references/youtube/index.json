@@ -47,6 +47,22 @@
     "upload_date": "20250506",
     "url": "https://www.youtube.com/watch?v=-O8jOdKvAjA"
   },
+  "-iLRyOghSYI": {
+    "channel": "Travis Wardrop",
+    "channel_url": "https://www.youtube.com/channel/UCPgP4NLeIrpu5qz8zs0yBew",
+    "chars": 14298,
+    "duration": "00:12:50",
+    "duration_secs": 770,
+    "error": "",
+    "id": "-iLRyOghSYI",
+    "lang": "en",
+    "path": "references/youtube/travis-wardrop/how-i-sell-ai-receptionists-to-local-businesses-copy-this.md",
+    "source": "yt-dlp manual captions",
+    "status": "ok",
+    "title": "How I Sell AI Receptionists to Local Businesses (COPY This!)",
+    "upload_date": "20251031",
+    "url": "https://www.youtube.com/watch?v=-iLRyOghSYI"
+  },
   "-ubiySv0dZg": {
     "channel": "Rodrigo Vincenzi",
     "channel_url": "https://www.youtube.com/channel/UCJx8oUY4N_SvP8P3ZliyBhw",
@@ -302,6 +318,22 @@
     "title": "CRIANDO UM LOW TICKET E VENDENDO COM TRÁFEGO DIRETO - AULA COMPLETA",
     "upload_date": "20260708",
     "url": "https://www.youtube.com/watch?v=1TY_nKIObJA"
+  },
+  "1axdRfoX7PQ": {
+    "channel": "IA na Prática | Thiago Skiante",
+    "channel_url": "https://www.youtube.com/channel/UCXb3FB3Ji2cre-uWwpzRLgA",
+    "chars": 12262,
+    "duration": "00:11:37",
+    "duration_secs": 697,
+    "error": "",
+    "id": "1axdRfoX7PQ",
+    "lang": "pt-orig",
+    "path": "references/youtube/ia-na-prática-thiago-skiante/guia-completo-como-vender-agentes-de-ia-em-2026-do-zero-ao-1º-cliente.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "GUIA COMPLETO: Como Vender Agentes de IA em 2026 (do Zero ao 1º Cliente)",
+    "upload_date": "20260102",
+    "url": "https://www.youtube.com/watch?v=1axdRfoX7PQ"
   },
   "1dzTGLd5o9s": {
     "channel": "Matt Diamante",
@@ -622,6 +654,22 @@
     "title": "How to Run a B2B Software Pilot Program and Get Your First Customers",
     "upload_date": "20230522",
     "url": "https://www.youtube.com/watch?v=3eBKwirMTMo"
+  },
+  "3fsjnY9hT4M": {
+    "channel": "AI Hustlers | Noah & Adam",
+    "channel_url": "https://www.youtube.com/channel/UChSv8aLGRqv1pKlz-nM3Y4g",
+    "chars": 28976,
+    "duration": "00:37:54",
+    "duration_secs": 2274,
+    "error": "",
+    "id": "3fsjnY9hT4M",
+    "lang": "en-orig",
+    "path": "references/youtube/ai-hustlers-noah-adam/ai-agency-live-cold-calling-6-meetings-booked-in-one-session-raw-uncut.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "AI Agency Live Cold Calling: 6 Meetings Booked in One Session (RAW UNCUT)",
+    "upload_date": "20260404",
+    "url": "https://www.youtube.com/watch?v=3fsjnY9hT4M"
   },
   "3kErg1AeEow": {
     "channel": "Feedback Automatic",
@@ -1372,6 +1420,38 @@
     "upload_date": "20230227",
     "url": "https://www.youtube.com/watch?v=9QsWF4o0_Uc"
   },
+  "9dA1VB8V8oo": {
+    "channel": "Nate Herk | AI Automation",
+    "channel_url": "https://www.youtube.com/channel/UC2ojq-nuP8ceeHqiroeKhBA",
+    "chars": 21963,
+    "duration": "00:14:49",
+    "duration_secs": 889,
+    "error": "",
+    "id": "9dA1VB8V8oo",
+    "lang": "en-orig",
+    "path": "references/youtube/nate-herk-ai-automation/how-to-sign-your-first-ai-automation-client-without-starting-an-agency.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "How to Sign Your First AI Automation Client (Without Starting an Agency)",
+    "upload_date": "20251117",
+    "url": "https://www.youtube.com/watch?v=9dA1VB8V8oo"
+  },
+  "9de9i8-1oAg": {
+    "channel": "Victor Peixoto",
+    "channel_url": "https://www.youtube.com/channel/UCT2iV-KB_zG-T2VCp_oQETw",
+    "chars": 14236,
+    "duration": "00:12:36",
+    "duration_secs": 756,
+    "error": "",
+    "id": "9de9i8-1oAg",
+    "lang": "pt-orig",
+    "path": "references/youtube/victor-peixoto/essa-ferramenta-acha-clientes-pra-você-de-graça-todo-mês.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Essa Ferramenta Acha Clientes pra Você de Graça Todo Mês",
+    "upload_date": "20260303",
+    "url": "https://www.youtube.com/watch?v=9de9i8-1oAg"
+  },
   "9jnMcBkZVv8": {
     "channel": "Marcos Machado",
     "channel_url": "https://www.youtube.com/channel/UCEetrz6EHZVjXiHHNtlzPQQ",
@@ -1451,6 +1531,22 @@
     "title": "QUANTO COBRAR POR AUTOMAÇÃO E CHATBOT (passo a passo + tabela atual)",
     "upload_date": "20241001",
     "url": "https://www.youtube.com/watch?v=A1iLdILxv3w"
+  },
+  "A8CiPlOl1b8": {
+    "channel": "Stint Educação",
+    "channel_url": "https://www.youtube.com/channel/UCJx8oUY4N_SvP8P3ZliyBhw",
+    "chars": 13591,
+    "duration": "00:11:43",
+    "duration_secs": 703,
+    "error": "",
+    "id": "A8CiPlOl1b8",
+    "lang": "pt-orig",
+    "path": "references/youtube/stint-educação/como-vender-e-lucro-com-chatbot-e-automação-de-whatapp.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "COMO VENDER E LUCRO COM CHATBOT E AUTOMAÇÃO DE WHATAPP",
+    "upload_date": "20250715",
+    "url": "https://www.youtube.com/watch?v=A8CiPlOl1b8"
   },
   "AJEFMFZMQKo": {
     "channel": "Kim Walachai",
@@ -1643,6 +1739,22 @@
     "title": "Fiz 150 VENDAS Usando o NOVO Funil de Vendas Low Ticket",
     "upload_date": "20260414",
     "url": "https://www.youtube.com/watch?v=BNOlFQInty4"
+  },
+  "BUG4J-NFA9A": {
+    "channel": "Aaron Shepherd | GrowthFlare",
+    "channel_url": "https://www.youtube.com/channel/UCWvlWXNvAdjj94UXVtjbLsQ",
+    "chars": 16666,
+    "duration": "00:12:13",
+    "duration_secs": 733,
+    "error": "",
+    "id": "BUG4J-NFA9A",
+    "lang": "en-orig",
+    "path": "references/youtube/aaron-shepherd-growthflare/i-sent-4500000-cold-emails-in-90-days-heres-what-works-in-2026.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "I Sent 4,500,000 Cold Emails in 90 days. Here's What Works in 2026",
+    "upload_date": "20260615",
+    "url": "https://www.youtube.com/watch?v=BUG4J-NFA9A"
   },
   "BV98gX1ffcY": {
     "channel": "Afonso Lopes | Automações IA ",
@@ -2620,6 +2732,22 @@
     "upload_date": "20170210",
     "url": "https://www.youtube.com/watch?v=HTeWDF7lPU0"
   },
+  "HfaA_Y5gbos": {
+    "channel": "Victor Peixoto",
+    "channel_url": "https://www.youtube.com/channel/UCT2iV-KB_zG-T2VCp_oQETw",
+    "chars": 11613,
+    "duration": "00:09:58",
+    "duration_secs": 598,
+    "error": "",
+    "id": "HfaA_Y5gbos",
+    "lang": "pt-orig",
+    "path": "references/youtube/victor-peixoto/como-prospectar-pelo-instagram-e-vender-ia-por-r5k-r2kmes.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como Prospectar Pelo Instagram e Vender IA por R$5k + R$2k/mes",
+    "upload_date": "20250626",
+    "url": "https://www.youtube.com/watch?v=HfaA_Y5gbos"
+  },
   "HmumLwemJQg": {
     "channel": "Adrián Sáenz",
     "channel_url": "https://www.youtube.com/channel/UCVt4ugq2txl_szlXAO7B3-g",
@@ -2667,6 +2795,22 @@
     "title": "Antigravity + Nano Banana 2 = Sites de R$25.000 (Absurdo)",
     "upload_date": "20260320",
     "url": "https://www.youtube.com/watch?v=HrMVakatQHk"
+  },
+  "HwO7g5uHHYY": {
+    "channel": "Adam Erhart",
+    "channel_url": "https://www.youtube.com/channel/UCKU0u3VbuYn0wD3CUr-Yn6A",
+    "chars": 17653,
+    "duration": "00:14:35",
+    "duration_secs": 875,
+    "error": "",
+    "id": "HwO7g5uHHYY",
+    "lang": "en-orig",
+    "path": "references/youtube/adam-erhart/my-favorite-marketing-strategy-for-getting-clients-in-48-hours-free-proven.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "My Favorite Marketing Strategy for Getting Clients in 48 Hours (Free & Proven)",
+    "upload_date": "20250930",
+    "url": "https://www.youtube.com/watch?v=HwO7g5uHHYY"
   },
   "Hy4eBvxvVfk": {
     "channel": "Rob Walling",
@@ -2908,6 +3052,22 @@
     "upload_date": "20260121",
     "url": "https://www.youtube.com/watch?v=JLaprLzPZYM"
   },
+  "JOCR2pL6kTI": {
+    "channel": "ItsKeaton",
+    "channel_url": "https://www.youtube.com/channel/UCROsCSoY7I_QZuS4QGQckOA",
+    "chars": 85873,
+    "duration": "01:13:09",
+    "duration_secs": 4389,
+    "error": "",
+    "id": "JOCR2pL6kTI",
+    "lang": "en-orig",
+    "path": "references/youtube/itskeaton/20k100kmo-agency-owners-share-how-they-actually-get-clients-2026.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "$20K–$100K/mo Agency Owners Share How They ACTUALLY Get Clients (2026)",
+    "upload_date": "20260925",
+    "url": "https://www.youtube.com/watch?v=JOCR2pL6kTI"
+  },
   "JOtDWe5svX8": {
     "channel": "Vivendo de Saas",
     "channel_url": "https://www.youtube.com/channel/UCoiZEHpk3hqkCe4Kz4psIuw",
@@ -3051,6 +3211,22 @@
     "title": "Tráfego Pago: A estratégia de ESCALA DIÁRIA para produtos Low Ticket",
     "upload_date": "20260420",
     "url": "https://www.youtube.com/watch?v=KpG0vqFqies"
+  },
+  "Krnsw9WZtRA": {
+    "channel": "Joey Seeman",
+    "channel_url": "https://www.youtube.com/channel/UCW5gktwyunjiN3xue3Aa0pQ",
+    "chars": 12975,
+    "duration": "00:11:37",
+    "duration_secs": 697,
+    "error": "",
+    "id": "Krnsw9WZtRA",
+    "lang": "en-orig",
+    "path": "references/youtube/joey-seeman/selling-ai-receptionists-to-local-businesses-with-cold-calls-5k-per.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Selling AI Receptionists To Local Businesses With Cold Calls ($5k Per)",
+    "upload_date": "20251106",
+    "url": "https://www.youtube.com/watch?v=Krnsw9WZtRA"
   },
   "Kv3olmGKVmw": {
     "channel": "Dan Martell",
@@ -3276,6 +3452,22 @@
     "upload_date": "20260313",
     "url": "https://www.youtube.com/watch?v=LkTFvh3UQfY"
   },
+  "LxaDD7eW_9E": {
+    "channel": "Owen Rensland",
+    "channel_url": "https://www.youtube.com/channel/UCzUOYAFd9ZGpma1tquXl5nQ",
+    "chars": 17951,
+    "duration": "00:15:01",
+    "duration_secs": 901,
+    "error": "",
+    "id": "LxaDD7eW_9E",
+    "lang": "en-orig",
+    "path": "references/youtube/owen-rensland/how-i-get-ai-agency-clients-with-paid-ads-step-by-step.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "how i get AI agency clients with paid ads (step by step)",
+    "upload_date": "20251214",
+    "url": "https://www.youtube.com/watch?v=LxaDD7eW_9E"
+  },
   "MOTfmFD0eVk": {
     "channel": "Prof. Diego Reis",
     "channel_url": "https://www.youtube.com/channel/UCK1ZofEiTmlGqQKXRzjfftw",
@@ -3404,6 +3596,22 @@
     "upload_date": "20260716",
     "url": "https://www.youtube.com/watch?v=NRR22EoGMgg"
   },
+  "NY6Abbhm_yY": {
+    "channel": "Breno Santos - Negócio com agentes de IA",
+    "channel_url": "https://www.youtube.com/channel/UCL1tvwMtUt5A6OAvFmhuQlA",
+    "chars": 8728,
+    "duration": "00:08:50",
+    "duration_secs": 530,
+    "error": "",
+    "id": "NY6Abbhm_yY",
+    "lang": "pt-orig",
+    "path": "references/youtube/breno-santos---negócio-com-agentes-de-ia/3-dicas-para-vender-agentes-de-ia-com-muito-lucro.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "3 Dicas para Vender Agentes de IA com MUITO Lucro",
+    "upload_date": "20250220",
+    "url": "https://www.youtube.com/watch?v=NY6Abbhm_yY"
+  },
   "NZp5j5hvn9I": {
     "channel": "Y Combinator",
     "channel_url": "https://www.youtube.com/channel/UCcefcZRL2oaA_uBNeo5UOWg",
@@ -3435,6 +3643,22 @@
     "title": "Achei uma Oferta Escalada, modelei do ZERO e subi a primeira campanha (Passo a Passo)",
     "upload_date": "20260408",
     "url": "https://www.youtube.com/watch?v=NpBsQzS2-bo"
+  },
+  "NqDWRJMOgEA": {
+    "channel": "Alex Berman",
+    "channel_url": "https://www.youtube.com/channel/UCAr7M4Pz-c1WCpIz3YAJQeQ",
+    "chars": 5376,
+    "duration": "00:05:30",
+    "duration_secs": 330,
+    "error": "",
+    "id": "NqDWRJMOgEA",
+    "lang": "en-orig",
+    "path": "references/youtube/alex-berman/how-to-get-clients-using-cold-email--a-step-by-step-guide.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "How To Get Clients Using Cold Email- A Step-by-Step Guide",
+    "upload_date": "20230201",
+    "url": "https://www.youtube.com/watch?v=NqDWRJMOgEA"
   },
   "Nv_UzT4jM5E": {
     "channel": "Frei Gilson / Som do Monte - OFICIAL",
@@ -4172,6 +4396,22 @@
     "upload_date": "20260708",
     "url": "https://www.youtube.com/watch?v=SYe1R-8HlcU"
   },
+  "SgeJoDWc_9U": {
+    "channel": "Jordan Platten",
+    "channel_url": "https://www.youtube.com/channel/UCsQiYDzi0UtpdDIe7_DpcLw",
+    "chars": 16892,
+    "duration": "00:17:11",
+    "duration_secs": 1031,
+    "error": "",
+    "id": "SgeJoDWc_9U",
+    "lang": "en-orig",
+    "path": "references/youtube/jordan-platten/the-cheapest-fastest-ways-to-get-clients-in-2026-ranked.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "The Cheapest & Fastest Ways to Get Clients in 2026 (Ranked)",
+    "upload_date": "20260927",
+    "url": "https://www.youtube.com/watch?v=SgeJoDWc_9U"
+  },
   "SqNyKuoPs1Q": {
     "channel": "Evan Fisher",
     "channel_url": "https://www.youtube.com/channel/UC8zJgBttYivUC3lhO0nSD1Q",
@@ -4620,6 +4860,22 @@
     "upload_date": "20260116",
     "url": "https://www.youtube.com/watch?v=VBSDTUldSEE"
   },
+  "VOY-37c6jVE": {
+    "channel": "Carson Reed",
+    "channel_url": "https://www.youtube.com/channel/UCCMH1iLxzvLXwxXhXGU2Ojg",
+    "chars": 7313,
+    "duration": "00:05:03",
+    "duration_secs": 303,
+    "error": "",
+    "id": "VOY-37c6jVE",
+    "lang": "en-orig",
+    "path": "references/youtube/carson-reed/the-truth-about-selling-ai-receptionists-to-businesses.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "The TRUTH About Selling \"AI Receptionists\" to Businesses",
+    "upload_date": "20260706",
+    "url": "https://www.youtube.com/watch?v=VOY-37c6jVE"
+  },
   "VZv2Bb0WHdk": {
     "channel": "Cássio Hart | Tráfego Pago para Low Ticket",
     "channel_url": "https://www.youtube.com/channel/UCfiVoZJZOejWGlLvADb9zFA",
@@ -4827,6 +5083,22 @@
     "title": "ESTRATÉGIAS DE VENDAS PARA SaaS | Como vender SaaS de maneira simples e eficiente",
     "upload_date": "20240509",
     "url": "https://www.youtube.com/watch?v=XFDpjiMmHf8"
+  },
+  "XUJA20VhWvE": {
+    "channel": "Payton Clark Smith",
+    "channel_url": "https://www.youtube.com/channel/UCbHP6VGz859AqUebR1B_WLw",
+    "chars": 12475,
+    "duration": "00:10:55",
+    "duration_secs": 655,
+    "error": "",
+    "id": "XUJA20VhWvE",
+    "lang": "en-orig",
+    "path": "references/youtube/payton-clark-smith/how-to-sell-seo-services-to-local-businesses-step-by-step.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "How to Sell SEO Services to Local Businesses (Step-By-Step)",
+    "upload_date": "20240903",
+    "url": "https://www.youtube.com/watch?v=XUJA20VhWvE"
   },
   "XY-glcMs8gY": {
     "channel": "Emmanuella Ezedioranma (Ella)",
@@ -5388,6 +5660,14 @@
     "upload_date": "20251017",
     "url": "https://www.youtube.com/watch?v=aUYGsoHUb2w"
   },
+  "aYTX4cfK64U": {
+    "channel": "",
+    "error": "ERROR: [youtube] aYTX4cfK64U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "aYTX4cfK64U",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=aYTX4cfK64U"
+  },
   "aawJ06qhVfE": {
     "channel": "Sancler Miranda",
     "channel_url": "https://www.youtube.com/channel/UCLMB3EPQVT-d9oQ5JigcabA",
@@ -5499,6 +5779,22 @@
     "title": "TUTORIAL COMPLETO: Como Criar um Low Ticket Gâmificado Usando Inteligência Artificial",
     "upload_date": "20251016",
     "url": "https://www.youtube.com/watch?v=bDAgkYVUdac"
+  },
+  "bE3-11lKqVI": {
+    "channel": "Luciana Papini | Automação com IA",
+    "channel_url": "https://www.youtube.com/channel/UCwCyve8wJg4gC3dwaqqc1ow",
+    "chars": 8988,
+    "duration": "00:08:38",
+    "duration_secs": 518,
+    "error": "",
+    "id": "bE3-11lKqVI",
+    "lang": "pt-orig",
+    "path": "references/youtube/luciana-papini-automação-com-ia/como-conseguir-clientes-de-gestão-de-automação-e-fazer-de-r5000-a-r10000-por-mês.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Como conseguir clientes de Gestão de Automação? E fazer de R$5000 a R$10.000 por mês",
+    "upload_date": "20240626",
+    "url": "https://www.youtube.com/watch?v=bE3-11lKqVI"
   },
   "bEyDm6f0tYo": {
     "channel": "Rafa Voss | IA na Prática",
@@ -6124,6 +6420,22 @@
     "upload_date": "20240204",
     "url": "https://www.youtube.com/watch?v=exOwI1qh5ps"
   },
+  "ezEvMAc3Ymc": {
+    "channel": "NoCode StartUp",
+    "channel_url": "https://www.youtube.com/channel/UCYx10jQ_0QeqkV7gWiUE5yw",
+    "chars": 15305,
+    "duration": "00:13:57",
+    "duration_secs": 837,
+    "error": "",
+    "id": "ezEvMAc3Ymc",
+    "lang": "pt-orig",
+    "path": "references/youtube/nocode-startup/7-dicas-para-conseguir-vender-seu-primeiro-agente-de-ia-em-2025.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "7 dicas para conseguir vender seu primeiro Agente de IA em 2025",
+    "upload_date": "20241206",
+    "url": "https://www.youtube.com/watch?v=ezEvMAc3Ymc"
+  },
   "f0n-CtUhF1k": {
     "channel": "Padre Paulo Ricardo",
     "channel_url": "https://www.youtube.com/channel/UCP6L9TPS3pHccVRiDB_cvqQ",
@@ -6299,6 +6611,22 @@
     "title": "COMO VENDER RÁPIDO EM DOLÁR 2025 (Afiliado na Gringa Passo a Passo)",
     "upload_date": "20250122",
     "url": "https://www.youtube.com/watch?v=ga10nPbcK_E"
+  },
+  "gmD3YrVwHaM": {
+    "channel": "Jordan Platten",
+    "channel_url": "https://www.youtube.com/channel/UCsQiYDzi0UtpdDIe7_DpcLw",
+    "chars": 36440,
+    "duration": "00:32:49",
+    "duration_secs": 1969,
+    "error": "",
+    "id": "gmD3YrVwHaM",
+    "lang": "en-orig",
+    "path": "references/youtube/jordan-platten/easy-cold-email-strategy-thatll-make-you-40kmo.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "EASY Cold Email Strategy That'll Make You $40k+/mo",
+    "upload_date": "20250416",
+    "url": "https://www.youtube.com/watch?v=gmD3YrVwHaM"
   },
   "gsrZSQGc7xk": {
     "channel": "Escola de SEO - Por Luciano Arthur",
@@ -6681,6 +7009,22 @@
     "upload_date": "20260810",
     "url": "https://www.youtube.com/watch?v=jQ42vCtm4a0"
   },
+  "jTLv3mJazlY": {
+    "channel": "Eduardo Carezia - Automatiza AI",
+    "channel_url": "https://www.youtube.com/channel/UCOx85a2HoB9wlza-iiCfqAg",
+    "chars": 26214,
+    "duration": "00:20:57",
+    "duration_secs": 1257,
+    "error": "",
+    "id": "jTLv3mJazlY",
+    "lang": "pt-orig",
+    "path": "references/youtube/eduardo-carezia---automatiza-ai/processo-comercial-de-uma-agência-de-ia-que-fecha-8-contratosmês.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "Processo comercial de uma Agência de I.A. (que fecha 8 contratos/mês)",
+    "upload_date": "20250831",
+    "url": "https://www.youtube.com/watch?v=jTLv3mJazlY"
+  },
   "jfW6gL6hKhk": {
     "channel": "Alex Hormozi",
     "channel_url": "https://www.youtube.com/channel/UCUyDOdBWhC1MCxEjC46d-zw",
@@ -6936,6 +7280,22 @@
     "title": "Google Meu Negócio 2026: 7 Ajustes Para Aparecer no Topo do Google",
     "upload_date": "20260730",
     "url": "https://www.youtube.com/watch?v=luXoWRqYsAo"
+  },
+  "m7rdbpmG9ck": {
+    "channel": "2GuysBuildaBiz - David Schlais & Derek DeMike",
+    "channel_url": "https://www.youtube.com/channel/UCUoXIkRM0FHQ9sWWHjNpYNQ",
+    "chars": 9562,
+    "duration": "00:09:11",
+    "duration_secs": 551,
+    "error": "",
+    "id": "m7rdbpmG9ck",
+    "lang": "en-orig",
+    "path": "references/youtube/2guysbuildabiz---david-schlais-derek-demike/how-to-get-your-first-smma-client-in-7-days-must-watch.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "How to Get Your First SMMA Client In 7 Days (Must watch!)",
+    "upload_date": "20221213",
+    "url": "https://www.youtube.com/watch?v=m7rdbpmG9ck"
   },
   "mHwMDKclUyA": {
     "channel": "Michael Elliott",
@@ -8056,6 +8416,22 @@
     "title": "Rotinas de stories que vendem todos os dias | ESTRATECLASS #76",
     "upload_date": "20260305",
     "url": "https://www.youtube.com/watch?v=uYnexQlx4J0"
+  },
+  "ubAAK1Uletg": {
+    "channel": "Eric Beer ",
+    "channel_url": "https://www.youtube.com/channel/UC1YMzMPLe9MttWy5oVGB1Ig",
+    "chars": 30882,
+    "duration": "00:32:11",
+    "duration_secs": 1931,
+    "error": "",
+    "id": "ubAAK1Uletg",
+    "lang": "en-orig",
+    "path": "references/youtube/eric-beer/how-to-make-80000-a-month-selling-leads-to-plumbers-full-tutorial.md",
+    "source": "yt-dlp auto captions",
+    "status": "ok",
+    "title": "How to Make $80,000 a month Selling Leads to Plumbers (full tutorial)",
+    "upload_date": "20211030",
+    "url": "https://www.youtube.com/watch?v=ubAAK1Uletg"
   },
   "unn1CnOCtRo": {
     "channel": "Triwer",

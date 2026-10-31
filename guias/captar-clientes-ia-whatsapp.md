@@ -14,9 +14,12 @@ primeiro cliente, os 8 canais do Well Pires e a stack. Aqui o foco é **captaç�
 o mercado anuncia**.
 
 > **Leia isto antes.**
-> 1. **Nenhum vídeo novo foi baixado.** A rede desta sessão bloqueia o YouTube (`yt-dlp` recebeu 403 do proxy).
->    Tudo vem dos vídeos que **já estavam** na biblioteca. "Melhores" = mais relevantes entre os 540, sem medir
->    visualizações.
+> 1. **Os vídeos novos vieram depois que o YouTube foi liberado.** Na primeira rodada a rede bloqueava o YouTube e usei só
+> os vídeos que já estavam na biblioteca. Depois da liberação, busquei candidatos no próprio YouTube, ordenando por
+> visualizações, e baixei **23 transcrições novas**. Dessas, li **5 por inteiro e 2 em parte** (marcadas no índice); as outras
+> 16 estão salvas em `references/youtube/` e **não foram lidas**. Uma (52 min, Jordan Platten) não baixou: o YouTube pediu
+> verificação anti-robô e a skill não permite usar cookies da sua conta. "Melhores" = mais vistos e mais relevantes entre
+> os que achei; não medi engajamento.
 > 2. **Só o que está marcado "lido" foi lido na íntegra nesta sessão.** O resto foi achado pelo título (índice
 >    no fim) e não é evidência aqui.
 > 3. **Legendas automáticas, e quase todo criador vende curso, comunidade ou ferramenta.** Valores e resultados
@@ -107,7 +110,7 @@ imobiliária, onde o ciclo é longo, **implementação fixa**.
 mensagens seguidas), limite de ~25 mensagens por conversa, aceitar áudio e imagem, parar o bot quando agendar,
 follow-up automático aos 15 minutos, 2 horas e 1 dia sem resposta, e lembrete antes da reunião.
 
-### 1.3 Preço e posicionamento: três escolas que divergem
+### 1.3 Preço e posicionamento: escolas que divergem
 
 | Fonte | Modelo | Valores citados | Observação |
 |---|---|---|---|
@@ -115,8 +118,11 @@ follow-up automático aos 15 minutos, 2 horas e 1 dia sem resposta, e lembrete a
 | **Felipe Fontoura** (out/2024) | **Pagamento único**, sem mensalidade; evita servidor | Chatbot de suporte + SDR integrado a CRM: **R$ 7.500 à vista** [00:08:02]; ancora em 1 a 3 meses de salário de um atendente (cerca de R$ 2.000, segundo a legenda) [00:02:02] | Vídeo de 2024; os valores do mercado mudaram. Ele pede que o cliente assine n8n e OpenAI no próprio cartão [00:12:03] |
 | **João Mussoi** (2026) | Implementação fixa **ou variável por visita** | De R$ 500 em diante nas primeiras experiências; R$ 20 a R$ 200 por lead reativado [00:14:05-00:16:05] | O teto fixo está truncado na legenda |
 | **Kelvin Cleto** (jul/2025) | **Solução de nicho**, não automação solta | Exemplo hipotético: cliente de R$ 100 mil/mês que passa a R$ 130 mil, solução a R$ 40 mil [00:14:08-00:16:10] | Contra-tese: vender *"infraestrutura de IA"* empacotada, porque automação isolada vira *"muito trabalho e pouco dinheiro"* [00:02:02]. Ele vende o próprio programa de aceleração |
+| **Breno Santos** (2026) | **Volume e preço baixo**, sem setup nem fidelidade | Cerca de R$ 750/mês por 6 meses, depois sobe; produto de R$ 297/mês para nutricionista [00:02:00-00:06:02] | Custo declarado de R$ 30/cliente/mês; o modelo depende de replicar o mesmo agente por nicho |
+| **Victor Peixoto** (2026) | Implantação + mensalidade | R$ 5.000 em 3x + cerca de R$ 2.000/mês numa clínica [00:08:02] | Um fechamento documentado; vendedor novo, nicho de harmonização facial |
 
 **Onde discordam:**
+- **Preço alto × preço de volume.** Afonso (R$ 800 a R$ 2.800/mês) e Victor (R$ 5.000 + R$ 2.000) apostam em ticket; Breno (R$ 750, sem setup) em volume e custo de R$ 30. Nenhum dado nos vídeos diz qual retém mais.
 - **Recorrência × pagamento único.** Afonso diz que *"o seu jogo precisa ser a recorrência"* [00:10:06]; Fontoura
   prefere antecipar a receita e evitar suporte mensal [00:10:02]. Não há dado nos vídeos para decidir.
 - **Quem atende.** Mussoi acha que reativação de base serve a *"99% das empresas"* [00:04:02]; Afonso insiste em
@@ -171,6 +177,48 @@ Resumido em [`agencia-ia.md`](agencia-ia.md), com as fontes nele: o passo a pass
 StartUp: demo antes, ir presencialmente, entregar o celular na mão, não falar de tecnologia), os **8 canais do
 Well Pires** (Instagram DM, site de graça, parceria, webinar), a **API oficial do WhatsApp** e seus custos
 (Marcelo Távora) e o argumento de ROI contra o salário de um funcionário.
+
+### 1.8 Vídeos adicionados depois que o YouTube foi liberado
+
+**Victor Peixoto — "Como Prospectar Pelo Instagram e Vender IA por R$5k + R$2k/mês"** (9:58,
+[vídeo](https://www.youtube.com/watch?v=HfaA_Y5gbos)), lido. É o único vídeo do conjunto com um **fechamento real
+documentado**: um vendedor novo da empresa dele, em menos de 15 dias, fechou uma clínica com **R$ 5.000 de implantação
+(em 3x no cartão) mais cerca de R$ 2.000 por mês** [00:00:00, 00:08:02]. É um caso só, do próprio dono, que vende
+serviço de IA e treinamento.
+- **Nicho**: clínicas de harmonização facial, porque a demanda é recorrente e quem faz o procedimento tem dinheiro
+  [00:02:00].
+- **Lista**: pesquisa no Google por perfis do Instagram de clínicas (a legenda truncou o operador de busca), rolagem
+  infinita por extensão, e o texto colado no ChatGPT para virar tabela (Instagram, WhatsApp) que depois vai ao CRM
+  [00:02:00-00:04:01].
+- **Leitura do perfil antes de abordar**: frequência de posts, stories, bio, para onde vai o link; e **mandar uma
+  mensagem no WhatsApp da clínica para medir quanto ela demora a responder** [00:04:01-00:06:01].
+- **Mensagem do vendedor** (resumida): apresenta-se como especialista em automação para clínicas, diz que vê boa presença
+  digital e que clínicas perdem agendamento por não responder rápido nem fazer follow-up, e propõe um bate-papo de
+  15 minutos [00:06:01]. Do Instagram foi ao WhatsApp, depois à reunião, e a conversa mostra que mandou foto para
+  provar que a empresa existe [00:08:02].
+- Ele admite que *"não é tão escalável"*, porque exige diagnóstico de cada cliente [00:00:00].
+
+**Breno Santos — "3 Dicas para Vender Agentes de IA com MUITO Lucro"** (8:50,
+[vídeo](https://www.youtube.com/watch?v=NY6Abbhm_yY)), lido. Escola oposta à do Afonso: **preço baixo e volume**.
+- Um agente por nicho por mês (já tem para advogados); a entrega é duplicar o modelo no n8n, e uma colaboradora replica
+  [00:02:00].
+- Cobra **meio salário por mês** (R$ 750, nas contas dele) nos primeiros 6 meses, **sem setup e sem fidelidade**, e sobe
+  depois [00:02:00-00:04:02]. O custo por cliente, segundo ele, é cerca de R$ 30 por mês [00:04:02].
+- Argumento: *"o jogo do mercado agora é quem consegue cliente primeiro"*, porque o cliente não troca o que funciona
+  [00:04:02]. Nutricionista seria um produto de R$ 297 por mês [00:06:02].
+- ⚠️ Termina na aula gratuita para "R$ 14.000 recorrentes" e na comunidade; 10 clientes a R$ 700 são R$ 7.000, conta
+  dele [00:08:03]. Ele coloca a própria IA para prospectar [00:06:02].
+
+**Eduardo Carezia — "Processo comercial de uma Agência de I.A. (que fecha 8 contratos/mês)"** (20:57,
+[vídeo](https://www.youtube.com/watch?v=jTLv3mJazlY)), lido só até 00:10:01. Argumento: ser **centrado no cliente, não no
+produto** (não "só chatbot", e sim a jornada inteira) [00:00:00-00:06:00]. Processo: **pré-diagnóstico** (estudar site,
+LinkedIn, testar o atendimento, ler avaliações e Reclame Aqui) → reunião de briefing de 35 a 60 minutos → apresentação das
+soluções → reunião de fechamento o mais perto possível [00:06:00-00:10:01]. Ele promete clientes de "cinco dígitos por
+mês", sem provar.
+
+**Vídeos em inglês que também valem para o Brasil** (lidos, detalhados no [guia EUA](captar-clientes-marketing-eua.md)):
+Carson Reed (vender antes de construir), Joey Seeman (ligação fria ao vivo, sem venda em 15 minutos) e Travis Wardrop
+(US$ 300 a US$ 500/mês, white-label).
 
 ---
 
@@ -280,6 +328,9 @@ Mussoi) em vez de "gestão de tráfego".
 8. **Captação paralela**: campanha de clique para WhatsApp (Parte 1.4) com ganchos de dor por nicho (Parte 2).
 9. **Diagnóstico gratuito de atendimento** como isca: mostre quanto tempo o time leva para responder, no estilo
    do Henrique Avila.
+10. **Instagram DM com leitura do perfil**: antes de abordar, mande uma mensagem ao WhatsApp da empresa e meça
+    a demora; use isso na abordagem (Victor Peixoto, caso documentado em 1.8). Escolha preço de ticket ou de volume
+    (Afonso e Victor × Breno) e teste, porque os vídeos não decidem.
 
 **EUA**
 
@@ -303,7 +354,7 @@ Mussoi) em vez de "gestão de tráfego".
 | **Ligação e SMS automáticos nos EUA** | TCPA e lista Do-Not-Call restringem chamadas automáticas, voz pré-gravada e SMS sem consentimento | Os vídeos americanos não tratam |
 | **Fingir ser cliente na ligação** | A abertura "estão abertos? aqui diz fechado" é artifício; pode irritar e queimar nicho pequeno | Mussoi e Pavlo ensinam |
 | **Promessa de resultado** | "10 a 20 visitas em 7 dias" é uma promessa; sem garantia contratual clara vira disputa | Mussoi cita o número como exemplo, sem prova de taxa |
-| **Interesse do vendedor** | Afonso, Mussoi, Oliveira e Kelvin terminam vendendo curso, comunidade ou ferramenta (link de afiliado/teste) | Veja [Números e Ceticismo](numeros-e-ceticismo.md) |
+| **Interesse do vendedor** | Afonso, Mussoi, Oliveira, Kelvin e Breno terminam vendendo curso, comunidade ou ferramenta; Travis Wardrop e Joey Seeman (EUA) admitem comissão de afiliado ou parceria com a plataforma que indicam | Veja [Números e Ceticismo](numeros-e-ceticismo.md) |
 | **Preço de 2024** | Fontoura é de out/2024; o mercado de IA mudou | Tratar como histórico |
 
 **Lacunas de evidência:** nenhum vídeo lido mostra taxa de conversão real de ligação fria para reunião nem
@@ -313,7 +364,7 @@ para venda; nenhum mostra churn de clientes de IA; os preços de EUA vêm só de
 
 ## Índice: o que foi lido e o que só foi achado
 
-**Lido na íntegra nesta sessão:**
+**Lido nesta sessão** (os 7 da primeira rodada e os 3 da seção 1.8, dos quais Eduardo Carezia só em parte):
 
 | Vídeo | Canal | Caminho local |
 |---|---|---|
@@ -324,8 +375,11 @@ para venda; nenhum mostra churn de clientes de IA; os preços de EUA vêm só de
 | Não Venda Fluxos do N8N, Venda Infraestrutura de IA | Kelvin Cleto | `references/youtube/kelvin-cleto/` |
 | Como é o Processo de Captação de Clientes na minha Agência | Henrique Avila | `references/youtube/henrique-avila/` |
 | Como Prospectar Clientes e Conseguir 200 Reuniões (parcial) | Victor Peixoto | `references/youtube/victor-peixoto/` |
+| Como Prospectar Pelo Instagram e Vender IA por R$5k + R$2k/mês | Victor Peixoto | `references/youtube/victor-peixoto/` |
+| 3 Dicas para Vender Agentes de IA com MUITO Lucro | Breno Santos | `references/youtube/breno-santos---negócio-com-agentes-de-ia/` |
+| Processo comercial de uma Agência de I.A. (até 00:10:01) | Eduardo Carezia | `references/youtube/eduardo-carezia---automatiza-ai/` |
 
-**Na biblioteca e relevantes, não lidos nesta sessão:**
+**Na biblioteca e relevantes, não lidos** (os 5 últimos foram baixados nesta rodada):
 
 | Vídeo | Canal | Duração | Link |
 |---|---|---|---|
@@ -337,13 +391,16 @@ para venda; nenhum mostra churn de clientes de IA; os preços de EUA vêm só de
 | AUTOMAÇÃO NO WHATSAPP = EXPLOSÃO DE VENDAS! | Nerds de Negócios | 9:51 | [YouTube](https://www.youtube.com/watch?v=dO_S6inB4-M) |
 | Como faturar vendendo IA (4 formas) | A Vizinhança | 18:41 | [YouTube](https://www.youtube.com/watch?v=Qoe61lzBQSk) |
 | Como funciona o processo de prospecção da minha agência | Henrique Avila | 19:04 | [YouTube](https://www.youtube.com/watch?v=ky-U_AFXHuM) |
+| GUIA COMPLETO: Como Vender Agentes de IA em 2026 | Thiago Skiante | 11:37 | [YouTube](https://www.youtube.com/watch?v=1axdRfoX7PQ) |
+| Como conseguir clientes de Gestão de Automação? | Luciana Papini | 8:38 | [YouTube](https://www.youtube.com/watch?v=bE3-11lKqVI) |
+| 7 dicas para conseguir vender seu primeiro Agente de IA | NoCode StartUp | 13:57 | [YouTube](https://www.youtube.com/watch?v=ezEvMAc3Ymc) |
+| COMO VENDER E LUCRO COM CHATBOT E AUTOMAÇÃO DE WHATSAPP | Stint Educação | 11:43 | [YouTube](https://www.youtube.com/watch?v=A8CiPlOl1b8) |
+| Essa Ferramenta Acha Clientes pra Você de Graça Todo Mês | Victor Peixoto | 12:36 | [YouTube](https://www.youtube.com/watch?v=9de9i8-1oAg) |
 
 **Pesquisa na web:** a busca disponível aqui é restrita aos EUA e devolveu páginas de fornecedores de
 ferramentas e blogs, sem vídeos do YouTube nem dados independentes. Não usei como evidência.
 
-**Para ampliar:** libere `youtube.com` na política de rede do ambiente (menu do ambiente na barra de título da
-sessão, Edit, Network access) para eu rodar a skill `youtube-refs` e trazer vídeos novos, em especial de
-canais americanos sobre AI receptionist e de brasileiros sobre agente de IA no WhatsApp.
+**Não baixou:** só um vídeo geral de agência (Jordan Platten, 52 min), citado no guia dos EUA: o YouTube pediu verificação anti-robô.
 
 ---
 
