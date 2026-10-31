@@ -1,0 +1,265 @@
+<title>Captar Clientes de Marketing nos EUA · CORTEX</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="cortex-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF1F4; --surface:#F8FAFC; --surface-raised:#FFFFFF; --surface-muted:#E2E9EF;
+  --ink:#243746; --ink-soft:#546777; --ink-faint:#7E90A0; --text-inverse:#F8FAFC;
+  --border:#CCD6DE; --border-control:#8294A3;
+  --action:#344F65; --action-hover:#263F54; --focus:#396E98;
+  --success:#28644F; --success-bg:#E5F0EA;
+  --warning:#805B1D; --warning-bg:#F4EDDF;
+  --danger:#A63D4B; --danger-bg:#F8E9EB;
+  --info:#345F83; --info-bg:#E3ECF4;
+  --glass-clear:rgba(255,255,255,.10); --glass-frosted:rgba(248,250,252,.72); --glass-liquid:rgba(255,255,255,.16);
+  --blur-clear:12px; --blur-frosted:28px; --blur-liquid:24px;
+  --glass-rim:inset 0 1px 0 rgba(255,255,255,.65),inset 1px 0 0 rgba(255,255,255,.16);
+  --atmosphere:radial-gradient(ellipse at 85% 0%,#9EAFBB 0%,transparent 58%),linear-gradient(125deg,#294355 0%,#526C80 54%,#8A9FAE 100%);
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'SFMono-Regular',Consolas,'Liberation Mono',monospace;
+  --radius-sm:.5rem; --radius-control:.875rem; --radius-card:1.75rem; --radius-stage:2rem; --radius-pill:999px;
+  --shadow-soft:0 8px 30px rgba(36,55,70,.05);
+  --shadow-raised:0 24px 64px rgba(25,44,60,.14);
+  --shadow-glass:0 16px 40px rgba(17,34,49,.15);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --press:120ms; --fast:180ms; --reveal:280ms;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#131A21; --surface:#1A222B; --surface-raised:#202A34; --surface-muted:#25303B;
+    --ink:#E9EFF4; --ink-soft:#AAB9C6; --ink-faint:#758795;
+    --border:#2C3945; --border-control:#4B5C6C;
+    --action:#89ABC6; --action-hover:#A6C3DA; --focus:#6FA9D6;
+    --success:#63C09E; --success-bg:#132621;
+    --warning:#DDB169; --warning-bg:#2A2313;
+    --danger:#E38F9A; --danger-bg:#2B181B;
+    --info:#8FB6D8; --info-bg:#15222E;
+    --glass-frosted:rgba(26,34,43,.72); --glass-clear:rgba(255,255,255,.06); --glass-liquid:rgba(255,255,255,.08);
+    --glass-rim:inset 0 1px 0 rgba(255,255,255,.10),inset 1px 0 0 rgba(255,255,255,.05);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131A21; --surface:#1A222B; --surface-raised:#202A34; --surface-muted:#25303B;
+  --ink:#E9EFF4; --ink-soft:#AAB9C6; --ink-faint:#758795;
+  --border:#2C3945; --border-control:#4B5C6C;
+  --action:#89ABC6; --action-hover:#A6C3DA; --focus:#6FA9D6;
+  --success:#63C09E; --success-bg:#132621;
+  --warning:#DDB169; --warning-bg:#2A2313;
+  --danger:#E38F9A; --danger-bg:#2B181B;
+  --info:#8FB6D8; --info-bg:#15222E;
+  --glass-frosted:rgba(26,34,43,.72); --glass-clear:rgba(255,255,255,.06); --glass-liquid:rgba(255,255,255,.08);
+  --glass-rim:inset 0 1px 0 rgba(255,255,255,.10),inset 1px 0 0 rgba(255,255,255,.05);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:16px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px;display:flex;gap:48px;align-items:flex-start}
+main{flex:1;min-width:0;max-width:72ch;padding:44px 0 110px}
+
+nav{
+  position:sticky; top:0; width:224px; flex:none;
+  padding:56px 0 40px; font-family:var(--mono); font-size:11px;
+  max-height:100vh; overflow-y:auto;
+}
+nav p{
+  margin:0 0 12px; text-transform:uppercase; letter-spacing:.14em;
+  color:var(--ink-faint); font-size:9.5px;
+}
+nav a{
+  display:block; padding:6px 0 6px 11px; border-left:2px solid var(--border);
+  color:var(--ink-soft); text-decoration:none; line-height:1.35;
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease);
+}
+nav a:hover{border-left-color:var(--action);color:var(--action)}
+nav a b{display:block;font-weight:600;color:var(--ink);letter-spacing:.01em}
+nav a span{display:block;color:var(--ink-faint);font-size:9.5px;margin-top:1px}
+nav .sub{padding-left:22px;border-left-color:transparent;font-size:10px}
+nav .sub:hover{border-left-color:var(--border)}
+@media(max-width:960px){nav{display:none}.wrap{gap:0}main{max-width:none;padding-top:32px}}
+
+h1,h2,h3,h4,h5{font-family:var(--sans);text-wrap:balance;line-height:1.18;letter-spacing:-.02em}
+h1{font-size:clamp(28px,5vw,42px);font-weight:750;margin:0 0 6px}
+h2{
+  font-size:clamp(22px,3.4vw,29px); font-weight:750; margin:0 0 8px;
+  padding-top:24px;
+}
+h3{font-size:19px;font-weight:700;margin:44px 0 14px;padding-top:18px;border-top:1px solid var(--border)}
+h4{font-size:16px;font-weight:680;margin:28px 0 10px}
+h5{font-size:14px;font-weight:680;margin:22px 0 8px;color:var(--ink-soft)}
+
+.topic{margin:76px 0 0;padding-top:28px;border-top:2px solid var(--border-control)}
+.topic .kicker{
+  font-family:var(--mono);font-size:10px;text-transform:uppercase;
+  letter-spacing:.17em;color:var(--action);margin:0 0 10px;
+}
+
+p{margin:0 0 17px}
+a{color:var(--action);text-decoration-thickness:1px;text-underline-offset:2px}
+strong{font-weight:640}
+hr{border:0;height:1px;background:var(--border);margin:38px 0}
+
+ul,ol{margin:0 0 18px;padding-left:22px}
+li{margin-bottom:7px}
+li::marker{color:var(--ink-faint)}
+ul ul,ol ol,ul ol,ol ul{margin:7px 0 0}
+ul.check{list-style:none;padding-left:0}
+ul.check li{position:relative;padding-left:29px}
+ul.check li span{
+  position:absolute;left:0;top:.36em;width:15px;height:15px;
+  border:1.5px solid var(--ink-faint);border-radius:4px;
+}
+
+blockquote{
+  margin:22px 0;padding:15px 20px;background:var(--surface);
+  border-left:3px solid var(--action);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+}
+blockquote p{margin:0 0 9px;font-size:16px;color:var(--ink-soft)}
+blockquote p:last-child{margin:0}
+blockquote em{color:var(--ink);font-style:italic}
+
+.scroll{overflow-x:auto;margin:24px 0;-webkit-overflow-scrolling:touch}
+table{
+  border-collapse:collapse;width:100%;font-family:var(--sans);
+  font-size:13.5px;line-height:1.5;font-variant-numeric:tabular-nums;
+}
+th{
+  text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);
+  padding:0 14px 9px 0;border-bottom:1.5px solid var(--border-control);white-space:nowrap;
+}
+td{padding:11px 14px 11px 0;border-bottom:1px solid var(--border);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td:first-child{color:var(--ink);font-weight:550}
+table code{font-size:12px}
+
+code{
+  font-family:var(--mono);font-size:.86em;background:var(--surface-muted);
+  padding:.14em .38em;border-radius:var(--radius-sm)
+}
+pre{
+  margin:0;background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-sm);padding:17px 19px;overflow-x:auto;
+}
+pre code{background:none;padding:0;font-size:12.5px;line-height:1.72;color:var(--ink-soft)}
+
+/* --- hero: banner de página inteira (edge-to-edge) com o gradiente
+   "atmosphere" do design system. Fica fora de .wrap para não parecer um
+   cartão recortado sobre o fundo — é a própria página, não uma moldura. --- */
+.hero{background:var(--atmosphere);color:var(--text-inverse)}
+.hero-inner{max-width:1240px;margin:0 auto;padding:52px 20px 40px}
+.eyebrow{
+  font-family:var(--mono);font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.19em;color:rgba(248,250,252,.7);margin:0 0 15px;
+}
+.hero h1{color:#F8FAFC}
+.lede{font-size:18px;color:rgba(248,250,252,.85);margin:16px 0 26px;max-width:60ch}
+.stats{display:flex;flex-wrap:wrap;margin:0;border-top:1px solid rgba(248,250,252,.22)}
+.stat{padding:14px 28px 14px 0;margin-right:28px;border-right:1px solid rgba(248,250,252,.22)}
+.stat:last-child{border-right:0;margin-right:0}
+.stat b{
+  display:block;font-family:var(--sans);font-size:24px;font-weight:730;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1;color:#fff;
+}
+.stat span{
+  display:block;font-family:var(--mono);font-size:9.5px;text-transform:uppercase;
+  letter-spacing:.13em;color:rgba(248,250,252,.6);margin-top:4px;
+}
+footer{
+  margin-top:64px;padding-top:22px;border-top:1px solid var(--border);
+  font-family:var(--mono);font-size:11px;color:var(--ink-faint);line-height:1.7;
+}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+/* --- progresso de leitura: vive dentro do hero (fundo "atmosphere"),
+   por isso parte de vidro claro em vez dos tokens de superfície comuns --- */
+.lido-toggle{
+  display:inline-flex;align-items:center;gap:8px;margin:18px 0 0;padding:9px 16px 9px 12px;
+  font-family:var(--sans);font-size:13px;font-weight:600;color:#fff;
+  background:var(--glass-clear);backdrop-filter:blur(var(--blur-clear));-webkit-backdrop-filter:blur(var(--blur-clear));
+  border:1.5px solid rgba(248,250,252,.32);border-radius:var(--radius-pill);cursor:pointer;
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease),background var(--fast) var(--ease);
+}
+.lido-toggle:hover{border-color:#fff;color:#fff}
+.lido-toggle .lido-toggle-icon{
+  display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
+  border-radius:50%;border:1.5px solid rgba(248,250,252,.6);font-size:11px;line-height:1;
+  color:transparent;transition:all var(--fast) var(--ease);
+}
+.lido-toggle.is-lido{background:var(--success-bg);border-color:var(--success);color:var(--success)}
+.lido-toggle.is-lido .lido-toggle-icon{
+  background:var(--success);border-color:var(--success);color:var(--surface);
+}
+
+/* --- marca --- */
+h1.brand{display:flex;align-items:center;gap:14px;letter-spacing:.015em}
+.brandmark{
+  width:50px;height:50px;flex:none;border-radius:var(--radius-control);
+  box-shadow:var(--shadow-soft);
+}
+@media(max-width:600px){.brandmark{width:40px;height:40px;border-radius:var(--radius-sm)}}
+</style>
+<div class="hero" id="topo">
+<div class="hero-inner">
+  <p class="eyebrow">CORTEX · Guia individual</p>
+  <h1>🇺🇸 Captar Clientes de Marketing nos EUA</h1>
+  <p class="lede">Como agências e freelancers de marketing conseguem clientes nos Estados Unidos: o que os vídeos da biblioteca ensinam, o que os anúncios ativos na Meta mostram do mercado de lá e o que nenhuma das duas fontes prova.</p>
+  <div class="stats">
+    <div class="stat"><b>outreach, oferta e o que os anunciantes fazem</b><span>foco do guia</span></div>
+  </div>
+  <button type="button" id="lido-toggle" class="lido-toggle" data-stem="captar-clientes-marketing-eua">
+    <span class="lido-toggle-icon">✓</span><span class="lido-toggle-label">Marcar como lido</span>
+  </button>
+</div>
+</div>
+<div class="wrap">
+<nav><p>Neste guia</p><a href="#topo"><b>Início</b></a><a href="#captar-clientes-marketing-eua-11-outreach-frio-a-estrutura-hormozi-via-lead-gen-jay">1.1 Outreach frio: a estrutura (Hormozi, via Lead Gen Jay)</a><a href="#captar-clientes-marketing-eua-12-os-três-métodos-para-quem-começa-do-zero-payton-clark-smith">1.2 Os três métodos para quem começa do zero (Payton Clark Smith)</a><a href="#captar-clientes-marketing-eua-13-script-de-ligação-fria-pavlo">1.3 Script de ligação fria (Pavlo)</a><a href="#captar-clientes-marketing-eua-14-post-levanta-a-mão-venda-em-vídeo-de-5-minutos-frankie-entrevistado-por-itskeaton">1.4 Post &quot;levanta a mão&quot; + venda em vídeo de 5 minutos (Frankie, entrevistado por ItsKeaton)</a><a href="#captar-clientes-marketing-eua-15-seo-local-como-produto-clay-lawrence">1.5 SEO local como produto (Clay Lawrence)</a><a href="#captar-clientes-marketing-eua-16-atrair-por-conteúdo-e-filtrar-com-diagnóstico-henrique-avila-brasil">1.6 Atrair por conteúdo e filtrar com diagnóstico (Henrique Avila, Brasil)</a><a href="#captar-clientes-marketing-eua-17-por-que-o-pequeno-empresário-contrata-rodrigo-vincenzi-brasil">1.7 Por que o pequeno empresário contrata (Rodrigo Vincenzi, Brasil)</a><a href="#captar-clientes-marketing-eua-como-ler-esta-amostra">Como ler esta amostra</a><a href="#captar-clientes-marketing-eua-mercado-de-agências-de-marketing-consulta-marketing-agency-get-more-leads-18300-anúncios-ativos">Mercado de agências de marketing (consulta `marketing agency get more leads`: ~18.300 anúncios ativos)</a><a href="#captar-clientes-marketing-eua-padrões-que-aparecem-na-amostra">Padrões que aparecem na amostra</a><a href="#captar-clientes-marketing-eua-o-que-o-benchmark-não-consegue-dizer">O que o benchmark **não** consegue dizer</a></nav>
+<main>
+<p>Como conseguir clientes para um serviço de marketing (leads, anúncios, SEO local, sites) vendendo para empresas americanas. Duas fontes: <strong>transcrições de YouTube já na biblioteca</strong> e <strong>uma amostra da Biblioteca de Anúncios da Meta</strong> (consultada em 2026-10-31).</p><blockquote><p><strong>Leia isto antes.</strong> 1. <strong>Nenhum vídeo novo foi baixado.</strong> A rede desta sessão bloqueia o YouTube (o <code>yt-dlp</code> recebeu 403 do proxy). Tudo abaixo vem dos vídeos que <strong>já estavam</strong> na biblioteca. &quot;Os melhores&quot; aqui quer dizer <em>os mais relevantes dentre os 540 que existem</em>; não medi visualizações nem engajamento. 2. <strong>Só o que está marcado &quot;lido&quot; foi lido na íntegra nesta sessão.</strong> O resto foi achado pelo título (veja o índice no fim) e não entra como evidência. 3. <strong>Todas as transcrições são legendas automáticas</strong> e quase todos os criadores vendem curso, ferramenta ou comunidade. Número de faturamento é alegação do próprio vendedor. 4. <strong>A Biblioteca de Anúncios só mostra quem anuncia, não quem lucra.</strong> Veja os limites na Parte 2.</p></blockquote><hr><h2 id="captar-clientes-marketing-eua-resumo-em-dez-linhas">Resumo em dez linhas</h2><ol><li>Quem começa do zero nos vídeos usa <strong>outreach ativo</strong> (e-mail, ligação, DM, Loom), porque não tem audiência nem verba de anúncio. Payton: <em>&quot;our only good option … is cold outreach&quot;</em> [00:00:00].</li><li>O que separa outreach que funciona do que não funciona, em todos os vídeos: <strong>dar valor antes de pedir</strong> (auditoria, vídeo, resultado concreto) e <strong>insistir em vários canais</strong>, não um e-mail.</li><li>A <strong>oferta</strong> pesa mais que o canal. Pavlo e os anúncios convergem: ofereça um <strong>resultado específico e sem risco</strong> (&quot;4 a 5 orçamentos de graça&quot;), não um serviço (&quot;gestão de tráfego&quot;).</li><li>Nos anúncios dos EUA, o padrão dominante é <strong>nicho de serviço doméstico + garantia ou pagamento por resultado</strong>: telhado, HVAC, reforma de cozinha, quiropraxia, paisagismo.</li><li>Quem vende &quot;recepcionista de IA&quot; lá vende <strong>telefone/voz</strong>. Preços que aparecem nos títulos: US$ 49/mês (RingReady), &quot;US$ 48 por dia&quot; (Smart Center AI) e site grátis + IA por US$ 297/mês (Lever Launch).</li><li>Rastrear tudo (UTM, custo por reunião, custo por venda) é o que permitiu a Lead Gen Jay cortar a equipe de ligação e manter e-mail e voicemail.</li><li>Os vídeos são <strong>fracos justamente no que importa para os EUA</strong>: nenhum cobre CAN-SPAM, TCPA, lista Do-Not-Call, impostos nem contrato. Isso está na Parte 4.</li><li>Dois truques ensinados (&quot;re:&quot; no assunto, fingir ser cliente na ligação) são <strong>enganosos</strong> e podem violar a lei ou a plataforma. Veja os riscos.</li><li>Nada aqui diz quanto custa <strong>adquirir um cliente</strong> nos EUA. Nenhuma fonte deu CAC verificável.</li><li>Antes de gastar: escolha <strong>um</strong> nicho, <strong>uma</strong> oferta com garantia, <strong>100 contatos</strong> e meça a resposta.</li></ol><hr><h2 id="captar-clientes-marketing-eua-parte-1-o-que-os-vídeos-ensinam">Parte 1 — O que os vídeos ensinam</h2><h3 id="captar-clientes-marketing-eua-11-outreach-frio-a-estrutura-hormozi-via-lead-gen-jay">1.1 Outreach frio: a estrutura (Hormozi, via Lead Gen Jay)</h3><p><em>Lido:</em> <strong>Lead Gen Jay — &quot;Alex Hormozi&#x27;s $100M Cold Outreach Strategy Revealed&quot;</strong> (13:53, <a href="https://www.youtube.com/watch?v=ND2vv3f83qM">vídeo</a>). É um resumo de segunda mão do livro <em>$100M Leads</em>, e o autor vende o próprio curso de cold e-mail. O que ele extrai:</p><div class="scroll"><table><thead><tr><th>Ideia</th><th>Trecho</th></tr></thead><tbody><tr><td><strong>Três fontes de lista:</strong> raspar (LinkedIn, Google Maps, grupos), comprar (Apollo.io) ou fazer à mão em comunidades</td><td>[00:00:00-00:02:00]</td></tr><tr><td><strong>Dar valor antes do pedido</strong></td><td><em>&quot;we&#x27;re not trying to tickle their interest, we&#x27;re trying to blow their minds in 30 seconds&quot;</em> [00:00:00]</td></tr><tr><td><strong>Personalizar para parecer contato morno</strong>: nome de concorrente, dor do setor, primeira linha com a descrição do site, em escala com IA</td><td>[00:02:00-00:04:00]</td></tr><tr><td><strong>Escrever em nível de 3ª série.</strong> Atribuído a Hormozi: <em>&quot;50% response bump&quot;</em> ao reescrever os modelos</td><td>[00:04:00]</td></tr><tr><td><strong>5 a 6 pontos de contato em vários canais</strong> (e-mail, LinkedIn, voicemail, SMS)</td><td>[00:06:00]</td></tr><tr><td><strong>Medir tudo</strong>: e-mails enviados → reuniões → vendas → valor da reunião; usar UTM</td><td>[00:08:00-00:10:01]</td></tr></tbody></table></div><p>O dado mais útil do vídeo é operacional: a agência do Jay manda cerca de <strong>1 milhão de e-mails por mês</strong>, montou <strong>4 pessoas só ligando</strong> e &quot;it just wasn&#x27;t very effective&quot;; a maioria dos leads vinha de voicemail e e-mail, então migrou para voicemail drop e dobrou o e-mail [00:10:01-00:12:01]. Isso é alegação dele, sem números de conversão.</p><h3 id="captar-clientes-marketing-eua-12-os-três-métodos-para-quem-começa-do-zero-payton-clark-smith">1.2 Os três métodos para quem começa do zero (Payton Clark Smith)</h3><p><em>Lido:</em> <strong>&quot;Starting From ZERO? Do THIS to Get Clients&quot;</strong> (11:25, <a href="https://www.youtube.com/watch?v=7ewQDY8Elys">vídeo</a>).</p><ol><li><strong>Vídeo Loom personalizado</strong>: gravar a tela mostrando 3 ou 4 melhorias no site, anúncio ou SEO do prospecto. Difícil de escalar, mas <em>&quot;people feel that reciprocity&quot;</em> [00:04:02]. <strong>Depois liga</strong>, cerca de 2 dias após um único e-mail de lembrete: <em>&quot;you probably remember me from the video…&quot;</em> [00:04:02].</li><li><strong>E-mail personalizado</strong> com assunto específico e útil: &quot;seu site tem um link quebrado&quot;, &quot;alguém está desperdiçando seu orçamento de anúncio&quot; [00:06:02].</li><li><strong>Método &quot;do you know&quot;</strong> (de Hormozi): em vez de oferecer, pergunta <em>&quot;você conhece alguém que precisaria de…?&quot;</em>. O indicado chega como lead morno [00:08:03].</li></ol><p>Ele diz que o número importa: <em>&quot;you need to be doing this hundreds of times, thousands even&quot;</em> [00:08:03]. E sobreponha os métodos (Loom + DM + ligação).</p><p>⚠️ Os dois &quot;hacks&quot; finais, <strong>tudo em minúsculas</strong> e <strong>&quot;re:&quot; no assunto</strong>, são o segundo ponto de risco da Parte 4.</p><h3 id="captar-clientes-marketing-eua-13-script-de-ligação-fria-pavlo">1.3 Script de ligação fria (Pavlo)</h3><p><em>Lido:</em> <strong>&quot;Cold Calling AI Agency Script That Gets 7 Meetings/day&quot;</strong> (16:32, <a href="https://www.youtube.com/watch?v=GCChOuvd7Sg">vídeo</a>). Pavlo diz ter passado de US$ 150 mil por mês; é alegação dele.</p><p>A estrutura, no vocabulário dele:</p><ol><li><strong>Abertura que parece cliente, não vendedor</strong>: <em>&quot;hey, sorry you broke up there, is this [name]? … you guys are still open, right? It said closed for some reason&quot;</em> [00:02:00]. Ele admite que <strong>não sabe</strong> se estão abertos.</li><li><strong>A oferta é um resultado sem risco</strong>, não o serviço: <em>&quot;I built an AI employee, I could book you 4 to 5 estimates the next couple days, completely free, is that something you&#x27;d want?&quot;</em> [00:02:00].</li><li><strong>Como entrega a &quot;prova grátis&quot;</strong>: reativação de base. Importa a lista de clientes antigos do prospecto, o bot tenta marcar horários, e se não fechar os 4 agendamentos vira proposta de serviço [00:06:02]. Um amigo em <em>med spa</em> teria passado de <strong>US$ 200 mil por mês</strong> vendendo a reativação no primeiro mês e anúncios depois (relato de terceiro, não verificado) [00:06:02].</li><li><strong>Para sites</strong>: duplicar um modelo pronto no GoHighLevel, trocar o logo e mostrar como &quot;primeiro rascunho&quot; [00:06:02].</li><li><strong>Tom conta mais que script</strong>: variar entonação, aceitar sair do roteiro, fazer conversa de pessoa [00:08:03].</li><li><strong>Marcar na hora, na ligação</strong>, digitando o nome e e-mail do prospecto no seu calendário. Nunca &quot;te mando o link&quot; [00:10:04].</li><li><strong>Reduzir falta na reunião</strong>: posicionar a reunião como entrega de valor (análise dos concorrentes e dos anúncios deles, ao vivo, na biblioteca de anúncios), e no dia mandar mensagem com gancho em vez de &quot;confirmando às 15h&quot;: <em>&quot;looked into all your competitors, found something crazy&quot;</em> [00:14:04].</li><li><strong>Fonte da lista</strong>: ele usa uma ferramenta de raspagem de empresas por cidade e nicho, que devolve nome, site, telefone, e-mail e número de avaliações; a legenda grafou o nome como &quot;outcraze&quot; [00:04:01].</li></ol><p>Em outro vídeo do mesmo canal, na biblioteca, ele liga ao vivo (&quot;Watch me book 5-7 meetings a day&quot;, 44:27, <a href="https://www.youtube.com/watch?v=CfMJ01KP_ns">vídeo</a>). <strong>Não li esse.</strong></p><h3 id="captar-clientes-marketing-eua-14-post-levanta-a-mão-venda-em-vídeo-de-5-minutos-frankie-entrevistado-por-itskeaton">1.4 Post &quot;levanta a mão&quot; + venda em vídeo de 5 minutos (Frankie, entrevistado por ItsKeaton)</h3><p><em>Lido:</em> <strong>&quot;He got 1,000 SaaS Clients in 12 Months Using 5-Minute Looms (No Sales Calls)&quot;</strong> (6:46, <a href="https://www.youtube.com/watch?v=RPd_3-CRyts">vídeo</a>).</p><ul><li><strong>Hand-raiser:</strong> adicionar ~100 pessoas do nicho no Facebook ou LinkedIn, postar uma frase de oferta e pedir comentário. <em>&quot;They think they found you rather than you strategically&quot;</em> [00:00:00]. O texto é uma <strong>promessa, não um serviço</strong>: &quot;50 a 100 pessoas este mês, com US$ 3.000 de verba, interessadas em conserto de vaso sanitário de emergência&quot; [00:00:00].</li><li><strong>Fechar por vídeo</strong>, sem ligação: mostra o resultado (áudio de uma ligação de cliente chegando, 10 segundos), o preço <strong>contextualizado pelo resultado</strong> (&quot;US$ 2.000 por mês e 50 a 100 ligações assim&quot;) e como pagar [00:02:00-00:04:00]. Primeiro um vídeo personalizado; depois que uma oferta fecha, <strong>um vídeo único</strong> para todos [00:04:00].</li><li>Alegações: <em>&quot;over a thousand agency clients&quot;</em> e um aluno com <strong>800 clientes em um ano</strong> sem falar com nenhum [00:02:00]. <strong>Sem prova no vídeo</strong>; é uma entrevista de um canal que vende SaaS.</li></ul><h3 id="captar-clientes-marketing-eua-15-seo-local-como-produto-clay-lawrence">1.5 SEO local como produto (Clay Lawrence)</h3><p><em>Lido:</em> <strong>&quot;Ranking a local business #1 on google from scratch&quot;</strong> (17:22, <a href="https://www.youtube.com/watch?v=BElTFsRoqYA">vídeo</a>). O criador diz ter feito <strong>US$ 58 mil em abril</strong> com a empresa Review Harvest [00:00:00]. Ensina o perfil do Google Business: nome com a palavra-chave, categoria principal, horários longos, serviços e produtos com páginas próprias, <strong>avaliações constantes</strong> e citações. Para captar cliente, o ponto é a <strong>reativação de avaliações</strong>: importar a lista de clientes antigos no HighLevel e pedir avaliação por SMS e e-mail [00:14:01]. Tem relação direta com o guia Google Meu Negócio, que cobre o tema em profundidade (inclusive o risco de suspensão do perfil, que este vídeo não menciona).</p><h3 id="captar-clientes-marketing-eua-16-atrair-por-conteúdo-e-filtrar-com-diagnóstico-henrique-avila-brasil">1.6 Atrair por conteúdo e filtrar com diagnóstico (Henrique Avila, Brasil)</h3><p><em>Lido:</em> <strong>&quot;Como é o Processo de Captação de Clientes na minha Agência de Marketing&quot;</strong> (15:05, <a href="https://www.youtube.com/watch?v=NA3bZqnSh5s">vídeo</a>). Não é dos EUA, mas é o contraponto honesto:</p><ul><li>Campanhas de mensagem funcionaram até janeiro, depois o <strong>CAC subiu</strong>: <em>&quot;muita gente aqui … e também muitos prestadores de serviço&quot;</em> [00:06:03].</li><li>Ele passou a <strong>empilhar funis</strong>: YouTube, Instagram e LinkedIn alimentando um <strong>diagnóstico gratuito</strong> [00:08:05]. Num post de isca no LinkedIn: 412 comentários e 489 seguidores novos em 24 horas, partindo de uma conta parada [00:00:01].</li><li>Agora filtra cliente: time comercial de 1 a 5 pessoas, visão de longo prazo [00:10:06].</li></ul><h3 id="captar-clientes-marketing-eua-17-por-que-o-pequeno-empresário-contrata-rodrigo-vincenzi-brasil">1.7 Por que o pequeno empresário contrata (Rodrigo Vincenzi, Brasil)</h3><p><em>Lido:</em> <strong>&quot;Como Vender Serviços de Marketing Digital para Negócios Locais&quot;</strong> (12:50, <a href="https://www.youtube.com/watch?v=_1EA8-JnhEs">vídeo</a>). Argumento reaproveitável: o dono contrata porque <em>&quot;ou ele não sabe fazer, ou não tem tempo para fazer, ou não tem tempo para aprender&quot;</em> [00:08:01]. E &quot;negócio local&quot; é quem vende localmente (inclusive indústria), <strong>não</strong> a padaria da esquina, que não tem orçamento [00:02:00]. Funciona igual nos EUA. O treinamento que ele vende ao final é publicidade; o conteúdo útil vem antes.</p><hr><h2 id="captar-clientes-marketing-eua-parte-2-benchmarking-a-biblioteca-de-anúncios-da-meta-eua">Parte 2 — Benchmarking: a Biblioteca de Anúncios da Meta (EUA)</h2><p>Dados brutos e links dos anúncios em <code>references/ads-library/2026-10-31-benchmark.md</code>.</p><h3 id="captar-clientes-marketing-eua-como-ler-esta-amostra">Como ler esta amostra</h3><div class="scroll"><table><thead><tr><th>O que a ferramenta mostra</th><th>O que <strong>não</strong> mostra</th></tr></thead><tbody><tr><td>Quem anuncia, título do anúncio, data de início, moeda</td><td>Texto do corpo, criativo, gasto, alcance, público, conversão</td></tr><tr><td>Quantos anúncios ativos casam com o termo</td><td>Quem está lucrando</td></tr></tbody></table></div><p>Cada consulta devolveu 25 anúncios, <strong>do mais novo para o mais antigo</strong>. Quase tudo começou há 0 a 2 dias, o que reflete a ordenação, não &quot;teste&quot;. Só dá para falar de longevidade quando a data é antiga (exemplos abaixo). Os totais são estimativas da própria ferramenta.</p><h3 id="captar-clientes-marketing-eua-mercado-de-agências-de-marketing-consulta-marketing-agency-get-more-leads-18300-anúncios-ativos">Mercado de agências de marketing (consulta <code>marketing agency get more leads</code>: ~18.300 anúncios ativos)</h3><div class="scroll"><table><thead><tr><th>Anunciante</th><th>Nicho</th><th>Título (promessa)</th><th>No ar há</th></tr></thead><tbody><tr><td>Kitchen &amp; Bath Marketing Company</td><td>Reforma de cozinha e banheiro</td><td>&quot;30 Remodeling Clients. 90 Days. <strong>Guaranteed.</strong>&quot;</td><td>65 dias</td></tr><tr><td>RevEngine</td><td>Telhado</td><td>&quot;A Roofing Agency Paid <strong>On Your Results, Not A Retainer.</strong>&quot; (7 anúncios)</td><td>26 dias</td></tr><tr><td>Prestige Chiro Marketing</td><td>Quiropraxia</td><td>&quot;<strong>Don&#x27;t Pay Us Until We Perform</strong>&quot;</td><td>28 dias</td></tr><tr><td>Response Mine Interactive</td><td>Várias filiais (pelo título, &quot;by branch&quot;)</td><td>&quot;Know your <strong>cost per appointment</strong> by branch&quot; / &quot;Switch agencies <strong>without carrying the risk</strong>&quot;</td><td>2 dias</td></tr><tr><td>Fuze7 Digital Marketing</td><td>Serviços que cotam (pelo título)</td><td>&quot;Stop being the fourth bid.&quot;</td><td>9 dias</td></tr><tr><td>Ogmentor</td><td>Não dá para saber (o título sugere público de agências)</td><td>&quot;Grow your margins without another account manager&quot;</td><td>11 dias</td></tr><tr><td>Ark Media Agency</td><td>Serviços para proprietários de imóvel (pelo título)</td><td>&quot;Generate More <strong>Qualified Homeowner Opportunities</strong>&quot;</td><td>1 dia</td></tr><tr><td>Abelino Media</td><td>Conteúdo</td><td>&quot;Content → Leads flood in&quot;</td><td>1 dia</td></tr></tbody></table></div><p>Consulta <code>lead generation for contractors home services</code> (~200 anúncios): Media Jet (&quot;<strong>Get your first landscaping lead in 7 days</strong>&quot;), Babio AI (&quot;Exclusive <strong>HVAC Leads From $60</strong>&quot;), Try Home Launch (&quot;<strong>$75 Per Confirmed Roof Replacement Estimate</strong>&quot;, em CAD), C&amp;R Services (&quot;100+ qualified kitchen &amp; bath remodeling estimates&quot;), Marova Media (&quot;$2k in ads → $114k+ in jobs&quot;, em GBP), Leadmotor (&quot;5 Systems $197/mo&quot;).</p><h3 id="captar-clientes-marketing-eua-padrões-que-aparecem-na-amostra">Padrões que aparecem na amostra</h3><ol><li><strong>Nicho explícito no título.</strong> Quase nenhum diz &quot;marketing digital&quot;. Dizem <em>roofing</em>, <em>HVAC</em>, <em>chiropractic</em>, <em>kitchen &amp; bath</em>, <em>landscaping</em>. É o que o Afonso recomenda no lado BR (ICP definido antes de abordar).</li><li><strong>Inversão de risco.</strong> Garantia (&quot;Guaranteed&quot;, &quot;Money Back&quot;), <strong>pagamento só quando entrega</strong> (&quot;Don&#x27;t Pay Us Until We Perform&quot;, &quot;Paid On Your Results&quot;) e <strong>preço por unidade</strong> (&quot;$75 per confirmed estimate&quot;, &quot;from $60&quot;). Isso é o mesmo movimento do script do Pavlo (&quot;4 a 5 orçamentos, de graça&quot;), só que em anúncio.</li><li><strong>Entregável é &quot;orçamento agendado&quot;, não &quot;lead&quot; nem &quot;curtida&quot;.</strong> <em>&quot;Booked Estimates. Not Likes.&quot;</em> (Josiah), <em>&quot;Quotable Lead&quot;</em> (Verdapt), <em>&quot;cost per appointment&quot;</em> (Response Mine).</li><li><strong>Número + prazo.</strong> &quot;30 clients, 90 days&quot;, &quot;first lead in 7 days&quot;, &quot;$2k → $114k&quot;. Consistente com a fórmula do Frankie (&quot;50 a 100 ligações por US$ 2.000&quot;).</li><li><strong>Parte dos anúncios parece mirar outras agências, não o dono do negócio</strong> (Ogmentor; Hyper Fuel Media com &quot;Don&#x27;t Get STUCK With an Empty GHL Account&quot;). É uma leitura só do título, sem ver o anúncio: pode haver concorrência vendendo para o próprio freelancer.</li><li><strong>Preço baixo de pacote</strong> circula: US$ 197/mês, US$ 297/mês com site grátis (Lever Launch). Isso ancora o que o dono de negócio local acha normal pagar.</li></ol><h3 id="captar-clientes-marketing-eua-o-que-o-benchmark-não-consegue-dizer">O que o benchmark <strong>não</strong> consegue dizer</h3><ul><li>Se esses anunciantes <strong>faturam</strong>. Só que estão <strong>gastando</strong> para vender.</li><li>O texto, a promessa por extenso e o criativo. Os links <code>ver</code> no arquivo bruto levam ao anúncio para ver isso à mão.</li><li>Idade real: só o anúncio da Kitchen &amp; Bath (65 dias) e os da RevEngine e Prestige (26 e 28 dias) mostram alguma permanência na amostra. O mais antigo é a data de <strong>um</strong> anúncio, não do anunciante.</li></ul><hr><h2 id="captar-clientes-marketing-eua-parte-3-plano-sugerido-síntese-minha-não-é-de-um-vídeo">Parte 3 — Plano sugerido (síntese minha, não é de um vídeo)</h2><p>Isto junta o que as duas fontes têm em comum. É uma hipótese para testar, não uma receita comprovada.</p><ol><li><strong>Escolha um nicho de serviço doméstico</strong> com ticket alto (telhado, HVAC, reforma). Os anúncios mostram concorrência ali, o que indica demanda; o Afonso (lado BR) argumenta que ticket médio-alto aceita pagar recorrência maior.</li><li><strong>Escreva a oferta como resultado + prazo + risco</strong>, ao estilo dos anúncios: &quot;X orçamentos agendados em 30 dias, ou não cobra&quot;.</li><li><strong>Monte uma lista de 100 contatos</strong> (Google Maps por cidade e nicho, com menos de 100 avaliações e sem site, como o Mussoi faz no lado BR).</li><li><strong>Três toques em canais diferentes</strong> (e-mail, ligação, Loom) por prospecto, com vídeo ou auditoria curta como valor inicial (Payton).</li><li><strong>Marque a reunião na própria ligação</strong> e reduza falta com gancho de valor (Pavlo).</li><li><strong>Meça</strong> por canal: contatos → respostas → reuniões → fechamentos → valor (Lead Gen Jay).</li><li><strong>Decida em 30 dias</strong> com os números, e não com a sensação.</li></ol><p>Do lado de anúncio pago para o próprio negócio, a biblioteca já tem o método de campanha de mensagem (Henrique Oliveira) no guia de Low Ticket e no guia Captar Clientes para IA no WhatsApp.</p><hr><h2 id="captar-clientes-marketing-eua-parte-4-riscos-e-lacunas-que-os-vídeos-não-cobrem">Parte 4 — Riscos e lacunas que os vídeos não cobrem</h2><blockquote><p>Isto <strong>não é aconselhamento jurídico</strong>. Confirme com advogado ou contador americano antes de operar.</p></blockquote><div class="scroll"><table><thead><tr><th>Tema</th><th>Por que importa</th><th>Onde os vídeos erram ou omitem</th></tr></thead><tbody><tr><td><strong>Assunto de e-mail enganoso</strong></td><td>A lei americana de e-mail comercial (CAN-SPAM) proíbe assunto que engane sobre o conteúdo. Simular resposta com &quot;re:&quot; em e-mail que não é resposta cai nessa zona</td><td>Payton recomenda o &quot;re:&quot; como hack [00:10:04]</td></tr><tr><td><strong>Fingir ser cliente</strong></td><td>Abrir a ligação com &quot;você quebrou a voz, vocês estão abertos?&quot; sem saber, para ganhar um &quot;sim&quot;, é artifício. Pode irritar e custar a reputação do nicho pequeno</td><td>Pavlo ensina isso e o Mussoi copia no lado BR</td></tr><tr><td><strong>Ligação e SMS automáticos</strong></td><td>A TCPA restringe ligação autodiscada, voz pré-gravada (voicemail drop) e SMS sem consentimento, e há lista Do-Not-Call. Regras diferem para número comercial e pessoal</td><td>Lead Gen Jay recomenda voicemail drop e SMS sem tocar no assunto [00:08:00]</td></tr><tr><td><strong>E-mail em volume</strong></td><td>Remetente precisa de endereço físico, descadastro funcional e domínio com reputação</td><td>Ninguém detalha</td></tr><tr><td><strong>Contrato e imposto</strong></td><td>Cobrar em dólar de empresa dos EUA sendo estrangeiro tem implicações fiscais e de formulário</td><td>Nenhum vídeo cobre. O guia Upwork já aponta a lacuna fiscal</td></tr><tr><td><strong>Alegações de renda</strong></td><td>Quase todo criador vende curso. US$ 58 mil, US$ 150 mil, 1.000 clientes: sem comprovação</td><td>Veja Números e Ceticismo</td></tr></tbody></table></div><p><strong>Lacunas de evidência:</strong> nenhuma fonte deu CAC, taxa de resposta real de cold e-mail ou ligação nos EUA, nem quanto tempo leva até o primeiro cliente. As taxas em vídeos (&quot;7 reuniões por dia&quot;) são do próprio vendedor.</p><hr><h2 id="captar-clientes-marketing-eua-índice-o-que-foi-lido-e-o-que-só-foi-achado">Índice: o que foi lido e o que só foi achado</h2><p><strong>Lido na íntegra nesta sessão</strong> (10 vídeos EUA e BR):</p><div class="scroll"><table><thead><tr><th>Vídeo</th><th>Canal</th><th>Caminho local</th></tr></thead><tbody><tr><td>Alex Hormozi&#x27;s $100M Cold Outreach Strategy Revealed</td><td>Lead Gen Jay</td><td><code>references/youtube/lead-gen-jay/</code></td></tr><tr><td>Cold Calling AI Agency Script That Gets 7 Meetings/day</td><td>Pavlo</td><td><code>references/youtube/pavlo/</code></td></tr><tr><td>Starting From ZERO? Do THIS to Get Clients</td><td>Payton Clark Smith</td><td><code>references/youtube/payton-clark-smith/</code></td></tr><tr><td>Ranking a local business #1 on google from scratch</td><td>Clay Lawrence</td><td><code>references/youtube/clay-lawrence/</code></td></tr><tr><td>He got 1,000 SaaS Clients in 12 Months Using 5-Minute Looms</td><td>ItsKeaton</td><td><code>references/youtube/itskeaton/</code></td></tr><tr><td>Como é o Processo de Captação de Clientes na minha Agência</td><td>Henrique Avila</td><td><code>references/youtube/henrique-avila/</code></td></tr><tr><td>Como Vender Serviços de Marketing Digital para Negócios Locais</td><td>Rodrigo Vincenzi</td><td><code>references/youtube/rodrigo-vincenzi/</code></td></tr></tbody></table></div><p><strong>Na biblioteca e relevantes, mas não lidos nesta sessão</strong> (abra a transcrição antes de citar):</p><div class="scroll"><table><thead><tr><th>Vídeo</th><th>Canal</th><th>Duração</th><th>Link</th></tr></thead><tbody><tr><td>Watch me book 5-7 meetings a day (ai agency cold calling)</td><td>Pavlo</td><td>44:27</td><td><a href="https://www.youtube.com/watch?v=CfMJ01KP_ns">YouTube</a></td></tr><tr><td>70 clients from 100 Cold Outreach in 1 hour of work</td><td>GuideMeDiscover</td><td>30:22</td><td><a href="https://www.youtube.com/watch?v=9yVKNBY-59g">YouTube</a></td></tr><tr><td>The B2B Cold Call Scripts That Actually Book Meetings</td><td>Trent Dressel</td><td>9:34</td><td><a href="https://www.youtube.com/watch?v=0KvXQ-NnhAE">YouTube</a></td></tr><tr><td>Copy This Cold Calling Script to Book More Meetings</td><td>Sell Better</td><td>10:47</td><td><a href="https://www.youtube.com/watch?v=A_881tlXXa0">YouTube</a></td></tr><tr><td>From Non-Technical to $300,000 Per Month with AI Automation</td><td>Liam Ottley</td><td>32:42</td><td><a href="https://www.youtube.com/watch?v=0REJDVvBvWQ">YouTube</a></td></tr><tr><td>How He Gets $2K/mo SaaS Clients Organically (No Ads)</td><td>ItsKeaton</td><td>5:33</td><td><a href="https://www.youtube.com/watch?v=aDZLzks_Tiw">YouTube</a></td></tr><tr><td>Ranking a local business #1 … (Merchynt AI SEO)</td><td>Clay Lawrence</td><td>—</td><td>índice em <code>references/youtube/index.json</code></td></tr><tr><td>Como Prospectar Clientes e Conseguir 200 Reuniões Por Mês (lido só o início)</td><td>Victor Peixoto</td><td>30:46</td><td><a href="https://www.youtube.com/watch?v=rPTLbX4Iu9I">YouTube</a></td></tr><tr><td>Como funciona o processo de prospecção da minha agência</td><td>Henrique Avila</td><td>19:04</td><td><a href="https://www.youtube.com/watch?v=ky-U_AFXHuM">YouTube</a></td></tr></tbody></table></div><p><strong>Pesquisa na web:</strong> a busca disponível aqui é restrita aos EUA e devolveu quase só blogs de fornecedores de ferramentas, sem vídeos do YouTube nem dados independentes. Não usei esses resultados como evidência.</p><p><strong>Para ampliar:</strong> se o domínio <code>youtube.com</code> for liberado na política de rede do ambiente, dá para rodar a skill <code>youtube-refs</code> e puxar vídeos novos (por exemplo, canais de agência de leads para home services nos EUA, que a biblioteca quase não tem).</p><hr><p>*Fontes: transcrições em <code>references/youtube/</code> (legendas automáticas do YouTube) e a Biblioteca de Anúncios da Meta, consultada em 2026-10-31. Cada trecho é rastreável ao vídeo e ao timestamp.*</p>
+<footer>
+  Extraído da leitura integral das transcrições em <code>references/youtube/</code>. Cada afirmação
+  é rastreável ao vídeo e timestamp de origem.<br>
+  Transcrições automáticas — números e nomes de ferramentas podem conter erros. Parte do
+  <a href="https://github.com/analuisamoutinho/estudos">repositório CORTEX</a>.<br>
+  <a href="index.html">← voltar para a lista de tópicos</a>
+</footer>
+</main>
+</div>
+<script>
+(function(){
+  var LS_KEY = 'estudos-lidos-v1';
+  function getLidos(){ try{ return JSON.parse(localStorage.getItem(LS_KEY)||'{}'); }catch(e){ return {}; } }
+  function setLido(stem,val){
+    var l=getLidos();
+    if(val){ l[stem]=Date.now(); } else { delete l[stem]; }
+    localStorage.setItem(LS_KEY, JSON.stringify(l));
+    return l;
+  }
+  window.estudosLidos = {get:getLidos, set:setLido};
+})();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var btn = document.getElementById('lido-toggle');
+  var stem = btn.getAttribute('data-stem');
+  function render(){
+    var lidos = window.estudosLidos.get();
+    var isLido = !!lidos[stem];
+    btn.classList.toggle('is-lido', isLido);
+    btn.querySelector('.lido-toggle-label').textContent = isLido ? 'Lido' : 'Marcar como lido';
+  }
+  btn.addEventListener('click', function(){
+    var lidos = window.estudosLidos.get();
+    window.estudosLidos.set(stem, !lidos[stem]);
+    render();
+  });
+  render();
+});
+</script>

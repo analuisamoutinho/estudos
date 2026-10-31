@@ -12,6 +12,8 @@ completa, com timestamps, indexada e pesquisável.
 | Tópico | O que cobre |
 |---|---|
 | 🤖 [Agência de IA](guias/agencia-ia.md) | vender agentes e automação — o caminho mais rápido para caixa |
+| 🇺🇸 [Captar Clientes de Marketing nos EUA](guias/captar-clientes-marketing-eua.md) | outreach, oferta e benchmark da Biblioteca de Anúncios |
+| 💬 [Captar Clientes para IA no WhatsApp](guias/captar-clientes-ia-whatsapp.md) | cliente certo, preço e benchmark BR e EUA |
 | 🛠️ [Ferramentas de IA na Prática](guias/ferramentas-de-ia.md) | como criadores realmente usam Claude, Claude Code e N8N |
 | 🧲 [Aquisição de Clientes para SaaS](guias/aquisicao-saas.md) | como conseguir assinantes — os primeiros 100 |
 | 💰 [Serviços Digitais: R$1k/dia](guias/servicos-mil-dia.md) | a matemática real de faturar R$1.000 por dia |

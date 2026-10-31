@@ -1,0 +1,265 @@
+<title>Captar Clientes para IA de Atendimento no WhatsApp · CORTEX</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="cortex-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF1F4; --surface:#F8FAFC; --surface-raised:#FFFFFF; --surface-muted:#E2E9EF;
+  --ink:#243746; --ink-soft:#546777; --ink-faint:#7E90A0; --text-inverse:#F8FAFC;
+  --border:#CCD6DE; --border-control:#8294A3;
+  --action:#344F65; --action-hover:#263F54; --focus:#396E98;
+  --success:#28644F; --success-bg:#E5F0EA;
+  --warning:#805B1D; --warning-bg:#F4EDDF;
+  --danger:#A63D4B; --danger-bg:#F8E9EB;
+  --info:#345F83; --info-bg:#E3ECF4;
+  --glass-clear:rgba(255,255,255,.10); --glass-frosted:rgba(248,250,252,.72); --glass-liquid:rgba(255,255,255,.16);
+  --blur-clear:12px; --blur-frosted:28px; --blur-liquid:24px;
+  --glass-rim:inset 0 1px 0 rgba(255,255,255,.65),inset 1px 0 0 rgba(255,255,255,.16);
+  --atmosphere:radial-gradient(ellipse at 85% 0%,#9EAFBB 0%,transparent 58%),linear-gradient(125deg,#294355 0%,#526C80 54%,#8A9FAE 100%);
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'SFMono-Regular',Consolas,'Liberation Mono',monospace;
+  --radius-sm:.5rem; --radius-control:.875rem; --radius-card:1.75rem; --radius-stage:2rem; --radius-pill:999px;
+  --shadow-soft:0 8px 30px rgba(36,55,70,.05);
+  --shadow-raised:0 24px 64px rgba(25,44,60,.14);
+  --shadow-glass:0 16px 40px rgba(17,34,49,.15);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --press:120ms; --fast:180ms; --reveal:280ms;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#131A21; --surface:#1A222B; --surface-raised:#202A34; --surface-muted:#25303B;
+    --ink:#E9EFF4; --ink-soft:#AAB9C6; --ink-faint:#758795;
+    --border:#2C3945; --border-control:#4B5C6C;
+    --action:#89ABC6; --action-hover:#A6C3DA; --focus:#6FA9D6;
+    --success:#63C09E; --success-bg:#132621;
+    --warning:#DDB169; --warning-bg:#2A2313;
+    --danger:#E38F9A; --danger-bg:#2B181B;
+    --info:#8FB6D8; --info-bg:#15222E;
+    --glass-frosted:rgba(26,34,43,.72); --glass-clear:rgba(255,255,255,.06); --glass-liquid:rgba(255,255,255,.08);
+    --glass-rim:inset 0 1px 0 rgba(255,255,255,.10),inset 1px 0 0 rgba(255,255,255,.05);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131A21; --surface:#1A222B; --surface-raised:#202A34; --surface-muted:#25303B;
+  --ink:#E9EFF4; --ink-soft:#AAB9C6; --ink-faint:#758795;
+  --border:#2C3945; --border-control:#4B5C6C;
+  --action:#89ABC6; --action-hover:#A6C3DA; --focus:#6FA9D6;
+  --success:#63C09E; --success-bg:#132621;
+  --warning:#DDB169; --warning-bg:#2A2313;
+  --danger:#E38F9A; --danger-bg:#2B181B;
+  --info:#8FB6D8; --info-bg:#15222E;
+  --glass-frosted:rgba(26,34,43,.72); --glass-clear:rgba(255,255,255,.06); --glass-liquid:rgba(255,255,255,.08);
+  --glass-rim:inset 0 1px 0 rgba(255,255,255,.10),inset 1px 0 0 rgba(255,255,255,.05);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:16px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px;display:flex;gap:48px;align-items:flex-start}
+main{flex:1;min-width:0;max-width:72ch;padding:44px 0 110px}
+
+nav{
+  position:sticky; top:0; width:224px; flex:none;
+  padding:56px 0 40px; font-family:var(--mono); font-size:11px;
+  max-height:100vh; overflow-y:auto;
+}
+nav p{
+  margin:0 0 12px; text-transform:uppercase; letter-spacing:.14em;
+  color:var(--ink-faint); font-size:9.5px;
+}
+nav a{
+  display:block; padding:6px 0 6px 11px; border-left:2px solid var(--border);
+  color:var(--ink-soft); text-decoration:none; line-height:1.35;
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease);
+}
+nav a:hover{border-left-color:var(--action);color:var(--action)}
+nav a b{display:block;font-weight:600;color:var(--ink);letter-spacing:.01em}
+nav a span{display:block;color:var(--ink-faint);font-size:9.5px;margin-top:1px}
+nav .sub{padding-left:22px;border-left-color:transparent;font-size:10px}
+nav .sub:hover{border-left-color:var(--border)}
+@media(max-width:960px){nav{display:none}.wrap{gap:0}main{max-width:none;padding-top:32px}}
+
+h1,h2,h3,h4,h5{font-family:var(--sans);text-wrap:balance;line-height:1.18;letter-spacing:-.02em}
+h1{font-size:clamp(28px,5vw,42px);font-weight:750;margin:0 0 6px}
+h2{
+  font-size:clamp(22px,3.4vw,29px); font-weight:750; margin:0 0 8px;
+  padding-top:24px;
+}
+h3{font-size:19px;font-weight:700;margin:44px 0 14px;padding-top:18px;border-top:1px solid var(--border)}
+h4{font-size:16px;font-weight:680;margin:28px 0 10px}
+h5{font-size:14px;font-weight:680;margin:22px 0 8px;color:var(--ink-soft)}
+
+.topic{margin:76px 0 0;padding-top:28px;border-top:2px solid var(--border-control)}
+.topic .kicker{
+  font-family:var(--mono);font-size:10px;text-transform:uppercase;
+  letter-spacing:.17em;color:var(--action);margin:0 0 10px;
+}
+
+p{margin:0 0 17px}
+a{color:var(--action);text-decoration-thickness:1px;text-underline-offset:2px}
+strong{font-weight:640}
+hr{border:0;height:1px;background:var(--border);margin:38px 0}
+
+ul,ol{margin:0 0 18px;padding-left:22px}
+li{margin-bottom:7px}
+li::marker{color:var(--ink-faint)}
+ul ul,ol ol,ul ol,ol ul{margin:7px 0 0}
+ul.check{list-style:none;padding-left:0}
+ul.check li{position:relative;padding-left:29px}
+ul.check li span{
+  position:absolute;left:0;top:.36em;width:15px;height:15px;
+  border:1.5px solid var(--ink-faint);border-radius:4px;
+}
+
+blockquote{
+  margin:22px 0;padding:15px 20px;background:var(--surface);
+  border-left:3px solid var(--action);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+}
+blockquote p{margin:0 0 9px;font-size:16px;color:var(--ink-soft)}
+blockquote p:last-child{margin:0}
+blockquote em{color:var(--ink);font-style:italic}
+
+.scroll{overflow-x:auto;margin:24px 0;-webkit-overflow-scrolling:touch}
+table{
+  border-collapse:collapse;width:100%;font-family:var(--sans);
+  font-size:13.5px;line-height:1.5;font-variant-numeric:tabular-nums;
+}
+th{
+  text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);
+  padding:0 14px 9px 0;border-bottom:1.5px solid var(--border-control);white-space:nowrap;
+}
+td{padding:11px 14px 11px 0;border-bottom:1px solid var(--border);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td:first-child{color:var(--ink);font-weight:550}
+table code{font-size:12px}
+
+code{
+  font-family:var(--mono);font-size:.86em;background:var(--surface-muted);
+  padding:.14em .38em;border-radius:var(--radius-sm)
+}
+pre{
+  margin:0;background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-sm);padding:17px 19px;overflow-x:auto;
+}
+pre code{background:none;padding:0;font-size:12.5px;line-height:1.72;color:var(--ink-soft)}
+
+/* --- hero: banner de página inteira (edge-to-edge) com o gradiente
+   "atmosphere" do design system. Fica fora de .wrap para não parecer um
+   cartão recortado sobre o fundo — é a própria página, não uma moldura. --- */
+.hero{background:var(--atmosphere);color:var(--text-inverse)}
+.hero-inner{max-width:1240px;margin:0 auto;padding:52px 20px 40px}
+.eyebrow{
+  font-family:var(--mono);font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.19em;color:rgba(248,250,252,.7);margin:0 0 15px;
+}
+.hero h1{color:#F8FAFC}
+.lede{font-size:18px;color:rgba(248,250,252,.85);margin:16px 0 26px;max-width:60ch}
+.stats{display:flex;flex-wrap:wrap;margin:0;border-top:1px solid rgba(248,250,252,.22)}
+.stat{padding:14px 28px 14px 0;margin-right:28px;border-right:1px solid rgba(248,250,252,.22)}
+.stat:last-child{border-right:0;margin-right:0}
+.stat b{
+  display:block;font-family:var(--sans);font-size:24px;font-weight:730;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1;color:#fff;
+}
+.stat span{
+  display:block;font-family:var(--mono);font-size:9.5px;text-transform:uppercase;
+  letter-spacing:.13em;color:rgba(248,250,252,.6);margin-top:4px;
+}
+footer{
+  margin-top:64px;padding-top:22px;border-top:1px solid var(--border);
+  font-family:var(--mono);font-size:11px;color:var(--ink-faint);line-height:1.7;
+}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+/* --- progresso de leitura: vive dentro do hero (fundo "atmosphere"),
+   por isso parte de vidro claro em vez dos tokens de superfície comuns --- */
+.lido-toggle{
+  display:inline-flex;align-items:center;gap:8px;margin:18px 0 0;padding:9px 16px 9px 12px;
+  font-family:var(--sans);font-size:13px;font-weight:600;color:#fff;
+  background:var(--glass-clear);backdrop-filter:blur(var(--blur-clear));-webkit-backdrop-filter:blur(var(--blur-clear));
+  border:1.5px solid rgba(248,250,252,.32);border-radius:var(--radius-pill);cursor:pointer;
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease),background var(--fast) var(--ease);
+}
+.lido-toggle:hover{border-color:#fff;color:#fff}
+.lido-toggle .lido-toggle-icon{
+  display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
+  border-radius:50%;border:1.5px solid rgba(248,250,252,.6);font-size:11px;line-height:1;
+  color:transparent;transition:all var(--fast) var(--ease);
+}
+.lido-toggle.is-lido{background:var(--success-bg);border-color:var(--success);color:var(--success)}
+.lido-toggle.is-lido .lido-toggle-icon{
+  background:var(--success);border-color:var(--success);color:var(--surface);
+}
+
+/* --- marca --- */
+h1.brand{display:flex;align-items:center;gap:14px;letter-spacing:.015em}
+.brandmark{
+  width:50px;height:50px;flex:none;border-radius:var(--radius-control);
+  box-shadow:var(--shadow-soft);
+}
+@media(max-width:600px){.brandmark{width:40px;height:40px;border-radius:var(--radius-sm)}}
+</style>
+<div class="hero" id="topo">
+<div class="hero-inner">
+  <p class="eyebrow">CORTEX · Guia individual</p>
+  <h1>💬 Captar Clientes para IA de Atendimento no WhatsApp</h1>
+  <p class="lede">Como conseguir clientes para um serviço de IA de atendimento no WhatsApp: o que os vídeos da biblioteca ensinam sobre cliente certo, abordagem, preço e entrega, e o que os anúncios ativos no Brasil e nos EUA mostram do mercado.</p>
+  <div class="stats">
+    <div class="stat"><b>vender atendimento por IA, BR e EUA</b><span>foco do guia</span></div>
+  </div>
+  <button type="button" id="lido-toggle" class="lido-toggle" data-stem="captar-clientes-ia-whatsapp">
+    <span class="lido-toggle-icon">✓</span><span class="lido-toggle-label">Marcar como lido</span>
+  </button>
+</div>
+</div>
+<div class="wrap">
+<nav><p>Neste guia</p><a href="#topo"><b>Início</b></a><a href="#captar-clientes-ia-whatsapp-11-quem-é-o-cliente-certo-afonso-lopes">1.1 Quem é o cliente certo (Afonso Lopes)</a><a href="#captar-clientes-ia-whatsapp-12-como-chegar-google-maps-reativação-de-base-joão-mussoi">1.2 Como chegar: Google Maps + reativação de base (João Mussoi)</a><a href="#captar-clientes-ia-whatsapp-13-preço-e-posicionamento-três-escolas-que-divergem">1.3 Preço e posicionamento: três escolas que divergem</a><a href="#captar-clientes-ia-whatsapp-14-atrair-com-anúncio-para-o-whatsapp-henrique-oliveira">1.4 Atrair com anúncio para o WhatsApp (Henrique Oliveira)</a><a href="#captar-clientes-ia-whatsapp-15-conteúdo-e-diagnóstico-henrique-avila">1.5 Conteúdo e diagnóstico (Henrique Avila)</a><a href="#captar-clientes-ia-whatsapp-16-prospecção-estruturada-victor-peixoto-lido-até-001403">1.6 Prospecção estruturada (Victor Peixoto, lido até 00:14:03)</a><a href="#captar-clientes-ia-whatsapp-17-o-que-o-guia-agência-de-ia-já-cobre-não-repeti">1.7 O que o guia Agência de IA já cobre (não repeti)</a><a href="#captar-clientes-ia-whatsapp-quem-anuncia">Quem anuncia</a><a href="#captar-clientes-ia-whatsapp-padrões-nos-títulos">Padrões nos títulos</a><a href="#captar-clientes-ia-whatsapp-permanência-único-sinal-de-duração-na-amostra">Permanência (único sinal de duração na amostra)</a><a href="#captar-clientes-ia-whatsapp-o-que-a-biblioteca-de-anúncios-mostra">O que a Biblioteca de Anúncios mostra</a><a href="#captar-clientes-ia-whatsapp-o-que-isso-sugere-inferência-minha-não-está-nas-fontes">O que isso sugere (inferência minha, não está nas fontes)</a><a href="#captar-clientes-ia-whatsapp-como-captar-cliente-de-ia-nos-eua-com-o-que-a-biblioteca-tem">Como captar cliente de IA nos EUA com o que a biblioteca tem</a></nav>
+<main>
+<p>Como atrair clientes para uma <strong>IA de atendimento</strong> (agente que responde, qualifica e agenda por WhatsApp), no <strong>Brasil</strong> e nos <strong>EUA</strong>. Complementa o guia Agência de IA, que cobre o passo a passo do primeiro cliente, os 8 canais do Well Pires e a stack. Aqui o foco é <strong>captação, posicionamento, preço e o que o mercado anuncia</strong>.</p><blockquote><p><strong>Leia isto antes.</strong> 1. <strong>Nenhum vídeo novo foi baixado.</strong> A rede desta sessão bloqueia o YouTube (<code>yt-dlp</code> recebeu 403 do proxy). Tudo vem dos vídeos que <strong>já estavam</strong> na biblioteca. &quot;Melhores&quot; = mais relevantes entre os 540, sem medir visualizações. 2. <strong>Só o que está marcado &quot;lido&quot; foi lido na íntegra nesta sessão.</strong> O resto foi achado pelo título (índice no fim) e não é evidência aqui. 3. <strong>Legendas automáticas, e quase todo criador vende curso, comunidade ou ferramenta.</strong> Valores e resultados são alegação do vendedor. Onde a legenda truncou um número, eu digo em vez de adivinhar. Nas citações, limpei erros óbvios da legenda automática (por exemplo &quot;A&quot; no lugar de &quot;IA&quot;), sem mudar o sentido. 4. <strong>A Biblioteca de Anúncios mostra quem anuncia, não quem lucra</strong>, e não devolve texto nem criativo.</p></blockquote><hr><h2 id="captar-clientes-ia-whatsapp-resumo">Resumo</h2><ol><li><strong>Criar o agente é a parte fácil.</strong> Afonso Lopes: <em>&quot;criar o agente de IA é uma das partes mais fáceis&quot;</em> [00:02:01]. O que falta é saber <strong>o que vender, para quem e como chegar</strong>.</li><li><strong>Cliente certo = alto volume de leads, ticket alto e quem já paga tráfego.</strong> Cliente barato (barbearia) acha caro; clínica, estética e imobiliária pagam.</li><li><strong>A oferta que mais aparece nos vídeos é &quot;reativação de base&quot;</strong>: o bot chama os leads antigos que estão parados no CRM e marca visitas. É um resultado fácil de prometer e de demonstrar (Mussoi, Pavlo).</li><li><strong>Prospecção barata e local</strong>: Google Maps + ligação ou visita, antes de qualquer anúncio (Mussoi; NoCode StartUp no guia Agência de IA).</li><li><strong>Preço: os criadores divergem.</strong> Setup alto sem mensalidade (Felipe Fontoura, 2024) × setup baixo ou zero com recorrência (Afonso) × valor por visita (Mussoi). Veja a tabela.</li><li><strong>No Brasil, o anúncio de IA para WhatsApp é de dois tipos</strong>: ferramentas (SaaS) e <strong>quem ensina a vender IA</strong>. Na amostra de 10 anunciantes, pelo menos 4 parecem ensino ou comunidade (pelo título).</li><li><strong>Nos EUA, o produto é vendido como telefone/voz</strong> (&quot;never miss a call&quot;, &quot;receptionist&quot;), e <strong>vários anúncios convidam a ligar para testar a IA</strong>. Nenhum título cita WhatsApp.</li><li><strong>Risco real e pouco falado</strong>: reativar base por WhatsApp envolve dados pessoais (LGPD no Brasil) e risco de bloqueio do número; nos EUA, regras de ligação e SMS automáticos (TCPA). Veja a Parte 5.</li></ol><hr><h2 id="captar-clientes-ia-whatsapp-parte-1-brasil-o-que-os-vídeos-ensinam">Parte 1 — Brasil: o que os vídeos ensinam</h2><h3 id="captar-clientes-ia-whatsapp-11-quem-é-o-cliente-certo-afonso-lopes">1.1 Quem é o cliente certo (Afonso Lopes)</h3><p><em>Lido:</em> <strong>&quot;AGENTES de IA no WHATSAPP em 2026: Quanto Cobrar, Como Entregar e Como Escalar&quot;</strong> (25:54, <a href="https://www.youtube.com/watch?v=BV98gX1ffcY">vídeo</a>). Ele termina oferecendo uma aula gratuita, ou seja, o vídeo é isca de funil.</p><ul><li><strong>&quot;Ilusão&quot;</strong>: criar o agente e sair abordando empresas <em>&quot;não funciona&quot;</em> [00:02:01]. A estratégia é ter clareza sobre <strong>o que vende, para quem, e como chega nele</strong> [00:02:01].</li><li><strong>ICP</strong> (perfil de cliente ideal): descrição de quem tem mais chance de comprar, pagar bem e ficar [00:04:01].</li><li>Quatro sinais de cliente bom [00:16:07-00:20:08]:</li><ul><li><strong>Já faz tráfego pago</strong>: não pode desperdiçar lead que custou dinheiro.</li><li><strong>Alto volume de leads por dia</strong>: ele fala de 50, 60, 80 por dia; com 3 a 10 a dor não existe.</li><li><strong>Ticket médio a alto</strong>: clínica de estética, transplante capilar. Barbearia (serviço de R$ 50 a R$ 150) acha R$ 1.000 por mês caro.</li><li><strong>Já tem secretária ou atendente</strong>: já reconhece o problema.</li></ul><li>Ele prefere <em>&quot;o game do alto ticket&quot;</em>: 10 clientes a R$ 2.000 = R$ 20.000 por mês; uma clínica de estética chegou a pagar R$ 2.800 por mês [00:20:08].</li></ul><h3 id="captar-clientes-ia-whatsapp-12-como-chegar-google-maps-reativação-de-base-joão-mussoi">1.2 Como chegar: Google Maps + reativação de base (João Mussoi)</h3><p><em>Lido:</em> <strong>&quot;Como Vender IA Usando Apenas o Google Maps e o GoHighLevel&quot;</strong> (23:48, <a href="https://www.youtube.com/watch?v=IGCW99Hoce0">vídeo</a>). O vídeo leva a um teste gratuito do GoHighLevel e a uma comunidade com modelos do autor, então ele tem interesse comercial na ferramenta.</p><p><strong>Por que não anúncio:</strong> quem começa não tem verba para lotar a agenda; a prospecção pelo Google é gratuita ou muito barata, segundo ele, e dá leads ilimitados [00:00:00-00:02:01].</p><p><strong>Critérios de lista</strong> (basta um) [00:02:01-00:04:02]:</p><div class="scroll"><table><thead><tr><th>Critério</th><th>Raciocínio dele</th></tr></thead><tbody><tr><td>Menos de 100 avaliações</td><td>Quem tem muitas já tem agência</td></tr><tr><td>Menos de 4,8 estrelas</td><td>Quem tem 5 já faz bem</td></tr><tr><td>Sem site</td><td>Já deixa dinheiro na mesa (upsell futuro)</td></tr><tr><td>Anos de mercado</td><td>Mais tempo = base maior de leads antigos</td></tr></tbody></table></div><p><strong>Local primeiro</strong>: ele diz que a localização e o raio podem importar até mais que o nicho no começo [00:06:02]. Extração com a extensão Instant Data Scraper (lista de 100 a 200 empresas) [00:08:03].</p><p><strong>Script de ligação</strong> [00:08:03-00:12:05]: abre perguntando se a empresa está aberta (&quot;aqui diz que vocês estão fechados&quot;) para gerar curiosidade e o primeiro &quot;sim&quot;; em seguida o pitch: <em>&quot;construí uma IA para sua empresa que pode agendar de 10 a 20 visitas nos próximos 7 dias, se for do seu interesse&quot;</em>; silêncio; depois valida requisito: <em>&quot;preciso de uma base de 2.000 a 5.000 leads, isso seria um problema?&quot;</em>. A abertura é a mesma do Pavlo (veja o guia EUA).</p><p><strong>Disciplina</strong>: <em>&quot;vendas é um jogo de números&quot;</em>; quem tem resultado liga mais de 100 vezes por dia [00:12:05].</p><p><strong>Na reunião</strong>, fale do lead, não de você: problema superficial (&quot;só recebo lead desqualificado&quot;) e <strong>problema real</strong> (&quot;tenho que trabalhar mais por menos&quot;, &quot;menos tempo com a família&quot;) [00:12:05-00:14:05].</p><p><strong>Preço</strong> [00:14:05-00:16:05]: para as primeiras experiências ele recomenda cobrar de R$ 500 até um teto que a legenda truncou (leia o trecho antes de citar). Se o cliente recebe na hora (clínica de estética: R$ 300 a R$ 5.000 por pessoa que chega), cobra-se <strong>variável por visita</strong> (R$ 20 a R$ 200 por lead reativado); em imobiliária, onde o ciclo é longo, <strong>implementação fixa</strong>.</p><p><strong>Entrega no GoHighLevel</strong> [00:18:06-00:22:07]: esperar 20 segundos antes de responder (lead manda várias mensagens seguidas), limite de ~25 mensagens por conversa, aceitar áudio e imagem, parar o bot quando agendar, follow-up automático aos 15 minutos, 2 horas e 1 dia sem resposta, e lembrete antes da reunião.</p><h3 id="captar-clientes-ia-whatsapp-13-preço-e-posicionamento-três-escolas-que-divergem">1.3 Preço e posicionamento: três escolas que divergem</h3><div class="scroll"><table><thead><tr><th>Fonte</th><th>Modelo</th><th>Valores citados</th><th>Observação</th></tr></thead><tbody><tr><td><strong>Afonso Lopes</strong> (2026)</td><td>Setup baixo ou zero + <strong>recorrência</strong>; contrato mínimo de 6 meses</td><td>Clínica de psicologia <strong>R$ 800/mês</strong> sem setup [00:08:04]; clínica de estética <strong>R$ 2.800/mês</strong> [00:20:08]; entrega &quot;completa&quot; separa quem cobra R$ 500 de R$ 2.000/mês [00:12:06]</td><td>O número da clínica de odontologia saiu truncado na legenda</td></tr><tr><td><strong>Felipe Fontoura</strong> (out/2024)</td><td><strong>Pagamento único</strong>, sem mensalidade; evita servidor</td><td>Chatbot de suporte + SDR integrado a CRM: <strong>R$ 7.500 à vista</strong> [00:08:02]; ancora em 1 a 3 meses de salário de um atendente (cerca de R$ 2.000, segundo a legenda) [00:02:02]</td><td>Vídeo de 2024; os valores do mercado mudaram. Ele pede que o cliente assine n8n e OpenAI no próprio cartão [00:12:03]</td></tr><tr><td><strong>João Mussoi</strong> (2026)</td><td>Implementação fixa <strong>ou variável por visita</strong></td><td>De R$ 500 em diante nas primeiras experiências; R$ 20 a R$ 200 por lead reativado [00:14:05-00:16:05]</td><td>O teto fixo está truncado na legenda</td></tr><tr><td><strong>Kelvin Cleto</strong> (jul/2025)</td><td><strong>Solução de nicho</strong>, não automação solta</td><td>Exemplo hipotético: cliente de R$ 100 mil/mês que passa a R$ 130 mil, solução a R$ 40 mil [00:14:08-00:16:10]</td><td>Contra-tese: vender <em>&quot;infraestrutura de IA&quot;</em> empacotada, porque automação isolada vira <em>&quot;muito trabalho e pouco dinheiro&quot;</em> [00:02:02]. Ele vende o próprio programa de aceleração</td></tr></tbody></table></div><p><strong>Onde discordam:</strong></p><ul><li><strong>Recorrência × pagamento único.</strong> Afonso diz que <em>&quot;o seu jogo precisa ser a recorrência&quot;</em> [00:10:06]; Fontoura prefere antecipar a receita e evitar suporte mensal [00:10:02]. Não há dado nos vídeos para decidir.</li><li><strong>Quem atende.</strong> Mussoi acha que reativação de base serve a <em>&quot;99% das empresas&quot;</em> [00:04:02]; Afonso insiste em ICP estreito (volume, ticket, tráfego pago).</li><li><strong>Automação × infraestrutura.</strong> Kelvin diz para não vender fluxos de n8n; Afonso e Fontoura vendem justamente um agente com CRM e painel, que é próximo da &quot;infraestrutura&quot; dele. A divergência é mais de embalagem que de produto.</li></ul><p><strong>Argumento de preço que aparece em dois deles:</strong> só falar de valor <strong>depois</strong> de mostrar a perda (leads sem resposta, tráfego desperdiçado, salário de atendente) [Afonso, 00:10:06-00:12:06; Fontoura, 00:02:02].</p><h3 id="captar-clientes-ia-whatsapp-14-atrair-com-anúncio-para-o-whatsapp-henrique-oliveira">1.4 Atrair com anúncio para o WhatsApp (Henrique Oliveira)</h3><p><em>Lido:</em> <strong>&quot;PASSO A PASSO: CAMPANHA PARA WHATSAPP NO FACEBOOK ADS (X1 2026)&quot;</strong> (16:42, <a href="https://www.youtube.com/watch?v=PbfGljiNutE">vídeo</a>). O autor vende o treinamento ETP no fim. Serve se você quiser <strong>anunciar o seu próprio serviço</strong> (ou o do cliente) com clique que abre conversa:</p><ol><li>Vincular um <strong>WhatsApp Business</strong> à página [00:00:00].</li><li>Iniciante com pouco orçamento: objetivo <strong>Engajamento</strong>; já experiente: <strong>Vendas</strong>. Engajamento sai mais barato, mas o lead é menos qualificado [00:00:00-00:02:01].</li><li>Destino <strong>manual: só WhatsApp</strong> (tirar Messenger e Instagram, senão o algoritmo empurra para o Instagram e você perde o follow-up) [00:04:01].</li><li>Meta de desempenho: <strong>maximizar o número de conversas</strong>, nunca cliques no link [00:06:02].</li><li>Orçamento mínimo sugerido: <strong>R$ 15 por dia</strong>, início à meia-noite do dia seguinte [00:06:02].</li><li>Negócio local: marcar um pino e usar raio (exemplo: 5 km) [00:08:02].</li><li><strong>Dois conjuntos</strong>: um aberto e outro segmentado por 3 a 5 interesses; a segmentação principal vem do <strong>criativo</strong>, falando do assunto do público [00:10:02-00:12:02].</li><li><strong>3 a 4 criativos</strong>, nunca misturar vídeo e imagem, e <strong>dizer no anúncio que o clique leva ao WhatsApp</strong> [00:12:02].</li><li>Deixar rodar <strong>3 a 7 dias</strong> antes de mexer [00:14:02].</li></ol><p>⚠️ Esse vídeo é de 2026-05; as telas da Meta mudam rápido. Confira no seu Gerenciador antes de seguir.</p><h3 id="captar-clientes-ia-whatsapp-15-conteúdo-e-diagnóstico-henrique-avila">1.5 Conteúdo e diagnóstico (Henrique Avila)</h3><p><em>Lido:</em> <strong>&quot;Como é o Processo de Captação de Clientes na minha Agência de Marketing&quot;</strong> (15:05, <a href="https://www.youtube.com/watch?v=NA3bZqnSh5s">vídeo</a>). Não é de IA, mas a lógica vale: campanhas de mensagem ficaram mais caras (<strong>CAC subiu</strong>) [00:06:03]; ele passou a <strong>empilhar funis</strong> (YouTube, Instagram, LinkedIn) que levam a um <strong>diagnóstico gratuito</strong>, e o diagnóstico vira a venda [00:08:05]. Para quem vende IA, o equivalente é o &quot;diagnóstico de atendimento&quot; (veja o plano na Parte 4).</p><h3 id="captar-clientes-ia-whatsapp-16-prospecção-estruturada-victor-peixoto-lido-até-001403">1.6 Prospecção estruturada (Victor Peixoto, lido até 00:14:03)</h3><p><strong>&quot;Como Prospectar Clientes e Conseguir 200 Reuniões Por Mês&quot;</strong> (30:46, <a href="https://www.youtube.com/watch?v=rPTLbX4Iu9I">vídeo</a>). O primeiro dos cinco passos (estratégia) reúne dor, produto, ICP, preço, processo, diferencial e meta (OKR). Ideia útil: ler comentários dos vídeos mais vistos do nicho para aprender o jargão e as dores [00:12:03]; e escolher o canal em que o decisor está (para gerente de marketing, LinkedIn) [00:14:03]. Li só a primeira metade.</p><h3 id="captar-clientes-ia-whatsapp-17-o-que-o-guia-agência-de-ia-já-cobre-não-repeti">1.7 O que o guia Agência de IA já cobre (não repeti)</h3><p>Resumido em [<code>agencia-ia.md</code>](agencia-ia.md), com as fontes nele: o passo a passo do <strong>primeiro cliente</strong> (NoCode StartUp: demo antes, ir presencialmente, entregar o celular na mão, não falar de tecnologia), os <strong>8 canais do Well Pires</strong> (Instagram DM, site de graça, parceria, webinar), a <strong>API oficial do WhatsApp</strong> e seus custos (Marcelo Távora) e o argumento de ROI contra o salário de um funcionário.</p><hr><h2 id="captar-clientes-ia-whatsapp-parte-2-benchmarking-biblioteca-de-anúncios-no-brasil">Parte 2 — Benchmarking: Biblioteca de Anúncios no Brasil</h2><p>Dados brutos em <code>references/ads-library/2026-10-31-benchmark.md</code>. Consultas ativas em 2026-10-31: <code>agente de IA WhatsApp atendimento</code> (~1.150 anúncios) e <code>chatbot WhatsApp automação atendimento empresas</code> (26). Limites: título e datas apenas; amostra de 25 anúncios do mais novo ao mais antigo.</p><h3 id="captar-clientes-ia-whatsapp-quem-anuncia">Quem anuncia</h3><div class="scroll"><table><thead><tr><th>Tipo</th><th>Anunciantes na amostra</th><th>O que o título promete</th></tr></thead><tbody><tr><td><strong>Parece ensino ou comunidade</strong> (pelo título; não vi o anúncio)</td><td>Bruno Okamoto, Kelvin Cleto, Renato Asse, Asimov Academy</td><td>&quot;Agentes de IA na sua empresa&quot;, &quot;Entre na Black e receba créditos de IA&quot;, &quot;Conheça os níveis de agentes de IA&quot;, &quot;Growth AI Black: garanta sua vaga&quot;</td></tr><tr><td><strong>Indefinido</strong></td><td>Nathan Lopes (12 anúncios), Filipe Montt</td><td>Nathan mistura ganchos por nicho com &quot;Como vender IA para empresas&quot;; não sei se vende curso ou serviço. Filipe: &quot;Veja alguns exemplos impressionantes!&quot;</td></tr><tr><td><strong>Ferramenta / plataforma de atendimento</strong></td><td>MEXX, Chatvolt, Suri (agora TOTVS), RIGO Digital, Wizbot, SeuZapp, Acelerador de Atendimento, Handix</td><td>&quot;Seu Comercial completo no WhatsApp&quot;, &quot;Seu time perde cliente no WhatsApp&quot;, &quot;Automação WhatsApp para Negócios&quot;</td></tr><tr><td><strong>Solução já vertical</strong></td><td>Forjai (Forzap), Converge.ai, 7X Digital, Miner</td><td>&quot;Forzap para pet shops e clínicas&quot;, &quot;Atendimento e agendamento com IA para clínicas&quot;, &quot;Amplie seu atendimento sem aumentar a equipe&quot;</td></tr></tbody></table></div><p>Na amostra de 25 da consulta principal, pelo menos quatro dos dez anunciantes parecem ensino ou comunidade. Isso sugere que <strong>há gente pagando para ensinar a vender IA</strong>, e portanto concorrência pela atenção do mesmo público (freelancers e donos de agência). Não prova que vender para o dono de clínica seja fácil.</p><h3 id="captar-clientes-ia-whatsapp-padrões-nos-títulos">Padrões nos títulos</h3><ol><li><strong>Ganchos de dor de atendimento, em linguagem de dono de negócio</strong>: &quot;Seu time perde cliente no WhatsApp&quot;, &quot;A mesma pergunta pela décima vez&quot;, &quot;Amplie seu atendimento sem aumentar a equipe&quot;, &quot;Mais um cliente, mais uma noite&quot;. Nenhum começa por &quot;IA&quot; ou &quot;chatbot&quot;.</li><li><strong>Nicho no gancho</strong>: &quot;A farmácia que lembra o cliente&quot;, &quot;IA na imobiliária&quot;, &quot;pet shops e clínicas&quot;, &quot;para clínicas&quot;. O Nathan Lopes tem <strong>12 anúncios</strong> na amostra, vários com ganchos por nicho; é a mesma lógica do ICP do Afonso.</li><li><strong>Posicionamento contra o chatbot</strong>: Suri: <em>&quot;Você acha que quer um chatbot, mas você merece mesmo é uma IA!&quot;</em>.</li><li><strong>Canal de parceiros</strong>: Handix, <em>&quot;Pare de indicar soluções de graça&quot;</em> (leitura do título: parece falar com quem indica ferramentas; não vi o anúncio). Quatro anúncios com o mesmo título, o mais antigo de 2026-09-29.</li><li><strong>Variação de criativo sob o mesmo título</strong> (Handix, Nathan Lopes, Bruno Okamoto): o título repete e o criativo muda, que é o teste de criativo descrito no vídeo do Henrique Oliveira.</li></ol><h3 id="captar-clientes-ia-whatsapp-permanência-único-sinal-de-duração-na-amostra">Permanência (único sinal de duração na amostra)</h3><div class="scroll"><table><thead><tr><th>Anunciante</th><th>Início do anúncio mais antigo da amostra</th><th>Dias no ar</th></tr></thead><tbody><tr><td>SeuZapp (&quot;Automação WhatsApp para Negócios&quot;)</td><td>2025-08-11</td><td>445</td></tr><tr><td>alexandrazapsuite</td><td>2026-07-28</td><td>94</td></tr><tr><td>Suri Shop</td><td>2026-09-25</td><td>35</td></tr><tr><td>Handix</td><td>2026-09-29</td><td>31</td></tr></tbody></table></div><p>Só o SeuZapp indica um anúncio rodando por mais de um ano; <strong>um</strong> anúncio, de <strong>uma</strong> ferramenta, sem saber se dá lucro.</p><hr><h2 id="captar-clientes-ia-whatsapp-parte-3-eua-o-mesmo-produto-outro-canal">Parte 3 — EUA: o mesmo produto, outro canal</h2><h3 id="captar-clientes-ia-whatsapp-o-que-a-biblioteca-de-anúncios-mostra">O que a Biblioteca de Anúncios mostra</h3><p>Consulta <code>AI receptionist</code> (EUA, ~2.350 anúncios ativos). Detalhe no arquivo bruto (<code>references/ads-library/2026-10-31-benchmark.md</code>).</p><div class="scroll"><table><thead><tr><th>Anunciante</th><th>Título</th><th>Leitura</th></tr></thead><tbody><tr><td>Smart Center AI (4 anúncios)</td><td>&quot;<strong>Call it and try to trip it up</strong>&quot; / &quot;Get a 24/7 receptionist for <strong>$48 a day</strong>&quot; / &quot;Answer every call without putting down your tools&quot; / &quot;Stop sending your callers to the next guy&quot;</td><td>Demo por telefone como CTA; preço por dia; público de ofício (&quot;tools&quot;)</td></tr><tr><td>RingReady AI Receptionist</td><td>&quot;AI receptionist. <strong>$49/mo</strong> unlimited calls&quot;</td><td>Preço no título</td></tr><tr><td>RivetBell</td><td>&quot;<strong>Call our AI receptionist demo now</strong>&quot;</td><td>Ligar para testar</td></tr><tr><td>Vooix (4)</td><td>&quot;Stop Watching AI Demos. <strong>Try Yours.</strong>&quot;</td><td>Teste com o negócio do próprio cliente</td></tr><tr><td>Contractor call desk</td><td>&quot;Stop losing jobs to voicemail&quot;</td><td>Perda concreta, nicho de reformas</td></tr><tr><td>TillyPhone / Launchify / Tactly AI</td><td>&quot;Never Miss a Customer Call Again&quot; / &quot;Your phone, answered 24/7&quot; / &quot;You can&#x27;t answer from up here. Tactly can.&quot;</td><td>Dor de perder chamada</td></tr><tr><td>Lever Launch (consulta <code>missed call text back</code>)</td><td>&quot;Free website + AI system. <strong>$297/mo</strong>.&quot;</td><td>Pacote com site grátis</td></tr><tr><td>FreedomSoft (consulta <code>WhatsApp AI agent</code>)</td><td>&quot;Free AI <strong>Voice Agent training</strong>&quot;</td><td>Há também funil de ensino nos EUA</td></tr></tbody></table></div><h3 id="captar-clientes-ia-whatsapp-o-que-isso-sugere-inferência-minha-não-está-nas-fontes">O que isso sugere (inferência minha, não está nas fontes)</h3><ul><li><strong>O produto lá é ligação, não WhatsApp.</strong> Nenhum título menciona WhatsApp, e a consulta <code>WhatsApp AI agent</code> nos EUA devolveu ruído (apps de série dramática) mais ferramentas de voz. Não vi o corpo dos anúncios, então pode haver menção lá dentro. WhatsApp tende a funcionar nos EUA em <strong>comunidades que já o usam</strong> (por exemplo, imigrantes latinos e brasileiros), mas isso eu não consegui confirmar nas fontes; teste em vez de assumir.</li><li><strong>Demo ao vivo como anúncio.</strong> Três dos anunciantes convidam a ligar ou testar. É a versão digital do que o NoCode StartUp ensina no guia Agência de IA (entregar o celular para a pessoa testar).</li><li><strong>Preço de entrada baixo e público.</strong> US$ 48 a US$ 297 por mês é o que aparece nos títulos; é o que o dono de negócio vê quando compara. Pode ser seu piso de comparação, não seu preço.</li><li><strong>Mesma oferta de &quot;recuperar o que perdeu&quot;.</strong> &quot;Stop losing jobs to voicemail&quot; equivale ao argumento do Afonso (lead sem resposta é dinheiro perdido).</li></ul><h3 id="captar-clientes-ia-whatsapp-como-captar-cliente-de-ia-nos-eua-com-o-que-a-biblioteca-tem">Como captar cliente de IA nos EUA com o que a biblioteca tem</h3><p>A parte de <strong>prospecção</strong> é a mesma do guia Captar Clientes de Marketing nos EUA: lista por Google Maps, ligação, Loom, oferta de resultado. A diferença é a <strong>oferta</strong>: &quot;não perca chamadas&quot; e &quot;reative seus clientes antigos&quot; (Pavlo, Mussoi) em vez de &quot;gestão de tráfego&quot;.</p><hr><h2 id="captar-clientes-ia-whatsapp-parte-4-plano-sugerido-síntese-minha-a-testar">Parte 4 — Plano sugerido (síntese minha, a testar)</h2><p><strong>Brasil</strong></p><ol><li><strong>Nicho</strong>: clínica (estética, odonto, psicologia) ou imobiliária <strong>que já anuncia</strong> e tem volume de leads.</li><li><strong>Oferta de entrada</strong>: reativação de base, com meta e prazo (&quot;X agendamentos em 7 dias&quot;), no estilo de Mussoi. Peça a base de leads antes de prometer.</li><li><strong>Lista</strong>: Google Maps na sua cidade, com os 4 critérios do Mussoi (menos de 100 avaliações, menos de 4,8, sem site, anos de mercado).</li><li><strong>Abordagem</strong>: ligação ou visita; demo pronta no seu celular (guia Agência de IA); reunião focada no problema do lead.</li><li><strong>Âncora de preço</strong>: perda mensal em leads sem resposta e custo de um atendente (Afonso e Fontoura).</li><li><strong>Preço</strong>: setup baixo + recorrência para quem tem receita previsível; variável por visita para quem cobra na hora (Mussoi). Teste os dois com os 3 primeiros clientes.</li><li><strong>Entrega</strong>: agente + CRM + painel, não só o agente (Afonso). Teste os cenários difíceis antes de subir.</li><li><strong>Captação paralela</strong>: campanha de clique para WhatsApp (Parte 1.4) com ganchos de dor por nicho (Parte 2).</li><li><strong>Diagnóstico gratuito de atendimento</strong> como isca: mostre quanto tempo o time leva para responder, no estilo do Henrique Avila.</li></ol><p><strong>EUA</strong></p><ol><li><strong>Nicho de serviço doméstico</strong> (reforma, HVAC, telhado), onde a perda por chamada não atendida é concreta.</li><li><strong>Oferta</strong>: recepcionista que atende e agenda; opcionalmente reativação de base.</li><li><strong>CTA de demonstração</strong>: um número para a pessoa ligar e testar (padrão dos anúncios).</li><li><strong>Preço</strong>: confronte com US$ 49 a US$ 297 por mês que aparecem nos títulos e justifique a diferença por integração e resultado.</li><li><strong>WhatsApp só se o público usar</strong>; caso contrário, voz e SMS.</li></ol><hr><h2 id="captar-clientes-ia-whatsapp-parte-5-riscos-e-lacunas">Parte 5 — Riscos e lacunas</h2><blockquote><p>Isto <strong>não é aconselhamento jurídico</strong>. Confirme com advogado antes de operar.</p></blockquote><div class="scroll"><table><thead><tr><th>Tema</th><th>Por que importa</th><th>O que os vídeos dizem</th></tr></thead><tbody><tr><td><strong>Dados pessoais na reativação de base</strong></td><td>Chamar leads antigos de outra empresa por WhatsApp é tratamento de dado pessoal. No Brasil, a LGPD exige base legal e transparência; o prospecto (controlador) e você (operador) têm responsabilidades</td><td>Mussoi mostra o processo sem tocar no tema</td></tr><tr><td><strong>Bloqueio do número</strong></td><td>Disparo em massa para base fria pode derrubar o número. Parte dos criadores usa API não oficial (Baileys, Evolution), o que o guia Agência de IA já aponta; a API oficial exige modelos aprovados e tem custo por categoria</td><td>Marcelo Távora (na biblioteca; síntese no guia Agência de IA)</td></tr><tr><td><strong>Ligação e SMS automáticos nos EUA</strong></td><td>TCPA e lista Do-Not-Call restringem chamadas automáticas, voz pré-gravada e SMS sem consentimento</td><td>Os vídeos americanos não tratam</td></tr><tr><td><strong>Fingir ser cliente na ligação</strong></td><td>A abertura &quot;estão abertos? aqui diz fechado&quot; é artifício; pode irritar e queimar nicho pequeno</td><td>Mussoi e Pavlo ensinam</td></tr><tr><td><strong>Promessa de resultado</strong></td><td>&quot;10 a 20 visitas em 7 dias&quot; é uma promessa; sem garantia contratual clara vira disputa</td><td>Mussoi cita o número como exemplo, sem prova de taxa</td></tr><tr><td><strong>Interesse do vendedor</strong></td><td>Afonso, Mussoi, Oliveira e Kelvin terminam vendendo curso, comunidade ou ferramenta (link de afiliado/teste)</td><td>Veja Números e Ceticismo</td></tr><tr><td><strong>Preço de 2024</strong></td><td>Fontoura é de out/2024; o mercado de IA mudou</td><td>Tratar como histórico</td></tr></tbody></table></div><p><strong>Lacunas de evidência:</strong> nenhum vídeo lido mostra taxa de conversão real de ligação fria para reunião nem para venda; nenhum mostra churn de clientes de IA; os preços de EUA vêm só de títulos de anúncio.</p><hr><h2 id="captar-clientes-ia-whatsapp-índice-o-que-foi-lido-e-o-que-só-foi-achado">Índice: o que foi lido e o que só foi achado</h2><p><strong>Lido na íntegra nesta sessão:</strong></p><div class="scroll"><table><thead><tr><th>Vídeo</th><th>Canal</th><th>Caminho local</th></tr></thead><tbody><tr><td>AGENTES de IA no WHATSAPP em 2026</td><td>Afonso Lopes</td><td><code>references/youtube/afonso-lopes-automações-ia/</code></td></tr><tr><td>Como Vender IA Usando Apenas o Google Maps e o GoHighLevel</td><td>João Mussoi</td><td><code>references/youtube/joão-mussoi/</code></td></tr><tr><td>QUANTO COBRAR POR AUTOMAÇÃO E CHATBOT</td><td>Felipe Fontoura</td><td><code>references/youtube/felipe-fontoura/</code></td></tr><tr><td>PASSO A PASSO: CAMPANHA PARA WHATSAPP NO FACEBOOK ADS</td><td>Henrique Oliveira</td><td><code>references/youtube/henrique-oliveira/</code></td></tr><tr><td>Não Venda Fluxos do N8N, Venda Infraestrutura de IA</td><td>Kelvin Cleto</td><td><code>references/youtube/kelvin-cleto/</code></td></tr><tr><td>Como é o Processo de Captação de Clientes na minha Agência</td><td>Henrique Avila</td><td><code>references/youtube/henrique-avila/</code></td></tr><tr><td>Como Prospectar Clientes e Conseguir 200 Reuniões (parcial)</td><td>Victor Peixoto</td><td><code>references/youtube/victor-peixoto/</code></td></tr></tbody></table></div><p><strong>Na biblioteca e relevantes, não lidos nesta sessão:</strong></p><div class="scroll"><table><thead><tr><th>Vídeo</th><th>Canal</th><th>Duração</th><th>Link</th></tr></thead><tbody><tr><td>7 lições que tive VENDENDO AGENTES DE IA no n8n</td><td>Afonso Lopes</td><td>19:16</td><td><a href="https://www.youtube.com/watch?v=P5zebeK9K1g">YouTube</a></td></tr><tr><td>Como Conseguir seu Primeiro Cliente com Agentes IA</td><td>NoCode StartUp</td><td>1:04:05</td><td><a href="https://www.youtube.com/watch?v=kcE7RDo75Ns">YouTube</a></td></tr><tr><td>Explicando todas as maneiras de construir uma Agência IA em 2026</td><td>Well Pires</td><td>34:33</td><td><a href="https://www.youtube.com/watch?v=rggm76INM6Q">YouTube</a></td></tr><tr><td>Atendimento no WhatsApp com Hermes Agent, Negócios Locais</td><td>Thalena Lima</td><td>28:37</td><td><a href="https://www.youtube.com/watch?v=i-Rq8btfPFg">YouTube</a></td></tr><tr><td>API Oficial de WhatsApp: Guia completo 2026</td><td>Marcelo Távora</td><td>14:22</td><td><a href="https://www.youtube.com/watch?v=H9AXymcVcig">YouTube</a></td></tr><tr><td>AUTOMAÇÃO NO WHATSAPP = EXPLOSÃO DE VENDAS!</td><td>Nerds de Negócios</td><td>9:51</td><td><a href="https://www.youtube.com/watch?v=dO_S6inB4-M">YouTube</a></td></tr><tr><td>Como faturar vendendo IA (4 formas)</td><td>A Vizinhança</td><td>18:41</td><td><a href="https://www.youtube.com/watch?v=Qoe61lzBQSk">YouTube</a></td></tr><tr><td>Como funciona o processo de prospecção da minha agência</td><td>Henrique Avila</td><td>19:04</td><td><a href="https://www.youtube.com/watch?v=ky-U_AFXHuM">YouTube</a></td></tr></tbody></table></div><p><strong>Pesquisa na web:</strong> a busca disponível aqui é restrita aos EUA e devolveu páginas de fornecedores de ferramentas e blogs, sem vídeos do YouTube nem dados independentes. Não usei como evidência.</p><p><strong>Para ampliar:</strong> libere <code>youtube.com</code> na política de rede do ambiente (menu do ambiente na barra de título da sessão, Edit, Network access) para eu rodar a skill <code>youtube-refs</code> e trazer vídeos novos, em especial de canais americanos sobre AI receptionist e de brasileiros sobre agente de IA no WhatsApp.</p><hr><p>*Fontes: transcrições em <code>references/youtube/</code> (legendas automáticas) e Biblioteca de Anúncios da Meta, consultada em 2026-10-31. Cada trecho é rastreável ao vídeo e ao timestamp.*</p>
+<footer>
+  Extraído da leitura integral das transcrições em <code>references/youtube/</code>. Cada afirmação
+  é rastreável ao vídeo e timestamp de origem.<br>
+  Transcrições automáticas — números e nomes de ferramentas podem conter erros. Parte do
+  <a href="https://github.com/analuisamoutinho/estudos">repositório CORTEX</a>.<br>
+  <a href="index.html">← voltar para a lista de tópicos</a>
+</footer>
+</main>
+</div>
+<script>
+(function(){
+  var LS_KEY = 'estudos-lidos-v1';
+  function getLidos(){ try{ return JSON.parse(localStorage.getItem(LS_KEY)||'{}'); }catch(e){ return {}; } }
+  function setLido(stem,val){
+    var l=getLidos();
+    if(val){ l[stem]=Date.now(); } else { delete l[stem]; }
+    localStorage.setItem(LS_KEY, JSON.stringify(l));
+    return l;
+  }
+  window.estudosLidos = {get:getLidos, set:setLido};
+})();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var btn = document.getElementById('lido-toggle');
+  var stem = btn.getAttribute('data-stem');
+  function render(){
+    var lidos = window.estudosLidos.get();
+    var isLido = !!lidos[stem];
+    btn.classList.toggle('is-lido', isLido);
+    btn.querySelector('.lido-toggle-label').textContent = isLido ? 'Lido' : 'Marcar como lido';
+  }
+  btn.addEventListener('click', function(){
+    var lidos = window.estudosLidos.get();
+    window.estudosLidos.set(stem, !lidos[stem]);
+    render();
+  });
+  render();
+});
+</script>
