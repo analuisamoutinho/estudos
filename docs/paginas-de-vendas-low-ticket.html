@@ -1,0 +1,265 @@
+<title>Páginas de Vendas de Low Ticket de Alta Conversão · CORTEX</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="cortex-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF1F4; --surface:#F8FAFC; --surface-raised:#FFFFFF; --surface-muted:#E2E9EF;
+  --ink:#243746; --ink-soft:#546777; --ink-faint:#7E90A0; --text-inverse:#F8FAFC;
+  --border:#CCD6DE; --border-control:#8294A3;
+  --action:#344F65; --action-hover:#263F54; --focus:#396E98;
+  --success:#28644F; --success-bg:#E5F0EA;
+  --warning:#805B1D; --warning-bg:#F4EDDF;
+  --danger:#A63D4B; --danger-bg:#F8E9EB;
+  --info:#345F83; --info-bg:#E3ECF4;
+  --glass-clear:rgba(255,255,255,.10); --glass-frosted:rgba(248,250,252,.72); --glass-liquid:rgba(255,255,255,.16);
+  --blur-clear:12px; --blur-frosted:28px; --blur-liquid:24px;
+  --glass-rim:inset 0 1px 0 rgba(255,255,255,.65),inset 1px 0 0 rgba(255,255,255,.16);
+  --atmosphere:radial-gradient(ellipse at 85% 0%,#9EAFBB 0%,transparent 58%),linear-gradient(125deg,#294355 0%,#526C80 54%,#8A9FAE 100%);
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'SFMono-Regular',Consolas,'Liberation Mono',monospace;
+  --radius-sm:.5rem; --radius-control:.875rem; --radius-card:1.75rem; --radius-stage:2rem; --radius-pill:999px;
+  --shadow-soft:0 8px 30px rgba(36,55,70,.05);
+  --shadow-raised:0 24px 64px rgba(25,44,60,.14);
+  --shadow-glass:0 16px 40px rgba(17,34,49,.15);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --press:120ms; --fast:180ms; --reveal:280ms;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#131A21; --surface:#1A222B; --surface-raised:#202A34; --surface-muted:#25303B;
+    --ink:#E9EFF4; --ink-soft:#AAB9C6; --ink-faint:#758795;
+    --border:#2C3945; --border-control:#4B5C6C;
+    --action:#89ABC6; --action-hover:#A6C3DA; --focus:#6FA9D6;
+    --success:#63C09E; --success-bg:#132621;
+    --warning:#DDB169; --warning-bg:#2A2313;
+    --danger:#E38F9A; --danger-bg:#2B181B;
+    --info:#8FB6D8; --info-bg:#15222E;
+    --glass-frosted:rgba(26,34,43,.72); --glass-clear:rgba(255,255,255,.06); --glass-liquid:rgba(255,255,255,.08);
+    --glass-rim:inset 0 1px 0 rgba(255,255,255,.10),inset 1px 0 0 rgba(255,255,255,.05);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131A21; --surface:#1A222B; --surface-raised:#202A34; --surface-muted:#25303B;
+  --ink:#E9EFF4; --ink-soft:#AAB9C6; --ink-faint:#758795;
+  --border:#2C3945; --border-control:#4B5C6C;
+  --action:#89ABC6; --action-hover:#A6C3DA; --focus:#6FA9D6;
+  --success:#63C09E; --success-bg:#132621;
+  --warning:#DDB169; --warning-bg:#2A2313;
+  --danger:#E38F9A; --danger-bg:#2B181B;
+  --info:#8FB6D8; --info-bg:#15222E;
+  --glass-frosted:rgba(26,34,43,.72); --glass-clear:rgba(255,255,255,.06); --glass-liquid:rgba(255,255,255,.08);
+  --glass-rim:inset 0 1px 0 rgba(255,255,255,.10),inset 1px 0 0 rgba(255,255,255,.05);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:16px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px;display:flex;gap:48px;align-items:flex-start}
+main{flex:1;min-width:0;max-width:72ch;padding:44px 0 110px}
+
+nav{
+  position:sticky; top:0; width:224px; flex:none;
+  padding:56px 0 40px; font-family:var(--mono); font-size:11px;
+  max-height:100vh; overflow-y:auto;
+}
+nav p{
+  margin:0 0 12px; text-transform:uppercase; letter-spacing:.14em;
+  color:var(--ink-faint); font-size:9.5px;
+}
+nav a{
+  display:block; padding:6px 0 6px 11px; border-left:2px solid var(--border);
+  color:var(--ink-soft); text-decoration:none; line-height:1.35;
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease);
+}
+nav a:hover{border-left-color:var(--action);color:var(--action)}
+nav a b{display:block;font-weight:600;color:var(--ink);letter-spacing:.01em}
+nav a span{display:block;color:var(--ink-faint);font-size:9.5px;margin-top:1px}
+nav .sub{padding-left:22px;border-left-color:transparent;font-size:10px}
+nav .sub:hover{border-left-color:var(--border)}
+@media(max-width:960px){nav{display:none}.wrap{gap:0}main{max-width:none;padding-top:32px}}
+
+h1,h2,h3,h4,h5{font-family:var(--sans);text-wrap:balance;line-height:1.18;letter-spacing:-.02em}
+h1{font-size:clamp(28px,5vw,42px);font-weight:750;margin:0 0 6px}
+h2{
+  font-size:clamp(22px,3.4vw,29px); font-weight:750; margin:0 0 8px;
+  padding-top:24px;
+}
+h3{font-size:19px;font-weight:700;margin:44px 0 14px;padding-top:18px;border-top:1px solid var(--border)}
+h4{font-size:16px;font-weight:680;margin:28px 0 10px}
+h5{font-size:14px;font-weight:680;margin:22px 0 8px;color:var(--ink-soft)}
+
+.topic{margin:76px 0 0;padding-top:28px;border-top:2px solid var(--border-control)}
+.topic .kicker{
+  font-family:var(--mono);font-size:10px;text-transform:uppercase;
+  letter-spacing:.17em;color:var(--action);margin:0 0 10px;
+}
+
+p{margin:0 0 17px}
+a{color:var(--action);text-decoration-thickness:1px;text-underline-offset:2px}
+strong{font-weight:640}
+hr{border:0;height:1px;background:var(--border);margin:38px 0}
+
+ul,ol{margin:0 0 18px;padding-left:22px}
+li{margin-bottom:7px}
+li::marker{color:var(--ink-faint)}
+ul ul,ol ol,ul ol,ol ul{margin:7px 0 0}
+ul.check{list-style:none;padding-left:0}
+ul.check li{position:relative;padding-left:29px}
+ul.check li span{
+  position:absolute;left:0;top:.36em;width:15px;height:15px;
+  border:1.5px solid var(--ink-faint);border-radius:4px;
+}
+
+blockquote{
+  margin:22px 0;padding:15px 20px;background:var(--surface);
+  border-left:3px solid var(--action);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+}
+blockquote p{margin:0 0 9px;font-size:16px;color:var(--ink-soft)}
+blockquote p:last-child{margin:0}
+blockquote em{color:var(--ink);font-style:italic}
+
+.scroll{overflow-x:auto;margin:24px 0;-webkit-overflow-scrolling:touch}
+table{
+  border-collapse:collapse;width:100%;font-family:var(--sans);
+  font-size:13.5px;line-height:1.5;font-variant-numeric:tabular-nums;
+}
+th{
+  text-align:left;font-family:var(--mono);font-size:10px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);
+  padding:0 14px 9px 0;border-bottom:1.5px solid var(--border-control);white-space:nowrap;
+}
+td{padding:11px 14px 11px 0;border-bottom:1px solid var(--border);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td:first-child{color:var(--ink);font-weight:550}
+table code{font-size:12px}
+
+code{
+  font-family:var(--mono);font-size:.86em;background:var(--surface-muted);
+  padding:.14em .38em;border-radius:var(--radius-sm)
+}
+pre{
+  margin:0;background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-sm);padding:17px 19px;overflow-x:auto;
+}
+pre code{background:none;padding:0;font-size:12.5px;line-height:1.72;color:var(--ink-soft)}
+
+/* --- hero: banner de página inteira (edge-to-edge) com o gradiente
+   "atmosphere" do design system. Fica fora de .wrap para não parecer um
+   cartão recortado sobre o fundo — é a própria página, não uma moldura. --- */
+.hero{background:var(--atmosphere);color:var(--text-inverse)}
+.hero-inner{max-width:1240px;margin:0 auto;padding:52px 20px 40px}
+.eyebrow{
+  font-family:var(--mono);font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.19em;color:rgba(248,250,252,.7);margin:0 0 15px;
+}
+.hero h1{color:#F8FAFC}
+.lede{font-size:18px;color:rgba(248,250,252,.85);margin:16px 0 26px;max-width:60ch}
+.stats{display:flex;flex-wrap:wrap;margin:0;border-top:1px solid rgba(248,250,252,.22)}
+.stat{padding:14px 28px 14px 0;margin-right:28px;border-right:1px solid rgba(248,250,252,.22)}
+.stat:last-child{border-right:0;margin-right:0}
+.stat b{
+  display:block;font-family:var(--sans);font-size:24px;font-weight:730;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1;color:#fff;
+}
+.stat span{
+  display:block;font-family:var(--mono);font-size:9.5px;text-transform:uppercase;
+  letter-spacing:.13em;color:rgba(248,250,252,.6);margin-top:4px;
+}
+footer{
+  margin-top:64px;padding-top:22px;border-top:1px solid var(--border);
+  font-family:var(--mono);font-size:11px;color:var(--ink-faint);line-height:1.7;
+}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+/* --- progresso de leitura: vive dentro do hero (fundo "atmosphere"),
+   por isso parte de vidro claro em vez dos tokens de superfície comuns --- */
+.lido-toggle{
+  display:inline-flex;align-items:center;gap:8px;margin:18px 0 0;padding:9px 16px 9px 12px;
+  font-family:var(--sans);font-size:13px;font-weight:600;color:#fff;
+  background:var(--glass-clear);backdrop-filter:blur(var(--blur-clear));-webkit-backdrop-filter:blur(var(--blur-clear));
+  border:1.5px solid rgba(248,250,252,.32);border-radius:var(--radius-pill);cursor:pointer;
+  transition:border-color var(--fast) var(--ease),color var(--fast) var(--ease),background var(--fast) var(--ease);
+}
+.lido-toggle:hover{border-color:#fff;color:#fff}
+.lido-toggle .lido-toggle-icon{
+  display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;
+  border-radius:50%;border:1.5px solid rgba(248,250,252,.6);font-size:11px;line-height:1;
+  color:transparent;transition:all var(--fast) var(--ease);
+}
+.lido-toggle.is-lido{background:var(--success-bg);border-color:var(--success);color:var(--success)}
+.lido-toggle.is-lido .lido-toggle-icon{
+  background:var(--success);border-color:var(--success);color:var(--surface);
+}
+
+/* --- marca --- */
+h1.brand{display:flex;align-items:center;gap:14px;letter-spacing:.015em}
+.brandmark{
+  width:50px;height:50px;flex:none;border-radius:var(--radius-control);
+  box-shadow:var(--shadow-soft);
+}
+@media(max-width:600px){.brandmark{width:40px;height:40px;border-radius:var(--radius-sm)}}
+</style>
+<div class="hero" id="topo">
+<div class="hero-inner">
+  <p class="eyebrow">CORTEX · Guia individual</p>
+  <h1>🧾 Páginas de Vendas de Low Ticket de Alta Conversão</h1>
+  <p class="lede">O que os vídeos da biblioteca mostram sobre páginas de vendas de low ticket que convertem: estrutura, o debate entre página, checkout com banner, VSL e quiz, números de funil e os riscos de copiar o que funciona.</p>
+  <div class="stats">
+    <div class="stat"><b>estrutura, checkout e métricas</b><span>foco do guia</span></div>
+  </div>
+  <button type="button" id="lido-toggle" class="lido-toggle" data-stem="paginas-de-vendas-low-ticket">
+    <span class="lido-toggle-icon">✓</span><span class="lido-toggle-label">Marcar como lido</span>
+  </button>
+</div>
+</div>
+<div class="wrap">
+<nav><p>Neste guia</p><a href="#topo"><b>Início</b></a><a href="#paginas-de-vendas-low-ticket-as-etapas-do-funil-e-o-número-de-cada-uma">As etapas do funil e o número de cada uma</a><a href="#paginas-de-vendas-low-ticket-metas-citadas">Metas citadas</a><a href="#paginas-de-vendas-low-ticket-o-critério-tangível-clara-específica-mensurável">O critério: tangível, clara, específica, mensurável</a><a href="#paginas-de-vendas-low-ticket-a-sequência-de-seções-síntese-de-três-páginas">A sequência de seções (síntese de três páginas)</a><a href="#paginas-de-vendas-low-ticket-número-em-tudo">Número em tudo</a><a href="#paginas-de-vendas-low-ticket-o-que-aparece-na-página-ruim">O que aparece na página ruim</a><a href="#paginas-de-vendas-low-ticket-31-página-de-vendas-tráfego-direto-para-checkout-com-banner">3.1 Página de vendas × tráfego direto para checkout com banner</a><a href="#paginas-de-vendas-low-ticket-32-botão-na-primeira-dobra">3.2 Botão na primeira dobra</a><a href="#paginas-de-vendas-low-ticket-33-vsl-mini-vsl-quiz-e-fluxo-no-typebot">3.3 VSL, mini VSL, quiz e fluxo no Typebot</a><a href="#paginas-de-vendas-low-ticket-34-urgência-e-escassez">3.4 Urgência e escassez</a><a href="#paginas-de-vendas-low-ticket-35-fundo-claro-escuro">3.5 Fundo claro × escuro</a></nav>
+<main>
+<p>Estudo sobre páginas de vendas para produtos de ticket baixo (de R$ 9,90 a cerca de R$ 99, ou US$ 6,90 a US$ 9,90 no mercado &quot;global&quot;), com base nas transcrições da biblioteca. Complementa o guia Low Ticket e Tráfego Pago, que tem o método de ponta a ponta; aqui o foco é só <strong>a página, o checkout e a medição</strong>.</p><blockquote><p><strong>Leia isto antes.</strong> 1. <strong>&quot;Alta conversão&quot; não foi provada por nenhum vídeo.</strong> Nenhum mostra teste A/B de elementos da página. O que existe são páginas de criadores que dizem vender, números de funil de dois produtos (Cássio Hart) e opiniões que se contradizem. 2. <strong>Quase todo criador vende curso, template, ferramenta ou comunidade</strong>, e várias das ferramentas recomendadas têm link de indicação. Faturamento citado é alegação do vendedor. 3. <strong>Só o que está marcado &quot;lido&quot; foi lido na íntegra.</strong> Dos vídeos longos usei trechos (marcados &quot;trechos&quot;). Há 20 vídeos novos buscados no YouTube sobre o tema que <strong>ainda não baixaram</strong> (verificação anti-robô); estão listados no fim, com link. 4. <strong>Legendas automáticas:</strong> números e nomes podem estar errados. Onde a legenda truncou algo, eu digo.</p></blockquote><hr><h2 id="paginas-de-vendas-low-ticket-resumo">Resumo</h2><ol><li>A estrutura mais citada, <strong>no mesmo molde em vários criadores</strong>: headline com o que é e para quem, subheadline com um <strong>número</strong> (&quot;50 aulas&quot;, &quot;200 dinâmicas&quot;), mockup do produto, o que vem dentro, bônus numerados, prova social, garantia de 7 dias, ancoragem de preço, FAQ e botão final. Veja a Parte 2.</li><li><strong>Clareza e especificidade</strong> são o critério que Nícolas Moreira e Allan Torquato usam para separar página boa de ruim: o visitante precisa entender <strong>o que recebe, em que quantidade e se é para ele</strong> sem rolar. O produto é &quot;visual&quot; (mockup, capa, prints).</li><li><strong>Os criadores discordam em três pontos centrais</strong>: página de vendas × tráfego direto para um checkout com banner; botão na primeira dobra; e VSL. Não há dado nos vídeos para decidir. Veja a Parte 3.</li><li>O número que mais mudou o raciocínio dos vídeos é o <strong>funil por etapa</strong>. Cássio Hart mostra dois produtos de mesmo ticket (R$ 97), um com <strong>18,6%</strong> e outro com <strong>7,9%</strong> das visitas indo ao checkout, e o checkout convertendo <strong>33,7%</strong> e <strong>45,1%</strong>. Conserte a etapa pior.</li><li><strong>Velocidade e celular</strong>: Cássio fala que mais de 90% do tráfego dele vem do celular; Caio Martins pede <em>connect rate</em> acima de 80%. Dois produtos do Cássio tiveram 81,8% e 71,3%.</li><li>O dinheiro de low ticket está <strong>no checkout e na esteira</strong> (order bump, upsell, recuperação), não só na página. Veja a Parte 5.</li><li><strong>IA para montar a página</strong> é consenso (Replit, Claude, Lovable, Hostinger), com ressalvas de Silvio Roberto: fundo claro, nada de botão de compra na primeira dobra, pixel e token no prompt, hospedar no domínio próprio.</li><li><strong>Riscos que os vídeos tratam como detalhe</strong>: depoimentos gerados por IA sem pessoa real, urgência e preço &quot;de&quot; fictícios, copiar página e VSL de concorrente. Veja a Parte 7.</li></ol><hr><h2 id="paginas-de-vendas-low-ticket-parte-1-como-medir-converte-antes-de-julgar-uma-página">Parte 1 — Como medir &quot;converte&quot; (antes de julgar uma página)</h2><h3 id="paginas-de-vendas-low-ticket-as-etapas-do-funil-e-o-número-de-cada-uma">As etapas do funil e o número de cada uma</h3><p>Cássio Hart, em <strong>&quot;Como lucrar com Low Ticket em 2026&quot;</strong> (1:25:42, <a href="https://www.youtube.com/watch?v=VBSDTUldSEE">vídeo</a>), trechos: <em>&quot;nem todo mundo que vê clica, nem todo mundo que clica espera carregar, nem todo mundo que chega na página avança pro checkout, nem todo mundo que tá no checkout compra&quot;</em> [00:32:18]. Ele mostra os números de dois produtos de <strong>R$ 97</strong>:</p><div class="scroll"><table><thead><tr><th>Etapa</th><th>Produto 1</th><th>Produto 2</th></tr></thead><tbody><tr><td>Investimento</td><td>R$ 5.900</td><td>R$ 9.600</td></tr><tr><td>Cliques no anúncio</td><td>3.118</td><td>5.116</td></tr><tr><td>Esperaram a página carregar</td><td>2.552</td><td>3.648</td></tr><tr><td>Foram ao checkout</td><td>475</td><td>288</td></tr><tr><td>Compras</td><td>160</td><td>130</td></tr><tr><td><strong>Connect rate</strong> (carregou ÷ cliques)</td><td><strong>81,8%</strong></td><td><strong>71,3%</strong></td></tr><tr><td><strong>Página → checkout</strong> (checkout ÷ carregou)</td><td><strong>18,6%</strong></td><td><strong>7,9%</strong></td></tr><tr><td><strong>Checkout → compra</strong></td><td><strong>33,7%</strong></td><td><strong>45,1%</strong></td></tr></tbody></table></div><p>As porcentagens da linha de baixo são contas minhas sobre os números que ele mostra; ele cita &quot;18%&quot;, &quot;33%&quot;, &quot;7,89&quot; e &quot;45%&quot; [00:38:20-00:40:22]. Somando os dois produtos, ele diz ter investido R$ 15.541 e faturado R$ 43.300 [00:36:20] (cerca de 2,8 vezes).</p><p>O que ele conclui, e vale como regra de leitura:</p><ul><li><strong>O custo por compra não é só problema de criativo.</strong> Se a página converte pouco, &quot;não adianta testar milhares de criativos&quot; [00:36:20].</li><li>Segundo ele, os dois produtos tinham o mesmo ticket (R$ 97) e custo por clique parecido (cerca de R$ 1,80 a R$ 1,90), e a página deu retornos bem diferentes: no produto 2, 92% de quem chegou à página saiu sem ir ao checkout.</li><li><em>&quot;Se eu dobro a taxa de conversão da página, de 7 para 15%, o retorno aumenta&quot;</em> com as mesmas campanhas [00:40:22]. É aritmética, não resultado de teste.</li><li><strong>Trocar o checkout derrubou o resultado</strong> numa oferta dele, mesmo achando que o novo era melhor: <em>&quot;só vou saber colocando tráfego&quot;</em> [00:40:22].</li><li>Um gateway de pagamento que mostrava aviso de &quot;possível golpe&quot; fez um cliente desistir, e ele atribui queda de conversão a isso [00:54:28].</li></ul><h3 id="paginas-de-vendas-low-ticket-metas-citadas">Metas citadas</h3><div class="scroll"><table><thead><tr><th>Métrica</th><th>Valor citado</th><th>Fonte</th></tr></thead><tbody><tr><td>Connect rate</td><td>acima de 80%</td><td>Caio Martins [00:34:14]</td></tr><tr><td>Conversão de checkout</td><td>30% ou mais; abaixo de 19% indica problema de confiança</td><td>guia Low Ticket (síntese de outros vídeos)</td></tr><tr><td>Mobile</td><td>&quot;mais de 90% do tráfego&quot;</td><td>Cássio Hart, checkout com IA [00:04:02]</td></tr><tr><td>Associar a conta do Instagram ao anúncio</td><td>&quot;aumenta uns 30 a 40% de conversão&quot;</td><td>Caio Martins [00:32:14] (alegação, sem dado)</td></tr></tbody></table></div><hr><h2 id="paginas-de-vendas-low-ticket-parte-2-anatomia-da-página-o-molde-que-se-repete">Parte 2 — Anatomia da página (o molde que se repete)</h2><h3 id="paginas-de-vendas-low-ticket-o-critério-tangível-clara-específica-mensurável">O critério: tangível, clara, específica, mensurável</h3><p><em>Lido:</em> <strong>Nícolas Moreira — &quot;A Página de Vendas que Me Gerou R$ 111.657 Com Low Ticket Global&quot;</strong> (21:21, <a href="https://www.youtube.com/watch?v=Euu4CmTQx50">vídeo</a>), lido até 00:14:03. Os quatro critérios dele [00:02:00-00:04:00]:</p><ol><li><strong>Tangível</strong>: a pessoa &quot;sente&quot; o produto (mockup que parece um e-book folheável no celular).</li><li><strong>Clara</strong>: entende o que a oferta promete ao entrar.</li><li><strong>Específica</strong>: fala direto com a persona, sem &quot;mecanismo único&quot; inventado.</li><li><strong>Mensurável</strong>: dá quantidade (quantas aulas, quantos modelos).</li></ol><p>E a premissa: em low ticket <em>&quot;a pessoa já reconhece o problema, você só vem com a solução&quot;</em> [00:04:00].</p><h3 id="paginas-de-vendas-low-ticket-a-sequência-de-seções-síntese-de-três-páginas">A sequência de seções (síntese de três páginas)</h3><p>A tabela cruza a página do Nícolas (pack de 50 aulas de canto), as duas páginas &quot;validadas&quot; que ele analisa em <strong>&quot;Seu Low Ticket Não Vende?&quot;</strong> (26:16, <a href="https://www.youtube.com/watch?v=mYiFs95ddRA">vídeo</a>) e a página do Allan Torquato (<strong>&quot;Analisei as páginas dos low ticket LATAM&quot;</strong>, 11:49, <a href="https://www.youtube.com/watch?v=cZmFHdXjIWo">vídeo</a>).</p><div class="scroll"><table><thead><tr><th>#</th><th>Seção</th><th>O que fazem</th><th>Onde</th></tr></thead><tbody><tr><td>1</td><td>Barra de urgência</td><td>&quot;Desconto aplicado só hoje&quot;</td><td>Nícolas [00:04:00]</td></tr><tr><td>2</td><td><strong>Headline</strong></td><td>Diz o que é e para quem: &quot;Pack de aulas prontas para professores de canto&quot;; &quot;200 dinâmicas cristãs interativas&quot;; &quot;150 atividades musicais&quot;</td><td>Nícolas, mYiFs [00:06:04]</td></tr><tr><td>3</td><td><strong>Subheadline</strong></td><td>Traz <strong>número</strong> e uso imediato: &quot;50 aulas estruturadas, prontas para imprimir e aplicar hoje mesmo&quot;</td><td>Nícolas [00:06:01]</td></tr><tr><td>4</td><td><strong>Mockup</strong></td><td>Imagem do produto, em mais de um ângulo ao longo da página; um vídeo curto (&quot;mini VSL&quot;) é a alternativa</td><td>Nícolas [00:06:01], mYiFs [00:08:04]</td></tr><tr><td>5</td><td>Botão</td><td>Rola para a seção da oferta (ver divergência na Parte 3)</td><td>Nícolas [00:06:01]</td></tr><tr><td>6</td><td>Estrutura do material</td><td>Nível básico ao avançado, método claro, adaptável a idades</td><td>Nícolas [00:06:01]</td></tr><tr><td>7</td><td>O que você recebe</td><td>Lista dos módulos ou temas</td><td>Nícolas [00:06:01], mYiFs [00:08:04]</td></tr><tr><td>8</td><td><strong>Bônus numerados</strong></td><td>&quot;Bônus 1 a 5&quot;, cada um com valor riscado e &quot;hoje grátis&quot;; Allan soma e diz que passam de US$ 49</td><td>Nícolas [00:08:02], Allan [00:08:03]</td></tr><tr><td>9</td><td>&quot;Este pack é para você&quot;</td><td>Lista de subnichos (principiantes, experientes, autônomos, escolas)</td><td>Nícolas [00:08:02]</td></tr><tr><td>10</td><td>Prova social</td><td>Depoimentos; ele recomenda deixá-los <strong>acima da oferta</strong></td><td>Nícolas [00:10:02], mYiFs [00:04:02]</td></tr><tr><td>11</td><td>Recapitulação da oferta</td><td>Repete tudo o que recebe, com outro ângulo de mockup</td><td>Nícolas [00:10:02]</td></tr><tr><td>12</td><td><strong>Quebra de objeções</strong></td><td>Garantia de 7 dias, acesso vitalício, atualizações grátis</td><td>Nícolas [00:10:02-00:12:02]</td></tr><tr><td>13</td><td><strong>Ancoragem de preço</strong></td><td>Preço &quot;de&quot; riscado e preço atual; &quot;pague em sua moeda local&quot; para venda em dólar</td><td>Nícolas [00:12:02]</td></tr><tr><td>14</td><td>FAQ</td><td>Perguntas frequentes, &quot;obrigação ter&quot;</td><td>Nícolas [00:12:02], Allan [00:10:03]</td></tr><tr><td>15</td><td>Botão final</td><td>Um único CTA</td><td>Nícolas [00:12:02]</td></tr></tbody></table></div><p>Ponto que aparece nos três: <strong>o preço vem tarde</strong>, depois de tratar objeções (Silvio Roberto também recomenda &quot;valor só no final&quot; [00:04:02]).</p><h3 id="paginas-de-vendas-low-ticket-número-em-tudo">Número em tudo</h3><p>Nícolas repete: <em>&quot;sempre coloco 50 aulas prontas para professores, 50 protocolos para médicos&quot;</em> [mYiFs 00:06:04]; coloca numeração nos bônus e no que a pessoa recebe [mYiFs 00:10:04]. Na página &quot;validada&quot; que analisa, a headline já traz <strong>&quot;mais de 200&quot;</strong> e a subheadline lista os usos. O produto &quot;genérico&quot; que ele critica (planos para professores sem número, mockup genérico, dois planos de mesmo preço) é o contra-exemplo.</p><h3 id="paginas-de-vendas-low-ticket-o-que-aparece-na-página-ruim">O que aparece na página ruim</h3><p>Nícolas e Allan descrevem, com quase as mesmas palavras:</p><ul><li>Criativo vago que não diz o que é; o criativo é <em>&quot;80/20 da operação&quot;</em> [mYiFs 00:02:00].</li><li>Página <strong>sem mockup</strong> ou com imagem genérica; headline fraca; <strong>sem bônus no início</strong>; prova social <strong>embaixo</strong>; <strong>sem garantia</strong>.</li><li><strong>Dois planos de mesmo preço</strong> sem lógica de upgrade [mYiFs 00:04:02].</li><li><strong>Sem order bump</strong> no checkout e <strong>sem avaliação</strong> no marketplace (sinal de que não vende) [mYiFs 00:06:04].</li><li><strong>Anunciar direto no checkout cru</strong> sem nenhuma página, e hospedar no domínio do marketplace [Allan 00:00:00-00:02:01].</li><li>Mockup de capa errada, imagem com baixa qualidade, página pesada [Allan 00:06:03-00:08:03].</li></ul><hr><h2 id="paginas-de-vendas-low-ticket-parte-3-onde-os-criadores-discordam">Parte 3 — Onde os criadores discordam</h2><h3 id="paginas-de-vendas-low-ticket-31-página-de-vendas-tráfego-direto-para-checkout-com-banner">3.1 Página de vendas × tráfego direto para checkout com banner</h3><div class="scroll"><table><thead><tr><th>Posição</th><th>Quem</th><th>Argumento</th></tr></thead><tbody><tr><td><strong>Sempre tenha página</strong></td><td>Allan Torquato</td><td><em>&quot;Ah, posso fazer só no checkout? Não faça… não vai&quot;</em> [00:02:01]. Ilustra: 100 cliques, 40 chegam ao checkout, &quot;perdeu R$ 120 se pagou R$ 2 no clique&quot; [00:10:03]. É uma ilustração dele, não dado medido</td></tr><tr><td><strong>Anúncio → checkout com banner que parece landing</strong></td><td>Cássio Hart</td><td><em>&quot;A melhor maneira e mais fácil de tu começar a rodar, principalmente um produto low ticket&quot;</em> [Checkout com IA, 00:02:01]. No checkout, um banner longo, <strong>mobile-first</strong>, gerado no ChatGPT, com order bumps, e recuperação de venda (Pix gerado sem pagar, abandono, cartão recusado) [00:00:00, 00:04:02]</td></tr><tr><td><strong>Anúncio → página → checkout</strong></td><td>Henrique Oliveira, Caio Martins, Nícolas</td><td>Página de vendas de R$ 9,90 com checkout de dois order bumps e dois upsells [Henrique, 00:02:01]; Caio define tráfego direto como subir o anúncio para uma página de vendas e depois ao checkout [00:26:12]</td></tr></tbody></table></div><p>Cássio justifica o checkout com banner por <strong>custo e velocidade de teste</strong>: quiz e VSL exigem ferramenta e edição, e ele diz que alterar a &quot;lead&quot; de uma VSL para testar conversão dá muito trabalho [Funil R$ 419 mil, 00:14:06]. Em outro vídeo (<strong>&quot;Como fiz 289 vendas de um Low Ticket de R$ 27&quot;</strong>, 39:58, <a href="https://www.youtube.com/watch?v=posOHrCnEBs">vídeo</a>, trechos), o checkout com banner é a estrutura da agência dele [00:06:02].</p><p>Nenhum dos dois mostra teste lado a lado com o mesmo produto. A diferença pode vir do produto, do ticket e do público; nenhum vídeo isola isso. Repare que o próprio Cássio mostra, no vídeo do funil de R$ 419 mil, produtos que passam por página e, no mesmo vídeo, descreve o checkout com banner como a estrutura da agência dele [00:14:06].</p><h3 id="paginas-de-vendas-low-ticket-32-botão-na-primeira-dobra">3.2 Botão na primeira dobra</h3><ul><li><strong>Silvio Roberto:</strong> não pôr botão na primeira dobra, que ele chama de erro mais comum. O botão que leva ao checkout faz a pessoa chegar fria; relata mentorados com muito <em>initiate checkout</em> e baixa conversão por isso [00:02:01-00:04:02].</li><li><strong>Nícolas e Allan:</strong> a página deles tem <strong>botão logo depois do mockup</strong>, mas o botão <strong>rola até a seção da oferta</strong>, não abre o checkout [Nícolas 00:06:01, Allan 00:08:03]. Nícolas até diz que em muitas páginas <strong>não</strong> põe esse botão, &quot;faço a pessoa ler&quot; [mYiFs 00:08:04].</li></ul><p>Isso pode não ser contradição: Silvio critica botão que leva ao checkout; os outros usam âncora para a oferta. É leitura minha; confira ao testar.</p><h3 id="paginas-de-vendas-low-ticket-33-vsl-mini-vsl-quiz-e-fluxo-no-typebot">3.3 VSL, mini VSL, quiz e fluxo no Typebot</h3><ul><li><strong>Nícolas</strong> analisa páginas &quot;escaladas&quot; com <strong>mini VSL</strong> (vídeo curto) e diz que dá para <strong>trocar por mockup</strong> [mYiFs 00:08:04, 00:14:06].</li><li><strong>Cássio</strong> evita VSL e quiz por custo e dificuldade de editar [00:14:06]; <strong>Rafa Souza</strong> (curso de 7 h, trechos) testa página, VSL, quiz e fluxo no Typebot, e diz que o que mais vende no caso dele é o <strong>fluxo Typebot</strong>, com produtos de R$ 19 a R$ 99 [05:20:38-05:22:39].</li><li>O guia Low Ticket já registra que Silvio Roberto desaconselha VSL em low ticket; os vídeos novos de <strong>Matheus Bressan</strong> (página × VSL × quiz) estão na lista pendente.</li></ul><h3 id="paginas-de-vendas-low-ticket-34-urgência-e-escassez">3.4 Urgência e escassez</h3><p>Na própria fonte principal há contradição: a página do Nícolas tem <strong>barra de &quot;desconto só hoje&quot;</strong> [00:04:00], e ele recomenda esse gatilho como um que &quot;converte bem&quot;. Na outra análise, diz <em>&quot;eu não rodo com esse gatilho de escassez&quot;</em> [mYiFs 00:08:04]. Pode ser um tipo diferente de gatilho (a legenda não deixa claro). Veja a Parte 7 sobre urgência falsa.</p><h3 id="paginas-de-vendas-low-ticket-35-fundo-claro-escuro">3.5 Fundo claro × escuro</h3><p>Só Silvio Roberto trata do tema: <em>&quot;site escuro converte menos que site claro&quot;</em>, e pede fundo claro no prompt [00:02:01]. Sem dado.</p><hr><h2 id="paginas-de-vendas-low-ticket-parte-4-montar-a-página-com-ia-processo-não-prompt-único">Parte 4 — Montar a página com IA (processo, não prompt único)</h2><div class="scroll"><table><thead><tr><th>Passo</th><th>Fonte</th><th>O que fazem</th></tr></thead><tbody><tr><td>Ponto de partida</td><td>Silvio [00:00:00]</td><td>Começar de uma página existente (&quot;modelagem&quot;), mas ele avisa que o termo &quot;virou sinônimo de plágio&quot; e pede que o resultado seja aprimorado, não cópia</td></tr><tr><td>Ferramenta</td><td>Nícolas [00:02:00]</td><td>Replit (também Lovable, Bolt); ele oferece o template e um agente de copy, a quem pedir por Direct no Instagram</td></tr><tr><td>Prompt: público</td><td>Silvio [00:02:01]</td><td>Copy para <strong>público frio</strong>, com dados demográficos (&quot;mulheres de 40 a 50 anos&quot;); quanto mais detalhe, melhor</td></tr><tr><td>Prompt: layout</td><td>Silvio [00:02:01-00:04:02]</td><td>Responsivo; <strong>fundo claro</strong>; paleta do nicho; estilo visual; <strong>sem botão de compra na primeira dobra</strong>; preço só no fim, com parcelamento; link do botão já informado</td></tr><tr><td>Prompt: rastreio</td><td>Silvio [00:04:02-00:06:05]</td><td>Informar <strong>ID do pixel e token</strong> (conjunto de dados, API de conversões) já no primeiro prompt; links das imagens hospedadas</td></tr><tr><td>Mockup</td><td>Allan [00:04:02-00:06:03]</td><td>No ChatGPT, mandar a imagem e pedir o <strong>prompt</strong> que recria o mockup; usar a imagem original do criativo na página</td></tr><tr><td>Hospedagem</td><td>Allan [00:02:01], Silvio [00:08:07-00:10:07]</td><td>Domínio e hospedagem próprios (Allan indica a Hostinger, com cupom de parceria); <strong>não deixar a página só no Lovable ou no Claude</strong>, porque quem espiona ofertas procura páginas ali [Silvio]. Silvio cola o HTML num bloco do Elementor no WordPress</td></tr><tr><td>Checkout</td><td>Cássio [00:02:01-00:06:02]</td><td>Prompt no ChatGPT para gerar um <strong>banner de checkout mobile</strong>; comprimir a imagem antes de subir</td></tr></tbody></table></div><p>⚠️ Allan e Silvio <strong>indicam ferramentas com link de parceria ou vendem curso</strong> no mesmo vídeo; a Hostinger e a ferramenta de espionagem de anúncios (Radar) são citadas com cupom ou link. Silvio pede também <strong>evitar palavras que bloqueiam</strong> o anúncio no título da página, como &quot;emagreça&quot; [00:10:07].</p><hr><h2 id="paginas-de-vendas-low-ticket-parte-5-checkout-e-esteira-onde-o-ticket-sobe">Parte 5 — Checkout e esteira: onde o ticket sobe</h2><div class="scroll"><table><thead><tr><th>Fonte</th><th>Desenho citado</th><th>Observação</th></tr></thead><tbody><tr><td>Henrique Oliveira, <strong>&quot;Fiz 150 vendas usando o NOVO Funil&quot;</strong> (16:01, <a href="https://www.youtube.com/watch?v=BNOlFQInty4">vídeo</a>, trechos)</td><td>Página de R$ 9,90 → checkout com <strong>2 order bumps (R$ 9,90 e R$ 19,90)</strong> → 2 upsells de R$ 9,90 [00:02:01]. Antes: checkout com no máximo 1 bump e página de obrigado [00:00:00]</td><td>Painel (VK Matrix) para ver front, bumps e upsells [00:12:04]</td></tr><tr><td>Cássio Hart, 289 vendas de R$ 27</td><td>Bumps de R$ 97, R$ 47, R$ 47 e R$ 27 [00:06:02]; <strong>comprando todos, o ticket vai a R$ 245</strong> [00:18:06]</td><td>R$ 245 é o <strong>máximo se todos forem comprados</strong>, não a média</td></tr><tr><td>Allan Torquato</td><td>Produto de R$ 14,90 com 5 bumps chega a R$ 221 se todos forem comprados [00:06:03-00:08:03]</td><td>idem</td></tr><tr><td>Caio Martins (39:15, <a href="https://www.youtube.com/watch?v=1TY_nKIObJA">vídeo</a>, trechos)</td><td>30 bumps de R$ 19,90 = R$ 600; 10 upsells de R$ 67; <em>&quot;quem não tem order bump não tem negócio&quot;</em> [00:08:04, 00:22:09]</td><td>Dados ilustrativos de aula</td></tr><tr><td>Nícolas Moreira</td><td>Duas ofertas analisadas: uma de R$ 37 com 4 order bumps [mYiFs 00:10:04-00:12:05]; outra com checkout da Hotmart com banner, timer e bumps [00:16:08]</td><td>Ele usa a <strong>presença do bump</strong> como sinal de oferta validada</td></tr></tbody></table></div><p><strong>Recuperação de venda</strong> (Cássio): quem gerou Pix e não pagou, abandonou o carrinho ou teve cartão recusado recebe sequência de mensagens por automação [Checkout com IA 00:00:00; 289 vendas 00:20:07]. Ele argumenta que quem chegou ao checkout já fez o trabalho caro (anúncio e página) e não receber oferta nenhuma é desperdício [00:22:07].</p><p><strong>Pop-up antes do checkout</strong> (Caio): ao clicar em comprar, aparece um formulário (nome, e-mail, telefone) que captura o lead antes do checkout, para remarketing [00:34:14-00:36:14].</p><hr><h2 id="paginas-de-vendas-low-ticket-parte-6-como-achar-páginas-validadas-para-estudar">Parte 6 — Como achar páginas validadas para estudar</h2><p>Os sinais que os vídeos usam, em ordem de confiança:</p><ol><li><strong>Muitas variações de criativo</strong> para a mesma oferta e <strong>muito tempo ativa</strong> na Biblioteca de Anúncios. Nícolas diz que a oferta que ele escolheu tem várias variações e &quot;bastante tempo ativa&quot; [Nícolas 00:12:02]; Guilherme Asvi cita uma oferta com <strong>410 anúncios ativos</strong> levando à mesma página [Asvi 00:12:01]. (A Biblioteca não mostra gasto; veja a Parte 2 do guia Captar Clientes de Marketing nos EUA sobre os limites.)</li><li><strong>Order bump no checkout</strong>: a lógica de que quem criou order bump validou a oferta [mYiFs 00:10:04-00:12:05]. É um argumento, não prova.</li><li><strong>Avaliações no marketplace</strong>: ofertas sem nenhuma avaliação provavelmente não vendem; uma com 6 avaliações &quot;vendeu&quot; [mYiFs 00:06:04, 00:16:08].</li><li><strong>Cópia do domínio</strong> para achar outras páginas anunciando a mesma oferta, back redirect, upsell e testes de VSL [Asvi 00:10:01-00:14:01].</li></ol><p>⚠️ A mesma &quot;modelagem&quot; que os vídeos ensinam inclui <strong>baixar a VSL e copiar a página do concorrente</strong> [Asvi 00:18:01-00:20:01]. Veja a Parte 7.</p><hr><h2 id="paginas-de-vendas-low-ticket-parte-7-riscos-que-os-vídeos-tratam-como-detalhe">Parte 7 — Riscos que os vídeos tratam como detalhe</h2><blockquote><p>Isto <strong>não é aconselhamento jurídico</strong>. Confirme com advogado antes de operar.</p></blockquote><div class="scroll"><table><thead><tr><th>Prática ensinada</th><th>Por que é risco</th><th>Quem</th></tr></thead><tbody><tr><td><strong>Depoimentos &quot;gerados artificialmente, sem foto&quot;</strong></td><td>Prova social inventada pode configurar publicidade enganosa (no Brasil, o Código de Defesa do Consumidor trata de publicidade enganosa; nos EUA, a FTC tem regra contra avaliações e depoimentos falsos). Pode também derrubar conta e processadora</td><td>Nícolas [00:10:02]</td></tr><tr><td><strong>Urgência e escassez falsas</strong> (&quot;só hoje&quot;, contador que reinicia)</td><td>Também enganoso; plataformas e processadoras reagem</td><td>Nícolas [00:04:00]</td></tr><tr><td><strong>Preço &quot;de&quot; fictício</strong> (&quot;de US$ 79,40 por US$ 9,90&quot;)</td><td>O preço &quot;de&quot; precisa ter sido praticado de fato</td><td>Nícolas [00:12:02]</td></tr><tr><td><strong>Copiar página e VSL do concorrente</strong></td><td>Direito autoral; o próprio Silvio diz que &quot;modelagem virou sinônimo de plágio&quot;</td><td>Asvi, Silvio</td></tr><tr><td><strong>Garantia de 7 dias</strong></td><td>No Brasil, compra online já tem 7 dias de arrependimento por lei; a garantia tem de ser cumprida, e o reembolso aparece na sua taxa</td><td>Nícolas, Allan</td></tr><tr><td><strong>Promessas em nichos sensíveis</strong> (saúde, emagrecimento)</td><td>Bloqueio de anúncio e de conta; Silvio manda evitar certas palavras no título da página</td><td>Silvio [00:10:07]</td></tr><tr><td><strong>&quot;Esconder&quot; a página de espionagem</strong></td><td>Ele orienta tirar a oferta validada do Lovable e hospedar no próprio domínio</td><td>Silvio [00:08:07]</td></tr></tbody></table></div><p><strong>Interesse do vendedor:</strong> Nícolas vende templates, agente de copy e acesso por Direct; Allan vende o treinamento de R$ 9,90 e indica Hostinger e Radar com cupom; Silvio vende curso de tráfego e grupo; Cássio fala &quot;aqui na agência&quot; (é dono de agência de tráfego). Faturamentos: Nícolas &quot;R$ 111.657&quot;, Cássio &quot;R$ 419.131&quot;, Allan &quot;6 anos vivendo de low ticket&quot;. Nenhum é auditado.</p><hr><h2 id="paginas-de-vendas-low-ticket-parte-8-checklist-de-uma-página-de-low-ticket">Parte 8 — Checklist de uma página de low ticket</h2><p><strong>Antes de publicar</strong></p><ul class="check"><li><span></span>Headline diz <strong>o que é e para quem</strong>, com um número (&quot;50 aulas&quot;, &quot;200 dinâmicas&quot;)</li><li><span></span>Subheadline com <strong>uso imediato</strong> e <strong>quantidade</strong></li><li><span></span><strong>Mockup</strong> claro do produto (e outro ângulo mais abaixo)</li><li><span></span>&quot;O que você recebe&quot; listado; <strong>bônus numerados</strong></li><li><span></span>Prova social <strong>real</strong> (depoimento com pessoa, print de avaliação ou resultado de verdade)</li><li><span></span><strong>Garantia</strong> de 7 dias, acesso e atualizações descritos</li><li><span></span>Preço <strong>só depois</strong> das objeções; preço &quot;de&quot; que existiu de verdade</li><li><span></span><strong>FAQ</strong> e <strong>um CTA</strong> final</li><li><span></span>Carrega rápido no celular; connect rate acima de 80% depois de rodar</li><li><span></span>Fundo claro, texto legível no celular, imagens comprimidas</li><li><span></span>Pixel e token (API de conversões) instalados <strong>e testados</strong></li><li><span></span>Hospedagem em domínio próprio</li></ul><p><strong>Depois de rodar (leia a etapa pior)</strong></p><ul class="check"><li><span></span>Connect rate baixo: página pesada, ajustar velocidade</li><li><span></span>Página → checkout baixo (Cássio: 7,9% × 18,6%): reescrever <strong>headline, mockup e oferta</strong></li><li><span></span>Checkout → compra baixo: confiança, meios de pagamento, aviso de golpe do gateway, order bump mal escrito</li><li><span></span>Muitos <em>initiate checkout</em> e poucas compras: botão na primeira dobra, preço, confiança (Silvio)</li><li><span></span><strong>Mude uma coisa por vez</strong> e compare no mesmo período</li></ul><hr><h2 id="paginas-de-vendas-low-ticket-lacunas-de-evidência">Lacunas de evidência</h2><ul><li><strong>Nenhum teste A/B de elementos de página</strong> nos vídeos lidos (headline, mockup, botão, VSL).</li><li><strong>Taxa de conversão por tipo de página</strong> (página × checkout com banner × VSL × quiz) não aparece; só os dois produtos do Cássio.</li><li><strong>Reembolso e chargeback</strong> não são medidos nos vídeos de página.</li><li><strong>Mercado global:</strong> Nícolas diz vender para vários países, mas nenhum vídeo mostra a conversão por país.</li><li>As <strong>páginas</strong> citadas não foram abertas aqui; descrevi o que cada criador diz delas.</li></ul><hr><h2 id="paginas-de-vendas-low-ticket-índice">Índice</h2><p><strong>Lidos (completos ou quase):</strong></p><div class="scroll"><table><thead><tr><th>Vídeo</th><th>Canal</th><th>Duração</th><th>Link</th></tr></thead><tbody><tr><td>A Página de Vendas que Me Gerou R$ 111.657 (até 00:14:03)</td><td>Nícolas Moreira</td><td>21:21</td><td><a href="https://www.youtube.com/watch?v=Euu4CmTQx50">YouTube</a></td></tr><tr><td>Seu Low Ticket Não Vende? (3 erros; quase todo)</td><td>Nícolas Moreira</td><td>26:16</td><td><a href="https://www.youtube.com/watch?v=mYiFs95ddRA">YouTube</a></td></tr><tr><td>Analisei as páginas dos low ticket LATAM</td><td>Allan Torquato</td><td>11:49</td><td><a href="https://www.youtube.com/watch?v=cZmFHdXjIWo">YouTube</a></td></tr><tr><td>Criar ou Modelar Página de Vendas com IA</td><td>Silvio Roberto</td><td>11:58</td><td><a href="https://www.youtube.com/watch?v=X0k9IxNEXHo">YouTube</a></td></tr></tbody></table></div><p><strong>Trechos (vídeos longos, só as partes sobre página, checkout e métricas):</strong></p><div class="scroll"><table><thead><tr><th>Vídeo</th><th>Canal</th><th>Duração</th><th>Link</th></tr></thead><tbody><tr><td>Como lucrar com Low Ticket em 2026: funil simples (R$ 419 mil)</td><td>Cássio Hart</td><td>1:25:42</td><td><a href="https://www.youtube.com/watch?v=VBSDTUldSEE">YouTube</a></td></tr><tr><td>Como fiz 289 vendas de um Low Ticket de R$ 27</td><td>Cássio Hart</td><td>39:58</td><td><a href="https://www.youtube.com/watch?v=posOHrCnEBs">YouTube</a></td></tr><tr><td>Checkout para Low Ticket com IA</td><td>Cássio Hart</td><td>10:16</td><td><a href="https://www.youtube.com/watch?v=FW1pf3l1mrU">YouTube</a></td></tr><tr><td>Fiz 150 vendas usando o novo funil</td><td>Henrique Oliveira</td><td>16:01</td><td><a href="https://www.youtube.com/watch?v=BNOlFQInty4">YouTube</a></td></tr><tr><td>Criando um Low Ticket e vendendo com tráfego direto</td><td>Caio Martins</td><td>39:15</td><td><a href="https://www.youtube.com/watch?v=1TY_nKIObJA">YouTube</a></td></tr><tr><td>Low Ticket: curso completo</td><td>Rafa Souza</td><td>7:11:17</td><td><a href="https://www.youtube.com/watch?v=hPgS4RJcHQg">YouTube</a></td></tr><tr><td>Como encontrar uma oferta escalada, clonar e vender</td><td>Guilherme Asvi</td><td>31:37</td><td><a href="https://www.youtube.com/watch?v=x9kljw6KCAI">YouTube</a></td></tr></tbody></table></div><p><strong>Buscados no YouTube sobre este tema e ainda não baixados</strong> (verificação anti-robô do YouTube; tentar de novo mais tarde):</p><div class="scroll"><table><thead><tr><th>Vídeo</th><th>Canal</th><th>Views</th><th>Link</th></tr></thead><tbody><tr><td>Sales Page, VSL or Quiz? Which is better?</td><td>Matheus Bressan</td><td>17,8 mil</td><td><a href="https://www.youtube.com/watch?v=5nQ4876pUPo">YouTube</a></td></tr><tr><td>Quiz + VSL, melhor estratégia para low ticket</td><td>Matheus Bressan</td><td>15 mil</td><td><a href="https://www.youtube.com/watch?v=2DjQ-HEE92k">YouTube</a></td></tr><tr><td>Too many initiate checkouts and zero sales</td><td>Matheus Bressan</td><td>14,3 mil</td><td><a href="https://www.youtube.com/watch?v=JKXUngYj0SM">YouTube</a></td></tr><tr><td>Elementos necessários para uma página de alta conversão</td><td>Tiago Tessmann</td><td>167,6 mil</td><td><a href="https://www.youtube.com/watch?v=XdouTIM7SGE">YouTube</a></td></tr><tr><td>Como criar páginas de vendas de alta conversão para low ticket</td><td>Fernando Oliveira</td><td>13 mil</td><td><a href="https://www.youtube.com/watch?v=oTAHd7jU89k">YouTube</a></td></tr><tr><td>How I create low-ticket sales pages in practice</td><td>Heitor Nogueira</td><td>12,2 mil</td><td><a href="https://www.youtube.com/watch?v=cbrno-n1vpU">YouTube</a></td></tr><tr><td>Low Ticket em 2026: copie minha página validada</td><td>1kevones</td><td>18,2 mil</td><td><a href="https://www.youtube.com/watch?v=dl_xy0M4DJs">YouTube</a></td></tr><tr><td>Como clonar, modelar ou criar página de vendas para low ticket</td><td>Guilherme Emanoel</td><td>44,2 mil</td><td><a href="https://www.youtube.com/watch?v=wgJgpyjBpG4">YouTube</a></td></tr><tr><td>How to create a high-converting low ticket checkout</td><td>Magnus Folletto</td><td>9,4 mil</td><td><a href="https://www.youtube.com/watch?v=RTyrocHt2wI">YouTube</a></td></tr><tr><td>Melhor estrutura de página de venda low ticket</td><td>Thiago Almeida</td><td>3,2 mil</td><td><a href="https://www.youtube.com/watch?v=57cVWghGfsk">YouTube</a></td></tr><tr><td>Página de Vendas Low Ticket: estrutura simples que converte</td><td>Eidi Diego</td><td>2,7 mil</td><td><a href="https://www.youtube.com/watch?v=Fob7Sbhy4gA">YouTube</a></td></tr><tr><td>Como criar a página de vendas perfeita em 2025 para low ticket</td><td>Allan Torquato</td><td>3,8 mil</td><td><a href="https://www.youtube.com/watch?v=msnqegqDjzI">YouTube</a></td></tr><tr><td>Understand everything about sales pages</td><td>Ícaro de Carvalho</td><td>10,9 mil</td><td><a href="https://www.youtube.com/watch?v=-A7ed8-EzWo">YouTube</a></td></tr><tr><td>5 hacks to crack your order bump</td><td>Matheus Bressan</td><td>6 mil</td><td><a href="https://www.youtube.com/watch?v=7pUF4DPfpwQ">YouTube</a></td></tr><tr><td>Como aumentar o ROI do low ticket: upsell e downsell</td><td>Guilherme Emanoel</td><td>7,5 mil</td><td><a href="https://www.youtube.com/watch?v=rBdJWps3DqM">YouTube</a></td></tr><tr><td>I Studied 1000 Landing Pages, Here&#x27;s What Works in 2026</td><td>ThrillX</td><td>76,8 mil</td><td><a href="https://www.youtube.com/watch?v=PcwuZJNJny4">YouTube</a></td></tr><tr><td>Alex Hormozi&#x27;s Landing Page Strategy for 2026</td><td>ThrillX</td><td>106,8 mil</td><td><a href="https://www.youtube.com/watch?v=zA0B-VwOPn4">YouTube</a></td></tr><tr><td>3 Landing Page Tests To Skyrocket Conversions</td><td>Alex Hormozi</td><td>152,9 mil</td><td><a href="https://www.youtube.com/watch?v=9Dc2UQbQNTo">YouTube</a></td></tr><tr><td>The Ultimate Step-By-Step Landing Page Guide</td><td>Sabri Suby</td><td>324,7 mil</td><td><a href="https://www.youtube.com/watch?v=zpTsCrOvGao">YouTube</a></td></tr><tr><td>How To Write a Sales Page</td><td>Alex Cattoni</td><td>42,8 mil</td><td><a href="https://www.youtube.com/watch?v=vho8y4WM1Lk">YouTube</a></td></tr></tbody></table></div><p>*Fontes: transcrições em <code>references/youtube/</code> (legendas automáticas do YouTube). Cada trecho é rastreável ao vídeo e ao timestamp.*</p>
+<footer>
+  Extraído da leitura integral das transcrições em <code>references/youtube/</code>. Cada afirmação
+  é rastreável ao vídeo e timestamp de origem.<br>
+  Transcrições automáticas — números e nomes de ferramentas podem conter erros. Parte do
+  <a href="https://github.com/analuisamoutinho/estudos">repositório CORTEX</a>.<br>
+  <a href="index.html">← voltar para a lista de tópicos</a>
+</footer>
+</main>
+</div>
+<script>
+(function(){
+  var LS_KEY = 'estudos-lidos-v1';
+  function getLidos(){ try{ return JSON.parse(localStorage.getItem(LS_KEY)||'{}'); }catch(e){ return {}; } }
+  function setLido(stem,val){
+    var l=getLidos();
+    if(val){ l[stem]=Date.now(); } else { delete l[stem]; }
+    localStorage.setItem(LS_KEY, JSON.stringify(l));
+    return l;
+  }
+  window.estudosLidos = {get:getLidos, set:setLido};
+})();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  var btn = document.getElementById('lido-toggle');
+  var stem = btn.getAttribute('data-stem');
+  function render(){
+    var lidos = window.estudosLidos.get();
+    var isLido = !!lidos[stem];
+    btn.classList.toggle('is-lido', isLido);
+    btn.querySelector('.lido-toggle-label').textContent = isLido ? 'Lido' : 'Marcar como lido';
+  }
+  btn.addEventListener('click', function(){
+    var lidos = window.estudosLidos.get();
+    window.estudosLidos.set(stem, !lidos[stem]);
+    render();
+  });
+  render();
+});
+</script>

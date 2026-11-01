@@ -114,6 +114,17 @@ CPM) · mineração de ofertas.
 
 ---
 
+### 🧾 [Páginas de Vendas de Low Ticket](guias/paginas-de-vendas-low-ticket.md)
+**Estrutura, checkout e métricas da página que vende produto barato.** Complementa o guia de Low Ticket com o que ele não detalha.
+
+O molde que se repete (headline com número, mockup, bônus numerados, garantia, FAQ) · página × checkout com banner × VSL: onde os
+criadores discordam · funil por etapa com os números de dois produtos de R$ 97 · como montar com IA · order bump e recuperação ·
+riscos (depoimentos gerados, urgência falsa, cópia de página).
+
+*Fontes: Nícolas Moreira, Allan Torquato, Silvio Roberto, Cássio Hart, Henrique Oliveira, Caio Martins, Rafa Souza, Guilherme Asvi*
+
+---
+
 ### 🧠 [Negócio Solo e Mentalidade](guias/negocio-solo.md)
 **Como sair do zero sem se sabotar.** O tópico mais conceitual — e o que mais determina se o resto funciona.
 

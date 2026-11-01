@@ -1,4 +1,12 @@
 {
+  "-A7ed8-EzWo": {
+    "channel": "",
+    "error": "ERROR: [youtube] -A7ed8-EzWo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "-A7ed8-EzWo",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=-A7ed8-EzWo"
+  },
   "-Albg7BGsr8": {
     "channel": "Allan Torquato",
     "channel_url": "https://www.youtube.com/channel/UCdrSd6acAbz23X2neLw2_eg",
@@ -431,6 +439,14 @@
     "upload_date": "20201029",
     "url": "https://www.youtube.com/watch?v=27FxFwsydls"
   },
+  "2DjQ-HEE92k": {
+    "channel": "",
+    "error": "ERROR: [youtube] 2DjQ-HEE92k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "2DjQ-HEE92k",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=2DjQ-HEE92k"
+  },
   "2EQ3TRNYIQM": {
     "channel": "Nícolas Moreira",
     "channel_url": "https://www.youtube.com/channel/UC0Z9Qrd-1pH7qmLdPdS_i6w",
@@ -831,6 +847,14 @@
     "upload_date": "20260723",
     "url": "https://www.youtube.com/watch?v=52Xv_v2IVUU"
   },
+  "57cVWghGfsk": {
+    "channel": "",
+    "error": "ERROR: [youtube] 57cVWghGfsk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "57cVWghGfsk",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=57cVWghGfsk"
+  },
   "5Rve50_MvEo": {
     "channel": "Gustavo de Castro",
     "channel_url": "https://www.youtube.com/channel/UCUIMnQ3g4SvoqIw7MMQ9gOg",
@@ -862,6 +886,14 @@
     "title": "Meu processo para criar sites IRRESISTÍVEIS com IA",
     "upload_date": "20260526",
     "url": "https://www.youtube.com/watch?v=5VWz9bJc4OU"
+  },
+  "5nQ4876pUPo": {
+    "channel": "",
+    "error": "ERROR: [youtube] 5nQ4876pUPo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "5nQ4876pUPo",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=5nQ4876pUPo"
   },
   "5oVuWdt_uTk": {
     "channel": "Padre Pedro Willemsens - Meditações",
@@ -1164,6 +1196,14 @@
     "upload_date": "20220706",
     "url": "https://www.youtube.com/watch?v=7lUOvGxeJkw"
   },
+  "7pUF4DPfpwQ": {
+    "channel": "",
+    "error": "ERROR: [youtube] 7pUF4DPfpwQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "7pUF4DPfpwQ",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=7pUF4DPfpwQ"
+  },
   "7u3-t-Ft65w": {
     "channel": "ClickBank",
     "channel_url": "https://www.youtube.com/channel/UC_U7_SF5ygXAIPOPNC6HuDw",
@@ -1371,6 +1411,14 @@
     "title": "TESTEI LOW TICKET COM 6 REAIS",
     "upload_date": "20260201",
     "url": "https://www.youtube.com/watch?v=9BTFkD1m1VA"
+  },
+  "9Dc2UQbQNTo": {
+    "channel": "",
+    "error": "ERROR: [youtube] 9Dc2UQbQNTo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "9Dc2UQbQNTo",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=9Dc2UQbQNTo"
   },
   "9GLb_CEjzko": {
     "channel": "Henrique Oliveira",
@@ -2460,6 +2508,14 @@
     "upload_date": "20260802",
     "url": "https://www.youtube.com/watch?v=FoQUrYn6SB4"
   },
+  "Fob7Sbhy4gA": {
+    "channel": "",
+    "error": "ERROR: [youtube] Fob7Sbhy4gA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "Fob7Sbhy4gA",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=Fob7Sbhy4gA"
+  },
   "FvljBhfFxzM": {
     "channel": "Rodrigo Vincenzi",
     "channel_url": "https://www.youtube.com/channel/UCJx8oUY4N_SvP8P3ZliyBhw",
@@ -3035,6 +3091,14 @@
     "title": "Como Vender Na CLICKBANK e Ganhar em Dólar! Afiliado Google Ads Na Gringa 2025",
     "upload_date": "20250528",
     "url": "https://www.youtube.com/watch?v=J7jsaA-eD0s"
+  },
+  "JKXUngYj0SM": {
+    "channel": "",
+    "error": "ERROR: [youtube] JKXUngYj0SM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "JKXUngYj0SM",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=JKXUngYj0SM"
   },
   "JLaprLzPZYM": {
     "channel": "Florian Darroman",
@@ -4012,6 +4076,14 @@
     "upload_date": "20260512",
     "url": "https://www.youtube.com/watch?v=PbfGljiNutE"
   },
+  "PcwuZJNJny4": {
+    "channel": "",
+    "error": "ERROR: [youtube] PcwuZJNJny4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "PcwuZJNJny4",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=PcwuZJNJny4"
+  },
   "Pj-YqtT3N_M": {
     "channel": "Rafa Souza - Dropshipping",
     "channel_url": "https://www.youtube.com/channel/UC7biFSCsgjy7VPbWyKO4NbA",
@@ -4299,6 +4371,14 @@
     "title": "60 DIAS PARA SALVAR UMA EMPRESA DE R$400 MIL/MÊS (Antes que seja tarde) | O Mentor #01",
     "upload_date": "20260325",
     "url": "https://www.youtube.com/watch?v=RR9XwVF2qHM"
+  },
+  "RTyrocHt2wI": {
+    "channel": "",
+    "error": "ERROR: [youtube] RTyrocHt2wI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "RTyrocHt2wI",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=RTyrocHt2wI"
   },
   "S-Ny3-WZ_0Q": {
     "channel": "Resolve com DaVinci • Lucas Guerra",
@@ -5115,6 +5195,14 @@
     "title": "Step-by-Step Upwork Optimization Live Training 2026 (with Q&A)",
     "upload_date": "20260725",
     "url": "https://www.youtube.com/watch?v=XY-glcMs8gY"
+  },
+  "XdouTIM7SGE": {
+    "channel": "",
+    "error": "ERROR: [youtube] XdouTIM7SGE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "XdouTIM7SGE",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=XdouTIM7SGE"
   },
   "XizVIVIIhas": {
     "channel": "Henrique Oliveira",
@@ -6084,6 +6172,14 @@
     "upload_date": "20260116",
     "url": "https://www.youtube.com/watch?v=cZmFHdXjIWo"
   },
+  "cbrno-n1vpU": {
+    "channel": "",
+    "error": "ERROR: [youtube] cbrno-n1vpU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "cbrno-n1vpU",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=cbrno-n1vpU"
+  },
   "ccCJ-8gKyDw": {
     "channel": "Tiago Rossi",
     "channel_url": "https://www.youtube.com/channel/UCpsMe7oXoNFJRMcMRxUn6rg",
@@ -6259,6 +6355,14 @@
     "title": "Por que somos atraídos pela tragédia e morte?",
     "upload_date": "20240921",
     "url": "https://www.youtube.com/watch?v=dYDONN0PcB4"
+  },
+  "dl_xy0M4DJs": {
+    "channel": "",
+    "error": "ERROR: [youtube] dl_xy0M4DJs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "dl_xy0M4DJs",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=dl_xy0M4DJs"
   },
   "dzmwsqVa2AA": {
     "channel": "Iagor Gonçalves",
@@ -7361,6 +7465,14 @@
     "upload_date": "20260404",
     "url": "https://www.youtube.com/watch?v=mYiFs95ddRA"
   },
+  "msnqegqDjzI": {
+    "channel": "",
+    "error": "ERROR: [youtube] msnqegqDjzI: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "msnqegqDjzI",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=msnqegqDjzI"
+  },
   "muVPcgoOUoM": {
     "channel": "Thiago Boeira ",
     "channel_url": "https://www.youtube.com/channel/UCR7l6ks9W6eKjk1A8aMT8yg",
@@ -7648,6 +7760,14 @@
     "title": "Como Validar e Vender Seu SaaS Rápido (Sem Enrolação!)",
     "upload_date": "20250315",
     "url": "https://www.youtube.com/watch?v=oEdFZT9vF5Q"
+  },
+  "oTAHd7jU89k": {
+    "channel": "",
+    "error": "ERROR: [youtube] oTAHd7jU89k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "oTAHd7jU89k",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=oTAHd7jU89k"
   },
   "oUFOVBGbOhs": {
     "channel": "Rafa Souza - Dropshipping",
@@ -7952,6 +8072,14 @@
     "title": "Criei um Low Ticket do Zero com IA em 5 Minutos (e já tá vendendo)",
     "upload_date": "20260422",
     "url": "https://www.youtube.com/watch?v=rB2S51SGmKI"
+  },
+  "rBdJWps3DqM": {
+    "channel": "",
+    "error": "ERROR: [youtube] rBdJWps3DqM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "rBdJWps3DqM",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=rBdJWps3DqM"
   },
   "rGjn7wzuexs": {
     "channel": "Felipe Marques | Home Office ",
@@ -8545,6 +8673,14 @@
     "upload_date": "20220316",
     "url": "https://www.youtube.com/watch?v=vWBRZx7JCjY"
   },
+  "vho8y4WM1Lk": {
+    "channel": "",
+    "error": "ERROR: [youtube] vho8y4WM1Lk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "vho8y4WM1Lk",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=vho8y4WM1Lk"
+  },
   "vhrQjWYc_s8": {
     "channel": "Kevin Salazar MKT",
     "channel_url": "https://www.youtube.com/channel/UCub4mFANfskbx_9HmdLWbjw",
@@ -8688,6 +8824,14 @@
     "title": "SaaS Marketing for Developers – Automate Sales Tasks with AI",
     "upload_date": "20260402",
     "url": "https://www.youtube.com/watch?v=wYx9Q6dcJCw"
+  },
+  "wgJgpyjBpG4": {
+    "channel": "",
+    "error": "ERROR: [youtube] wgJgpyjBpG4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "wgJgpyjBpG4",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=wgJgpyjBpG4"
   },
   "whDgHl6n0pQ": {
     "channel": "The Aristocratas | Del Francco & Rubatinno",
@@ -8977,6 +9121,14 @@
     "upload_date": "20260522",
     "url": "https://www.youtube.com/watch?v=z5sRjgUhUks"
   },
+  "zA0B-VwOPn4": {
+    "channel": "",
+    "error": "ERROR: [youtube] zA0B-VwOPn4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "zA0B-VwOPn4",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=zA0B-VwOPn4"
+  },
   "zFw3Mx85Z4U": {
     "channel": "Luciana Papini | Automação com IA",
     "channel_url": "https://www.youtube.com/channel/UCwCyve8wJg4gC3dwaqqc1ow",
@@ -9024,6 +9176,14 @@
     "title": "Como copiar qualquer site da internet usando LOVABLE",
     "upload_date": "20260729",
     "url": "https://www.youtube.com/watch?v=zcgWzmV6FKU"
+  },
+  "zpTsCrOvGao": {
+    "channel": "",
+    "error": "ERROR: [youtube] zpTsCrOvGao: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extract",
+    "id": "zpTsCrOvGao",
+    "status": "error",
+    "title": "",
+    "url": "https://www.youtube.com/watch?v=zpTsCrOvGao"
   },
   "zwQInbw0-bI": {
     "channel": "Luana Carolina",
